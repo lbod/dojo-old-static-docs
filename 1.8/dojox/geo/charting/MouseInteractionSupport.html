@@ -1,0 +1,478 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/geo/charting/MouseInteractionSupport</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/geo/charting/MouseInteractionSupport<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>class to handle mouse interactions on a dojox.geo.charting.Map widget</p>
+</div>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/geo/charting/MouseInteractionSupport<span class="parameters">(map,options);</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/geo/charting/MouseInteractionSupport">dojox/geo/charting/MouseInteractionSupport</a></div>
+<div class="jsdoc-summary"><p>Constructs a new _MouseInteractionSupport instance</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">map</td>
+    <td class="jsdoc-param-type">dojox/geo/charting/Map</td>
+    <td class="jsdoc-param-description"><p>the Map widget this class provides touch navigation for.</p>
+ 
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">options</td>
+    <td class="jsdoc-param-type">Object</td>
+    <td class="jsdoc-param-description">
+      <div><em>Optional</em></div><p>An object defining additional configuration properties.</p>
+ 
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojox/geo/charting.html" target="_blank">dojox/geo/charting/MouseInteractionSupport reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="objectIcon private"><a href="#1_8dojox_geo_charting_MouseInteractionSupport__cancelMouseClick" class="inline-link"> _cancelMouseClick </a><span></span><span title="private" class="jsdoc-private"></span>
+    </li>
+    <li class="objectIcon private"><a href="#1_8dojox_geo_charting_MouseInteractionSupport__currentFeature" class="inline-link"> _currentFeature </a><span></span><span title="private" class="jsdoc-private"></span>
+    </li>
+    <li class="objectIcon private"><a href="#1_8dojox_geo_charting_MouseInteractionSupport__map" class="inline-link"> _map </a><span></span><span title="private" class="jsdoc-private"></span>
+    </li>
+    <li class="objectIcon private"><a href="#1_8dojox_geo_charting_MouseInteractionSupport__mapClickLocation" class="inline-link"> _mapClickLocation </a><span></span><span title="private" class="jsdoc-private"></span>
+    </li>
+    <li class="objectIcon private"><a href="#1_8dojox_geo_charting_MouseInteractionSupport__mouseDownListener" class="inline-link"> _mouseDownListener </a><span></span><span title="private" class="jsdoc-private"></span>
+    </li>
+    <li class="objectIcon private"><a href="#1_8dojox_geo_charting_MouseInteractionSupport__mouseDragListener" class="inline-link"> _mouseDragListener </a><span></span><span title="private" class="jsdoc-private"></span>
+    </li>
+    <li class="objectIcon private"><a href="#1_8dojox_geo_charting_MouseInteractionSupport__mouseMoveListener" class="inline-link"> _mouseMoveListener </a><span></span><span title="private" class="jsdoc-private"></span>
+    </li>
+    <li class="objectIcon private"><a href="#1_8dojox_geo_charting_MouseInteractionSupport__mouseUpClickListener" class="inline-link"> _mouseUpClickListener </a><span></span><span title="private" class="jsdoc-private"></span>
+    </li>
+    <li class="objectIcon private"><a href="#1_8dojox_geo_charting_MouseInteractionSupport__mouseUpListener" class="inline-link"> _mouseUpListener </a><span></span><span title="private" class="jsdoc-private"></span>
+    </li>
+    <li class="objectIcon private"><a href="#1_8dojox_geo_charting_MouseInteractionSupport__mouseWheelListener" class="inline-link"> _mouseWheelListener </a><span></span><span title="private" class="jsdoc-private"></span>
+    </li>
+    <li class="objectIcon private"><a href="#1_8dojox_geo_charting_MouseInteractionSupport__onDragStartListener" class="inline-link"> _onDragStartListener </a><span></span><span title="private" class="jsdoc-private"></span>
+    </li>
+    <li class="objectIcon private"><a href="#1_8dojox_geo_charting_MouseInteractionSupport__onSelectStartListener" class="inline-link"> _onSelectStartListener </a><span></span><span title="private" class="jsdoc-private"></span>
+    </li>
+    <li class="booleanIcon private"><a href="#1_8dojox_geo_charting_MouseInteractionSupport__panEnabled" class="inline-link"> _panEnabled </a><span></span><span title="private" class="jsdoc-private"></span>
+    </li>
+    <li class="objectIcon private"><a href="#1_8dojox_geo_charting_MouseInteractionSupport__screenClickLocation" class="inline-link"> _screenClickLocation </a><span></span><span title="private" class="jsdoc-private"></span>
+    </li>
+    <li class="booleanIcon private"><a href="#1_8dojox_geo_charting_MouseInteractionSupport__zoomEnabled" class="inline-link"> _zoomEnabled </a><span></span><span title="private" class="jsdoc-private"></span>
+    </li>
+    <li class="numberIcon"><a href="#1_8dojox_geo_charting_MouseInteractionSupport_mouseClickThreshold" class="inline-link"> mouseClickThreshold </a><span></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dojox_geo_charting_MouseInteractionSupport__getFeatureFromMouseEvent" class="inline-link"> _getFeatureFromMouseEvent</a><span class="parameters">(</span>mouseEvent) <span>utility function to return the feature located at this mouse event location</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_geo_charting_MouseInteractionSupport__mouseClickHandler" class="inline-link"> _mouseClickHandler</a><span class="parameters">(</span>mouseEvent) <span>action performed on the map when a mouse click was performed</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_geo_charting_MouseInteractionSupport__mouseDownHandler" class="inline-link"> _mouseDownHandler</a><span class="parameters">(</span>mouseEvent) <span>action performed on the map when a mouse down was performed</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_geo_charting_MouseInteractionSupport__mouseDragHandler" class="inline-link"> _mouseDragHandler</a><span class="parameters">(</span>mouseEvent) <span>action performed on the map when a mouse drag was performed</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_geo_charting_MouseInteractionSupport__mouseMoveHandler" class="inline-link"> _mouseMoveHandler</a><span class="parameters">(</span>mouseEvent) <span>action performed on the map when a mouse move was performed</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_geo_charting_MouseInteractionSupport__mouseUpClickHandler" class="inline-link"> _mouseUpClickHandler</a><span class="parameters">(</span>mouseEvent) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_geo_charting_MouseInteractionSupport__mouseUpHandler" class="inline-link"> _mouseUpHandler</a><span class="parameters">(</span>mouseEvent) <span>action performed on the map when a mouse up was performed</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_geo_charting_MouseInteractionSupport__mouseWheelHandler" class="inline-link"> _mouseWheelHandler</a><span class="parameters">(</span>mouseEvent) <span>action performed on the map when a mouse wheel up/down was performed</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_geo_charting_MouseInteractionSupport_connect" class="inline-link"> connect</a><span class="parameters">(</span>) <span>connects this mouse support class to the Map component</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_geo_charting_MouseInteractionSupport_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>map, options) <span>Constructs a new _MouseInteractionSupport instance</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_geo_charting_MouseInteractionSupport_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>) <span>disconnects any installed listeners</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_geo_charting_MouseInteractionSupport_setEnablePan" class="inline-link"> setEnablePan</a><span class="parameters">(</span>enable) <span>enables mouse panning on the map</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_geo_charting_MouseInteractionSupport_setEnableZoom" class="inline-link"> setEnableZoom</a><span class="parameters">(</span>enable) <span>enables mouse zoom on the map</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport__cancelMouseClick"></a><span class="objectIcon">_cancelMouseClick</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport__currentFeature"></a><span class="objectIcon">_currentFeature</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport__map"></a><span class="objectIcon">_map</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport__mapClickLocation"></a><span class="objectIcon">_mapClickLocation</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport__mouseDownListener"></a><span class="objectIcon">_mouseDownListener</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport__mouseDragListener"></a><span class="objectIcon">_mouseDragListener</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport__mouseMoveListener"></a><span class="objectIcon">_mouseMoveListener</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport__mouseUpClickListener"></a><span class="objectIcon">_mouseUpClickListener</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport__mouseUpListener"></a><span class="objectIcon">_mouseUpListener</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport__mouseWheelListener"></a><span class="objectIcon">_mouseWheelListener</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport__onDragStartListener"></a><span class="objectIcon">_onDragStartListener</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport__onSelectStartListener"></a><span class="objectIcon">_onSelectStartListener</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport__panEnabled"></a><span class="booleanIcon">_panEnabled</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport__screenClickLocation"></a><span class="objectIcon">_screenClickLocation</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport__zoomEnabled"></a><span class="booleanIcon">_zoomEnabled</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport_mouseClickThreshold"></a><span class="numberIcon">mouseClickThreshold</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport__getFeatureFromMouseEvent"></a><span class="functionIcon">_getFeatureFromMouseEvent</span><span class="parameters">(mouseEvent)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>utility function to return the feature located at this mouse event location</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">mouseEvent</td>
+            <td class="jsdoc-param-type">MouseEvent</td>
+            <td class="jsdoc-param-description"><p>the mouse event</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
+        <div class="jsdoc-return-description">the feature found if any, null otherwise.</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport__mouseClickHandler"></a><span class="functionIcon">_mouseClickHandler</span><span class="parameters">(mouseEvent)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>action performed on the map when a mouse click was performed</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">mouseEvent</td>
+            <td class="jsdoc-param-type">MouseEvent</td>
+            <td class="jsdoc-param-description"><p>the mouse event</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport__mouseDownHandler"></a><span class="functionIcon">_mouseDownHandler</span><span class="parameters">(mouseEvent)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>action performed on the map when a mouse down was performed</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">mouseEvent</td>
+            <td class="jsdoc-param-type">MouseEvent</td>
+            <td class="jsdoc-param-description"><p>the mouse event</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport__mouseDragHandler"></a><span class="functionIcon">_mouseDragHandler</span><span class="parameters">(mouseEvent)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>action performed on the map when a mouse drag was performed</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">mouseEvent</td>
+            <td class="jsdoc-param-type">MouseEvent</td>
+            <td class="jsdoc-param-description"><p>the mouse event</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport__mouseMoveHandler"></a><span class="functionIcon">_mouseMoveHandler</span><span class="parameters">(mouseEvent)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>action performed on the map when a mouse move was performed</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">mouseEvent</td>
+            <td class="jsdoc-param-type">MouseEvent</td>
+            <td class="jsdoc-param-description"><p>the mouse event</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport__mouseUpClickHandler"></a><span class="functionIcon">_mouseUpClickHandler</span><span class="parameters">(mouseEvent)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">mouseEvent</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport__mouseUpHandler"></a><span class="functionIcon">_mouseUpHandler</span><span class="parameters">(mouseEvent)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>action performed on the map when a mouse up was performed</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">mouseEvent</td>
+            <td class="jsdoc-param-type">MouseEvent</td>
+            <td class="jsdoc-param-description"><p>the mouse event</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport__mouseWheelHandler"></a><span class="functionIcon">_mouseWheelHandler</span><span class="parameters">(mouseEvent)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>action performed on the map when a mouse wheel up/down was performed</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">mouseEvent</td>
+            <td class="jsdoc-param-type">MouseEvent</td>
+            <td class="jsdoc-param-description"><p>the mouse event</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport_connect"></a><span class="functionIcon">connect</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>connects this mouse support class to the Map component</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(map, options)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Constructs a new _MouseInteractionSupport instance</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">map</td>
+            <td class="jsdoc-param-type">dojox/geo/charting/Map</td>
+            <td class="jsdoc-param-description"><p>the Map widget this class provides touch navigation for.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">options</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>An object defining additional configuration properties.</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport_disconnect"></a><span class="functionIcon">disconnect</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>disconnects any installed listeners</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport_setEnablePan"></a><span class="functionIcon">setEnablePan</span><span class="parameters">(enable)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>enables mouse panning on the map</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">enable</td>
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description"><p>Indicates whether mouse zoom is enabled.</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_charting_MouseInteractionSupport_setEnableZoom"></a><span class="functionIcon">setEnableZoom</span><span class="parameters">(enable)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/charting/MouseInteractionSupport" class="jsdoc-link">dojox/geo/charting/MouseInteractionSupport</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>enables mouse zoom on the map</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">enable</td>
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description"><p>Indicates whether mouse zoom is enabled.</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,133 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/jaxer.regexp</div>
+<h1 class="objectIcon36 jsdoc-title">dojo/jaxer.regexp<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>Regular expressions and Builder resources</p>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojo_jaxer_regexp_buildGroupRE" class="inline-link"> buildGroupRE</a><span class="parameters">(</span>arr, re, nonCapture) <span>Builds a regular expression that groups subexpressions</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojo_jaxer_regexp_escapeString" class="inline-link"> escapeString</a><span class="parameters">(</span>str, except) <span>Adds escape sequences for special characters in regular expressions</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojo_jaxer_regexp_group" class="inline-link"> group</a><span class="parameters">(</span>expression, nonCapture) <span>adds group match to expression</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_jaxer_regexp_buildGroupRE"></a><span class="functionIcon">buildGroupRE</span><span class="parameters">(arr, re, nonCapture)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/regexp" class="jsdoc-link">dojo/regexp</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Builds a regular expression that groups subexpressions</p>
+</div>
+        <div class="jsdoc-full-summary"><p>A utility function used by some of the RE generators. The
+subexpressions are constructed by the function, re, in the second
+parameter.  re builds one subexpression for each elem in the array
+a, in the first parameter. Returns a string for a regular
+expression that groups all the subexpressions.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">arr</td>
+            <td class="jsdoc-param-type">Object | Array</td>
+            <td class="jsdoc-param-description"><p>A single value or an array of values.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">re</td>
+            <td class="jsdoc-param-type">Function</td>
+            <td class="jsdoc-param-description"><p>A function. Takes one parameter and converts it to a regular
+expression.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">nonCapture</td>
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>If true, uses non-capturing match, otherwise matches are retained
+by regular expression. Defaults to false</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_jaxer_regexp_escapeString"></a><span class="functionIcon">escapeString</span><span class="parameters">(str, except)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/regexp" class="jsdoc-link">dojo/regexp</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Adds escape sequences for special characters in regular expressions</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">str</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">except</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>a String with special characters to be left unescaped</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_jaxer_regexp_group"></a><span class="functionIcon">group</span><span class="parameters">(expression, nonCapture)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/regexp" class="jsdoc-link">dojo/regexp</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>adds group match to expression</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">expression</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">nonCapture</td>
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>If true, uses non-capturing match, otherwise matches are retained
+by regular expression.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">string</span></div>
+      </div>
+    </div>
+  </div>
+</div>

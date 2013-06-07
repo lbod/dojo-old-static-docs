@@ -1,0 +1,276 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/promise/Promise</div>
+<h1 class="functionIcon36 jsdoc-title">dojo/promise/Promise<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>The public interface to a deferred.</p>
+</div>
+<div class="jsdoc-full-summary"><p>The public interface to a deferred. All promises in Dojo are
+instances of this class.</p>
+</div>
+<p>See the <a href="/reference-guide/1.8/dojo/promise/Promise.html" target="_blank">dojo/promise/Promise reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojo_promise_Promise_always" class="inline-link"> always</a><span class="parameters">(</span>callbackOrErrback) <span>Add a callback to be invoked when the promise is resolved
+or rejected.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojo_promise_Promise_cancel" class="inline-link"> cancel</a><span class="parameters">(</span>reason, strict) <span>Inform the deferred it may cancel its asynchronous operation.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojo_promise_Promise_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>The public interface to a deferred.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojo_promise_Promise_isCanceled" class="inline-link"> isCanceled</a><span class="parameters">(</span>) <span>Checks whether the promise has been canceled.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojo_promise_Promise_isFulfilled" class="inline-link"> isFulfilled</a><span class="parameters">(</span>) <span>Checks whether the promise has been resolved or rejected.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojo_promise_Promise_isRejected" class="inline-link"> isRejected</a><span class="parameters">(</span>) <span>Checks whether the promise has been rejected.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojo_promise_Promise_isResolved" class="inline-link"> isResolved</a><span class="parameters">(</span>) <span>Checks whether the promise has been resolved.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojo_promise_Promise_otherwise" class="inline-link"> otherwise</a><span class="parameters">(</span>errback) <span>Add new errbacks to the promise.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojo_promise_Promise_then" class="inline-link"> then</a><span class="parameters">(</span>callback, errback, progback) <span>Add new callbacks to the promise.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojo_promise_Promise_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojo_promise_Promise_trace" class="inline-link"> trace</a><span class="parameters">(</span>) <span>Trace the promise.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojo_promise_Promise_traceRejected" class="inline-link"> traceRejected</a><span class="parameters">(</span>) <span>Trace rejection of the promise.</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_promise_Promise_always"></a><span class="functionIcon">always</span><span class="parameters">(callbackOrErrback)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/promise/Promise" class="jsdoc-link">dojo/promise/Promise</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Add a callback to be invoked when the promise is resolved
+or rejected.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">callbackOrErrback</td>
+            <td class="jsdoc-param-type">Function</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>A function that is used both as a callback and errback.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/promise/Promise">dojo/promise/Promise</a> | undefined</span></div>
+        <div class="jsdoc-return-description">Returns a new promise for the result of the callback/errback.</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_promise_Promise_cancel"></a><span class="functionIcon">cancel</span><span class="parameters">(reason, strict)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/promise/Promise" class="jsdoc-link">dojo/promise/Promise</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Inform the deferred it may cancel its asynchronous operation.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Inform the deferred it may cancel its asynchronous operation.
+The deferred&#39;s (optional) canceler is invoked and the
+deferred will be left in a rejected state. Can affect other
+promises that originate with the same deferred.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">reason</td>
+            <td class="jsdoc-param-type">any</td>
+            <td class="jsdoc-param-description"><p>A message that may be sent to the deferred&#39;s canceler,
+explaining why it&#39;s being canceled.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">strict</td>
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>If strict, will throw an error if the deferred has already
+been fulfilled and consequently cannot be canceled.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
+        <div class="jsdoc-return-description">Returns the rejection reason if the deferred was canceled
+normally.</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_promise_Promise_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/promise/Promise" class="jsdoc-link">dojo/promise/Promise</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>The public interface to a deferred.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>The public interface to a deferred. All promises in Dojo are
+instances of this class.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_promise_Promise_isCanceled"></a><span class="functionIcon">isCanceled</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/promise/Promise" class="jsdoc-link">dojo/promise/Promise</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Checks whether the promise has been canceled.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_promise_Promise_isFulfilled"></a><span class="functionIcon">isFulfilled</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/promise/Promise" class="jsdoc-link">dojo/promise/Promise</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Checks whether the promise has been resolved or rejected.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_promise_Promise_isRejected"></a><span class="functionIcon">isRejected</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/promise/Promise" class="jsdoc-link">dojo/promise/Promise</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Checks whether the promise has been rejected.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_promise_Promise_isResolved"></a><span class="functionIcon">isResolved</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/promise/Promise" class="jsdoc-link">dojo/promise/Promise</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Checks whether the promise has been resolved.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_promise_Promise_otherwise"></a><span class="functionIcon">otherwise</span><span class="parameters">(errback)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/promise/Promise" class="jsdoc-link">dojo/promise/Promise</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Add new errbacks to the promise.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">errback</td>
+            <td class="jsdoc-param-type">Function</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>Callback to be invoked when the promise is rejected.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/promise/Promise">dojo/promise/Promise</a> | undefined</span></div>
+        <div class="jsdoc-return-description">Returns a new promise for the result of the errback.</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_promise_Promise_then"></a><span class="functionIcon">then</span><span class="parameters">(callback, errback, progback)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/promise/Promise" class="jsdoc-link">dojo/promise/Promise</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Add new callbacks to the promise.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Add new callbacks to the deferred. Callbacks can be added
+before or after the deferred is fulfilled.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">callback</td>
+            <td class="jsdoc-param-type">Function</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>Callback to be invoked when the promise is resolved.
+Receives the resolution value.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">errback</td>
+            <td class="jsdoc-param-type">Function</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>Callback to be invoked when the promise is rejected.
+Receives the rejection error.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">progback</td>
+            <td class="jsdoc-param-type">Function</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>Callback to be invoked when the promise emits a progress
+update. Receives the progress update.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/promise/Promise">dojo/promise/Promise</a></span></div>
+        <div class="jsdoc-return-description">Returns a new promise for the result of the callback(s).
+This can be used for chaining many asynchronous operations.</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_promise_Promise_toString"></a><span class="functionIcon">toString</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/promise/Promise" class="jsdoc-link">dojo/promise/Promise</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">string</span></div>
+        <div class="jsdoc-return-description">Returns `[object Promise]`.</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_promise_Promise_trace"></a><span class="functionIcon">trace</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/promise/tracer" class="jsdoc-link">dojo/promise/tracer</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Trace the promise.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Tracing allows you to transparently log progress,
+resolution and rejection of promises, without affecting the
+promise itself. Any arguments passed to <code>trace()</code> are
+emitted in trace events. See <a class="jsdoc-link" href="/api/1.8/dojo/promise/tracer">dojo/promise/tracer</a> on how
+to handle traces.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/promise/Promise">dojo/promise/Promise</a></span></div>
+        <div class="jsdoc-return-description">The promise instance `trace()` is called on.</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_promise_Promise_traceRejected"></a><span class="functionIcon">traceRejected</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/promise/tracer" class="jsdoc-link">dojo/promise/tracer</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Trace rejection of the promise.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Tracing allows you to transparently log progress,
+resolution and rejection of promises, without affecting the
+promise itself. Any arguments passed to <code>trace()</code> are
+emitted in trace events. See <a class="jsdoc-link" href="/api/1.8/dojo/promise/tracer">dojo/promise/tracer</a> on how
+to handle traces.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/promise/Promise">dojo/promise/Promise</a></span></div>
+        <div class="jsdoc-return-description">The promise instance `traceRejected()` is called on.</div>
+      </div>
+    </div>
+  </div>
+</div>

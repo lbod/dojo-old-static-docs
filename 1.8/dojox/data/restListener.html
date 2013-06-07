@@ -1,0 +1,77 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/data/restListener</div>
+<h1 class="functionIcon36 jsdoc-title">dojox/data/restListener<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>this function can be used to receive REST notifications, from Comet or from another frame</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">message</td>
+    <td class="jsdoc-param-type">undefined</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojox/data.html" target="_blank">dojox/data/restListener reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<div class="jsdoc-examples">
+  <h2>Examples</h2>
+  <div class="jsdoc-example">
+    <h3>Example 1</h3><pre><code>  dojo.connect(window,&quot;onMessage&quot;,null,function(event) {
+    var data = dojo.fromJson(event.data);
+    dojox.restListener(data);
+  });</code></pre>
+
+  </div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_data_restListener_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>message) <span>this function can be used to receive REST notifications, from Comet or from another frame</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_data_restListener_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(message)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/data/restListener" class="jsdoc-link">dojox/data/restListener</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>this function can be used to receive REST notifications, from Comet or from another frame</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">message</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><pre><code>  dojo.connect(window,&quot;onMessage&quot;,null,function(event) {
+    var data = dojo.fromJson(event.data);
+    dojox.restListener(data);
+  });</code></pre>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

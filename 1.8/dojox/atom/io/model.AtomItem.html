@@ -1,0 +1,686 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/atom/io/model.AtomItem</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/atom/io/model.AtomItem<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>Class container for generic Atom items.</p>
+</div>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/atom/io/model.AtomItem<span class="parameters">(args);</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/atom/io/model">dojox/atom/io/model</a></div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">args</td>
+    <td class="jsdoc-param-type">undefined</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+</table>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="objectIcon private inherited"><a href="#1_8dojox_atom_io_model_AtomItem__accepts" class="inline-link"> _accepts </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private inherited"><a href="#1_8dojox_atom_io_model_AtomItem__getAttributeNames" class="inline-link"> _getAttributeNames</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_atom_io_model_AtomItem__postBuild" class="inline-link"> _postBuild</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_atom_io_model_AtomItem__saveAttributes" class="inline-link"> _saveAttributes</a><span class="parameters">(</span>node) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_atom_io_model_AtomItem_accept" class="inline-link"> accept</a><span class="parameters">(</span>tag) <span></span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_atom_io_model_AtomItem_addAttribute" class="inline-link"> addAttribute</a><span class="parameters">(</span>name, value) <span></span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_atom_io_model_AtomItem_addAuthor" class="inline-link"> addAuthor</a><span class="parameters">(</span>name, email, uri) <span>Function to add in an author to the list of authors.</span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_atom_io_model_AtomItem_addCategory" class="inline-link"> addCategory</a><span class="parameters">(</span>scheme, term, label) <span>Function to add in a category to the list of categories.</span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_atom_io_model_AtomItem_addContent" class="inline-link"> addContent</a><span class="parameters">(</span>content) <span></span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_atom_io_model_AtomItem_addContributor" class="inline-link"> addContributor</a><span class="parameters">(</span>name, email, uri) <span>Function to add in an author to the list of authors.</span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_atom_io_model_AtomItem_addExtension" class="inline-link"> addExtension</a><span class="parameters">(</span>name_space, name, attributes, content, shortNS) <span>Function to add in an extension namespace into the item.</span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_atom_io_model_AtomItem_addLink" class="inline-link"> addLink</a><span class="parameters">(</span>href, rel, hrefLang, title, type) <span>Function to add in a link to the list of links.</span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_atom_io_model_AtomItem_addNamespace" class="inline-link"> addNamespace</a><span class="parameters">(</span>fullName, shortName) <span></span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_atom_io_model_AtomItem_buildFromDom" class="inline-link"> buildFromDom</a><span class="parameters">(</span>node) <span></span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_atom_io_model_AtomItem_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span></span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_atom_io_model_AtomItem_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_atom_io_model_AtomItem_getAttribute" class="inline-link"> getAttribute</a><span class="parameters">(</span>name) <span></span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_atom_io_model_AtomItem_getCategories" class="inline-link"> getCategories</a><span class="parameters">(</span>scheme) <span>Function to get all categories that match a particular scheme.</span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_atom_io_model_AtomItem_getExtensions" class="inline-link"> getExtensions</a><span class="parameters">(</span>name_space, name) <span>Function to get extensions that match a namespace and name.</span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_atom_io_model_AtomItem_removeBasicLinks" class="inline-link"> removeBasicLinks</a><span class="parameters">(</span>) <span>Function to remove all basic links from the list of links.</span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_atom_io_model_AtomItem_removeCategories" class="inline-link"> removeCategories</a><span class="parameters">(</span>scheme, term) <span>Function to remove all categories that match a particular scheme and term.</span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_atom_io_model_AtomItem_removeExtensions" class="inline-link"> removeExtensions</a><span class="parameters">(</span>name_space, name) <span>Function to remove extensions that match a namespace and name.</span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_atom_io_model_AtomItem_removeLink" class="inline-link"> removeLink</a><span class="parameters">(</span>href, rel) <span>Function to remove a link from the list of links.</span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_atom_io_model_AtomItem_setTitle" class="inline-link"> setTitle</a><span class="parameters">(</span>str, type) <span>Function to set the title of the item.</span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_atom_io_model_AtomItem_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_AtomItem__accepts"></a><span class="objectIcon">_accepts</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_AtomItem__getAttributeNames"></a><span class="functionIcon">_getAttributeNames</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">null</span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_AtomItem__postBuild"></a><span class="functionIcon">_postBuild</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_AtomItem__saveAttributes"></a><span class="functionIcon">_saveAttributes</span><span class="parameters">(node)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">node</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_AtomItem_accept"></a><span class="functionIcon">accept</span><span class="parameters">(tag)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">tag</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_AtomItem_addAttribute"></a><span class="functionIcon">addAttribute</span><span class="parameters">(name, value)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_AtomItem_addAuthor"></a><span class="functionIcon">addAuthor</span><span class="parameters">(name, email, uri)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Function to add in an author to the list of authors.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The author&#39;s name.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">email</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The author&#39;s e-mail address.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">uri</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>A URI associated with the author.</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_AtomItem_addCategory"></a><span class="functionIcon">addCategory</span><span class="parameters">(scheme, term, label)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Function to add in a category to the list of categories.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">scheme</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">term</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">label</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_AtomItem_addContent"></a><span class="functionIcon">addContent</span><span class="parameters">(content)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">content</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_AtomItem_addContributor"></a><span class="functionIcon">addContributor</span><span class="parameters">(name, email, uri)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Function to add in an author to the list of authors.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The author&#39;s name.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">email</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The author&#39;s e-mail address.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">uri</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>A URI associated with the author.</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_AtomItem_addExtension"></a><span class="functionIcon">addExtension</span><span class="parameters">(name_space, name, attributes, content, shortNS)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Function to add in an extension namespace into the item.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name_space</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The namespace of the extension.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The name of the extension</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">attributes</td>
+            <td class="jsdoc-param-type">Array</td>
+            <td class="jsdoc-param-description"><p>The attributes associated with the extension.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">content</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The content of the extension.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">shortNS</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_AtomItem_addLink"></a><span class="functionIcon">addLink</span><span class="parameters">(href, rel, hrefLang, title, type)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Function to add in a link to the list of links.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">href</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">rel</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">hrefLang</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">title</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>A title to associate with the link.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The type of link is is.</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_AtomItem_addNamespace"></a><span class="functionIcon">addNamespace</span><span class="parameters">(fullName, shortName)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">fullName</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">shortName</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_AtomItem_buildFromDom"></a><span class="functionIcon">buildFromDom</span><span class="parameters">(node)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">node</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_AtomItem_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(args)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">args</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_AtomItem_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_AtomItem_getAttribute"></a><span class="functionIcon">getAttribute</span><span class="parameters">(name)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_AtomItem_getCategories"></a><span class="functionIcon">getCategories</span><span class="parameters">(scheme)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Function to get all categories that match a particular scheme.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">scheme</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The scheme to filter on.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | Array</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_AtomItem_getExtensions"></a><span class="functionIcon">getExtensions</span><span class="parameters">(name_space, name)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Function to get extensions that match a namespace and name.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name_space</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The namespace of the extension.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The name of the extension</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_AtomItem_removeBasicLinks"></a><span class="functionIcon">removeBasicLinks</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Function to remove all basic links from the list of links.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_AtomItem_removeCategories"></a><span class="functionIcon">removeCategories</span><span class="parameters">(scheme, term)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Function to remove all categories that match a particular scheme and term.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">scheme</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The scheme to filter on.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">term</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The term to filter on.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_AtomItem_removeExtensions"></a><span class="functionIcon">removeExtensions</span><span class="parameters">(name_space, name)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Function to remove extensions that match a namespace and name.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name_space</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The namespace of the extension.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The name of the extension</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_AtomItem_removeLink"></a><span class="functionIcon">removeLink</span><span class="parameters">(href, rel)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Function to remove a link from the list of links.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">href</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The href.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">rel</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_AtomItem_setTitle"></a><span class="functionIcon">setTitle</span><span class="parameters">(str, type)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Function to set the title of the item.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">str</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The title to set.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The type of title format, text, xml, xhtml, etc.</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_AtomItem_toString"></a><span class="functionIcon">toString</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+    </div>
+  </div>
+</div>

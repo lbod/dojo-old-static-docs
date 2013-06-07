@@ -1,0 +1,117 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/io-query</div>
+<h1 class="objectIcon36 jsdoc-title">dojo/io-query<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>This module defines query string processing functions.</p>
+</div>
+<p>See the <a href="/reference-guide/1.8/dojo/io-query.html" target="_blank">dojo/io-query reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojo_io-query_objectToQuery" class="inline-link"> objectToQuery</a><span class="parameters">(</span>map) <span>takes a name/value mapping object and returns a string representing
+a URL-encoded version of that object.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojo_io-query_queryToObject" class="inline-link"> queryToObject</a><span class="parameters">(</span>str) <span>Create an object representing a de-serialized query section of a
+URL.</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_io-query_objectToQuery"></a><span class="functionIcon">objectToQuery</span><span class="parameters">(map)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/io-query" class="jsdoc-link">dojo/io-query</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>takes a name/value mapping object and returns a string representing
+a URL-encoded version of that object.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">map</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><p>this object:
+
+</p>
+<pre><code>  {
+    blah: &quot;blah&quot;,
+    multi: [
+      &quot;thud&quot;,
+      &quot;thonk&quot;
+    ]
+  };</code></pre>
+<p></p>
+<p>yields the following query string:
+
+</p>
+<pre><code>  &quot;blah=blah&amp;multi=thud&amp;multi=thonk&quot;</code></pre>
+
+          </div>
+        </div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_io-query_queryToObject"></a><span class="functionIcon">queryToObject</span><span class="parameters">(str)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/io-query" class="jsdoc-link">dojo/io-query</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Create an object representing a de-serialized query section of a
+URL. Query keys with multiple values are returned in an array.
+</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">str</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><p>This string:
+
+</p>
+<pre><code>    &quot;foo=bar&amp;foo=baz&amp;thinger=%20spaces%20=blah&amp;zonk=blarg&amp;&quot;</code></pre>
+<p></p>
+<p>results in this object structure:
+
+</p>
+<pre><code>    {
+      foo: [ &quot;bar&quot;, &quot;baz&quot; ],
+      thinger: &quot; spaces =blah&quot;,
+      zonk: &quot;blarg&quot;
+    }</code></pre>
+<p></p>
+<p>Note that spaces and other urlencoded entities are correctly
+handled.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

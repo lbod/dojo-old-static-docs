@@ -1,0 +1,138 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/gfx.Mover</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/gfx.Mover<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>a constructor of custom Mover</p>
+</div>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/gfx.Mover<span class="parameters">(shape,e,host);</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/gfx/Mover">dojox/gfx/Mover</a></div>
+<div class="jsdoc-summary"><p>an object, which makes a shape follow the mouse,
+used as a default mover, and as a base class for custom movers</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">shape</td>
+    <td class="jsdoc-param-type">dojox/gfx.Shape</td>
+    <td class="jsdoc-param-description"><p>a shape object to be moved</p>
+ 
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">e</td>
+    <td class="jsdoc-param-type">Event</td>
+    <td class="jsdoc-param-description"><p>a mouse event, which started the move;
+only clientX and clientY properties are used</p>
+ 
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">host</td>
+    <td class="jsdoc-param-type">Object</td>
+    <td class="jsdoc-param-description">
+      <div><em>Optional</em></div><p>object which implements the functionality of the move,
+and defines proper events (onMoveStart and onMoveStop)</p>
+ 
+    </td>
+  </tr>
+</table>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_gfx_Mover_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>shape, e, host) <span>an object, which makes a shape follow the mouse,
+used as a default mover, and as a base class for custom movers</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx_Mover_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>stops the move, deletes all references, so the object can be garbage-collected</span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_gfx_Mover_onFirstMove" class="inline-link"> onFirstMove</a><span class="parameters">(</span>) <span>it is meant to be called only once</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx_Mover_onMouseMove" class="inline-link"> onMouseMove</a><span class="parameters">(</span>e) <span>event processor for onmousemove</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx_Mover_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(shape, e, host)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/Mover" class="jsdoc-link">dojox/gfx/Mover</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>an object, which makes a shape follow the mouse,
+used as a default mover, and as a base class for custom movers</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">shape</td>
+            <td class="jsdoc-param-type">dojox/gfx.Shape</td>
+            <td class="jsdoc-param-description"><p>a shape object to be moved</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">e</td>
+            <td class="jsdoc-param-type">Event</td>
+            <td class="jsdoc-param-description"><p>a mouse event, which started the move;
+only clientX and clientY properties are used</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">host</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>object which implements the functionality of the move,
+and defines proper events (onMoveStart and onMoveStop)</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx_Mover_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/Mover" class="jsdoc-link">dojox/gfx/Mover</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>stops the move, deletes all references, so the object can be garbage-collected</p>
+</div>
+      </div>
+    </div>
+    <h2>Events</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx_Mover_onFirstMove"></a><span class="functionIcon">onFirstMove</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/gfx/Mover" class="jsdoc-link">dojox/gfx/Mover</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>it is meant to be called only once</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx_Mover_onMouseMove"></a><span class="functionIcon">onMouseMove</span><span class="parameters">(e)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/gfx/Mover" class="jsdoc-link">dojox/gfx/Mover</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>event processor for onmousemove</p>
+</div>
+      </div>
+    </div>
+  </div>
+</div>

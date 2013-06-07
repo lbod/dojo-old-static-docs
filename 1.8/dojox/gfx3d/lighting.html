@@ -1,0 +1,632 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/gfx3d/lighting</div>
+<h1 class="objectIcon36 jsdoc-title">dojox/gfx3d/lighting<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<p>See the <a href="/reference-guide/1.8/dojox/gfx3d.html" target="_blank">dojox/gfx3d/lighting reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="objectIcon"><a href="#1_8dojox_gfx3d_lighting_finish" class="inline-link"> finish </a><span></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d_lighting_add" class="inline-link"> add</a><span class="parameters">(</span>a, b) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d_lighting_addColor" class="inline-link"> addColor</a><span class="parameters">(</span>a, b) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d_lighting_black" class="inline-link"> black</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d_lighting_diff2Color" class="inline-link"> diff2Color</a><span class="parameters">(</span>c1, c2) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d_lighting_diffuse" class="inline-link"> diffuse</a><span class="parameters">(</span>normal, lights) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d_lighting_dot" class="inline-link"> dot</a><span class="parameters">(</span>a, b) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d_lighting_faceforward" class="inline-link"> faceforward</a><span class="parameters">(</span>n, i) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d_lighting_fromStdColor" class="inline-link"> fromStdColor</a><span class="parameters">(</span>c) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d_lighting_length" class="inline-link"> length</a><span class="parameters">(</span>v) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d_lighting_length2Color" class="inline-link"> length2Color</a><span class="parameters">(</span>c) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d_lighting_mixColor" class="inline-link"> mixColor</a><span class="parameters">(</span>c1, c2, s) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d_lighting_Model" class="inline-link"> Model</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d_lighting_multiplyColor" class="inline-link"> multiplyColor</a><span class="parameters">(</span>a, b) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d_lighting_normalize" class="inline-link"> normalize</a><span class="parameters">(</span>v) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d_lighting_phong" class="inline-link"> phong</a><span class="parameters">(</span>normal, v, size, lights) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d_lighting_reflect" class="inline-link"> reflect</a><span class="parameters">(</span>i, n) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d_lighting_saturate" class="inline-link"> saturate</a><span class="parameters">(</span>v) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d_lighting_saturateColor" class="inline-link"> saturateColor</a><span class="parameters">(</span>c) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d_lighting_scale" class="inline-link"> scale</a><span class="parameters">(</span>s, v) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d_lighting_scaleColor" class="inline-link"> scaleColor</a><span class="parameters">(</span>s, c) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d_lighting_specular" class="inline-link"> specular</a><span class="parameters">(</span>normal, v, roughness, lights) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d_lighting_toStdColor" class="inline-link"> toStdColor</a><span class="parameters">(</span>c) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d_lighting_white" class="inline-link"> white</a><span class="parameters">(</span>) <span></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_lighting_finish"></a><span class="objectIcon">finish</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/gfx3d/lighting" class="jsdoc-link">dojox/gfx3d/lighting</a>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_lighting_add"></a><span class="functionIcon">add</span><span class="parameters">(a, b)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/lighting" class="jsdoc-link">dojox/gfx3d/lighting</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">a</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">b</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_lighting_addColor"></a><span class="functionIcon">addColor</span><span class="parameters">(a, b)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/lighting" class="jsdoc-link">dojox/gfx3d/lighting</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">a</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">b</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_lighting_black"></a><span class="functionIcon">black</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/lighting" class="jsdoc-link">dojox/gfx3d/lighting</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_lighting_diff2Color"></a><span class="functionIcon">diff2Color</span><span class="parameters">(c1, c2)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/lighting" class="jsdoc-link">dojox/gfx3d/lighting</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">c1</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">c2</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_lighting_diffuse"></a><span class="functionIcon">diffuse</span><span class="parameters">(normal, lights)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/lighting" class="jsdoc-link">dojox/gfx3d/lighting</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">normal</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">lights</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_lighting_dot"></a><span class="functionIcon">dot</span><span class="parameters">(a, b)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/lighting" class="jsdoc-link">dojox/gfx3d/lighting</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">a</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">b</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_lighting_faceforward"></a><span class="functionIcon">faceforward</span><span class="parameters">(n, i)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/lighting" class="jsdoc-link">dojox/gfx3d/lighting</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">n</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">i</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_lighting_fromStdColor"></a><span class="functionIcon">fromStdColor</span><span class="parameters">(c)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/lighting" class="jsdoc-link">dojox/gfx3d/lighting</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">c</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">instance</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_lighting_length"></a><span class="functionIcon">length</span><span class="parameters">(v)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/lighting" class="jsdoc-link">dojox/gfx3d/lighting</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">v</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_lighting_length2Color"></a><span class="functionIcon">length2Color</span><span class="parameters">(c)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/lighting" class="jsdoc-link">dojox/gfx3d/lighting</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">c</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_lighting_mixColor"></a><span class="functionIcon">mixColor</span><span class="parameters">(c1, c2, s)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/lighting" class="jsdoc-link">dojox/gfx3d/lighting</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">c1</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">c2</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">s</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_lighting_Model"></a><span class="functionIcon">Model</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/lighting" class="jsdoc-link">dojox/gfx3d/lighting</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_lighting_multiplyColor"></a><span class="functionIcon">multiplyColor</span><span class="parameters">(a, b)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/lighting" class="jsdoc-link">dojox/gfx3d/lighting</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">a</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">b</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_lighting_normalize"></a><span class="functionIcon">normalize</span><span class="parameters">(v)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/lighting" class="jsdoc-link">dojox/gfx3d/lighting</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">v</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_lighting_phong"></a><span class="functionIcon">phong</span><span class="parameters">(normal, v, size, lights)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/lighting" class="jsdoc-link">dojox/gfx3d/lighting</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">normal</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">v</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">size</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">lights</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_lighting_reflect"></a><span class="functionIcon">reflect</span><span class="parameters">(i, n)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/lighting" class="jsdoc-link">dojox/gfx3d/lighting</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">i</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">n</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_lighting_saturate"></a><span class="functionIcon">saturate</span><span class="parameters">(v)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/lighting" class="jsdoc-link">dojox/gfx3d/lighting</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">v</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_lighting_saturateColor"></a><span class="functionIcon">saturateColor</span><span class="parameters">(c)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/lighting" class="jsdoc-link">dojox/gfx3d/lighting</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">c</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_lighting_scale"></a><span class="functionIcon">scale</span><span class="parameters">(s, v)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/lighting" class="jsdoc-link">dojox/gfx3d/lighting</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">s</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">v</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_lighting_scaleColor"></a><span class="functionIcon">scaleColor</span><span class="parameters">(s, c)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/lighting" class="jsdoc-link">dojox/gfx3d/lighting</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">s</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">c</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_lighting_specular"></a><span class="functionIcon">specular</span><span class="parameters">(normal, v, roughness, lights)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/lighting" class="jsdoc-link">dojox/gfx3d/lighting</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">normal</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">v</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">roughness</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">lights</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_lighting_toStdColor"></a><span class="functionIcon">toStdColor</span><span class="parameters">(c)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/lighting" class="jsdoc-link">dojox/gfx3d/lighting</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">c</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_lighting_white"></a><span class="functionIcon">white</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/lighting" class="jsdoc-link">dojox/gfx3d/lighting</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
+      </div>
+    </div>
+  </div>
+</div>

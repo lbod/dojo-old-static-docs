@@ -1,0 +1,120 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/request/notify</div>
+<h1 class="functionIcon36 jsdoc-title">dojo/request/notify<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>Register a listener to be notified when an event
+in <a class="jsdoc-link" href="/api/1.8/dojo/request">dojo/request</a> happens.</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">type</td>
+    <td class="jsdoc-param-type">String</td>
+    <td class="jsdoc-param-description">
+      <div><em>Optional</em></div><p>The event to listen for. Events emitted: &quot;start&quot;, &quot;send&quot;,
+&quot;load&quot;, &quot;error&quot;, &quot;done&quot;, &quot;stop&quot;.</p>
+ 
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">listener</td>
+    <td class="jsdoc-param-type">Function</td>
+    <td class="jsdoc-param-description">
+      <div><em>Optional</em></div><p>A callback to be run when an event happens.</p>
+ 
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojo/request/notify.html" target="_blank">dojo/request/notify reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojo_request_notify_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>type, listener) <span>Register a listener to be notified when an event
+in dojo/request happens.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojo_request_notify_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, event, cancel) <span></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_request_notify_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(type, listener)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/request/notify" class="jsdoc-link">dojo/request/notify</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Register a listener to be notified when an event
+in dojo/request happens.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>The event to listen for. Events emitted: &quot;start&quot;, &quot;send&quot;,
+&quot;load&quot;, &quot;error&quot;, &quot;done&quot;, &quot;stop&quot;.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">listener</td>
+            <td class="jsdoc-param-type">Function</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>A callback to be run when an event happens.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
+        <div class="jsdoc-return-description">A signal object that can be used to cancel the listener.
+If remove() is called on this signal object, it will
+stop the listener from being executed.</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_request_notify_emit"></a><span class="functionIcon">emit</span><span class="parameters">(type, event, cancel)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/request/notify" class="jsdoc-link">dojo/request/notify</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">event</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">cancel</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

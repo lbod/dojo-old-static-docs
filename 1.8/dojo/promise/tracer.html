@@ -1,0 +1,59 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/promise/tracer</div>
+<h1 class="objectIcon36 jsdoc-title">dojo/promise/tracer<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>Trace promise fulfillment.</p>
+</div>
+<div class="jsdoc-full-summary"><p>Trace promise fulfillment. Calling <code>.trace()</code> or <code>.traceError()</code> on a
+promise enables tracing. Will emit <code>resolved</code>, <code>rejected</code> or <code>progress</code>
+events.</p>
+</div>
+<p>See the <a href="/reference-guide/1.8/dojo/promise.html" target="_blank">dojo/promise/tracer reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojo_promise_tracer_on" class="inline-link"> on</a><span class="parameters">(</span>type, listener) <span>Subscribe to traces.</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_promise_tracer_on"></a><span class="functionIcon">on</span><span class="parameters">(type, listener)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/promise/tracer" class="jsdoc-link">dojo/promise/tracer</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Subscribe to traces.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>See <a class="jsdoc-link" href="/api/1.8/dojo/Evented">dojo/Evented</a>#on()</code>.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p><code>resolved</code>, <code>rejected</code>, or <code>progress</code></p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">listener</td>
+            <td class="jsdoc-param-type">Function</td>
+            <td class="jsdoc-param-description"><p>The listener is passed the traced value and any arguments
+that were used with the <code>.trace()</code> call.</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

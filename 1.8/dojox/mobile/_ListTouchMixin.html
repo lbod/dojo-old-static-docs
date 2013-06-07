@@ -1,0 +1,179 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mobile/_ListTouchMixin</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/mobile/_ListTouchMixin<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-mixins">
+  <label>Extends </label><a href="/api/1.8/dijit/form/_ListBase" class="jsdoc-link">dijit/form/_ListBase,   </a>
+</div>
+<div class="jsdoc-full-summary"><p>Focus-less menu to handle touch events consistently.</p>
+</div>
+<div class="jsdoc-full-summary"><p>Focus-less menu to handle touch events consistently. Abstract
+method that must be defined externally:
+
+</p>
+<ul>
+<li>onClick: item was chosen (mousedown somewhere on the menu and mouseup somewhere on the menu).</li>
+</ul>
+</div>
+<p>See the <a href="/reference-guide/1.8/dojox/mobile.html" target="_blank">dojox/mobile/_ListTouchMixin reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="domnodeIcon inherited"><a href="#1_8dojox_mobile__ListTouchMixin_selected" class="inline-link"> selected </a><span>currently selected node</span><span title="inherited from dijit/form/_ListBase" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private inherited"><a href="#1_8dojox_mobile__ListTouchMixin__listConnect" class="inline-link"> _listConnect</a><span class="parameters">(</span>eventType, callbackFuncName) <span>Connects &#39;containerNode&#39; to specified method of this object
+and automatically registers for &#39;disconnect&#39; on widget destroy.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_ListBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_mobile__ListTouchMixin__setSelectedAttr" class="inline-link"> _setSelectedAttr</a><span class="parameters">(</span>node) <span>Does the actual select.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/_ListBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_mobile__ListTouchMixin_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ListTouchMixin_selectFirstNode" class="inline-link"> selectFirstNode</a><span class="parameters">(</span>) <span>Select the first displayed item in the list.</span><span title="inherited from dijit/form/_ListBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ListTouchMixin_selectLastNode" class="inline-link"> selectLastNode</a><span class="parameters">(</span>) <span>Select the last displayed item in the list</span><span title="inherited from dijit/form/_ListBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ListTouchMixin_selectNextNode" class="inline-link"> selectNextNode</a><span class="parameters">(</span>) <span>Select the item just below the current selection.</span><span title="inherited from dijit/form/_ListBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_mobile__ListTouchMixin_selectPreviousNode" class="inline-link"> selectPreviousNode</a><span class="parameters">(</span>) <span>Select the item just above the current selection.</span><span title="inherited from dijit/form/_ListBase" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dojox_mobile__ListTouchMixin__onClick" class="inline-link"> _onClick</a><span class="parameters">(</span>evt, target) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_mobile__ListTouchMixin_selected"></a><span class="domnodeIcon">selected</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/form/_ListBase" class="jsdoc-link">dijit/form/_ListBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>currently selected node</p>
+</div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_mobile__ListTouchMixin__listConnect"></a><span class="functionIcon">_listConnect</span><span class="parameters">(eventType, callbackFuncName)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/_ListBase" class="jsdoc-link">dijit/form/_ListBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Connects &#39;containerNode&#39; to specified method of this object
+and automatically registers for &#39;disconnect&#39; on widget destroy.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Provide widget-specific analog to &#39;connect&#39;.
+The callback function is called with the normal event object,
+but also a second parameter is passed that indicates which list item
+actually received the event.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">eventType</td>
+            <td class="jsdoc-param-type">String | Function</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">callbackFuncName</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
+        <div class="jsdoc-return-description">A handle that can be passed to `disconnect` in order to disconnect
+before the widget is destroyed.</div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_mobile__ListTouchMixin__setSelectedAttr"></a><span class="functionIcon">_setSelectedAttr</span><span class="parameters">(node)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/_ListBase" class="jsdoc-link">dijit/form/_ListBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Does the actual select.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">node</td>
+            <td class="jsdoc-param-type">DomNode</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_mobile__ListTouchMixin_postCreate"></a><span class="functionIcon">postCreate</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/_ListTouchMixin" class="jsdoc-link">dojox/mobile/_ListTouchMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_mobile__ListTouchMixin_selectFirstNode"></a><span class="functionIcon">selectFirstNode</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/_ListBase" class="jsdoc-link">dijit/form/_ListBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Select the first displayed item in the list.</p>
+</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_mobile__ListTouchMixin_selectLastNode"></a><span class="functionIcon">selectLastNode</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/_ListBase" class="jsdoc-link">dijit/form/_ListBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Select the last displayed item in the list</p>
+</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_mobile__ListTouchMixin_selectNextNode"></a><span class="functionIcon">selectNextNode</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/_ListBase" class="jsdoc-link">dijit/form/_ListBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Select the item just below the current selection.
+If nothing selected, select first node.</p>
+</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_mobile__ListTouchMixin_selectPreviousNode"></a><span class="functionIcon">selectPreviousNode</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/_ListBase" class="jsdoc-link">dijit/form/_ListBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Select the item just above the current selection.
+If nothing selected, select last node (if
+you select Previous and try to keep scrolling up the list).</p>
+</div>
+      </div>
+    </div>
+    <h2>Events</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_mobile__ListTouchMixin__onClick"></a><span class="functionIcon">_onClick</span><span class="parameters">(evt, target)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/mobile/_ListTouchMixin" class="jsdoc-link">dojox/mobile/_ListTouchMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+    </div>
+  </div>
+</div>

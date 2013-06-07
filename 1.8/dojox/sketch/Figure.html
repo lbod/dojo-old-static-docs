@@ -1,0 +1,635 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/sketch/Figure</div>
+<h1 class="functionIcon36 jsdoc-title">dojox/sketch/Figure<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">mixin</td>
+    <td class="jsdoc-param-type">undefined</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+</table>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="numberIcon"><a href="#1_8dojox_sketch_Figure_gridSize" class="inline-link"> gridSize </a><span></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dojox_sketch_Figure__add" class="inline-link"> _add</a><span class="parameters">(</span>obj) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_sketch_Figure__calCol" class="inline-link"> _calCol</a><span class="parameters">(</span>v) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_sketch_Figure__delete" class="inline-link"> _delete</a><span class="parameters">(</span>arr, noundo) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_sketch_Figure__fromEvt" class="inline-link"> _fromEvt</a><span class="parameters">(</span>e) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_sketch_Figure__get" class="inline-link"> _get</a><span class="parameters">(</span>key) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_sketch_Figure__keyFromEvt" class="inline-link"> _keyFromEvt</a><span class="parameters">(</span>e) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_sketch_Figure__loadAnnotation" class="inline-link"> _loadAnnotation</a><span class="parameters">(</span>obj) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_sketch_Figure__remove" class="inline-link"> _remove</a><span class="parameters">(</span>obj) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_add" class="inline-link"> add</a><span class="parameters">(</span>annotation) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>mixin) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_convert" class="inline-link"> convert</a><span class="parameters">(</span>ann, t) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>isLoading) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_draw" class="inline-link"> draw</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_getAnnotator" class="inline-link"> getAnnotator</a><span class="parameters">(</span>id) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_getFit" class="inline-link"> getFit</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_initialize" class="inline-link"> initialize</a><span class="parameters">(</span>node) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_initUndoStack" class="inline-link"> initUndoStack</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_load" class="inline-link"> load</a><span class="parameters">(</span>obj, n) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_nextKey" class="inline-link"> nextKey</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_redo" class="inline-link"> redo</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_remove" class="inline-link"> remove</a><span class="parameters">(</span>annotation) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_serialize" class="inline-link"> serialize</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_setTool" class="inline-link"> setTool</a><span class="parameters">(</span>t) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_setValue" class="inline-link"> setValue</a><span class="parameters">(</span>text) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_undo" class="inline-link"> undo</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_unzoom" class="inline-link"> unzoom</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_zoom" class="inline-link"> zoom</a><span class="parameters">(</span>pct) <span></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_onBeforeCreateShape" class="inline-link"> onBeforeCreateShape</a><span class="parameters">(</span>shape) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_onBeforeRedo" class="inline-link"> onBeforeRedo</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_onBeforeUndo" class="inline-link"> onBeforeUndo</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_onClick" class="inline-link"> onClick</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_onCreateShape" class="inline-link"> onCreateShape</a><span class="parameters">(</span>shape) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_onDblClickShape" class="inline-link"> onDblClickShape</a><span class="parameters">(</span>shape, e) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_onLoad" class="inline-link"> onLoad</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_onRedo" class="inline-link"> onRedo</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_sketch_Figure_onUndo" class="inline-link"> onUndo</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_gridSize"></a><span class="numberIcon">gridSize</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure__add"></a><span class="functionIcon">_add</span><span class="parameters">(obj)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">obj</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure__calCol"></a><span class="functionIcon">_calCol</span><span class="parameters">(v)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">v</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure__delete"></a><span class="functionIcon">_delete</span><span class="parameters">(arr, noundo)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">arr</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">noundo</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure__fromEvt"></a><span class="functionIcon">_fromEvt</span><span class="parameters">(e)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">e</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure__get"></a><span class="functionIcon">_get</span><span class="parameters">(key)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">key</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure__keyFromEvt"></a><span class="functionIcon">_keyFromEvt</span><span class="parameters">(e)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">e</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure__loadAnnotation"></a><span class="functionIcon">_loadAnnotation</span><span class="parameters">(obj)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">obj</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure__remove"></a><span class="functionIcon">_remove</span><span class="parameters">(obj)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">obj</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_add"></a><span class="functionIcon">add</span><span class="parameters">(annotation)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">annotation</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(mixin)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">mixin</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_convert"></a><span class="functionIcon">convert</span><span class="parameters">(ann, t)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">ann</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">t</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">(isLoading)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">isLoading</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_draw"></a><span class="functionIcon">draw</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_getAnnotator"></a><span class="functionIcon">getAnnotator</span><span class="parameters">(id)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">id</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_getFit"></a><span class="functionIcon">getFit</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_getValue"></a><span class="functionIcon">getValue</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_initialize"></a><span class="functionIcon">initialize</span><span class="parameters">(node)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">node</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_initUndoStack"></a><span class="functionIcon">initUndoStack</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_load"></a><span class="functionIcon">load</span><span class="parameters">(obj, n)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">obj</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">n</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_nextKey"></a><span class="functionIcon">nextKey</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_redo"></a><span class="functionIcon">redo</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_remove"></a><span class="functionIcon">remove</span><span class="parameters">(annotation)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">annotation</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_serialize"></a><span class="functionIcon">serialize</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_setTool"></a><span class="functionIcon">setTool</span><span class="parameters">(t)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">t</td>
+            <td class="jsdoc-param-type">dojox/sketch/_Plugin</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_setValue"></a><span class="functionIcon">setValue</span><span class="parameters">(text)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">text</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_undo"></a><span class="functionIcon">undo</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_unzoom"></a><span class="functionIcon">unzoom</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_zoom"></a><span class="functionIcon">zoom</span><span class="parameters">(pct)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">pct</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <h2>Events</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_onBeforeCreateShape"></a><span class="functionIcon">onBeforeCreateShape</span><span class="parameters">(shape)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_onBeforeRedo"></a><span class="functionIcon">onBeforeRedo</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_onBeforeUndo"></a><span class="functionIcon">onBeforeUndo</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_onClick"></a><span class="functionIcon">onClick</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_onCreateShape"></a><span class="functionIcon">onCreateShape</span><span class="parameters">(shape)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_onDblClickShape"></a><span class="functionIcon">onDblClickShape</span><span class="parameters">(shape, e)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_onLoad"></a><span class="functionIcon">onLoad</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_onRedo"></a><span class="functionIcon">onRedo</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_sketch_Figure_onUndo"></a><span class="functionIcon">onUndo</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/sketch/Figure" class="jsdoc-link">dojox/sketch/Figure</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+    </div>
+  </div>
+</div>

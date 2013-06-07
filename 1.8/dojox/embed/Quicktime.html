@@ -1,0 +1,159 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/embed/Quicktime</div>
+<h1 class="functionIcon36 jsdoc-title">dojox/embed/Quicktime<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>Returns a reference to the HTMLObject/HTMLEmbed that is created to
+place the movie in the document.  You can use this either with or
+without the new operator.  Note that with any other DOM manipulation,
+you must wait until the document is finished loading before trying
+to use this.
+</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">kwArgs</td>
+    <td class="jsdoc-param-type">Object</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">node</td>
+    <td class="jsdoc-param-type">DOMNode</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojox/embed/Quicktime.html" target="_blank">dojox/embed/Quicktime reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<div class="jsdoc-examples">
+  <h2>Examples</h2>
+  <div class="jsdoc-example">
+    <h3>Example 1</h3><p>Embed a QuickTime movie in a document using the new operator, and get a reference to it.</p>
+<pre><code>  var movie = new dojox.embed.Quicktime({
+    path: &quot;path/to/my/movie.mov&quot;,
+    width: 400,
+    height: 300
+  }, myWrapperNode);</code></pre>
+<p></p>
+
+  </div>
+  <div class="jsdoc-example">
+    <h3>Example 2</h3><p>Embed a movie in a document without using the new operator.</p>
+<pre><code>  var movie = dojox.embed.Quicktime({
+    path: &quot;path/to/my/movie.mov&quot;,
+    width: 400,
+    height: 300
+  }, myWrapperNode);</code></pre>
+
+  </div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="booleanIcon"><a href="#1_8dojox_embed_Quicktime_initialized" class="inline-link"> initialized </a><span></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_embed_Quicktime_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>kwArgs, node) <span>Returns a reference to the HTMLObject/HTMLEmbed that is created to
+place the movie in the document.</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_embed_Quicktime_initialized"></a><span class="booleanIcon">initialized</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/embed/Quicktime" class="jsdoc-link">dojox/embed/Quicktime</a>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_embed_Quicktime_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(kwArgs, node)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/embed/Quicktime" class="jsdoc-link">dojox/embed/Quicktime</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Returns a reference to the HTMLObject/HTMLEmbed that is created to
+place the movie in the document.  You can use this either with or
+without the new operator.  Note that with any other DOM manipulation,
+you must wait until the document is finished loading before trying
+to use this.
+</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">kwArgs</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>An object with the following properties:
+
+</p>
+<ul>
+<li><p>path (String): <p>The URL of the movie to embed.</p></p>
+</li>
+<li><p>id (String, optional): <p>A unique key that will be used as the id of the created markup.  If you don&#39;t
+provide this, a unique key will be generated.</p></p>
+</li>
+<li><p>width (Number, optional): <p>The width of the embedded movie; the default value is 320px.</p></p>
+</li>
+<li><p>height (Number, optional): <p>The height of the embedded movie; the default value is 240px</p></p>
+</li>
+<li><p>params (Object, optional): <p>A set of key/value pairs that you want to define in the resultant markup.</p></p>
+</li>
+<li><p>redirect (String, optional): <p>A url to redirect the browser to if the current QuickTime version is not supported.</p></p>
+</li>
+</ul>
+
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">node</td>
+            <td class="jsdoc-param-type">DOMNode</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><p>Embed a QuickTime movie in a document using the new operator, and get a reference to it.</p>
+<pre><code>  var movie = new dojox.embed.Quicktime({
+    path: &quot;path/to/my/movie.mov&quot;,
+    width: 400,
+    height: 300
+  }, myWrapperNode);</code></pre>
+<p></p>
+
+          </div>
+          <div class="jsdoc-example">
+            <h3>Example 2</h3><p>Embed a movie in a document without using the new operator.</p>
+<pre><code>  var movie = dojox.embed.Quicktime({
+    path: &quot;path/to/my/movie.mov&quot;,
+    width: 400,
+    height: 300
+  }, myWrapperNode);</code></pre>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

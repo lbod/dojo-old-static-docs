@@ -1,0 +1,230 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/charting/action2d/MouseZoomAndPan</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/charting/action2d/MouseZoomAndPan<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-mixins">
+  <label>Extends </label><a href="/api/1.8/dojox/charting/action2d/ChartAction" class="jsdoc-link">dojox/charting/action2d/ChartAction,   </a>
+</div>
+<div class="jsdoc-full-summary"><p>Create an mouse zoom and pan action.
+You can zoom in or out the data window with mouse wheel. You can scroll using mouse drag gesture.
+You can toggle between zoom and fit view using double click on the chart.</p>
+</div>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/charting/action2d/MouseZoomAndPan<span class="parameters">(chart,plot,kwArgs);</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/charting/action2d/MouseZoomAndPan">dojox/charting/action2d/MouseZoomAndPan</a></div>
+<div class="jsdoc-summary"><p>Create an mouse zoom and pan action and connect it.</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">chart</td>
+    <td class="jsdoc-param-type">dojox/charting/Chart</td>
+    <td class="jsdoc-param-description"><p>The chart this action applies to.</p>
+ 
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">plot</td>
+    <td class="jsdoc-param-type">undefined</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">kwArgs</td>
+    <td class="jsdoc-param-type">Object</td>
+    <td class="jsdoc-param-description">
+      <div><em>Optional</em></div><p>Optional arguments for the chart action.</p>
+ 
+    </td>
+  </tr>
+</table>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="objectIcon"><a href="#1_8dojox_charting_action2d_MouseZoomAndPan_defaultParams" class="inline-link"> defaultParams </a><span></span>
+    </li>
+    <li class="objectIcon"><a href="#1_8dojox_charting_action2d_MouseZoomAndPan_optionalParams" class="inline-link"> optionalParams </a><span></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dojox_charting_action2d_MouseZoomAndPan__disconnectHandles" class="inline-link"> _disconnectHandles</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_charting_action2d_MouseZoomAndPan_connect" class="inline-link"> connect</a><span class="parameters">(</span>) <span>Connect this action to the chart.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_charting_action2d_MouseZoomAndPan_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>chart, plot, kwArgs) <span>Create an mouse zoom and pan action and connect it.</span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_charting_action2d_MouseZoomAndPan_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Do any cleanup needed when destroying parent elements.</span><span title="inherited from dojox/charting/action2d/Base" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_charting_action2d_MouseZoomAndPan_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>) <span>Disconnect this action from the chart.</span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dojox_charting_action2d_MouseZoomAndPan__onZoom" class="inline-link"> _onZoom</a><span class="parameters">(</span>scroll, event) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_charting_action2d_MouseZoomAndPan_onDoubleClick" class="inline-link"> onDoubleClick</a><span class="parameters">(</span>event) <span>Called when the mouse is double is double clicked on the chart.</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_charting_action2d_MouseZoomAndPan_onKeyPress" class="inline-link"> onKeyPress</a><span class="parameters">(</span>event) <span>Called when a key is pressed on the chart.</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_charting_action2d_MouseZoomAndPan_onMouseDown" class="inline-link"> onMouseDown</a><span class="parameters">(</span>event) <span>Called when mouse is down on the chart.</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_charting_action2d_MouseZoomAndPan_onMouseMove" class="inline-link"> onMouseMove</a><span class="parameters">(</span>event) <span>Called when mouse is moved on the chart.</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_charting_action2d_MouseZoomAndPan_onMouseUp" class="inline-link"> onMouseUp</a><span class="parameters">(</span>event) <span>Called when mouse is up on the chart.</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_charting_action2d_MouseZoomAndPan_onMouseWheel" class="inline-link"> onMouseWheel</a><span class="parameters">(</span>event) <span>Called when mouse wheel is used on the chart.</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_charting_action2d_MouseZoomAndPan_defaultParams"></a><span class="objectIcon">defaultParams</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/charting/action2d/MouseZoomAndPan" class="jsdoc-link">dojox/charting/action2d/MouseZoomAndPan</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_charting_action2d_MouseZoomAndPan_optionalParams"></a><span class="objectIcon">optionalParams</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/charting/action2d/MouseZoomAndPan" class="jsdoc-link">dojox/charting/action2d/MouseZoomAndPan</a>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_charting_action2d_MouseZoomAndPan__disconnectHandles"></a><span class="functionIcon">_disconnectHandles</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/charting/action2d/MouseZoomAndPan" class="jsdoc-link">dojox/charting/action2d/MouseZoomAndPan</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_charting_action2d_MouseZoomAndPan_connect"></a><span class="functionIcon">connect</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/charting/action2d/MouseZoomAndPan" class="jsdoc-link">dojox/charting/action2d/MouseZoomAndPan</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Connect this action to the chart.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_charting_action2d_MouseZoomAndPan_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(chart, plot, kwArgs)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/charting/action2d/MouseZoomAndPan" class="jsdoc-link">dojox/charting/action2d/MouseZoomAndPan</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Create an mouse zoom and pan action and connect it.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">chart</td>
+            <td class="jsdoc-param-type">dojox/charting/Chart</td>
+            <td class="jsdoc-param-description"><p>The chart this action applies to.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">plot</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">kwArgs</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>Optional arguments for the chart action.</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_charting_action2d_MouseZoomAndPan_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/charting/action2d/Base" class="jsdoc-link">dojox/charting/action2d/Base</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Do any cleanup needed when destroying parent elements.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_charting_action2d_MouseZoomAndPan_disconnect"></a><span class="functionIcon">disconnect</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/charting/action2d/MouseZoomAndPan" class="jsdoc-link">dojox/charting/action2d/MouseZoomAndPan</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Disconnect this action from the chart.</p>
+</div>
+      </div>
+    </div>
+    <h2>Events</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_charting_action2d_MouseZoomAndPan__onZoom"></a><span class="functionIcon">_onZoom</span><span class="parameters">(scroll, event)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/charting/action2d/MouseZoomAndPan" class="jsdoc-link">dojox/charting/action2d/MouseZoomAndPan</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_charting_action2d_MouseZoomAndPan_onDoubleClick"></a><span class="functionIcon">onDoubleClick</span><span class="parameters">(event)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/charting/action2d/MouseZoomAndPan" class="jsdoc-link">dojox/charting/action2d/MouseZoomAndPan</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Called when the mouse is double is double clicked on the chart. Toggle between zoom and fit chart.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_charting_action2d_MouseZoomAndPan_onKeyPress"></a><span class="functionIcon">onKeyPress</span><span class="parameters">(event)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/charting/action2d/MouseZoomAndPan" class="jsdoc-link">dojox/charting/action2d/MouseZoomAndPan</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Called when a key is pressed on the chart.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_charting_action2d_MouseZoomAndPan_onMouseDown"></a><span class="functionIcon">onMouseDown</span><span class="parameters">(event)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/charting/action2d/MouseZoomAndPan" class="jsdoc-link">dojox/charting/action2d/MouseZoomAndPan</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Called when mouse is down on the chart.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_charting_action2d_MouseZoomAndPan_onMouseMove"></a><span class="functionIcon">onMouseMove</span><span class="parameters">(event)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/charting/action2d/MouseZoomAndPan" class="jsdoc-link">dojox/charting/action2d/MouseZoomAndPan</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Called when mouse is moved on the chart.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_charting_action2d_MouseZoomAndPan_onMouseUp"></a><span class="functionIcon">onMouseUp</span><span class="parameters">(event)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/charting/action2d/MouseZoomAndPan" class="jsdoc-link">dojox/charting/action2d/MouseZoomAndPan</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Called when mouse is up on the chart.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_charting_action2d_MouseZoomAndPan_onMouseWheel"></a><span class="functionIcon">onMouseWheel</span><span class="parameters">(event)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/charting/action2d/MouseZoomAndPan" class="jsdoc-link">dojox/charting/action2d/MouseZoomAndPan</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Called when mouse wheel is used on the chart.</p>
+</div>
+      </div>
+    </div>
+  </div>
+</div>

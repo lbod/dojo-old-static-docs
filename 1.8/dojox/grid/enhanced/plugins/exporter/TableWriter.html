@@ -1,0 +1,476 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/plugins/exporter/TableWriter</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/plugins/exporter/TableWriter<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-mixins">
+  <label>Extends </label><a href="/api/1.8/dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-link">dojox/grid/enhanced/plugins/exporter/_ExportWriter,   </a>
+</div>
+<div class="jsdoc-full-summary"><p>Export grid to HTML table format. Primarily used by Printer plugin.</p>
+</div>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/grid/enhanced/plugins/exporter/TableWriter<span class="parameters">(writerArgs);</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/grid/enhanced/plugins/exporter/TableWriter">dojox/grid/enhanced/plugins/exporter/TableWriter</a></div>
+<div class="jsdoc-summary"><p>The generated table only defines the col/rowspan, height and width of
+all the cells in the style attribute, no other attributes
+(like border, cellspacing, etc.) are used.
+Users can define these attributes in the writerArgs object, like:
+{table:&quot;border=&#39;border&#39;&quot;,thead:&quot;cellspacing=&#39;3&#39;&quot;}</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">writerArgs</td>
+    <td class="jsdoc-param-type">object</td>
+    <td class="jsdoc-param-description">
+      <div><em>Optional</em></div>
+    </td>
+  </tr>
+</table>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="objectIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_argObj" class="inline-link"> argObj </a><span></span><span title="inherited from dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter__getColumnClass" class="inline-link"> _getColumnClass</a><span class="parameters">(</span>arg_obj) <span>Get CSS class string for a column</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter__getExportDataForCell" class="inline-link"> _getExportDataForCell</a><span class="parameters">(</span>rowIndex, rowItem, cell, grid) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter__getRowClass" class="inline-link"> _getRowClass</a><span class="parameters">(</span>arg_obj) <span>Get CSS class string for a row</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter__getTableAttrs" class="inline-link"> _getTableAttrs</a><span class="parameters">(</span>tagName) <span>Get html attribute string for the given kind of tag.</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_afterContent" class="inline-link"> afterContent</a><span class="parameters">(</span>) <span>Overrided from _ExportWriter</span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_afterContentRow" class="inline-link"> afterContentRow</a><span class="parameters">(</span>argObj) <span>After handling a line of data (not header).</span><span title="inherited from dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_afterHeader" class="inline-link"> afterHeader</a><span class="parameters">(</span>) <span>The header line has been handled.</span><span title="inherited from dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_afterSubrow" class="inline-link"> afterSubrow</a><span class="parameters">(</span>arg_obj) <span>Overrided from _ExportWriter</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_afterView" class="inline-link"> afterView</a><span class="parameters">(</span>arg_obj) <span>Overrided from _ExportWriter</span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_beforeContent" class="inline-link"> beforeContent</a><span class="parameters">(</span>items) <span>We are ready to go through all the contents(items).</span><span title="inherited from dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_beforeContentRow" class="inline-link"> beforeContentRow</a><span class="parameters">(</span>argObj) <span>Before handling a line of data (not header).</span><span title="inherited from dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_beforeHeader" class="inline-link"> beforeHeader</a><span class="parameters">(</span>grid) <span>We are going to start the travel in the grid.</span><span title="inherited from dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_beforeSubrow" class="inline-link"> beforeSubrow</a><span class="parameters">(</span>arg_obj) <span>Overrided from _ExportWriter</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_beforeView" class="inline-link"> beforeView</a><span class="parameters">(</span>arg_obj) <span>Overrided from _ExportWriter</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>writerArgs) <span>The generated table only defines the col/rowspan, height and width of
+all the cells in the style attribute, no other attributes
+(like border, cellspacing, etc.) are used.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_handleCell" class="inline-link"> handleCell</a><span class="parameters">(</span>arg_obj) <span>Overrided from _ExportWriter</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_exporter_TableWriter_toString" class="inline-link"> toString</a><span class="parameters">(</span>) <span>Overrided from _ExportWriter</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter_TableWriter_argObj"></a><span class="objectIcon">argObj</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-link">dojox/grid/enhanced/plugins/exporter/_ExportWriter</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter_TableWriter__getColumnClass"></a><span class="functionIcon">_getColumnClass</span><span class="parameters">(arg_obj)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/exporter/TableWriter" class="jsdoc-link">dojox/grid/enhanced/plugins/exporter/TableWriter</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Get CSS class string for a column</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">arg_obj</td>
+            <td class="jsdoc-param-type">object</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">String</span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter_TableWriter__getExportDataForCell"></a><span class="functionIcon">_getExportDataForCell</span><span class="parameters">(rowIndex, rowItem, cell, grid)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-link">dojox/grid/enhanced/plugins/exporter/_ExportWriter</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">rowIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">rowItem</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">cell</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">grid</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter_TableWriter__getRowClass"></a><span class="functionIcon">_getRowClass</span><span class="parameters">(arg_obj)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/exporter/TableWriter" class="jsdoc-link">dojox/grid/enhanced/plugins/exporter/TableWriter</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Get CSS class string for a row</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">arg_obj</td>
+            <td class="jsdoc-param-type">object</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">String</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter_TableWriter__getTableAttrs"></a><span class="functionIcon">_getTableAttrs</span><span class="parameters">(tagName)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/exporter/TableWriter" class="jsdoc-link">dojox/grid/enhanced/plugins/exporter/TableWriter</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Get html attribute string for the given kind of tag.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">tagName</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description"><p>An html tag name</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | string</span></div>
+        <div class="jsdoc-return-description">The well formatted attributes for the given html table.tag</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter_TableWriter_afterContent"></a><span class="functionIcon">afterContent</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/exporter/TableWriter" class="jsdoc-link">dojox/grid/enhanced/plugins/exporter/TableWriter</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Overrided from _ExportWriter</p>
+</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter_TableWriter_afterContentRow"></a><span class="functionIcon">afterContentRow</span><span class="parameters">(argObj)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-link">dojox/grid/enhanced/plugins/exporter/_ExportWriter</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>After handling a line of data (not header).</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">argObj</td>
+            <td class="jsdoc-param-type">object</td>
+            <td class="jsdoc-param-description"><p>An object with at least the following context properties available:</p>
+<pre><code>  {
+    grid,isHeader,
+    row,rowIdx,
+    spCols
+  }</code></pre>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
+        <div class="jsdoc-return-description">undefined</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter_TableWriter_afterHeader"></a><span class="functionIcon">afterHeader</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-link">dojox/grid/enhanced/plugins/exporter/_ExportWriter</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>The header line has been handled.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
+        <div class="jsdoc-return-description">undefined</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter_TableWriter_afterSubrow"></a><span class="functionIcon">afterSubrow</span><span class="parameters">(arg_obj)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/exporter/TableWriter" class="jsdoc-link">dojox/grid/enhanced/plugins/exporter/TableWriter</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Overrided from _ExportWriter</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">arg_obj</td>
+            <td class="jsdoc-param-type">object</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter_TableWriter_afterView"></a><span class="functionIcon">afterView</span><span class="parameters">(arg_obj)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/exporter/TableWriter" class="jsdoc-link">dojox/grid/enhanced/plugins/exporter/TableWriter</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Overrided from _ExportWriter</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">arg_obj</td>
+            <td class="jsdoc-param-type">object</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter_TableWriter_beforeContent"></a><span class="functionIcon">beforeContent</span><span class="parameters">(items)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-link">dojox/grid/enhanced/plugins/exporter/_ExportWriter</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>We are ready to go through all the contents(items).</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">items</td>
+            <td class="jsdoc-param-type">Array</td>
+            <td class="jsdoc-param-description"><p>All the items fetched from the store</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | boolean</span></div>
+        <div class="jsdoc-return-description">- true: go on handling the contents and then call afterContent.
+- false: skip all the contents, won't call afterContent.</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter_TableWriter_beforeContentRow"></a><span class="functionIcon">beforeContentRow</span><span class="parameters">(argObj)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-link">dojox/grid/enhanced/plugins/exporter/_ExportWriter</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Before handling a line of data (not header).</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">argObj</td>
+            <td class="jsdoc-param-type">object</td>
+            <td class="jsdoc-param-description"><p>An object with at least the following context properties available:</p>
+<pre><code>  {
+    grid,isHeader,
+    row,rowIdx,
+    spCols
+  }</code></pre>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | boolean</span></div>
+        <div class="jsdoc-return-description">- true: go on handling the current data row and then call afterContentRow.
+- false: skip the current data row, won't call afterContentRow.</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter_TableWriter_beforeHeader"></a><span class="functionIcon">beforeHeader</span><span class="parameters">(grid)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/exporter/_ExportWriter" class="jsdoc-link">dojox/grid/enhanced/plugins/exporter/_ExportWriter</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>We are going to start the travel in the grid.
+Is there anything we should do now?</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">grid</td>
+            <td class="jsdoc-param-type">EnhancedGrid</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | boolean</span></div>
+        <div class="jsdoc-return-description">- true: go on handling the header row and then call afterHeader.
+- false: skip the header row, won't call afterHeader.</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter_TableWriter_beforeSubrow"></a><span class="functionIcon">beforeSubrow</span><span class="parameters">(arg_obj)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/exporter/TableWriter" class="jsdoc-link">dojox/grid/enhanced/plugins/exporter/TableWriter</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Overrided from _ExportWriter</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">arg_obj</td>
+            <td class="jsdoc-param-type">object</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter_TableWriter_beforeView"></a><span class="functionIcon">beforeView</span><span class="parameters">(arg_obj)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/exporter/TableWriter" class="jsdoc-link">dojox/grid/enhanced/plugins/exporter/TableWriter</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Overrided from _ExportWriter</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">arg_obj</td>
+            <td class="jsdoc-param-type">object</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter_TableWriter_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(writerArgs)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/exporter/TableWriter" class="jsdoc-link">dojox/grid/enhanced/plugins/exporter/TableWriter</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>The generated table only defines the col/rowspan, height and width of
+all the cells in the style attribute, no other attributes
+(like border, cellspacing, etc.) are used.
+Users can define these attributes in the writerArgs object, like:
+{table:&quot;border=&#39;border&#39;&quot;,thead:&quot;cellspacing=&#39;3&#39;&quot;}</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">writerArgs</td>
+            <td class="jsdoc-param-type">object</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter_TableWriter_handleCell"></a><span class="functionIcon">handleCell</span><span class="parameters">(arg_obj)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/exporter/TableWriter" class="jsdoc-link">dojox/grid/enhanced/plugins/exporter/TableWriter</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Overrided from _ExportWriter</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">arg_obj</td>
+            <td class="jsdoc-param-type">object</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_exporter_TableWriter_toString"></a><span class="functionIcon">toString</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/exporter/TableWriter" class="jsdoc-link">dojox/grid/enhanced/plugins/exporter/TableWriter</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Overrided from _ExportWriter</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+    </div>
+  </div>
+</div>

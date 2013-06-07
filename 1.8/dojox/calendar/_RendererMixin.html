@@ -1,0 +1,717 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/calendar/_RendererMixin</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/calendar/_RendererMixin<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-mixins">
+  <label>Extends </label><a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful,   </a>
+</div>
+<div class="jsdoc-full-summary"><p>This class is the base class of calendar renderers.</p>
+</div>
+<p>See the <a href="/reference-guide/1.8/dojox/calendar.html" target="_blank">dojox/calendar/_RendererMixin reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="objectIcon private inherited"><a href="#1_8dojox_calendar__RendererMixin__attrPairNames" class="inline-link"> _attrPairNames </a><span>Used across all instances a hash to cache attribute names and their getter 
+and setter names.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon private inherited"><a href="#1_8dojox_calendar__RendererMixin__displayValue" class="inline-link"> _displayValue </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/calendar/_RendererMixin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon private inherited"><a href="#1_8dojox_calendar__RendererMixin__displayValueMap" class="inline-link"> _displayValueMap </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/calendar/_RendererMixin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon private inherited"><a href="#1_8dojox_calendar__RendererMixin__orientation" class="inline-link"> _orientation </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/calendar/_RendererMixin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="booleanIcon inherited"><a href="#1_8dojox_calendar__RendererMixin_edited" class="inline-link"> edited </a><span>Indicates that the item displayed by this renderer is in editing mode.</span><span title="inherited from dojox/calendar/_RendererMixin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="booleanIcon inherited"><a href="#1_8dojox_calendar__RendererMixin_focused" class="inline-link"> focused </a><span>Indicates that the item displayed by this renderer is focused.</span><span title="inherited from dojox/calendar/_RendererMixin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="booleanIcon inherited"><a href="#1_8dojox_calendar__RendererMixin_hovered" class="inline-link"> hovered </a><span>Indicates that the item displayed by this renderer is hovered.</span><span title="inherited from dojox/calendar/_RendererMixin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_calendar__RendererMixin_item" class="inline-link"> item </a><span>The layout item displayed by this renderer.</span><span title="inherited from dojox/calendar/_RendererMixin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="booleanIcon inherited"><a href="#1_8dojox_calendar__RendererMixin_moveEnabled" class="inline-link"> moveEnabled </a><span>Whether the event displayed by this renderer can be moved.</span><span title="inherited from dojox/calendar/_RendererMixin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_calendar__RendererMixin_owner" class="inline-link"> owner </a><span>The view that contains this renderer.</span><span title="inherited from dojox/calendar/_RendererMixin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="booleanIcon inherited"><a href="#1_8dojox_calendar__RendererMixin_resizeEnabled" class="inline-link"> resizeEnabled </a><span>Whether the event displayed by this renderer can be resized.</span><span title="inherited from dojox/calendar/_RendererMixin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="booleanIcon inherited"><a href="#1_8dojox_calendar__RendererMixin_selected" class="inline-link"> selected </a><span>Indicates that the item displayed by this renderer is selected.</span><span title="inherited from dojox/calendar/_RendererMixin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_calendar__RendererMixin_visibilityLimits" class="inline-link"> visibilityLimits </a><span></span><span title="inherited from dojox/calendar/_RendererMixin" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar__RendererMixin__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_calendar__RendererMixin__formatTime" class="inline-link"> _formatTime</a><span class="parameters">(</span>rd, d) <span>Returns the time formatted string.</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar__RendererMixin__get" class="inline-link"> _get</a><span class="parameters">(</span>name, names) <span>Private function that does a get based off a hash of names</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_calendar__RendererMixin__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_calendar__RendererMixin__isElementVisible" class="inline-link"> _isElementVisible</a><span class="parameters">(</span>elt, startHidden, endHidden, size) <span>Determine whether the item renderer sub element is visible or not.</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_calendar__RendererMixin__setEditedAttr" class="inline-link"> _setEditedAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_calendar__RendererMixin__setFocusedAttr" class="inline-link"> _setFocusedAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_calendar__RendererMixin__setHoveredAttr" class="inline-link"> _setHoveredAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_calendar__RendererMixin__setItemAttr" class="inline-link"> _setItemAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_calendar__RendererMixin__setSelectedAttr" class="inline-link"> _setSelectedAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_calendar__RendererMixin__setState" class="inline-link"> _setState</a><span class="parameters">(</span>prop, value, cssClass) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_calendar__RendererMixin__setText" class="inline-link"> _setText</a><span class="parameters">(</span>node, text, allowHTML) <span>Set the text to the specified node.</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__RendererMixin_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property on a Stateful instance.</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_calendar__RendererMixin_getDisplayValue" class="inline-link"> getDisplayValue</a><span class="parameters">(</span>part) <span></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__RendererMixin_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>params) <span></span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__RendererMixin_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a Stateful instance</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_calendar__RendererMixin_updateRendering" class="inline-link"> updateRendering</a><span class="parameters">(</span>w, h) <span>Updates the visual appearance of the renderer according the new values of the properties and the new size of the component.</span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_calendar__RendererMixin_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin__attrPairNames"></a><span class="objectIcon">_attrPairNames</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Used across all instances a hash to cache attribute names and their getter 
+and setter names.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin__displayValue"></a><span class="stringIcon">_displayValue</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin__displayValueMap"></a><span class="objectIcon">_displayValueMap</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin__orientation"></a><span class="stringIcon">_orientation</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin_edited"></a><span class="booleanIcon">edited</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Indicates that the item displayed by this renderer is in editing mode.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin_focused"></a><span class="booleanIcon">focused</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Indicates that the item displayed by this renderer is focused.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin_hovered"></a><span class="booleanIcon">hovered</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Indicates that the item displayed by this renderer is hovered.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin_item"></a><span class="objectIcon">item</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>The layout item displayed by this renderer.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin_moveEnabled"></a><span class="booleanIcon">moveEnabled</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Whether the event displayed by this renderer can be moved.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin_owner"></a><span class="objectIcon">owner</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>The view that contains this renderer.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin_resizeEnabled"></a><span class="booleanIcon">resizeEnabled</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Whether the event displayed by this renderer can be resized.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin_selected"></a><span class="booleanIcon">selected</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Indicates that the item displayed by this renderer is selected.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin_visibilityLimits"></a><span class="objectIcon">visibilityLimits</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin__changeAttrValue"></a><span class="functionIcon">_changeAttrValue</span><span class="parameters">(name, value)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Internal helper for directly changing an attribute value.
+</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Directly change the value of an attribute on an object, bypassing any
+accessor setter.  Also handles the calling of watch and emitting events.
+It is designed to be used by descendent class when there are two values
+of attributes that are linked, but calling .set() is not appropriate.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The property to set.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">Mixed</td>
+            <td class="jsdoc-param-description"><p>The value to set in the property.
+</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">function</span></div>
+        <div class="jsdoc-return-description"><p>Internal helper for directly changing an attribute value.
+</p>
+</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin__formatTime"></a><span class="functionIcon">_formatTime</span><span class="parameters">(rd, d)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Returns the time formatted string.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">rd</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>The render data.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">d</td>
+            <td class="jsdoc-param-type">Date</td>
+            <td class="jsdoc-param-description"><p>The time to format.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin__get"></a><span class="functionIcon">_get</span><span class="parameters">(name, names)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Private function that does a get based off a hash of names</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">names</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description"><p>Hash of names of custom attributes</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin__getAttrNames"></a><span class="functionIcon">_getAttrNames</span><span class="parameters">(name)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Helper function for get() and set().
+Caches attribute name values so we don&#39;t do the string ops every time.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | object</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin__isElementVisible"></a><span class="functionIcon">_isElementVisible</span><span class="parameters">(elt, startHidden, endHidden, size)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Determine whether the item renderer sub element is visible or not.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">elt</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The element node.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">startHidden</td>
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description"><p>Indicates that the start of time interval displayed by this item renderer is not the start of the displayed event. </p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">endHidden</td>
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description"><p>Indicates that the end of time interval displayed by this item renderer is not the end of the displayed event.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">size</td>
+            <td class="jsdoc-param-type">Integer</td>
+            <td class="jsdoc-param-description"><p>The size of the item renderer on the time axis. </p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin__setEditedAttr"></a><span class="functionIcon">_setEditedAttr</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin__setFocusedAttr"></a><span class="functionIcon">_setFocusedAttr</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin__setHoveredAttr"></a><span class="functionIcon">_setHoveredAttr</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin__setItemAttr"></a><span class="functionIcon">_setItemAttr</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin__setSelectedAttr"></a><span class="functionIcon">_setSelectedAttr</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin__setState"></a><span class="functionIcon">_setState</span><span class="parameters">(prop, value, cssClass)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">prop</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">cssClass</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin__setText"></a><span class="functionIcon">_setText</span><span class="parameters">(node, text, allowHTML)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Set the text to the specified node.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">node</td>
+            <td class="jsdoc-param-type">Node</td>
+            <td class="jsdoc-param-description"><p>The parent node.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">text</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The text to display.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">allowHTML</td>
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description"><p>Whether text is containing HTML formatting.</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin_get"></a><span class="functionIcon">get</span><span class="parameters">(name)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Get a property on a Stateful instance.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Get a named property on a Stateful object. The property may
+potentially be retrieved via a getter method in subclasses. In the base class
+this just retrieves the object&#39;s property.
+For example:</p>
+<pre><code>  stateful = new dojo.Stateful({foo: 3});
+  stateful.get(&quot;foo&quot;) // returns 3
+  stateful.foo // returns 3</pre></code>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The property to get.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
+        <div class="jsdoc-return-description">The property value on this Stateful instance.</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin_getDisplayValue"></a><span class="functionIcon">getDisplayValue</span><span class="parameters">(part)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">part</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin_postscript"></a><span class="functionIcon">postscript</span><span class="parameters">(params)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">params</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin_set"></a><span class="functionIcon">set</span><span class="parameters">(name, value)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Set a property on a Stateful instance</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Sets named properties on a stateful object and notifies any watchers of
+the property. A programmatic setter may be defined in subclasses.
+For example:</p>
+<pre><code>  stateful = new dojo.Stateful();
+  stateful.watch(function(name, oldValue, value){
+    // this will be called on the set below
+  }
+  stateful.set(foo, 5);</pre></code>
+<p></p>
+<p>set() may also be called with a hash of name/value pairs, ex:</p>
+<pre><code>  myObj.set({
+    foo: &quot;Howdy&quot;,
+    bar: 3
+  })</pre></code>
+<p>This is equivalent to calling set(foo, &quot;Howdy&quot;) and set(bar, 3)</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The property to set.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>The value to set in the property.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | function</span></div>
+        <div class="jsdoc-return-description">The function returns this dojo.Stateful instance.</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin_updateRendering"></a><span class="functionIcon">updateRendering</span><span class="parameters">(w, h)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/calendar/_RendererMixin" class="jsdoc-link">dojox/calendar/_RendererMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Updates the visual appearance of the renderer according the new values of the properties and the new size of the component.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">w</td>
+            <td class="jsdoc-param-type">Number</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>The width in pixels of the renderer.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">h</td>
+            <td class="jsdoc-param-type">Number</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>The height in pixels of the renderer.</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_calendar__RendererMixin_watch"></a><span class="functionIcon">watch</span><span class="parameters">(name, callback)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Watches a property for changes</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>Indicates the property to watch. This is optional (the callback may be the
+only parameter), and if omitted, all the properties will be watched</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">callback</td>
+            <td class="jsdoc-param-type">Function</td>
+            <td class="jsdoc-param-description"><p>The function to execute when the property changes. This will be called after
+the property has been changed. The callback will be called with the |this|
+set to the instance, the first argument as the name of the property, the
+second argument as the old value and the third argument as the new value.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | object</span></div>
+        <div class="jsdoc-return-description">An object handle for the watch. The unwatch method of this object
+can be used to discontinue watching this property:
+|  var watchHandle = obj.watch("foo", callback);
+|  watchHandle.unwatch(); // callback won't be called now</div>
+      </div>
+    </div>
+  </div>
+</div>

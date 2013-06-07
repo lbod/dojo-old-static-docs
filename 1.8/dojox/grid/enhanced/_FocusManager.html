@@ -1,0 +1,1519 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/_FocusManager</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/_FocusManager<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-mixins">
+  <label>Extends </label><a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager,   </a>
+</div>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/grid/enhanced/_FocusManager<span class="parameters">(grid);</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/grid/enhanced/_FocusManager">dojox/grid/enhanced/_FocusManager</a></div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">grid</td>
+    <td class="jsdoc-param-type">undefined</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+</table>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="booleanIcon private"><a href="#1_8dojox_grid_enhanced__FocusManager__blurFromEditableCell" class="inline-link"> _blurFromEditableCell </a><span></span><span title="private" class="jsdoc-private"></span>
+    </li>
+    <li class="objectIcon private inherited"><a href="#1_8dojox_grid_enhanced__FocusManager__colHeadFocusIdx" class="inline-link"> _colHeadFocusIdx </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon private inherited"><a href="#1_8dojox_grid_enhanced__FocusManager__colHeadNode" class="inline-link"> _colHeadNode </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon private inherited"><a href="#1_8dojox_grid_enhanced__FocusManager__contextMenuBindNode" class="inline-link"> _contextMenuBindNode </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="booleanIcon private inherited"><a href="#1_8dojox_grid_enhanced__FocusManager__isNavigating" class="inline-link"> _isNavigating </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon private inherited"><a href="#1_8dojox_grid_enhanced__FocusManager__navElems" class="inline-link"> _navElems </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojox_grid_enhanced__FocusManager_focusClass" class="inline-link"> focusClass </a><span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_grid_enhanced__FocusManager_focusView" class="inline-link"> focusView </a><span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="booleanIcon inherited"><a href="#1_8dojox_grid_enhanced__FocusManager_tabbingOut" class="inline-link"> tabbingOut </a><span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced__FocusManager__applyEditableCell" class="inline-link"> _applyEditableCell</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced__FocusManager__bindAreaEvents" class="inline-link"> _bindAreaEvents</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced__FocusManager__blurContent" class="inline-link"> _blurContent</a><span class="parameters">(</span>evt, step) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced__FocusManager__blurEditableCell" class="inline-link"> _blurEditableCell</a><span class="parameters">(</span>evt, step) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced__FocusManager__blurHeader" class="inline-link"> _blurHeader</a><span class="parameters">(</span>evt, step) <span>Overwritten</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced__FocusManager__changeMenuBindNode" class="inline-link"> _changeMenuBindNode</a><span class="parameters">(</span>oldBindNode, newBindNode) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced__FocusManager__delayedCellFocus" class="inline-link"> _delayedCellFocus</a><span class="parameters">(</span>) <span>Overwritten</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced__FocusManager__delayedHeaderFocus" class="inline-link"> _delayedHeaderFocus</a><span class="parameters">(</span>) <span>Overwritten</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced__FocusManager__doBlur" class="inline-link"> _doBlur</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_grid_enhanced__FocusManager__findHeaderCells" class="inline-link"> _findHeaderCells</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced__FocusManager__focusContent" class="inline-link"> _focusContent</a><span class="parameters">(</span>evt, step) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced__FocusManager__focusEditableCell" class="inline-link"> _focusEditableCell</a><span class="parameters">(</span>evt, step) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_grid_enhanced__FocusManager__focusifyCellNode" class="inline-link"> _focusifyCellNode</a><span class="parameters">(</span>inBork) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_grid_enhanced__FocusManager__initColumnHeaders" class="inline-link"> _initColumnHeaders</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced__FocusManager__initNavigatableElems" class="inline-link"> _initNavigatableElems</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_grid_enhanced__FocusManager__isHeaderHidden" class="inline-link"> _isHeaderHidden</a><span class="parameters">(</span>) <span>determine if the grid headers are hidden
+relies on documented technique of setting .dojoxGridHeader { display:none; }</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_grid_enhanced__FocusManager__mouseDown" class="inline-link"> _mouseDown</a><span class="parameters">(</span>e) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_grid_enhanced__FocusManager__mouseUp" class="inline-link"> _mouseUp</a><span class="parameters">(</span>e) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced__FocusManager__navContent" class="inline-link"> _navContent</a><span class="parameters">(</span>rowStep, colStep, evt) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced__FocusManager__navHeader" class="inline-link"> _navHeader</a><span class="parameters">(</span>rowStep, colStep, evt) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_grid_enhanced__FocusManager__scrollHeader" class="inline-link"> _scrollHeader</a><span class="parameters">(</span>currentIdx) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_grid_enhanced__FocusManager__scrollInfo" class="inline-link"> _scrollInfo</a><span class="parameters">(</span>cell, domNode) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced__FocusManager__setActiveColHeader" class="inline-link"> _setActiveColHeader</a><span class="parameters">(</span>) <span>Overwritten</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced__FocusManager__stopEvent" class="inline-link"> _stopEvent</a><span class="parameters">(</span>evt) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced__FocusManager_addArea" class="inline-link"> addArea</a><span class="parameters">(</span>area) <span></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced__FocusManager_blurHeader" class="inline-link"> blurHeader</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced__FocusManager_colSizeAdjust" class="inline-link"> colSizeAdjust</a><span class="parameters">(</span>e, colIdx, delta) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced__FocusManager_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>grid) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced__FocusManager_contentMouseEvent" class="inline-link"> contentMouseEvent</a><span class="parameters">(</span>evt) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced__FocusManager_currentArea" class="inline-link"> currentArea</a><span class="parameters">(</span>areaName, toBlurOld) <span>Set current area to the one areaName refers.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced__FocusManager_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced__FocusManager_doBlur" class="inline-link"> doBlur</a><span class="parameters">(</span>e) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced__FocusManager_doColHeaderBlur" class="inline-link"> doColHeaderBlur</a><span class="parameters">(</span>e) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced__FocusManager_doColHeaderFocus" class="inline-link"> doColHeaderFocus</a><span class="parameters">(</span>e) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced__FocusManager_doContextMenu" class="inline-link"> doContextMenu</a><span class="parameters">(</span>e) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced__FocusManager_doFocus" class="inline-link"> doFocus</a><span class="parameters">(</span>e) <span>Overwritten
+trap focus only for grid dom node
+do not focus for scrolling if grid is about to blur</span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced__FocusManager_doLastNodeBlur" class="inline-link"> doLastNodeBlur</a><span class="parameters">(</span>e) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced__FocusManager_doLastNodeFocus" class="inline-link"> doLastNodeFocus</a><span class="parameters">(</span>e) <span>Overwritten</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced__FocusManager_findAndFocusGridCell" class="inline-link"> findAndFocusGridCell</a><span class="parameters">(</span>) <span>Overwritten</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced__FocusManager_focusArea" class="inline-link"> focusArea</a><span class="parameters">(</span>areaId, evt) <span></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced__FocusManager_focusGrid" class="inline-link"> focusGrid</a><span class="parameters">(</span>inSkipFocusCell) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced__FocusManager_focusGridView" class="inline-link"> focusGridView</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced__FocusManager_focusHeader" class="inline-link"> focusHeader</a><span class="parameters">(</span>evt, step) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced__FocusManager_getArea" class="inline-link"> getArea</a><span class="parameters">(</span>areaName) <span></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced__FocusManager_getHeaderIndex" class="inline-link"> getHeaderIndex</a><span class="parameters">(</span>) <span>if one of the column headers currently has focus, return its index.</span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced__FocusManager_headerMouseEvent" class="inline-link"> headerMouseEvent</a><span class="parameters">(</span>evt) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced__FocusManager_ignoreArea" class="inline-link"> ignoreArea</a><span class="parameters">(</span>name) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced__FocusManager_initFocusView" class="inline-link"> initFocusView</a><span class="parameters">(</span>) <span>Overwritten</span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced__FocusManager_isFirstFocusCell" class="inline-link"> isFirstFocusCell</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced__FocusManager_isFocusCell" class="inline-link"> isFocusCell</a><span class="parameters">(</span>inCell, inRowIndex) <span>states if the given cell is focused</span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced__FocusManager_isLastFocusCell" class="inline-link"> isLastFocusCell</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced__FocusManager_isNavHeader" class="inline-link"> isNavHeader</a><span class="parameters">(</span>) <span>Overwritten
+Check whether currently navigating among column headers.</span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced__FocusManager_isNoFocusCell" class="inline-link"> isNoFocusCell</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced__FocusManager_move" class="inline-link"> move</a><span class="parameters">(</span>inRowDelta, inColDelta) <span>focus grid cell or  simulate focus to column header based on position relative to current focus</span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced__FocusManager_next" class="inline-link"> next</a><span class="parameters">(</span>) <span>focus next grid cell</span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced__FocusManager_nextKey" class="inline-link"> nextKey</a><span class="parameters">(</span>e) <span>Overwritten</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced__FocusManager_placeArea" class="inline-link"> placeArea</a><span class="parameters">(</span>name, pos, otherAreaName) <span>Place the area refered by name at some logical position relative to an existing area.</span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced__FocusManager_previous" class="inline-link"> previous</a><span class="parameters">(</span>) <span>focus previous grid cell</span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced__FocusManager_previousKey" class="inline-link"> previousKey</a><span class="parameters">(</span>e) <span>Overwritten</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced__FocusManager_removeArea" class="inline-link"> removeArea</a><span class="parameters">(</span>areaName) <span></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced__FocusManager_scrollIntoView" class="inline-link"> scrollIntoView</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced__FocusManager_setFocusCell" class="inline-link"> setFocusCell</a><span class="parameters">(</span>inCell, inRowIndex) <span>Overwritten - focuses the given grid cell</span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced__FocusManager_setFocusIndex" class="inline-link"> setFocusIndex</a><span class="parameters">(</span>inRowIndex, inCellIndex) <span>focuses the given grid cell</span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced__FocusManager_styleRow" class="inline-link"> styleRow</a><span class="parameters">(</span>inRow) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced__FocusManager_tab" class="inline-link"> tab</a><span class="parameters">(</span>step, evt) <span></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced__FocusManager_tabOut" class="inline-link"> tabOut</a><span class="parameters">(</span>inFocusNode) <span></span><span title="inherited from dojox/grid/_FocusManager" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced__FocusManager__onContentKeyDown" class="inline-link"> _onContentKeyDown</a><span class="parameters">(</span>e, isBubble) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced__FocusManager__onEditableCellKeyDown" class="inline-link"> _onEditableCellKeyDown</a><span class="parameters">(</span>e, isBubble) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced__FocusManager__onEditableCellMouseEvent" class="inline-link"> _onEditableCellMouseEvent</a><span class="parameters">(</span>evt) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced__FocusManager__onHeaderKeyDown" class="inline-link"> _onHeaderKeyDown</a><span class="parameters">(</span>e, isBubble) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced__FocusManager__onMouseEvent" class="inline-link"> _onMouseEvent</a><span class="parameters">(</span>type, evt) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__blurFromEditableCell"></a><span class="booleanIcon">_blurFromEditableCell</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__colHeadFocusIdx"></a><span class="objectIcon">_colHeadFocusIdx</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__colHeadNode"></a><span class="objectIcon">_colHeadNode</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__contextMenuBindNode"></a><span class="objectIcon">_contextMenuBindNode</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__isNavigating"></a><span class="booleanIcon">_isNavigating</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__navElems"></a><span class="objectIcon">_navElems</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_focusClass"></a><span class="stringIcon">focusClass</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_focusView"></a><span class="objectIcon">focusView</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_tabbingOut"></a><span class="booleanIcon">tabbingOut</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__applyEditableCell"></a><span class="functionIcon">_applyEditableCell</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__bindAreaEvents"></a><span class="functionIcon">_bindAreaEvents</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__blurContent"></a><span class="functionIcon">_blurContent</span><span class="parameters">(evt, step)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evt</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">step</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__blurEditableCell"></a><span class="functionIcon">_blurEditableCell</span><span class="parameters">(evt, step)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evt</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">step</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">string | boolean</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__blurHeader"></a><span class="functionIcon">_blurHeader</span><span class="parameters">(evt, step)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Overwritten</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evt</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">step</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__changeMenuBindNode"></a><span class="functionIcon">_changeMenuBindNode</span><span class="parameters">(oldBindNode, newBindNode)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">oldBindNode</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">newBindNode</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__delayedCellFocus"></a><span class="functionIcon">_delayedCellFocus</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Overwritten</p>
+</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__delayedHeaderFocus"></a><span class="functionIcon">_delayedHeaderFocus</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Overwritten</p>
+</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__doBlur"></a><span class="functionIcon">_doBlur</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__findHeaderCells"></a><span class="functionIcon">_findHeaderCells</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__focusContent"></a><span class="functionIcon">_focusContent</span><span class="parameters">(evt, step)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evt</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">step</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__focusEditableCell"></a><span class="functionIcon">_focusEditableCell</span><span class="parameters">(evt, step)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evt</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">step</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__focusifyCellNode"></a><span class="functionIcon">_focusifyCellNode</span><span class="parameters">(inBork)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inBork</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__initColumnHeaders"></a><span class="functionIcon">_initColumnHeaders</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__initNavigatableElems"></a><span class="functionIcon">_initNavigatableElems</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__isHeaderHidden"></a><span class="functionIcon">_isHeaderHidden</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>determine if the grid headers are hidden
+relies on documented technique of setting .dojoxGridHeader { display:none; }</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Boolean | undefined</span></div>
+        <div class="jsdoc-return-description">true if headers are hidden
+false if headers are not hidden</div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__mouseDown"></a><span class="functionIcon">_mouseDown</span><span class="parameters">(e)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">e</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__mouseUp"></a><span class="functionIcon">_mouseUp</span><span class="parameters">(e)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">e</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__navContent"></a><span class="functionIcon">_navContent</span><span class="parameters">(rowStep, colStep, evt)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">rowStep</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">colStep</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evt</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__navHeader"></a><span class="functionIcon">_navHeader</span><span class="parameters">(rowStep, colStep, evt)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">rowStep</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">colStep</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evt</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__scrollHeader"></a><span class="functionIcon">_scrollHeader</span><span class="parameters">(currentIdx)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">currentIdx</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__scrollInfo"></a><span class="functionIcon">_scrollInfo</span><span class="parameters">(cell, domNode)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">cell</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">domNode</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">object | null</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__setActiveColHeader"></a><span class="functionIcon">_setActiveColHeader</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Overwritten</p>
+</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__stopEvent"></a><span class="functionIcon">_stopEvent</span><span class="parameters">(evt)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evt</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_addArea"></a><span class="functionIcon">addArea</span><span class="parameters">(area)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">area</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_blurHeader"></a><span class="functionIcon">blurHeader</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_colSizeAdjust"></a><span class="functionIcon">colSizeAdjust</span><span class="parameters">(e, colIdx, delta)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">e</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">colIdx</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">delta</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(grid)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">grid</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_contentMouseEvent"></a><span class="functionIcon">contentMouseEvent</span><span class="parameters">(evt)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evt</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_currentArea"></a><span class="functionIcon">currentArea</span><span class="parameters">(areaName, toBlurOld)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Set current area to the one areaName refers.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">areaName</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">toBlurOld</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | null</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_doBlur"></a><span class="functionIcon">doBlur</span><span class="parameters">(e)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">e</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_doColHeaderBlur"></a><span class="functionIcon">doColHeaderBlur</span><span class="parameters">(e)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">e</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_doColHeaderFocus"></a><span class="functionIcon">doColHeaderFocus</span><span class="parameters">(e)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">e</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_doContextMenu"></a><span class="functionIcon">doContextMenu</span><span class="parameters">(e)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">e</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_doFocus"></a><span class="functionIcon">doFocus</span><span class="parameters">(e)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Overwritten
+trap focus only for grid dom node
+do not focus for scrolling if grid is about to blur</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">e</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_doLastNodeBlur"></a><span class="functionIcon">doLastNodeBlur</span><span class="parameters">(e)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">e</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_doLastNodeFocus"></a><span class="functionIcon">doLastNodeFocus</span><span class="parameters">(e)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Overwritten</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">e</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_findAndFocusGridCell"></a><span class="functionIcon">findAndFocusGridCell</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Overwritten</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_focusArea"></a><span class="functionIcon">focusArea</span><span class="parameters">(areaId, evt)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">areaId</td>
+            <td class="jsdoc-param-type">int | string | areaObj</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evt</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_focusGrid"></a><span class="functionIcon">focusGrid</span><span class="parameters">(inSkipFocusCell)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inSkipFocusCell</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_focusGridView"></a><span class="functionIcon">focusGridView</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_focusHeader"></a><span class="functionIcon">focusHeader</span><span class="parameters">(evt, step)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evt</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">step</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_getArea"></a><span class="functionIcon">getArea</span><span class="parameters">(areaName)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">areaName</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_getHeaderIndex"></a><span class="functionIcon">getHeaderIndex</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>if one of the column headers currently has focus, return its index.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined | number</span></div>
+        <div class="jsdoc-return-description">index of the focused column header, or -1 if none have focus.</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_headerMouseEvent"></a><span class="functionIcon">headerMouseEvent</span><span class="parameters">(evt)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evt</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_ignoreArea"></a><span class="functionIcon">ignoreArea</span><span class="parameters">(name)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_initFocusView"></a><span class="functionIcon">initFocusView</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Overwritten</p>
+</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_isFirstFocusCell"></a><span class="functionIcon">isFirstFocusCell</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_isFocusCell"></a><span class="functionIcon">isFocusCell</span><span class="parameters">(inCell, inRowIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>states if the given cell is focused</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inCell</td>
+            <td class="jsdoc-param-type">object</td>
+            <td class="jsdoc-param-description"><p>grid cell object</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">int</td>
+            <td class="jsdoc-param-description"><p>grid row index</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | boolean</span></div>
+        <div class="jsdoc-return-description">true of the given grid cell is focused</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_isLastFocusCell"></a><span class="functionIcon">isLastFocusCell</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_isNavHeader"></a><span class="functionIcon">isNavHeader</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Overwritten
+Check whether currently navigating among column headers.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | boolean</span></div>
+        <div class="jsdoc-return-description">true - focus is on a certain column header | false otherwise</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_isNoFocusCell"></a><span class="functionIcon">isNoFocusCell</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_move"></a><span class="functionIcon">move</span><span class="parameters">(inRowDelta, inColDelta)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>focus grid cell or  simulate focus to column header based on position relative to current focus</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowDelta</td>
+            <td class="jsdoc-param-type">int</td>
+            <td class="jsdoc-param-description"><p>vertical distance from current focus</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inColDelta</td>
+            <td class="jsdoc-param-type">int</td>
+            <td class="jsdoc-param-description"><p>horizontal distance from current focus</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_next"></a><span class="functionIcon">next</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>focus next grid cell</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_nextKey"></a><span class="functionIcon">nextKey</span><span class="parameters">(e)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Overwritten</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">e</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_placeArea"></a><span class="functionIcon">placeArea</span><span class="parameters">(name, pos, otherAreaName)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Place the area refered by <em>name</em> at some logical position relative to an existing area.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">pos</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">otherAreaName</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><p>placeArea(&quot;myarea&quot;,&quot;before&quot;|&quot;after&quot;,...)
+placeArea(&quot;myarea&quot;,&quot;below&quot;|&quot;above&quot;,...)</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_previous"></a><span class="functionIcon">previous</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>focus previous grid cell</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_previousKey"></a><span class="functionIcon">previousKey</span><span class="parameters">(e)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Overwritten</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">e</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_removeArea"></a><span class="functionIcon">removeArea</span><span class="parameters">(areaName)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">areaName</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_scrollIntoView"></a><span class="functionIcon">scrollIntoView</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">null | undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_setFocusCell"></a><span class="functionIcon">setFocusCell</span><span class="parameters">(inCell, inRowIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Overwritten - focuses the given grid cell</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inCell</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">Integer</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_setFocusIndex"></a><span class="functionIcon">setFocusIndex</span><span class="parameters">(inRowIndex, inCellIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>focuses the given grid cell</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">int</td>
+            <td class="jsdoc-param-description"><p>grid row index</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inCellIndex</td>
+            <td class="jsdoc-param-type">int</td>
+            <td class="jsdoc-param-description"><p>grid cell index</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_styleRow"></a><span class="functionIcon">styleRow</span><span class="parameters">(inRow)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRow</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_tab"></a><span class="functionIcon">tab</span><span class="parameters">(step, evt)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">step</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evt</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager_tabOut"></a><span class="functionIcon">tabOut</span><span class="parameters">(inFocusNode)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_FocusManager" class="jsdoc-link">dojox/grid/_FocusManager</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inFocusNode</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <h2>Events</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__onContentKeyDown"></a><span class="functionIcon">_onContentKeyDown</span><span class="parameters">(e, isBubble)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__onEditableCellKeyDown"></a><span class="functionIcon">_onEditableCellKeyDown</span><span class="parameters">(e, isBubble)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__onEditableCellMouseEvent"></a><span class="functionIcon">_onEditableCellMouseEvent</span><span class="parameters">(evt)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__onHeaderKeyDown"></a><span class="functionIcon">_onHeaderKeyDown</span><span class="parameters">(e, isBubble)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced__FocusManager__onMouseEvent"></a><span class="functionIcon">_onMouseEvent</span><span class="parameters">(type, evt)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_FocusManager" class="jsdoc-link">dojox/grid/enhanced/_FocusManager</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+    </div>
+  </div>
+</div>

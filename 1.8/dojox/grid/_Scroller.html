@@ -1,0 +1,1328 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/_Scroller</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/grid/_Scroller<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/grid/_Scroller<span class="parameters">(inContentNodes);</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/grid/_Scroller">dojox/grid/_Scroller</a></div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">inContentNodes</td>
+    <td class="jsdoc-param-type">undefined</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+</table>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="numberIcon"><a href="#1_8dojox_grid__Scroller_averageRowHeight" class="inline-link"> averageRowHeight </a><span></span>
+    </li>
+    <li class="objectIcon"><a href="#1_8dojox_grid__Scroller_contentNode" class="inline-link"> contentNode </a><span></span>
+    </li>
+    <li class="numberIcon"><a href="#1_8dojox_grid__Scroller_defaultPageHeight" class="inline-link"> defaultPageHeight </a><span></span>
+    </li>
+    <li class="numberIcon"><a href="#1_8dojox_grid__Scroller_defaultRowHeight" class="inline-link"> defaultRowHeight </a><span></span>
+    </li>
+    <li class="numberIcon"><a href="#1_8dojox_grid__Scroller_dummy" class="inline-link"> dummy </a><span></span>
+    </li>
+    <li class="numberIcon"><a href="#1_8dojox_grid__Scroller_firstVisibleRow" class="inline-link"> firstVisibleRow </a><span></span>
+    </li>
+    <li class="numberIcon"><a href="#1_8dojox_grid__Scroller_keepPages" class="inline-link"> keepPages </a><span></span>
+    </li>
+    <li class="numberIcon"><a href="#1_8dojox_grid__Scroller_keepRows" class="inline-link"> keepRows </a><span></span>
+    </li>
+    <li class="numberIcon"><a href="#1_8dojox_grid__Scroller_lastVisibleRow" class="inline-link"> lastVisibleRow </a><span></span>
+    </li>
+    <li class="booleanIcon"><a href="#1_8dojox_grid__Scroller_pacifying" class="inline-link"> pacifying </a><span></span>
+    </li>
+    <li class="numberIcon"><a href="#1_8dojox_grid__Scroller_pacifyTicks" class="inline-link"> pacifyTicks </a><span></span>
+    </li>
+    <li class="numberIcon"><a href="#1_8dojox_grid__Scroller_page" class="inline-link"> page </a><span></span>
+    </li>
+    <li class="numberIcon"><a href="#1_8dojox_grid__Scroller_pageCount" class="inline-link"> pageCount </a><span></span>
+    </li>
+    <li class="numberIcon"><a href="#1_8dojox_grid__Scroller_pageTop" class="inline-link"> pageTop </a><span></span>
+    </li>
+    <li class="numberIcon"><a href="#1_8dojox_grid__Scroller_rowCount" class="inline-link"> rowCount </a><span></span>
+    </li>
+    <li class="objectIcon"><a href="#1_8dojox_grid__Scroller_scrollboxNode" class="inline-link"> scrollboxNode </a><span></span>
+    </li>
+    <li class="numberIcon"><a href="#1_8dojox_grid__Scroller_windowHeight" class="inline-link"> windowHeight </a><span></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dojox_grid__Scroller__getPageCount" class="inline-link"> _getPageCount</a><span class="parameters">(</span>rowCount, rowsPerPage) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_buildPage" class="inline-link"> buildPage</a><span class="parameters">(</span>inPageIndex, inReuseNode, inPos) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_calcLastPageHeight" class="inline-link"> calcLastPageHeight</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>inContentNodes) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_createPageNode" class="inline-link"> createPageNode</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_destroyPage" class="inline-link"> destroyPage</a><span class="parameters">(</span>inPageIndex) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_doPacify" class="inline-link"> doPacify</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_endPacify" class="inline-link"> endPacify</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_findPage" class="inline-link"> findPage</a><span class="parameters">(</span>inTop) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_findScrollTop" class="inline-link"> findScrollTop</a><span class="parameters">(</span>inRow) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_findTopRow" class="inline-link"> findTopRow</a><span class="parameters">(</span>inScrollTop) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_getDefaultNodes" class="inline-link"> getDefaultNodes</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_getDefaultPageNode" class="inline-link"> getDefaultPageNode</a><span class="parameters">(</span>inPageIndex) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_getFirstVisibleRow" class="inline-link"> getFirstVisibleRow</a><span class="parameters">(</span>inPage, inPageTop, inScrollTop) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_getLastPageRow" class="inline-link"> getLastPageRow</a><span class="parameters">(</span>inPage) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_getLastVisibleRow" class="inline-link"> getLastVisibleRow</a><span class="parameters">(</span>inPage, inBottom, inScrollBottom) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_getPageHeight" class="inline-link"> getPageHeight</a><span class="parameters">(</span>inPageIndex) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_getPageNodePosition" class="inline-link"> getPageNodePosition</a><span class="parameters">(</span>inNode) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_getPageRow" class="inline-link"> getPageRow</a><span class="parameters">(</span>inPage) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_getScrollBottom" class="inline-link"> getScrollBottom</a><span class="parameters">(</span>inTop) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_init" class="inline-link"> init</a><span class="parameters">(</span>inRowCount, inKeepRows, inRowsPerPage) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_installPage" class="inline-link"> installPage</a><span class="parameters">(</span>inPageIndex) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_invalidate" class="inline-link"> invalidate</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_invalidateNodes" class="inline-link"> invalidateNodes</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_invalidatePageNode" class="inline-link"> invalidatePageNode</a><span class="parameters">(</span>inPageIndex, inNodes) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_measurePage" class="inline-link"> measurePage</a><span class="parameters">(</span>inPageIndex) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_needPage" class="inline-link"> needPage</a><span class="parameters">(</span>inPageIndex, inPos) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_onscroll" class="inline-link"> onscroll</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_pacify" class="inline-link"> pacify</a><span class="parameters">(</span>inShouldPacify) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_pageExists" class="inline-link"> pageExists</a><span class="parameters">(</span>inPageIndex) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_popPage" class="inline-link"> popPage</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_positionPage" class="inline-link"> positionPage</a><span class="parameters">(</span>inPageIndex, inPos) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_positionPageNode" class="inline-link"> positionPageNode</a><span class="parameters">(</span>inNode, inPos) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_preparePage" class="inline-link"> preparePage</a><span class="parameters">(</span>inPageIndex, inReuseNode) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_processEvent" class="inline-link"> processEvent</a><span class="parameters">(</span>e) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_processNodeEvent" class="inline-link"> processNodeEvent</a><span class="parameters">(</span>e, inNode) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_pushPage" class="inline-link"> pushPage</a><span class="parameters">(</span>inPageIndex) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_removePage" class="inline-link"> removePage</a><span class="parameters">(</span>inPageIndex) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_removeRow" class="inline-link"> removeRow</a><span class="parameters">(</span>inRowIndex) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_renderPage" class="inline-link"> renderPage</a><span class="parameters">(</span>inPageIndex) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_renderRow" class="inline-link"> renderRow</a><span class="parameters">(</span>inRowIndex, inPageNode) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_repositionPages" class="inline-link"> repositionPages</a><span class="parameters">(</span>inPageIndex) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_resize" class="inline-link"> resize</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_rowHeightChanged" class="inline-link"> rowHeightChanged</a><span class="parameters">(</span>inRowIndex, fromAsynRendering) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_scroll" class="inline-link"> scroll</a><span class="parameters">(</span>inTop) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_setContentNodes" class="inline-link"> setContentNodes</a><span class="parameters">(</span>inNodes) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_setKeepInfo" class="inline-link"> setKeepInfo</a><span class="parameters">(</span>inKeepRows) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_setPacifying" class="inline-link"> setPacifying</a><span class="parameters">(</span>inPacifying) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_startPacify" class="inline-link"> startPacify</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_updateContentHeight" class="inline-link"> updateContentHeight</a><span class="parameters">(</span>inDh) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_updatePageHeight" class="inline-link"> updatePageHeight</a><span class="parameters">(</span>inPageIndex, fromBuild, fromAsynRendering) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__Scroller_updateRowCount" class="inline-link"> updateRowCount</a><span class="parameters">(</span>inRowCount) <span></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_averageRowHeight"></a><span class="numberIcon">averageRowHeight</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_contentNode"></a><span class="objectIcon">contentNode</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_defaultPageHeight"></a><span class="numberIcon">defaultPageHeight</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_defaultRowHeight"></a><span class="numberIcon">defaultRowHeight</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_dummy"></a><span class="numberIcon">dummy</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_firstVisibleRow"></a><span class="numberIcon">firstVisibleRow</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_keepPages"></a><span class="numberIcon">keepPages</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_keepRows"></a><span class="numberIcon">keepRows</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_lastVisibleRow"></a><span class="numberIcon">lastVisibleRow</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_pacifying"></a><span class="booleanIcon">pacifying</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_pacifyTicks"></a><span class="numberIcon">pacifyTicks</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_page"></a><span class="numberIcon">page</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_pageCount"></a><span class="numberIcon">pageCount</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_pageTop"></a><span class="numberIcon">pageTop</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_rowCount"></a><span class="numberIcon">rowCount</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_scrollboxNode"></a><span class="objectIcon">scrollboxNode</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_windowHeight"></a><span class="numberIcon">windowHeight</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller__getPageCount"></a><span class="functionIcon">_getPageCount</span><span class="parameters">(rowCount, rowsPerPage)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">rowCount</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">rowsPerPage</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_buildPage"></a><span class="functionIcon">buildPage</span><span class="parameters">(inPageIndex, inReuseNode, inPos)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPageIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inReuseNode</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPos</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_calcLastPageHeight"></a><span class="functionIcon">calcLastPageHeight</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(inContentNodes)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inContentNodes</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_createPageNode"></a><span class="functionIcon">createPageNode</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_destroyPage"></a><span class="functionIcon">destroyPage</span><span class="parameters">(inPageIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPageIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_doPacify"></a><span class="functionIcon">doPacify</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_endPacify"></a><span class="functionIcon">endPacify</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_findPage"></a><span class="functionIcon">findPage</span><span class="parameters">(inTop)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inTop</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_findScrollTop"></a><span class="functionIcon">findScrollTop</span><span class="parameters">(inRow)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRow</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_findTopRow"></a><span class="functionIcon">findTopRow</span><span class="parameters">(inScrollTop)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inScrollTop</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_getDefaultNodes"></a><span class="functionIcon">getDefaultNodes</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_getDefaultPageNode"></a><span class="functionIcon">getDefaultPageNode</span><span class="parameters">(inPageIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPageIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_getFirstVisibleRow"></a><span class="functionIcon">getFirstVisibleRow</span><span class="parameters">(inPage, inPageTop, inScrollTop)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPage</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPageTop</td>
+            <td class="jsdoc-param-type">number</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inScrollTop</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">number | undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_getLastPageRow"></a><span class="functionIcon">getLastPageRow</span><span class="parameters">(inPage)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPage</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_getLastVisibleRow"></a><span class="functionIcon">getLastVisibleRow</span><span class="parameters">(inPage, inBottom, inScrollBottom)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPage</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inBottom</td>
+            <td class="jsdoc-param-type">number</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inScrollBottom</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_getPageHeight"></a><span class="functionIcon">getPageHeight</span><span class="parameters">(inPageIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPageIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_getPageNodePosition"></a><span class="functionIcon">getPageNodePosition</span><span class="parameters">(inNode)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inNode</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_getPageRow"></a><span class="functionIcon">getPageRow</span><span class="parameters">(inPage)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPage</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_getScrollBottom"></a><span class="functionIcon">getScrollBottom</span><span class="parameters">(inTop)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inTop</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_init"></a><span class="functionIcon">init</span><span class="parameters">(inRowCount, inKeepRows, inRowsPerPage)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowCount</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inKeepRows</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowsPerPage</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_installPage"></a><span class="functionIcon">installPage</span><span class="parameters">(inPageIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPageIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_invalidate"></a><span class="functionIcon">invalidate</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_invalidateNodes"></a><span class="functionIcon">invalidateNodes</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_invalidatePageNode"></a><span class="functionIcon">invalidatePageNode</span><span class="parameters">(inPageIndex, inNodes)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPageIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inNodes</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_measurePage"></a><span class="functionIcon">measurePage</span><span class="parameters">(inPageIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPageIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">number | undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_needPage"></a><span class="functionIcon">needPage</span><span class="parameters">(inPageIndex, inPos)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPageIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPos</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_onscroll"></a><span class="functionIcon">onscroll</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_pacify"></a><span class="functionIcon">pacify</span><span class="parameters">(inShouldPacify)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inShouldPacify</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_pageExists"></a><span class="functionIcon">pageExists</span><span class="parameters">(inPageIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPageIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_popPage"></a><span class="functionIcon">popPage</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_positionPage"></a><span class="functionIcon">positionPage</span><span class="parameters">(inPageIndex, inPos)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPageIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPos</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_positionPageNode"></a><span class="functionIcon">positionPageNode</span><span class="parameters">(inNode, inPos)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inNode</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPos</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_preparePage"></a><span class="functionIcon">preparePage</span><span class="parameters">(inPageIndex, inReuseNode)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPageIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inReuseNode</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_processEvent"></a><span class="functionIcon">processEvent</span><span class="parameters">(e)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">e</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_processNodeEvent"></a><span class="functionIcon">processNodeEvent</span><span class="parameters">(e, inNode)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">e</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inNode</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_pushPage"></a><span class="functionIcon">pushPage</span><span class="parameters">(inPageIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPageIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_removePage"></a><span class="functionIcon">removePage</span><span class="parameters">(inPageIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPageIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_removeRow"></a><span class="functionIcon">removeRow</span><span class="parameters">(inRowIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_renderPage"></a><span class="functionIcon">renderPage</span><span class="parameters">(inPageIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPageIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_renderRow"></a><span class="functionIcon">renderRow</span><span class="parameters">(inRowIndex, inPageNode)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPageNode</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_repositionPages"></a><span class="functionIcon">repositionPages</span><span class="parameters">(inPageIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPageIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_resize"></a><span class="functionIcon">resize</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_rowHeightChanged"></a><span class="functionIcon">rowHeightChanged</span><span class="parameters">(inRowIndex, fromAsynRendering)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">fromAsynRendering</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_scroll"></a><span class="functionIcon">scroll</span><span class="parameters">(inTop)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inTop</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_setContentNodes"></a><span class="functionIcon">setContentNodes</span><span class="parameters">(inNodes)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inNodes</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_setKeepInfo"></a><span class="functionIcon">setKeepInfo</span><span class="parameters">(inKeepRows)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inKeepRows</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_setPacifying"></a><span class="functionIcon">setPacifying</span><span class="parameters">(inPacifying)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPacifying</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_startPacify"></a><span class="functionIcon">startPacify</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_updateContentHeight"></a><span class="functionIcon">updateContentHeight</span><span class="parameters">(inDh)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inDh</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_updatePageHeight"></a><span class="functionIcon">updatePageHeight</span><span class="parameters">(inPageIndex, fromBuild, fromAsynRendering)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inPageIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">fromBuild</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">fromAsynRendering</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | number</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__Scroller_updateRowCount"></a><span class="functionIcon">updateRowCount</span><span class="parameters">(inRowCount)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_Scroller" class="jsdoc-link">dojox/grid/_Scroller</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowCount</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

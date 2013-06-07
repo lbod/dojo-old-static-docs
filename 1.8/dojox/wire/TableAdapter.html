@@ -1,0 +1,489 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/wire/TableAdapter</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/wire/TableAdapter<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-mixins">
+  <label>Extends </label><a href="/api/1.8/dojox/wire/CompositeWire" class="jsdoc-link">dojox/wire/CompositeWire,   </a>
+</div>
+<div class="jsdoc-full-summary"><p>A composite Wire for table rows</p>
+</div>
+<div class="jsdoc-full-summary"><p>This class has multiple child Wires for object properties or array
+elements of a table row.
+The root object for this class must be an array.
+When an object with Wires is specified to &#39;columns&#39; property, they
+are used to get a row object with property values.
+When an array of Wires is specified to &#39;columns&#39; property, they
+are used to get a row array with element values.
+The row values are returned in an array.
+This class only supports getValue(), but not setValue().</p>
+</div>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/wire/TableAdapter<span class="parameters">(args);</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/wire/TableAdapter">dojox/wire/TableAdapter</a></div>
+<div class="jsdoc-summary"><p>If object properties or array elements specified in &#39;columns&#39;
+property are not Wires, Wires are created from them as
+arguments, with &#39;parent&#39; property set to this Wire instance.</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">args</td>
+    <td class="jsdoc-param-type">Object</td>
+    <td class="jsdoc-param-description"><p>Arguments to initialize properties:
+
+</p>
+<ul>
+<li>columns: An object or array containing child Wires for column values</li>
+</ul>
+ 
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojox/wire.html" target="_blank">dojox/wire/TableAdapter reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="stringIcon private"><a href="#1_8dojox_wire_TableAdapter__wireClass" class="inline-link"> _wireClass </a><span></span><span title="private" class="jsdoc-private"></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private inherited"><a href="#1_8dojox_wire_TableAdapter__getPropertyValue" class="inline-link"> _getPropertyValue</a><span class="parameters">(</span>object, property) <span>Return a property value of an object</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/wire/Wire" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_wire_TableAdapter__getRow" class="inline-link"> _getRow</a><span class="parameters">(</span>object) <span>Return an array or object for a table row</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_wire_TableAdapter__getValue" class="inline-link"> _getValue</a><span class="parameters">(</span>object) <span>Return an array of table row value (object or array)</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_wire_TableAdapter__initializeChildren" class="inline-link"> _initializeChildren</a><span class="parameters">(</span>children) <span>Initialize child Wires</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/wire/CompositeWire" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_wire_TableAdapter__setPropertyValue" class="inline-link"> _setPropertyValue</a><span class="parameters">(</span>object, property, value) <span>Set a property value to an object</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/wire/Wire" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_wire_TableAdapter__setValue" class="inline-link"> _setValue</a><span class="parameters">(</span>object, value) <span>Not supported</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_wire_TableAdapter__useAttr" class="inline-link"> _useAttr</a><span class="parameters">(</span>object) <span>Function to detect if dijit.attr support exists on the target</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/wire/Wire" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_wire_TableAdapter__useGet" class="inline-link"> _useGet</a><span class="parameters">(</span>object) <span>Function to detect if dijit.get support exists on the target</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/wire/Wire" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_wire_TableAdapter__useSet" class="inline-link"> _useSet</a><span class="parameters">(</span>object) <span>Function to detect if dijit.set support exists on the target</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/wire/Wire" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_wire_TableAdapter_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span>Initialize properties</span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_wire_TableAdapter_getValue" class="inline-link"> getValue</a><span class="parameters">(</span>defaultObject) <span>Return a value of an object</span><span title="inherited from dojox/wire/Wire" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_wire_TableAdapter_setValue" class="inline-link"> setValue</a><span class="parameters">(</span>value, defaultObject) <span>Set a value to an object</span><span title="inherited from dojox/wire/Wire" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_wire_TableAdapter__wireClass"></a><span class="stringIcon">_wireClass</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/wire/TableAdapter" class="jsdoc-link">dojox/wire/TableAdapter</a>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_wire_TableAdapter__getPropertyValue"></a><span class="functionIcon">_getPropertyValue</span><span class="parameters">(object, property)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/wire/Wire" class="jsdoc-link">dojox/wire/Wire</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Return a property value of an object</p>
+</div>
+        <div class="jsdoc-full-summary"><p>A value for &#39;property&#39; of &#39;object&#39; is returned.
+If &#39;property&#39; ends with an array index, it is used to indentify
+an element of an array property.
+If &#39;object&#39; implements getPropertyValue(), it is called with
+&#39;property&#39; to obtain the property value.
+If &#39;object&#39; implements a getter for the property, it is called
+to obtain the property value.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">object</td>
+            <td class="jsdoc-param-type">Object | Array</td>
+            <td class="jsdoc-param-description"><p>A default root object</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">property</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>A property name</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
+        <div class="jsdoc-return-description">A value found, otherwise 'undefined'</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_wire_TableAdapter__getRow"></a><span class="functionIcon">_getRow</span><span class="parameters">(object)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/wire/TableAdapter" class="jsdoc-link">dojox/wire/TableAdapter</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Return an array or object for a table row</p>
+</div>
+        <div class="jsdoc-full-summary"><p>This method calls getValue() method of the child Wires to
+create a row object or array.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">object</td>
+            <td class="jsdoc-param-type">Object | Array</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | object</span></div>
+        <div class="jsdoc-return-description">An array or object for a table row</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_wire_TableAdapter__getValue"></a><span class="functionIcon">_getValue</span><span class="parameters">(object)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/wire/TableAdapter" class="jsdoc-link">dojox/wire/TableAdapter</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Return an array of table row value (object or array)</p>
+</div>
+        <div class="jsdoc-full-summary"><p>This method iterates over an array specified to &#39;object&#39;
+argument and calls getValue() method of the child Wires with
+each element of the array to get a row object or array.
+Finally, an array with the row objects or arrays are retuned.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">object</td>
+            <td class="jsdoc-param-type">Array</td>
+            <td class="jsdoc-param-description"><p>A root array</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | Array</span></div>
+        <div class="jsdoc-return-description">An array of table row value</div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_wire_TableAdapter__initializeChildren"></a><span class="functionIcon">_initializeChildren</span><span class="parameters">(children)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/wire/CompositeWire" class="jsdoc-link">dojox/wire/CompositeWire</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Initialize child Wires</p>
+</div>
+        <div class="jsdoc-full-summary"><p>If object properties or array elements specified in &#39;children&#39;
+argument are not Wires, Wires are created from them as
+arguments, with &#39;parent&#39; property set to this Wire instance.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">children</td>
+            <td class="jsdoc-param-type">Object | Array</td>
+            <td class="jsdoc-param-description"><p>An object or array containing child Wires</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_wire_TableAdapter__setPropertyValue"></a><span class="functionIcon">_setPropertyValue</span><span class="parameters">(object, property, value)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/wire/Wire" class="jsdoc-link">dojox/wire/Wire</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Set a property value to an object</p>
+</div>
+        <div class="jsdoc-full-summary"><p>&#39;value&#39; is set to &#39;property&#39; of &#39;object&#39;.
+If &#39;property&#39; ends with an array index, it is used to indentify
+an element of an array property to set the value.
+If &#39;object&#39; implements setPropertyValue(), it is called with
+&#39;property&#39; and &#39;value&#39; to set the property value.
+If &#39;object&#39; implements a setter for the property, it is called
+with &#39;value&#39; to set the property value.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">object</td>
+            <td class="jsdoc-param-type">Object | Array</td>
+            <td class="jsdoc-param-description"><p>An object</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">property</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>A property name</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">anything</td>
+            <td class="jsdoc-param-description"><p>A value to set</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_wire_TableAdapter__setValue"></a><span class="functionIcon">_setValue</span><span class="parameters">(object, value)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/wire/TableAdapter" class="jsdoc-link">dojox/wire/TableAdapter</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Not supported</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">object</td>
+            <td class="jsdoc-param-type">Array</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">Array</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_wire_TableAdapter__useAttr"></a><span class="functionIcon">_useAttr</span><span class="parameters">(object)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/wire/Wire" class="jsdoc-link">dojox/wire/Wire</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Function to detect if dijit.attr support exists on the target</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">object</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description"><p>The target object to set the property of.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_wire_TableAdapter__useGet"></a><span class="functionIcon">_useGet</span><span class="parameters">(object)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/wire/Wire" class="jsdoc-link">dojox/wire/Wire</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Function to detect if dijit.get support exists on the target</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">object</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description"><p>The target object to set the property of.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_wire_TableAdapter__useSet"></a><span class="functionIcon">_useSet</span><span class="parameters">(object)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/wire/Wire" class="jsdoc-link">dojox/wire/Wire</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Function to detect if dijit.set support exists on the target</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">object</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description"><p>The target object to set the property of.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_wire_TableAdapter_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(args)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/wire/TableAdapter" class="jsdoc-link">dojox/wire/TableAdapter</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Initialize properties</p>
+</div>
+        <div class="jsdoc-full-summary"><p>If object properties or array elements specified in &#39;columns&#39;
+property are not Wires, Wires are created from them as
+arguments, with &#39;parent&#39; property set to this Wire instance.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">args</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>Arguments to initialize properties:
+
+</p>
+<ul>
+<li>columns: An object or array containing child Wires for column values</li>
+</ul>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_wire_TableAdapter_getValue"></a><span class="functionIcon">getValue</span><span class="parameters">(defaultObject)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/wire/Wire" class="jsdoc-link">dojox/wire/Wire</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Return a value of an object</p>
+</div>
+        <div class="jsdoc-full-summary"><p>This method first determines a root object as follows:
+
+</p>
+<ol>
+<li>If &#39;object&#39; property specified,
+1.1 If &#39;object&#39; is a Wire, its getValue() method is called to
+obtain a root object.
+1.2 Otherwise, use &#39;object&#39; as a root object.</li>
+<li>Otherwise, use &#39;defaultObject&#39; argument.</li>
+<li>If &#39;property&#39; is specified, it is used to get a property
+value.</li>
+</ol>
+<p>Then, if a sub-class implements _getValue() method, it is
+called with the root object to get the return value.
+Otherwise, the root object (typically, a property valye) is
+used for the return value.
+Finally, if &#39;type&#39; property is specified, the return value is
+converted to the specified primitive type (&quot;string&quot;, &quot;number&quot;,
+&quot;boolean&quot; and &quot;array&quot;).
+If &#39;converter&#39; property is specified, its convert() method is
+called to convert the value.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">defaultObject</td>
+            <td class="jsdoc-param-type">Object | Array</td>
+            <td class="jsdoc-param-description"><p>A default root object</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
+        <div class="jsdoc-return-description">A value found</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_wire_TableAdapter_setValue"></a><span class="functionIcon">setValue</span><span class="parameters">(value, defaultObject)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/wire/Wire" class="jsdoc-link">dojox/wire/Wire</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Set a value to an object</p>
+</div>
+        <div class="jsdoc-full-summary"><p>This method first determines a root object as follows:
+
+</p>
+<ol>
+<li>If &#39;object&#39; property specified,
+1.1 If &#39;object&#39; is a Wire, its getValue() method is called to
+obtain a root object.
+1.2 Otherwise, use &#39;object&#39; as a root object.</li>
+<li>Otherwise, use &#39;defaultObject&#39; argument.</li>
+<li>If &#39;property&#39; is specified, it is used to get a property
+value.</li>
+</ol>
+<p>Then, if a sub-class implements _setValue() method, it is
+called with the root object and &#39;value&#39; argument to set
+the value.
+Otherwise, &#39;value&#39; is set to a property specified with
+&#39;property&#39; property.
+If the root object is undefined and &#39;object&#39; property is a Wire
+and a new object is created and returned by _setValue() it is
+set through &#39;object&#39; (setValue() method).</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">anything</td>
+            <td class="jsdoc-param-description"><p>A value to set</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">defaultObject</td>
+            <td class="jsdoc-param-type">Object | Array</td>
+            <td class="jsdoc-param-description"><p>A default root object</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

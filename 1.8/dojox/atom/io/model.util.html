@@ -1,0 +1,124 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/atom/io/model.util</div>
+<h1 class="objectIcon36 jsdoc-title">dojox/atom/io/model.util<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon  inherited"><a href="#1_8dojox_atom_io_model_util_createDate" class="inline-link"> createDate</a><span class="parameters">(</span>node) <span>Utility function to create a date from a DOM node&#39;s text content.</span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_atom_io_model_util_escapeHtml" class="inline-link"> escapeHtml</a><span class="parameters">(</span>str) <span>Utility function to escape XML special characters in an HTML string.</span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_atom_io_model_util_getNodename" class="inline-link"> getNodename</a><span class="parameters">(</span>node) <span>Utility function to get a node name and deal with IE&#39;s bad handling of namespaces
+on tag names.</span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_atom_io_model_util_unEscapeHtml" class="inline-link"> unEscapeHtml</a><span class="parameters">(</span>str) <span>Utility function to un-escape XML special characters in an HTML string.</span><span title="inherited from dojox/atom/io/model" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_util_createDate"></a><span class="functionIcon">createDate</span><span class="parameters">(node)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Utility function to create a date from a DOM node&#39;s text content.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">node</td>
+            <td class="jsdoc-param-type">DOMNode</td>
+            <td class="jsdoc-param-description"><p>The DOM node to inspect.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined | null</span></div>
+        <div class="jsdoc-return-description">Date object from a DOM Node containing a ISO-8610 string.</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_util_escapeHtml"></a><span class="functionIcon">escapeHtml</span><span class="parameters">(str)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Utility function to escape XML special characters in an HTML string.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">str</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The string to escape</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
+        <div class="jsdoc-return-description">HTML String with special characters (<,>,&, ", etc,) escaped.</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_util_getNodename"></a><span class="functionIcon">getNodename</span><span class="parameters">(node)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Utility function to get a node name and deal with IE&#39;s bad handling of namespaces
+on tag names.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">node</td>
+            <td class="jsdoc-param-type">DOMNode</td>
+            <td class="jsdoc-param-description"><p>The DOM node whose name to retrieve.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">String | undefined</span></div>
+        <div class="jsdoc-return-description">The name without namespace prefixes.</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_atom_io_model_util_unEscapeHtml"></a><span class="functionIcon">unEscapeHtml</span><span class="parameters">(str)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/atom/io/model" class="jsdoc-link">dojox/atom/io/model</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Utility function to un-escape XML special characters in an HTML string.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">str</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The string to un-escape.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
+        <div class="jsdoc-return-description">HTML String converted back to the normal text (unescaped) characters (<,>,&, ", etc,).</div>
+      </div>
+    </div>
+  </div>
+</div>

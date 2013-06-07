@@ -1,0 +1,293 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/geo/openlayers/Layer</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/geo/openlayers/Layer<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>Base layer class for dojox.geo.openlayers.Map specific layers extending OpenLayers.Layer class.
+This layer class accepts Features which encapsulates graphic objects to be added to the map.
+This layer class encapsulates an OpenLayers.Layer.
+This class provides Feature management such as add, remove and feature access.</p>
+</div>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/geo/openlayers/Layer<span class="parameters">(name,options);</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/geo/openlayers/Layer">dojox/geo/openlayers/Layer</a></div>
+<div class="jsdoc-summary"><p>Constructs a new Layer.</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">name</td>
+    <td class="jsdoc-param-type">String</td>
+    <td class="jsdoc-param-description"><p>The name of the layer.</p>
+ 
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">options</td>
+    <td class="jsdoc-param-type">Object</td>
+    <td class="jsdoc-param-description"><p>Options passed to the underlying OpenLayers.Layer object.</p>
+ 
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojox/geo/openlayers.html" target="_blank">dojox/geo/openlayers/Layer reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers_Layer_added" class="inline-link"> added</a><span class="parameters">(</span>) <span>Called when the layer is added to the map</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers_Layer_addFeature" class="inline-link"> addFeature</a><span class="parameters">(</span>f) <span>Add a feature or an array of features to the layer.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers_Layer_clear" class="inline-link"> clear</a><span class="parameters">(</span>) <span>Removes all the features from this layer.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers_Layer_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>name, options) <span>Constructs a new Layer.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers_Layer_getDojoMap" class="inline-link"> getDojoMap</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers_Layer_getFeatureAt" class="inline-link"> getFeatureAt</a><span class="parameters">(</span>i) <span>Returns the i-th feature of this layer.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers_Layer_getFeatureCount" class="inline-link"> getFeatureCount</a><span class="parameters">(</span>) <span>Returns the number of the features contained by this layer.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers_Layer_getFeatures" class="inline-link"> getFeatures</a><span class="parameters">(</span>) <span>Returns the feature hold by this layer.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers_Layer_moveTo" class="inline-link"> moveTo</a><span class="parameters">(</span>event) <span>Called when the layer is panned or zoomed.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers_Layer_redraw" class="inline-link"> redraw</a><span class="parameters">(</span>) <span>Redraws this layer</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers_Layer_removeFeature" class="inline-link"> removeFeature</a><span class="parameters">(</span>f) <span>Removes a feature or an array of features from the layer.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers_Layer_removeFeatureAt" class="inline-link"> removeFeatureAt</a><span class="parameters">(</span>index) <span>Remove the feature at the specified index.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers_Layer_renderFeature" class="inline-link"> renderFeature</a><span class="parameters">(</span>f) <span>Called when rendering a feature is necessary.</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_Layer_added"></a><span class="functionIcon">added</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/openlayers/Layer" class="jsdoc-link">dojox/geo/openlayers/Layer</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Called when the layer is added to the map</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_Layer_addFeature"></a><span class="functionIcon">addFeature</span><span class="parameters">(f)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/openlayers/Layer" class="jsdoc-link">dojox/geo/openlayers/Layer</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Add a feature or an array of features to the layer.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">f</td>
+            <td class="jsdoc-param-type">Feature | Feature[]</td>
+            <td class="jsdoc-param-description"><p>The Feature or array of features to add.</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_Layer_clear"></a><span class="functionIcon">clear</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/openlayers/Layer" class="jsdoc-link">dojox/geo/openlayers/Layer</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Removes all the features from this layer.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_Layer_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(name, options)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/openlayers/Layer" class="jsdoc-link">dojox/geo/openlayers/Layer</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Constructs a new Layer.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The name of the layer.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">options</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>Options passed to the underlying OpenLayers.Layer object.</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_Layer_getDojoMap"></a><span class="functionIcon">getDojoMap</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/openlayers/Layer" class="jsdoc-link">dojox/geo/openlayers/Layer</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_Layer_getFeatureAt"></a><span class="functionIcon">getFeatureAt</span><span class="parameters">(i)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/openlayers/Layer" class="jsdoc-link">dojox/geo/openlayers/Layer</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Returns the i-th feature of this layer.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">i</td>
+            <td class="jsdoc-param-type">Number</td>
+            <td class="jsdoc-param-description"><p>The index of the feature to return.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
+        <div class="jsdoc-return-description">The i-th feature of this layer.</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_Layer_getFeatureCount"></a><span class="functionIcon">getFeatureCount</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/openlayers/Layer" class="jsdoc-link">dojox/geo/openlayers/Layer</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Returns the number of the features contained by this layer.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | number | undefined</span></div>
+        <div class="jsdoc-return-description">The number of the features contained by this layer.</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_Layer_getFeatures"></a><span class="functionIcon">getFeatures</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/openlayers/Layer" class="jsdoc-link">dojox/geo/openlayers/Layer</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Returns the feature hold by this layer.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
+        <div class="jsdoc-return-description">The untouched array of features hold by this layer.</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_Layer_moveTo"></a><span class="functionIcon">moveTo</span><span class="parameters">(event)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/openlayers/Layer" class="jsdoc-link">dojox/geo/openlayers/Layer</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Called when the layer is panned or zoomed.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">event</td>
+            <td class="jsdoc-param-type">MouseEvent</td>
+            <td class="jsdoc-param-description"><p>The event</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_Layer_redraw"></a><span class="functionIcon">redraw</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/openlayers/Layer" class="jsdoc-link">dojox/geo/openlayers/Layer</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Redraws this layer</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_Layer_removeFeature"></a><span class="functionIcon">removeFeature</span><span class="parameters">(f)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/openlayers/Layer" class="jsdoc-link">dojox/geo/openlayers/Layer</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Removes a feature or an array of features from the layer.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">f</td>
+            <td class="jsdoc-param-type">Feature | Feature[]</td>
+            <td class="jsdoc-param-description"><p>The Feature or array of features to remove.</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_Layer_removeFeatureAt"></a><span class="functionIcon">removeFeatureAt</span><span class="parameters">(index)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/openlayers/Layer" class="jsdoc-link">dojox/geo/openlayers/Layer</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Remove the feature at the specified index.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">index</td>
+            <td class="jsdoc-param-type">int</td>
+            <td class="jsdoc-param-description"><p>The index of the feature to remove.</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_Layer_renderFeature"></a><span class="functionIcon">renderFeature</span><span class="parameters">(f)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/openlayers/Layer" class="jsdoc-link">dojox/geo/openlayers/Layer</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Called when rendering a feature is necessary.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">f</td>
+            <td class="jsdoc-param-type">dojox/geo/openlayers/Feature</td>
+            <td class="jsdoc-param-description"><p>The feature to draw.</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

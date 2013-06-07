@@ -1,0 +1,122 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/app/model</div>
+<h1 class="functionIcon36 jsdoc-title">dojox/app/model<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>model is called to create all of the models for the app, and all models for a view, it will
+create and call the appropriate model utility based upon the modelLoader set in the model in the config</p>
+</div>
+<div class="jsdoc-full-summary"><p>Called for each view or for the app.  For each model in the config, it will
+create the model utility based upon the modelLoader and call it to create and load the model.</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">config</td>
+    <td class="jsdoc-param-type">Object</td>
+    <td class="jsdoc-param-description"><p>The models section of the config for this view or for the app.</p>
+ 
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">parent</td>
+    <td class="jsdoc-param-type">Object</td>
+    <td class="jsdoc-param-description"><p>The parent of this view or the app itself, so that models from the parent will be 
+available to the view.</p>
+ 
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">app</td>
+    <td class="jsdoc-param-type">Object</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojox/app/model.html" target="_blank">dojox/app/model reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="objectIcon"><a href="#1_8dojox_app_model_app" class="inline-link"> app </a><span></span>
+    </li>
+    <li class="numberIcon"><a href="#1_8dojox_app_model_defCount" class="inline-link"> defCount </a><span></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_app_model_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>config, parent, app) <span>model is called to create all of the models for the app, and all models for a view, it will
+create and call the appropriate model utility based upon the modelLoader set in the model in the config</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field public extension-module">
+        <div class="jsdoc-title"><a name="1_8dojox_app_model_app"></a><span class="objectIcon">app</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/app/View" class="jsdoc-link">dojox/app/View</a><span title="Must manually require () dojox/app/View to access" class="jsdoc-extension"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public extension-module">
+        <div class="jsdoc-title"><a name="1_8dojox_app_model_defCount"></a><span class="numberIcon">defCount</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/app/View" class="jsdoc-link">dojox/app/View</a><span title="Must manually require () dojox/app/View to access" class="jsdoc-extension"></span>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_app_model_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(config, parent, app)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/app/model" class="jsdoc-link">dojox/app/model</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>model is called to create all of the models for the app, and all models for a view, it will
+create and call the appropriate model utility based upon the modelLoader set in the model in the config</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Called for each view or for the app.  For each model in the config, it will
+create the model utility based upon the modelLoader and call it to create and load the model.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">config</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>The models section of the config for this view or for the app.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">parent</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>The parent of this view or the app itself, so that models from the parent will be 
+available to the view.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">app</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">loadedModels | object | instance | undefined</span></div>
+        <div class="jsdoc-return-description">loadedModels is an object holding all of the available loaded models for this view.</div>
+      </div>
+    </div>
+  </div>
+</div>

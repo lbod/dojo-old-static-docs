@@ -1,0 +1,256 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/form/uploader/plugins/HTML5</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/form/uploader/plugins/HTML5<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>A plugin for dojox.form.Uploader that adds HTML5 multiple-file upload capabilities and
+progress events.
+</p>
+</div>
+<div class="jsdoc-full-summary"><p>Add this plugin to have HTML5 capabilities in the Uploader. Note that it does not add
+these capabilities to browsers that don&#39;t support them. For IE or older browsers, add
+additional plugins: IFrame or Flash.
+
+</p>
+<p>Version: 1.6</p>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="stringIcon"><a href="#1_8dojox_form_uploader_plugins_HTML5_errMsg" class="inline-link"> errMsg </a><span></span>
+    </li>
+    <li class="stringIcon"><a href="#1_8dojox_form_uploader_plugins_HTML5_uploadType" class="inline-link"> uploadType </a><span></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dojox_form_uploader_plugins_HTML5__buildRequestBody" class="inline-link"> _buildRequestBody</a><span class="parameters">(</span>data, boundary) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_form_uploader_plugins_HTML5__drop" class="inline-link"> _drop</a><span class="parameters">(</span>e) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_form_uploader_plugins_HTML5__xhrProgress" class="inline-link"> _xhrProgress</a><span class="parameters">(</span>evt) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_form_uploader_plugins_HTML5_addDropTarget" class="inline-link"> addDropTarget</a><span class="parameters">(</span>node, onlyConnectDrop) <span>Add a dom node which will act as the drop target area so user
+can drop files to this node.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_form_uploader_plugins_HTML5_createXhr" class="inline-link"> createXhr</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_form_uploader_plugins_HTML5_postCreate" class="inline-link"> postCreate</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_form_uploader_plugins_HTML5_sendAsBinary" class="inline-link"> sendAsBinary</a><span class="parameters">(</span>data) <span>Used primarily in FF &lt; 4.0.</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_form_uploader_plugins_HTML5_upload" class="inline-link"> upload</a><span class="parameters">(</span>formData) <span>See: dojox.form.Uploader.upload</span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_form_uploader_plugins_HTML5_uploadWithFormData" class="inline-link"> uploadWithFormData</a><span class="parameters">(</span>data) <span>Used with WebKit and Firefox 4+
+Upload files using the much friendlier FormData browser object.</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_form_uploader_plugins_HTML5_errMsg"></a><span class="stringIcon">errMsg</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/form/uploader/plugins/HTML5" class="jsdoc-link">dojox/form/uploader/plugins/HTML5</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_form_uploader_plugins_HTML5_uploadType"></a><span class="stringIcon">uploadType</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/form/uploader/plugins/HTML5" class="jsdoc-link">dojox/form/uploader/plugins/HTML5</a>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_form_uploader_plugins_HTML5__buildRequestBody"></a><span class="functionIcon">_buildRequestBody</span><span class="parameters">(data, boundary)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/form/uploader/plugins/HTML5" class="jsdoc-link">dojox/form/uploader/plugins/HTML5</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">data</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">boundary</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean | string</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_form_uploader_plugins_HTML5__drop"></a><span class="functionIcon">_drop</span><span class="parameters">(e)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/form/uploader/plugins/HTML5" class="jsdoc-link">dojox/form/uploader/plugins/HTML5</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">e</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_form_uploader_plugins_HTML5__xhrProgress"></a><span class="functionIcon">_xhrProgress</span><span class="parameters">(evt)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/form/uploader/plugins/HTML5" class="jsdoc-link">dojox/form/uploader/plugins/HTML5</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evt</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_form_uploader_plugins_HTML5_addDropTarget"></a><span class="functionIcon">addDropTarget</span><span class="parameters">(node, onlyConnectDrop)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/form/uploader/plugins/HTML5" class="jsdoc-link">dojox/form/uploader/plugins/HTML5</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Add a dom node which will act as the drop target area so user
+can drop files to this node.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>If onlyConnectDrop is true, dragenter/dragover/dragleave events
+won&#39;t be connected to dojo.stopEvent, and they need to be
+canceled by user code to allow DnD files to happen.
+This API is only available in HTML5 plugin (only HTML5 allows
+DnD files).</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">node</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">onlyConnectDrop</td>
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_form_uploader_plugins_HTML5_createXhr"></a><span class="functionIcon">createXhr</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/form/uploader/plugins/HTML5" class="jsdoc-link">dojox/form/uploader/plugins/HTML5</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">instance</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_form_uploader_plugins_HTML5_postCreate"></a><span class="functionIcon">postCreate</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/form/uploader/plugins/HTML5" class="jsdoc-link">dojox/form/uploader/plugins/HTML5</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_form_uploader_plugins_HTML5_sendAsBinary"></a><span class="functionIcon">sendAsBinary</span><span class="parameters">(data)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/form/uploader/plugins/HTML5" class="jsdoc-link">dojox/form/uploader/plugins/HTML5</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Used primarily in FF &lt; 4.0. Sends files and form object as binary data, written to
+still enable use of $_FILES in PHP (or equivalent).</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">data</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_form_uploader_plugins_HTML5_upload"></a><span class="functionIcon">upload</span><span class="parameters">(formData)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/form/uploader/plugins/HTML5" class="jsdoc-link">dojox/form/uploader/plugins/HTML5</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>See: dojox.form.Uploader.upload</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">formData</td>
+            <td class="jsdoc-param-type">Object </td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_form_uploader_plugins_HTML5_uploadWithFormData"></a><span class="functionIcon">uploadWithFormData</span><span class="parameters">(data)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/form/uploader/plugins/HTML5" class="jsdoc-link">dojox/form/uploader/plugins/HTML5</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Used with WebKit and Firefox 4+
+Upload files using the much friendlier FormData browser object.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">data</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

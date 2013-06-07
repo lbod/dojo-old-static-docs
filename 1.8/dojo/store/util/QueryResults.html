@@ -1,0 +1,106 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/store/util/QueryResults</div>
+<h1 class="functionIcon36 jsdoc-title">dojo/store/util/QueryResults<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>A function that wraps the results of a store query with additional
+methods.</p>
+</div>
+<div class="jsdoc-full-summary"><p>QueryResults is a basic wrapper that allows for array-like iteration
+over any kind of returned data from a query.  While the simplest store
+will return a plain array of data, other stores may return deferreds or
+promises; this wrapper makes sure that <em>all</em> results can be treated
+the same.
+
+</p>
+<p>Additional methods include <code>forEach</code>, <code>filter</code> and <code>map</code>.</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">results</td>
+    <td class="jsdoc-param-type">Array | dojo/promise/Promise</td>
+    <td class="jsdoc-param-description"><p>The result set as an array, or a promise for an array.</p>
+ 
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojo/store/util/QueryResults.html" target="_blank">dojo/store/util/QueryResults reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<div class="jsdoc-examples">
+  <h2>Examples</h2>
+  <div class="jsdoc-example">
+    <h3>Example 1</h3><p>Query a store and iterate over the results.
+
+</p>
+<pre><code>  store.query({ prime: true }).forEach(function(item){
+    //  do something
+  });</code></pre>
+
+  </div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojo_store_util_QueryResults_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>results) <span>A function that wraps the results of a store query with additional
+methods.</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_store_util_QueryResults_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(results)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/store/util/QueryResults" class="jsdoc-link">dojo/store/util/QueryResults</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>A function that wraps the results of a store query with additional
+methods.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>QueryResults is a basic wrapper that allows for array-like iteration
+over any kind of returned data from a query.  While the simplest store
+will return a plain array of data, other stores may return deferreds or
+promises; this wrapper makes sure that <em>all</em> results can be treated
+the same.
+
+</p>
+<p>Additional methods include <code>forEach</code>, <code>filter</code> and <code>map</code>.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">results</td>
+            <td class="jsdoc-param-type">Array | dojo/promise/Promise</td>
+            <td class="jsdoc-param-description"><p>The result set as an array, or a promise for an array.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | Array|<a class="jsdoc-link" href="/api/1.8/dojo/promise/Promise">dojo/promise/Promise</a> | undefined</span></div>
+        <div class="jsdoc-return-description">An array-like object that can be used for iterating over.</div>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><p>Query a store and iterate over the results.
+
+</p>
+<pre><code>  store.query({ prime: true }).forEach(function(item){
+    //  do something
+  });</code></pre>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

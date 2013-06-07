@@ -1,0 +1,109 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/lang/functional/tailrec</div>
+<h1 class="functionIcon36 jsdoc-title">dojox/lang/functional/tailrec<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>Generates a function for the tail recursion pattern. This is the simplified
+version of the linear recursive combinator without the &quot;after&quot; function,
+and with the modified &quot;before&quot; function. All parameter functions are called
+in the context of &quot;this&quot; object.</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">cond</td>
+    <td class="jsdoc-param-type">Function | String | Array</td>
+    <td class="jsdoc-param-description"><p>The lambda expression, which is used to detect the termination of recursion.
+It accepts the same parameter as the generated recursive function itself.
+This function should return &quot;true&quot;, if the recursion should be stopped,
+and the &quot;then&quot; part should be executed. Otherwise the recursion will proceed.</p>
+ 
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">then</td>
+    <td class="jsdoc-param-type">Function | String | Array</td>
+    <td class="jsdoc-param-description"><p>The lambda expression, which is called upon termination of the recursion.
+It accepts the same parameters as the generated recursive function itself.
+The returned value will be returned as the value of the generated function.</p>
+ 
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">before</td>
+    <td class="jsdoc-param-type">Function | String | Array</td>
+    <td class="jsdoc-param-description"><p>The lambda expression, which is called before the recursive step.
+It accepts the same parameter as the generated recursive function itself,
+and returns an array of arguments for the next recursive call of
+the generated function.</p>
+ 
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojox/lang/functional.html" target="_blank">dojox/lang/functional/tailrec reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_lang_functional_tailrec_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>cond, then, before) <span>Generates a function for the tail recursion pattern.</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_lang_functional_tailrec_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(cond, then, before)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/lang/functional/tailrec" class="jsdoc-link">dojox/lang/functional/tailrec</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Generates a function for the tail recursion pattern. This is the simplified
+version of the linear recursive combinator without the &quot;after&quot; function,
+and with the modified &quot;before&quot; function. All parameter functions are called
+in the context of &quot;this&quot; object.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">cond</td>
+            <td class="jsdoc-param-type">Function | String | Array</td>
+            <td class="jsdoc-param-description"><p>The lambda expression, which is used to detect the termination of recursion.
+It accepts the same parameter as the generated recursive function itself.
+This function should return &quot;true&quot;, if the recursion should be stopped,
+and the &quot;then&quot; part should be executed. Otherwise the recursion will proceed.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">then</td>
+            <td class="jsdoc-param-type">Function | String | Array</td>
+            <td class="jsdoc-param-description"><p>The lambda expression, which is called upon termination of the recursion.
+It accepts the same parameters as the generated recursive function itself.
+The returned value will be returned as the value of the generated function.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">before</td>
+            <td class="jsdoc-param-type">Function | String | Array</td>
+            <td class="jsdoc-param-description"><p>The lambda expression, which is called before the recursive step.
+It accepts the same parameter as the generated recursive function itself,
+and returns an array of arguments for the next recursive call of
+the generated function.</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,91 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/Evented</div>
+<h1 class="functionIcon36 jsdoc-title">dojo/Evented<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>A class that can be used as a mixin or base class,
+to add on() and emit() methods to a class
+for listening for events and emitting events:
+
+</p>
+<pre><code>  define([&quot;dojo/Evented&quot;], function(Evented){
+    var EventedWidget = dojo.declare([Evented, dijit._Widget], {...});
+    widget = new EventedWidget();
+    widget.on(&quot;open&quot;, function(event){
+    ... do something with event
+   });
+
+  widget.emit(&quot;open&quot;, {name:&quot;some event&quot;, ...});</pre></code>
+</div>
+<p>See the <a href="/reference-guide/1.8/dojo/Evented.html" target="_blank">dojo/Evented reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojo_Evented_emit" class="inline-link"> emit</a><span class="parameters">(</span>type, event) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojo_Evented_on" class="inline-link"> on</a><span class="parameters">(</span>type, listener) <span></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_Evented_emit"></a><span class="functionIcon">emit</span><span class="parameters">(type, event)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/Evented" class="jsdoc-link">dojo/Evented</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">event</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_Evented_on"></a><span class="functionIcon">on</span><span class="parameters">(type, listener)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/Evented" class="jsdoc-link">dojo/Evented</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">listener</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+    </div>
+  </div>
+</div>

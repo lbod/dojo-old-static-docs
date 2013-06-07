@@ -1,0 +1,90 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/node</div>
+<h1 class="objectIcon36 jsdoc-title">dojo/node<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>This AMD plugin module allows native Node.js modules to be loaded by AMD modules using the Dojo
+loader. Note that this plugin will not work with AMD loaders other than the Dojo loader.</p>
+</div>
+<p>See the <a href="/reference-guide/1.8/dojo/node.html" target="_blank">dojo/node reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<div class="jsdoc-examples">
+  <h2>Examples</h2>
+  <div class="jsdoc-example">
+    <h3>Example 1</h3><pre><code>  require([&quot;dojo/node!fs&quot;], function(fs){
+    var fileData = fs.readFileSync(&quot;foo.txt&quot;, &quot;utf-8&quot;);
+  });</code></pre>
+
+  </div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojo_node_load" class="inline-link"> load</a><span class="parameters">(</span>id, require, load) <span>Standard AMD plugin interface.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojo_node_normalize" class="inline-link"> normalize</a><span class="parameters">(</span>id) <span></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_node_load"></a><span class="functionIcon">load</span><span class="parameters">(id, require, load)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/node" class="jsdoc-link">dojo/node</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Standard AMD plugin interface. See <a href="https://github.com/amdjs/amdjs-api/wiki/Loader-Plugins">https://github.com/amdjs/amdjs-api/wiki/Loader-Plugins</a>
+for information.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">id</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">require</td>
+            <td class="jsdoc-param-type">Function</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">load</td>
+            <td class="jsdoc-param-type">Function</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_node_normalize"></a><span class="functionIcon">normalize</span><span class="parameters">(id)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/node" class="jsdoc-link">dojo/node</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">id</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">string</span></div>
+      </div>
+    </div>
+  </div>
+</div>

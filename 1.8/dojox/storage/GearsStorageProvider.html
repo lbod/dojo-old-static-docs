@@ -1,0 +1,586 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/storage/GearsStorageProvider</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/storage/GearsStorageProvider<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-mixins">
+  <label>Extends </label><a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider,   </a>
+</div>
+<div class="jsdoc-full-summary"><p>Storage provider that uses the features of Google Gears
+to store data (it is saved into the local SQL database
+provided by Gears, using dojox.sql)</p>
+</div>
+<div class="jsdoc-full-summary"><p>You can disable this storage provider with the following djConfig variable:</p>
+<pre><code>    var djConfig = { disableGearsStorage: true };</pre></code>
+<p></p>
+<p>Authors of this storage provider-
+Brad Neuberg, bkn3@columbia.edu</p>
+</div>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/storage/GearsStorageProvider<span class="parameters">();</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/storage/GearsStorageProvider">dojox/storage/GearsStorageProvider</a></div>
+<p>See the <a href="/reference-guide/1.8/dojox/storage.html" target="_blank">dojox/storage/GearsStorageProvider reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="objectIcon private"><a href="#1_8dojox_storage_GearsStorageProvider__available" class="inline-link"> _available </a><span></span><span title="private" class="jsdoc-private"></span>
+    </li>
+    <li class="booleanIcon private"><a href="#1_8dojox_storage_GearsStorageProvider__storageReady" class="inline-link"> _storageReady </a><span></span><span title="private" class="jsdoc-private"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojox_storage_GearsStorageProvider_DEFAULT_NAMESPACE" class="inline-link"> DEFAULT_NAMESPACE </a><span>The namespace for all storage operations.</span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojox_storage_GearsStorageProvider_FAILED" class="inline-link"> FAILED </a><span>Flag that indicates a put() call to
+a storage provider failed.</span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="booleanIcon inherited"><a href="#1_8dojox_storage_GearsStorageProvider_initialized" class="inline-link"> initialized </a><span></span><span title="inherited from dojox/storage/GearsStorageProvider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon inherited"><a href="#1_8dojox_storage_GearsStorageProvider_onHideSettingsUI" class="inline-link"> onHideSettingsUI </a><span>If a function is assigned to this property, then when the settings
+provider&#39;s UI is closed this function is called.</span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojox_storage_GearsStorageProvider_PENDING" class="inline-link"> PENDING </a><span>Flag that indicates a put() call to a
+storage provider is pending user approval.</span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojox_storage_GearsStorageProvider_SIZE_NO_LIMIT" class="inline-link"> SIZE_NO_LIMIT </a><span>Returned by getMaximumSize() if this storage provider has no theoretical
+limit on the amount of data it can store.</span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojox_storage_GearsStorageProvider_SIZE_NOT_AVAILABLE" class="inline-link"> SIZE_NOT_AVAILABLE </a><span>Returned by getMaximumSize() if this storage provider can not determine
+the maximum amount of data it can support.</span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojox_storage_GearsStorageProvider_SUCCESS" class="inline-link"> SUCCESS </a><span>Flag that indicates a put() call to a
+storage provider was successful.</span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojox_storage_GearsStorageProvider_TABLE_NAME" class="inline-link"> TABLE_NAME </a><span></span><span title="inherited from dojox/storage/GearsStorageProvider" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dojox_storage_GearsStorageProvider__initStorage" class="inline-link"> _initStorage</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_GearsStorageProvider_clear" class="inline-link"> clear</a><span class="parameters">(</span>namespace) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_GearsStorageProvider_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_GearsStorageProvider_get" class="inline-link"> get</a><span class="parameters">(</span>key, namespace) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_GearsStorageProvider_getKeys" class="inline-link"> getKeys</a><span class="parameters">(</span>namespace) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_GearsStorageProvider_getMaximumSize" class="inline-link"> getMaximumSize</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_GearsStorageProvider_getMultiple" class="inline-link"> getMultiple</a><span class="parameters">(</span>keys, namespace) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_GearsStorageProvider_getNamespaces" class="inline-link"> getNamespaces</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_storage_GearsStorageProvider_getResourceList" class="inline-link"> getResourceList</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_storage_GearsStorageProvider_hasKey" class="inline-link"> hasKey</a><span class="parameters">(</span>key, namespace) <span>Determines whether the storage has the given key.</span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_GearsStorageProvider_hasSettingsUI" class="inline-link"> hasSettingsUI</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_GearsStorageProvider_hideSettingsUI" class="inline-link"> hideSettingsUI</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_GearsStorageProvider_initialize" class="inline-link"> initialize</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_GearsStorageProvider_isAvailable" class="inline-link"> isAvailable</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_GearsStorageProvider_isPermanent" class="inline-link"> isPermanent</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_storage_GearsStorageProvider_isValidKey" class="inline-link"> isValidKey</a><span class="parameters">(</span>keyName) <span></span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_storage_GearsStorageProvider_isValidKeyArray" class="inline-link"> isValidKeyArray</a><span class="parameters">(</span>keys) <span></span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_GearsStorageProvider_put" class="inline-link"> put</a><span class="parameters">(</span>key, value, resultsHandler, namespace) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_GearsStorageProvider_putMultiple" class="inline-link"> putMultiple</a><span class="parameters">(</span>keys, values, resultsHandler, namespace) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_GearsStorageProvider_remove" class="inline-link"> remove</a><span class="parameters">(</span>key, namespace) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_GearsStorageProvider_removeMultiple" class="inline-link"> removeMultiple</a><span class="parameters">(</span>keys, namespace) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_GearsStorageProvider_showSettingsUI" class="inline-link"> showSettingsUI</a><span class="parameters">(</span>) <span></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider__available"></a><span class="objectIcon">_available</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/storage/GearsStorageProvider" class="jsdoc-link">dojox/storage/GearsStorageProvider</a>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider__storageReady"></a><span class="booleanIcon">_storageReady</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/storage/GearsStorageProvider" class="jsdoc-link">dojox/storage/GearsStorageProvider</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_DEFAULT_NAMESPACE"></a><span class="stringIcon">DEFAULT_NAMESPACE</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>The namespace for all storage operations. This is useful if several
+applications want access to the storage system from the same domain but
+want different storage silos.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_FAILED"></a><span class="stringIcon">FAILED</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Flag that indicates a put() call to
+a storage provider failed.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_initialized"></a><span class="booleanIcon">initialized</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/storage/GearsStorageProvider" class="jsdoc-link">dojox/storage/GearsStorageProvider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_onHideSettingsUI"></a><span class="functionIcon">onHideSettingsUI</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>If a function is assigned to this property, then when the settings
+provider&#39;s UI is closed this function is called. Useful, for example,
+if the user has just cleared out all storage for this provider using
+the settings UI, and you want to update your UI.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_PENDING"></a><span class="stringIcon">PENDING</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Flag that indicates a put() call to a
+storage provider is pending user approval.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_SIZE_NO_LIMIT"></a><span class="stringIcon">SIZE_NO_LIMIT</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Returned by getMaximumSize() if this storage provider has no theoretical
+limit on the amount of data it can store.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_SIZE_NOT_AVAILABLE"></a><span class="stringIcon">SIZE_NOT_AVAILABLE</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Returned by getMaximumSize() if this storage provider can not determine
+the maximum amount of data it can support.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_SUCCESS"></a><span class="stringIcon">SUCCESS</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Flag that indicates a put() call to a
+storage provider was successful.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_TABLE_NAME"></a><span class="stringIcon">TABLE_NAME</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/storage/GearsStorageProvider" class="jsdoc-link">dojox/storage/GearsStorageProvider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider__initStorage"></a><span class="functionIcon">_initStorage</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/GearsStorageProvider" class="jsdoc-link">dojox/storage/GearsStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_clear"></a><span class="functionIcon">clear</span><span class="parameters">(namespace)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/GearsStorageProvider" class="jsdoc-link">dojox/storage/GearsStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">namespace</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/GearsStorageProvider" class="jsdoc-link">dojox/storage/GearsStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_get"></a><span class="functionIcon">get</span><span class="parameters">(key, namespace)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/GearsStorageProvider" class="jsdoc-link">dojox/storage/GearsStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">key</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">namespace</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">null | undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_getKeys"></a><span class="functionIcon">getKeys</span><span class="parameters">(namespace)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/GearsStorageProvider" class="jsdoc-link">dojox/storage/GearsStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">namespace</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_getMaximumSize"></a><span class="functionIcon">getMaximumSize</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/GearsStorageProvider" class="jsdoc-link">dojox/storage/GearsStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_getMultiple"></a><span class="functionIcon">getMultiple</span><span class="parameters">(keys, namespace)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/GearsStorageProvider" class="jsdoc-link">dojox/storage/GearsStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">keys</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">namespace</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_getNamespaces"></a><span class="functionIcon">getNamespaces</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/GearsStorageProvider" class="jsdoc-link">dojox/storage/GearsStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_getResourceList"></a><span class="functionIcon">getResourceList</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_hasKey"></a><span class="functionIcon">hasKey</span><span class="parameters">(key, namespace)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Determines whether the storage has the given key.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">key</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">namespace</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_hasSettingsUI"></a><span class="functionIcon">hasSettingsUI</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/GearsStorageProvider" class="jsdoc-link">dojox/storage/GearsStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_hideSettingsUI"></a><span class="functionIcon">hideSettingsUI</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/GearsStorageProvider" class="jsdoc-link">dojox/storage/GearsStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_initialize"></a><span class="functionIcon">initialize</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/GearsStorageProvider" class="jsdoc-link">dojox/storage/GearsStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_isAvailable"></a><span class="functionIcon">isAvailable</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/GearsStorageProvider" class="jsdoc-link">dojox/storage/GearsStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
+        <div class="jsdoc-return-description"><p>True if client is using Google Gears</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_isPermanent"></a><span class="functionIcon">isPermanent</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/GearsStorageProvider" class="jsdoc-link">dojox/storage/GearsStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_isValidKey"></a><span class="functionIcon">isValidKey</span><span class="parameters">(keyName)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">keyName</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean | undefined</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_isValidKeyArray"></a><span class="functionIcon">isValidKeyArray</span><span class="parameters">(keys)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">keys</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_put"></a><span class="functionIcon">put</span><span class="parameters">(key, value, resultsHandler, namespace)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/GearsStorageProvider" class="jsdoc-link">dojox/storage/GearsStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">key</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">resultsHandler</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">namespace</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_putMultiple"></a><span class="functionIcon">putMultiple</span><span class="parameters">(keys, values, resultsHandler, namespace)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/GearsStorageProvider" class="jsdoc-link">dojox/storage/GearsStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">keys</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">values</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">resultsHandler</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">namespace</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_remove"></a><span class="functionIcon">remove</span><span class="parameters">(key, namespace)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/GearsStorageProvider" class="jsdoc-link">dojox/storage/GearsStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">key</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">namespace</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_removeMultiple"></a><span class="functionIcon">removeMultiple</span><span class="parameters">(keys, namespace)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/GearsStorageProvider" class="jsdoc-link">dojox/storage/GearsStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">keys</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">namespace</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_GearsStorageProvider_showSettingsUI"></a><span class="functionIcon">showSettingsUI</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/GearsStorageProvider" class="jsdoc-link">dojox/storage/GearsStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+    </div>
+  </div>
+</div>

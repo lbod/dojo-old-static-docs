@@ -1,0 +1,269 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mdnd/Moveable</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/mdnd/Moveable<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>Allow end-users to track a DOM node into the web page</p>
+</div>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/mdnd/Moveable<span class="parameters">(params,node);</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/mdnd/Moveable">dojox/mdnd/Moveable</a></div>
+<div class="jsdoc-summary"><p>Configure parameters and listen to mousedown events from handle
+node.</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">params</td>
+    <td class="jsdoc-param-type">Object</td>
+    <td class="jsdoc-param-description"><p>Hash of parameters</p>
+ 
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">node</td>
+    <td class="jsdoc-param-type">DOMNode</td>
+    <td class="jsdoc-param-description"><p>The draggable node</p>
+ 
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojox/mdnd.html" target="_blank">dojox/mdnd/Moveable reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="numberIcon"><a href="#1_8dojox_mdnd_Moveable_dragDistance" class="inline-link"> dragDistance </a><span>The user clicks on the handle, but the drag action will really begin
+if he tracks the main node to more than 3 pixels.</span>
+    </li>
+    <li class="domnodeIcon"><a href="#1_8dojox_mdnd_Moveable_handle" class="inline-link"> handle </a><span>The node on which the user clicks to drag the main node.</span>
+    </li>
+    <li class="booleanIcon"><a href="#1_8dojox_mdnd_Moveable_skip" class="inline-link"> skip </a><span>A flag to control a drag action if a form element has been focused.</span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_mdnd_Moveable_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>params, node) <span>Configure parameters and listen to mousedown events from handle
+node.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_mdnd_Moveable_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Delecte associated events</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_mdnd_Moveable_initOffsetDrag" class="inline-link"> initOffsetDrag</a><span class="parameters">(</span>e) <span>Initialize the gap between main node coordinates and the clicked point.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_mdnd_Moveable_isFormElement" class="inline-link"> isFormElement</a><span class="parameters">(</span>e) <span>identify the type of target node associated with a DOM event.</span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_mdnd_Moveable_onDrag" class="inline-link"> onDrag</a><span class="parameters">(</span>node, coords, size, mousePosition) <span>Stub function.</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_mdnd_Moveable_onDragEnd" class="inline-link"> onDragEnd</a><span class="parameters">(</span>node) <span>Stub function
+Notes : Coordinates don&#39;t contain margins</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_mdnd_Moveable_onDragStart" class="inline-link"> onDragStart</a><span class="parameters">(</span>node, coords, size) <span>Stub function.</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_mdnd_Moveable_onFirstMove" class="inline-link"> onFirstMove</a><span class="parameters">(</span>e) <span>Occurs when the user moves the mouse after clicking on the
+handle.</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_mdnd_Moveable_onMouseDown" class="inline-link"> onMouseDown</a><span class="parameters">(</span>e) <span>Occurs when the user clicks on the handle node.</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_mdnd_Moveable_onMouseUp" class="inline-link"> onMouseUp</a><span class="parameters">(</span>e) <span>Occurs when the user releases the mouse
+Calls the onDragEnd method.</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_mdnd_Moveable_onMove" class="inline-link"> onMove</a><span class="parameters">(</span>e) <span>Occurs when the user moves the mouse.</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_mdnd_Moveable_dragDistance"></a><span class="numberIcon">dragDistance</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/mdnd/Moveable" class="jsdoc-link">dojox/mdnd/Moveable</a>
+        </div>
+        <div class="jsdoc-summary"><p>The user clicks on the handle, but the drag action will really begin
+if he tracks the main node to more than 3 pixels.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_mdnd_Moveable_handle"></a><span class="domnodeIcon">handle</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/mdnd/Moveable" class="jsdoc-link">dojox/mdnd/Moveable</a>
+        </div>
+        <div class="jsdoc-summary"><p>The node on which the user clicks to drag the main node.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_mdnd_Moveable_skip"></a><span class="booleanIcon">skip</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/mdnd/Moveable" class="jsdoc-link">dojox/mdnd/Moveable</a>
+        </div>
+        <div class="jsdoc-summary"><p>A flag to control a drag action if a form element has been focused.
+If true, the drag action is not executed.</p>
+</div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_mdnd_Moveable_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(params, node)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mdnd/Moveable" class="jsdoc-link">dojox/mdnd/Moveable</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Configure parameters and listen to mousedown events from handle
+node.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">params</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>Hash of parameters</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">node</td>
+            <td class="jsdoc-param-type">DOMNode</td>
+            <td class="jsdoc-param-description"><p>The draggable node</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_mdnd_Moveable_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mdnd/Moveable" class="jsdoc-link">dojox/mdnd/Moveable</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Delecte associated events</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_mdnd_Moveable_initOffsetDrag"></a><span class="functionIcon">initOffsetDrag</span><span class="parameters">(e)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mdnd/Moveable" class="jsdoc-link">dojox/mdnd/Moveable</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Initialize the gap between main node coordinates and the clicked point.
+Call the onDragStart method.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">e</td>
+            <td class="jsdoc-param-type">DOMEvent</td>
+            <td class="jsdoc-param-description"><p>A DOM event</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_mdnd_Moveable_isFormElement"></a><span class="functionIcon">isFormElement</span><span class="parameters">(e)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mdnd/Moveable" class="jsdoc-link">dojox/mdnd/Moveable</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>identify the type of target node associated with a DOM event.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">e</td>
+            <td class="jsdoc-param-type">DOMEvent</td>
+            <td class="jsdoc-param-description"><p>a DOM event</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | boolean</span></div>
+        <div class="jsdoc-return-description">if true, the target is one of those specific nodes.</div>
+      </div>
+    </div>
+    <h2>Events</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_mdnd_Moveable_onDrag"></a><span class="functionIcon">onDrag</span><span class="parameters">(node, coords, size, mousePosition)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/mdnd/Moveable" class="jsdoc-link">dojox/mdnd/Moveable</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Stub function.
+Notes : border box model for size value, margin box model for coordinates</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_mdnd_Moveable_onDragEnd"></a><span class="functionIcon">onDragEnd</span><span class="parameters">(node)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/mdnd/Moveable" class="jsdoc-link">dojox/mdnd/Moveable</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Stub function
+Notes : Coordinates don&#39;t contain margins</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_mdnd_Moveable_onDragStart"></a><span class="functionIcon">onDragStart</span><span class="parameters">(node, coords, size)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/mdnd/Moveable" class="jsdoc-link">dojox/mdnd/Moveable</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Stub function.
+Notes : border box model</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_mdnd_Moveable_onFirstMove"></a><span class="functionIcon">onFirstMove</span><span class="parameters">(e)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/mdnd/Moveable" class="jsdoc-link">dojox/mdnd/Moveable</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Occurs when the user moves the mouse after clicking on the
+handle.
+Determinate when the drag action will have to begin (see
+dragDistance).</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_mdnd_Moveable_onMouseDown"></a><span class="functionIcon">onMouseDown</span><span class="parameters">(e)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/mdnd/Moveable" class="jsdoc-link">dojox/mdnd/Moveable</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Occurs when the user clicks on the handle node.
+Skip the drag action if a specific node is targeted.
+Listens to mouseup and mousemove events on to the HTML document.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_mdnd_Moveable_onMouseUp"></a><span class="functionIcon">onMouseUp</span><span class="parameters">(e)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/mdnd/Moveable" class="jsdoc-link">dojox/mdnd/Moveable</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Occurs when the user releases the mouse
+Calls the onDragEnd method.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_mdnd_Moveable_onMove"></a><span class="functionIcon">onMove</span><span class="parameters">(e)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/mdnd/Moveable" class="jsdoc-link">dojox/mdnd/Moveable</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Occurs when the user moves the mouse.
+Calls the onDrag method.</p>
+</div>
+      </div>
+    </div>
+  </div>
+</div>

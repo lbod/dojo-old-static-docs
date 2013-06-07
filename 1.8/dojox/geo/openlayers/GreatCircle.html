@@ -1,0 +1,187 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/geo/openlayers/GreatCircle</div>
+<h1 class="objectIcon36 jsdoc-title">dojox/geo/openlayers/GreatCircle<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<p>See the <a href="/reference-guide/1.8/dojox/geo/openlayers.html" target="_blank">dojox/geo/openlayers/GreatCircle reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="numberIcon"><a href="#1_8dojox_geo_openlayers_GreatCircle_DEG2RAD" class="inline-link"> DEG2RAD </a><span></span>
+    </li>
+    <li class="numberIcon"><a href="#1_8dojox_geo_openlayers_GreatCircle_RAD2DEG" class="inline-link"> RAD2DEG </a><span></span>
+    </li>
+    <li class="numberIcon"><a href="#1_8dojox_geo_openlayers_GreatCircle_TOLERANCE" class="inline-link"> TOLERANCE </a><span></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers_GreatCircle_toGeometryFeature" class="inline-link"> toGeometryFeature</a><span class="parameters">(</span>p1, p2, increment) <span>Create a geodetic line as an array of dojox.geo.openlayers.GeometryFeature.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers_GreatCircle_toLineString" class="inline-link"> toLineString</a><span class="parameters">(</span>p1, p2, increment) <span>Create a geodetic line as an array of OpenLayers.Geometry.LineString.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_geo_openlayers_GreatCircle_toPointArray" class="inline-link"> toPointArray</a><span class="parameters">(</span>p1, p2, increment) <span>Create a geodetic line as an array of OpenLayers.Point.</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_GreatCircle_DEG2RAD"></a><span class="numberIcon">DEG2RAD</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/geo/openlayers/GreatCircle" class="jsdoc-link">dojox/geo/openlayers/GreatCircle</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_GreatCircle_RAD2DEG"></a><span class="numberIcon">RAD2DEG</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/geo/openlayers/GreatCircle" class="jsdoc-link">dojox/geo/openlayers/GreatCircle</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_GreatCircle_TOLERANCE"></a><span class="numberIcon">TOLERANCE</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/geo/openlayers/GreatCircle" class="jsdoc-link">dojox/geo/openlayers/GreatCircle</a>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_GreatCircle_toGeometryFeature"></a><span class="functionIcon">toGeometryFeature</span><span class="parameters">(p1, p2, increment)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/openlayers/GreatCircle" class="jsdoc-link">dojox/geo/openlayers/GreatCircle</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Create a geodetic line as an array of dojox.geo.openlayers.GeometryFeature.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Create a geodetic line as a dojox.geo.openlayers.GeometryFeature between the point p1
+ant the point p2. Result is a polyline approximation for which a new point is
+calculated every <em>increment</em> degrees.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">p1</td>
+            <td class="jsdoc-param-type">Point</td>
+            <td class="jsdoc-param-description"><p>The first point of the geodetic line. x and y fields are longitude and
+latitude in decimal degrees.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">p2</td>
+            <td class="jsdoc-param-type">Point</td>
+            <td class="jsdoc-param-description"><p>The second point of the geodetic line. x and y fields are longitude and
+latitude in decimal degrees.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">increment</td>
+            <td class="jsdoc-param-type">Float</td>
+            <td class="jsdoc-param-description"><p>The value at which a new point is computed. </p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | instance</span></div>
+        <div class="jsdoc-return-description">The geodetic line as a GeometryFeature</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_GreatCircle_toLineString"></a><span class="functionIcon">toLineString</span><span class="parameters">(p1, p2, increment)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/openlayers/GreatCircle" class="jsdoc-link">dojox/geo/openlayers/GreatCircle</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Create a geodetic line as an array of OpenLayers.Geometry.LineString.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Create a geodetic line as a OpenLayers.Geometry.LineString between the point p1
+and the point p2. Result is a polyline approximation for which a new point is
+calculated every <em>increment</em> degrees.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">p1</td>
+            <td class="jsdoc-param-type">Point</td>
+            <td class="jsdoc-param-description"><p>The first point of the geodetic line. x and y fields are longitude and
+latitude in decimal degrees.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">p2</td>
+            <td class="jsdoc-param-type">Point</td>
+            <td class="jsdoc-param-description"><p>The second point of the geodetic line. x and y fields are longitude and
+latitude in decimal degrees.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">increment</td>
+            <td class="jsdoc-param-type">Float</td>
+            <td class="jsdoc-param-description"><p>The value at which a new point is computed. </p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">instance</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_geo_openlayers_GreatCircle_toPointArray"></a><span class="functionIcon">toPointArray</span><span class="parameters">(p1, p2, increment)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/geo/openlayers/GreatCircle" class="jsdoc-link">dojox/geo/openlayers/GreatCircle</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Create a geodetic line as an array of OpenLayers.Point.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Create a geodetic line as an array of OpenLayers.Point between the point p1
+and the point p2. Result is a polyline approximation for which a new point is
+calculated every <em>increment</em> degrees.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">p1</td>
+            <td class="jsdoc-param-type">Point</td>
+            <td class="jsdoc-param-description"><p>The first point of the geodetic line. x and y fields are longitude and
+latitude in decimal degrees.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">p2</td>
+            <td class="jsdoc-param-type">Point</td>
+            <td class="jsdoc-param-description"><p>The second point of the geodetic line. x and y fields are longitude and
+latitude in decimal degrees.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">increment</td>
+            <td class="jsdoc-param-type">Float</td>
+            <td class="jsdoc-param-description"><p>The value at which a new point is computed. </p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
+      </div>
+    </div>
+  </div>
+</div>

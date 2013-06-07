@@ -1,0 +1,271 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/dtl/Context</div>
+<h1 class="functionIcon36 jsdoc-title">dojox/dtl/Context<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>Represents a runtime context used by DTL templates.</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">dict</td>
+    <td class="jsdoc-param-type">Object</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojox/dtl.html" target="_blank">dojox/dtl/Context reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private inherited"><a href="#1_8dojox_dtl_Context__normalize" class="inline-link"> _normalize</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dtl/_base" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_dtl_Context_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>dict) <span>Pass one of these when rendering a template to tell the template what values to use.</span><span title="inherited from dojox/dtl/_base" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_dtl_Context_extend" class="inline-link"> extend</a><span class="parameters">(</span>obj) <span>Returns a clone of this context object, with the items from the passed objecct mixed in.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_dtl_Context_filter" class="inline-link"> filter</a><span class="parameters">(</span>filter) <span>Returns a clone of this context, only containing the items defined in the filter.</span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_dtl_Context_get" class="inline-link"> get</a><span class="parameters">(</span>key, otherwise) <span></span><span title="inherited from dojox/dtl/_base" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_dtl_Context_getKeys" class="inline-link"> getKeys</a><span class="parameters">(</span>) <span>Returns the set of keys exported by this context.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_dtl_Context_getThis" class="inline-link"> getThis</a><span class="parameters">(</span>) <span>Gets the object on which to perform operations.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_dtl_Context_hasKey" class="inline-link"> hasKey</a><span class="parameters">(</span>key) <span>Indicates whether the specified key is defined on this context.</span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_dtl_Context_pop" class="inline-link"> pop</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/dtl/_base" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_dtl_Context_push" class="inline-link"> push</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/dtl/_base" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_dtl_Context_setThis" class="inline-link"> setThis</a><span class="parameters">(</span>scope) <span>Sets the object on which to perform operations.</span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_dtl_Context_update" class="inline-link"> update</a><span class="parameters">(</span>dict) <span></span><span title="inherited from dojox/dtl/_base" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dtl_Context__normalize"></a><span class="functionIcon">_normalize</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dtl/_base" class="jsdoc-link">dojox/dtl/_base</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dtl_Context_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(dict)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dtl/_base" class="jsdoc-link">dojox/dtl/_base</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Pass one of these when rendering a template to tell the template what values to use.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">dict</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_dtl_Context_extend"></a><span class="functionIcon">extend</span><span class="parameters">(obj)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dtl/Context" class="jsdoc-link">dojox/dtl/Context</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Returns a clone of this context object, with the items from the passed objecct mixed in.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">obj</td>
+            <td class="jsdoc-param-type">dojox/dtl/Context | Object</td>
+            <td class="jsdoc-param-description"><p>The object to extend.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_dtl_Context_filter"></a><span class="functionIcon">filter</span><span class="parameters">(filter)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dtl/Context" class="jsdoc-link">dojox/dtl/Context</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Returns a clone of this context, only containing the items defined in the filter.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">filter</td>
+            <td class="jsdoc-param-type">dojox/dtl/Context | Object | String...</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">instance</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dtl_Context_get"></a><span class="functionIcon">get</span><span class="parameters">(key, otherwise)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dtl/_base" class="jsdoc-link">dojox/dtl/_base</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">key</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">otherwise</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_dtl_Context_getKeys"></a><span class="functionIcon">getKeys</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dtl/Context" class="jsdoc-link">dojox/dtl/Context</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Returns the set of keys exported by this context.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_dtl_Context_getThis"></a><span class="functionIcon">getThis</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dtl/Context" class="jsdoc-link">dojox/dtl/Context</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Gets the object on which to perform operations.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_dtl_Context_hasKey"></a><span class="functionIcon">hasKey</span><span class="parameters">(key)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dtl/Context" class="jsdoc-link">dojox/dtl/Context</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Indicates whether the specified key is defined on this context.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">key</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The key to look up.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dtl_Context_pop"></a><span class="functionIcon">pop</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dtl/_base" class="jsdoc-link">dojox/dtl/_base</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dtl_Context_push"></a><span class="functionIcon">push</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dtl/_base" class="jsdoc-link">dojox/dtl/_base</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_dtl_Context_setThis"></a><span class="functionIcon">setThis</span><span class="parameters">(scope)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dtl/Context" class="jsdoc-link">dojox/dtl/Context</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Sets the object on which to perform operations.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">scope</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>the this ref.</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dtl_Context_update"></a><span class="functionIcon">update</span><span class="parameters">(dict)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dtl/_base" class="jsdoc-link">dojox/dtl/_base</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">dict</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+    </div>
+  </div>
+</div>

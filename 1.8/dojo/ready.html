@@ -1,0 +1,169 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/ready</div>
+<h1 class="functionIcon36 jsdoc-title">dojo/ready<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>Add a function to execute on DOM content loaded and all requested modules have arrived and been evaluated.
+In most cases, the <code>domReady</code> plug-in should suffice and this method should not be needed.</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">priority</td>
+    <td class="jsdoc-param-type">Integer</td>
+    <td class="jsdoc-param-description">
+      <div><em>Optional</em></div><p>The order in which to exec this callback relative to other callbacks, defaults to 1000</p>
+ 
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">context</td>
+    <td class="jsdoc-param-type">undefined</td>
+    <td class="jsdoc-param-description"><p>The context in which to run execute callback, or a callback if not using context</p>
+ 
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">callback</td>
+    <td class="jsdoc-param-type">Function</td>
+    <td class="jsdoc-param-description">
+      <div><em>Optional</em></div><p>The function to execute.
+</p>
+ 
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojo/ready.html" target="_blank">dojo/ready reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<div class="jsdoc-examples">
+  <h2>Examples</h2>
+  <div class="jsdoc-example">
+    <h3>Example 1</h3><p>Simple DOM and Modules ready syntax</p>
+<pre><code>  require([&quot;dojo/ready&quot;], function(ready){
+    ready(function(){ alert(&quot;Dom ready!&quot;); });
+  });</code></pre>
+<p></p>
+
+  </div>
+  <div class="jsdoc-example">
+    <h3>Example 2</h3><p>Using a priority</p>
+<pre><code>  require([&quot;dojo/ready&quot;], function(ready){
+    ready(2, function(){ alert(&quot;low priority ready!&quot;); })
+  });</code></pre>
+<p></p>
+
+  </div>
+  <div class="jsdoc-example">
+    <h3>Example 3</h3><p>Using context</p>
+<pre><code>  require([&quot;dojo/ready&quot;], function(ready){
+    ready(foo, function(){
+      // in here, this == foo
+    });
+  });</code></pre>
+<p></p>
+
+  </div>
+  <div class="jsdoc-example">
+    <h3>Example 4</h3><p>Using dojo/hitch style args:</p>
+<pre><code>  require([&quot;dojo/ready&quot;], function(ready){
+    var foo = { dojoReady: function(){ console.warn(this, &quot;dojo dom and modules ready.&quot;); } };
+    ready(foo, &quot;dojoReady&quot;);
+  });</code></pre>
+
+  </div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojo_ready_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>priority, context, callback) <span>Add a function to execute on DOM content loaded and all requested modules have arrived and been evaluated.</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_ready_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(priority, context, callback)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/ready" class="jsdoc-link">dojo/ready</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Add a function to execute on DOM content loaded and all requested modules have arrived and been evaluated.
+In most cases, the <code>domReady</code> plug-in should suffice and this method should not be needed.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">priority</td>
+            <td class="jsdoc-param-type">Integer</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>The order in which to exec this callback relative to other callbacks, defaults to 1000</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">context</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description"><p>The context in which to run execute callback, or a callback if not using context</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">callback</td>
+            <td class="jsdoc-param-type">Function</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>The function to execute.
+</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><p>Simple DOM and Modules ready syntax</p>
+<pre><code>  require([&quot;dojo/ready&quot;], function(ready){
+    ready(function(){ alert(&quot;Dom ready!&quot;); });
+  });</code></pre>
+<p></p>
+
+          </div>
+          <div class="jsdoc-example">
+            <h3>Example 2</h3><p>Using a priority</p>
+<pre><code>  require([&quot;dojo/ready&quot;], function(ready){
+    ready(2, function(){ alert(&quot;low priority ready!&quot;); })
+  });</code></pre>
+<p></p>
+
+          </div>
+          <div class="jsdoc-example">
+            <h3>Example 3</h3><p>Using context</p>
+<pre><code>  require([&quot;dojo/ready&quot;], function(ready){
+    ready(foo, function(){
+      // in here, this == foo
+    });
+  });</code></pre>
+<p></p>
+
+          </div>
+          <div class="jsdoc-example">
+            <h3>Example 4</h3><p>Using dojo/hitch style args:</p>
+<pre><code>  require([&quot;dojo/ready&quot;], function(ready){
+    var foo = { dojoReady: function(){ console.warn(this, &quot;dojo dom and modules ready.&quot;); } };
+    ready(foo, &quot;dojoReady&quot;);
+  });</code></pre>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

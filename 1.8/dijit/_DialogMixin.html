@@ -1,0 +1,99 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/_DialogMixin</div>
+<h1 class="constructorIcon36 jsdoc-title">dijit/_DialogMixin<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>This provides functions useful to Dialog and TooltipDialog</p>
+</div>
+<p>See the <a href="/reference-guide/1.8/dijit/_DialogMixin.html" target="_blank">dijit/_DialogMixin reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dijit__DialogMixin__getFocusItems" class="inline-link"> _getFocusItems</a><span class="parameters">(</span>) <span>Finds focusable items in dialog,
+and sets this._firstFocusItem and this._lastFocusItem</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dijit__DialogMixin_execute" class="inline-link"> execute</a><span class="parameters">(</span>formContents) <span>Callback when the user hits the submit button.</span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dijit__DialogMixin__onSubmit" class="inline-link"> _onSubmit</a><span class="parameters">(</span>) <span>Callback when user hits submit button</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dijit__DialogMixin_onCancel" class="inline-link"> onCancel</a><span class="parameters">(</span>) <span>Called when user has pressed the Dialog&#39;s cancel button, to notify container.</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dijit__DialogMixin_onExecute" class="inline-link"> onExecute</a><span class="parameters">(</span>) <span>Called when user has pressed the dialog&#39;s OK button, to notify container.</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dijit__DialogMixin__getFocusItems"></a><span class="functionIcon">_getFocusItems</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_DialogMixin" class="jsdoc-link">dijit/_DialogMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Finds focusable items in dialog,
+and sets this._firstFocusItem and this._lastFocusItem</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dijit__DialogMixin_execute"></a><span class="functionIcon">execute</span><span class="parameters">(formContents)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_DialogMixin" class="jsdoc-link">dijit/_DialogMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Callback when the user hits the submit button.
+Override this method to handle Dialog execution.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>After the user has pressed the submit button, the Dialog
+first calls onExecute() to notify the container to hide the
+dialog and restore focus to wherever it used to be.
+
+</p>
+<p>Then* this method is called.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">formContents</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <h2>Events</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dijit__DialogMixin__onSubmit"></a><span class="functionIcon">_onSubmit</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dijit/_DialogMixin" class="jsdoc-link">dijit/_DialogMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Callback when user hits submit button</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dijit__DialogMixin_onCancel"></a><span class="functionIcon">onCancel</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dijit/_DialogMixin" class="jsdoc-link">dijit/_DialogMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Called when user has pressed the Dialog&#39;s cancel button, to notify container.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dijit__DialogMixin_onExecute"></a><span class="functionIcon">onExecute</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dijit/_DialogMixin" class="jsdoc-link">dijit/_DialogMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Called when user has pressed the dialog&#39;s OK button, to notify container.</p>
+</div>
+      </div>
+    </div>
+  </div>
+</div>

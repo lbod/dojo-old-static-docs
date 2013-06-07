@@ -1,0 +1,336 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/gfx/_base.vml</div>
+<h1 class="objectIcon36 jsdoc-title">dojox/gfx/_base.vml<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>This the default graphics rendering bridge for IE6-7.
+This renderer is very slow.  For best performance on IE6-8, use Silverlight plugin.
+IE9+ defaults to the standard W3C SVG renderer.</p>
+</div>
+<p>See the <a href="/reference-guide/1.8/dojox/gfx.html" target="_blank">dojox/gfx/_base.vml reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="objectIcon private"><a href="#1_8dojox_gfx__base_vml__bool" class="inline-link"> _bool </a><span></span><span title="private" class="jsdoc-private"></span>
+    </li>
+    <li class="objectIcon"><a href="#1_8dojox_gfx__base_vml_text_alignment" class="inline-link"> text_alignment </a><span></span>
+    </li>
+    <li class="stringIcon"><a href="#1_8dojox_gfx__base_vml_xmlns" class="inline-link"> xmlns </a><span></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dojox_gfx__base_vml__parseFloat" class="inline-link"> _parseFloat</a><span class="parameters">(</span>str) <span>a helper function to parse VML-specific floating-point values</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_gfx__base_vml__reparentEvents" class="inline-link"> _reparentEvents</a><span class="parameters">(</span>dst, src) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx__base_vml_attachNode" class="inline-link"> attachNode</a><span class="parameters">(</span>node) <span>creates a shape from a Node</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx__base_vml_attachSurface" class="inline-link"> attachSurface</a><span class="parameters">(</span>node) <span>creates a surface from a Node</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx__base_vml_Circle" class="inline-link"> Circle</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx__base_vml_createSurface" class="inline-link"> createSurface</a><span class="parameters">(</span>parentNode, width, height) <span>creates a surface (VML)</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx__base_vml_Ellipse" class="inline-link"> Ellipse</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx__base_vml_fixTarget" class="inline-link"> fixTarget</a><span class="parameters">(</span>event, gfxElement) <span>Adds the gfxElement to event.gfxTarget if none exists.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx__base_vml_Group" class="inline-link"> Group</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx__base_vml_Image" class="inline-link"> Image</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx__base_vml_Line" class="inline-link"> Line</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx__base_vml_Path" class="inline-link"> Path</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx__base_vml_Polyline" class="inline-link"> Polyline</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx__base_vml_Rect" class="inline-link"> Rect</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx__base_vml_Shape" class="inline-link"> Shape</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx__base_vml_Surface" class="inline-link"> Surface</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx__base_vml_Text" class="inline-link"> Text</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx__base_vml_TextPath" class="inline-link"> TextPath</a><span class="parameters">(</span>) <span></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private extension-module">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx__base_vml__bool"></a><span class="objectIcon">_bool</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/gfx/vml" class="jsdoc-link">dojox/gfx/vml</a><span title="Must manually require () dojox/gfx/vml to access" class="jsdoc-extension"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public extension-module">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx__base_vml_text_alignment"></a><span class="objectIcon">text_alignment</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/gfx/vml" class="jsdoc-link">dojox/gfx/vml</a><span title="Must manually require () dojox/gfx/vml to access" class="jsdoc-extension"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public extension-module">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx__base_vml_xmlns"></a><span class="stringIcon">xmlns</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/gfx/vml" class="jsdoc-link">dojox/gfx/vml</a><span title="Must manually require () dojox/gfx/vml to access" class="jsdoc-extension"></span>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx__base_vml__parseFloat"></a><span class="functionIcon">_parseFloat</span><span class="parameters">(str)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/vml" class="jsdoc-link">dojox/gfx/vml</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>a helper function to parse VML-specific floating-point values</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">str</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>a representation of a floating-point number</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx__base_vml__reparentEvents"></a><span class="functionIcon">_reparentEvents</span><span class="parameters">(dst, src)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/vml" class="jsdoc-link">dojox/gfx/vml</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">dst</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">src</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx__base_vml_attachNode"></a><span class="functionIcon">attachNode</span><span class="parameters">(node)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/vml_attach" class="jsdoc-link">dojox/gfx/vml_attach</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>creates a shape from a Node</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">node</td>
+            <td class="jsdoc-param-type">Node</td>
+            <td class="jsdoc-param-description"><p>a VML node</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx__base_vml_attachSurface"></a><span class="functionIcon">attachSurface</span><span class="parameters">(node)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/vml_attach" class="jsdoc-link">dojox/gfx/vml_attach</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>creates a surface from a Node</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">node</td>
+            <td class="jsdoc-param-type">Node</td>
+            <td class="jsdoc-param-description"><p>a VML node</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx__base_vml_Circle"></a><span class="functionIcon">Circle</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/vml" class="jsdoc-link">dojox/gfx/vml</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx__base_vml_createSurface"></a><span class="functionIcon">createSurface</span><span class="parameters">(parentNode, width, height)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/vml" class="jsdoc-link">dojox/gfx/vml</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>creates a surface (VML)</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">parentNode</td>
+            <td class="jsdoc-param-type">Node</td>
+            <td class="jsdoc-param-description"><p>a parent node</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">width</td>
+            <td class="jsdoc-param-type">String | Number</td>
+            <td class="jsdoc-param-description"><p>width of surface, e.g., &quot;100px&quot; or 100</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">height</td>
+            <td class="jsdoc-param-type">String | NUmber</td>
+            <td class="jsdoc-param-description"><p>height of surface, e.g., &quot;100px&quot; or 100</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any</span></div>
+        <div class="jsdoc-return-description">newly created surface</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx__base_vml_Ellipse"></a><span class="functionIcon">Ellipse</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/vml" class="jsdoc-link">dojox/gfx/vml</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx__base_vml_fixTarget"></a><span class="functionIcon">fixTarget</span><span class="parameters">(event, gfxElement)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/vml" class="jsdoc-link">dojox/gfx/vml</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Adds the gfxElement to event.gfxTarget if none exists. This new
+property will carry the GFX element associated with this event.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">event</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>The current input event (MouseEvent or TouchEvent)</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">gfxElement</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>The GFX target element</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx__base_vml_Group"></a><span class="functionIcon">Group</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/vml" class="jsdoc-link">dojox/gfx/vml</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx__base_vml_Image"></a><span class="functionIcon">Image</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/vml" class="jsdoc-link">dojox/gfx/vml</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx__base_vml_Line"></a><span class="functionIcon">Line</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/vml" class="jsdoc-link">dojox/gfx/vml</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx__base_vml_Path"></a><span class="functionIcon">Path</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/vml" class="jsdoc-link">dojox/gfx/vml</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx__base_vml_Polyline"></a><span class="functionIcon">Polyline</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/vml" class="jsdoc-link">dojox/gfx/vml</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx__base_vml_Rect"></a><span class="functionIcon">Rect</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/vml" class="jsdoc-link">dojox/gfx/vml</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx__base_vml_Shape"></a><span class="functionIcon">Shape</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/vml" class="jsdoc-link">dojox/gfx/vml</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx__base_vml_Surface"></a><span class="functionIcon">Surface</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/vml" class="jsdoc-link">dojox/gfx/vml</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx__base_vml_Text"></a><span class="functionIcon">Text</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/vml" class="jsdoc-link">dojox/gfx/vml</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx__base_vml_TextPath"></a><span class="functionIcon">TextPath</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx/vml" class="jsdoc-link">dojox/gfx/vml</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,133 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/when</div>
+<h1 class="functionIcon36 jsdoc-title">dojo/when<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>Transparently applies callbacks to values and/or promises.</p>
+</div>
+<div class="jsdoc-full-summary"><p>Accepts promises but also transparently handles non-promises. If no
+callbacks are provided returns a promise, regardless of the initial
+value. Foreign promises are converted.
+
+</p>
+<p>If callbacks are provided and the initial value is not a promise,
+the callback is executed immediately with no error handling. Returns
+a promise if the initial value is a promise, or the result of the
+callback otherwise.</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">valueOrPromise</td>
+    <td class="jsdoc-param-type">undefined</td>
+    <td class="jsdoc-param-description"><p>Either a regular value or an object with a <code>then()</code> method that
+follows the Promises/A specification.</p>
+ 
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">callback</td>
+    <td class="jsdoc-param-type">Function</td>
+    <td class="jsdoc-param-description">
+      <div><em>Optional</em></div><p>Callback to be invoked when the promise is resolved, or a non-promise
+is received.</p>
+ 
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">errback</td>
+    <td class="jsdoc-param-type">Function</td>
+    <td class="jsdoc-param-description">
+      <div><em>Optional</em></div><p>Callback to be invoked when the promise is rejected.</p>
+ 
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">progback</td>
+    <td class="jsdoc-param-type">Function</td>
+    <td class="jsdoc-param-description">
+      <div><em>Optional</em></div><p>Callback to be invoked when the promise emits a progress update.</p>
+ 
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojo/when.html" target="_blank">dojo/when reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojo_when_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>valueOrPromise, callback, errback, progback) <span>Transparently applies callbacks to values and/or promises.</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_when_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(valueOrPromise, callback, errback, progback)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/when" class="jsdoc-link">dojo/when</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Transparently applies callbacks to values and/or promises.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Accepts promises but also transparently handles non-promises. If no
+callbacks are provided returns a promise, regardless of the initial
+value. Foreign promises are converted.
+
+</p>
+<p>If callbacks are provided and the initial value is not a promise,
+the callback is executed immediately with no error handling. Returns
+a promise if the initial value is a promise, or the result of the
+callback otherwise.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">valueOrPromise</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description"><p>Either a regular value or an object with a <code>then()</code> method that
+follows the Promises/A specification.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">callback</td>
+            <td class="jsdoc-param-type">Function</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>Callback to be invoked when the promise is resolved, or a non-promise
+is received.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">errback</td>
+            <td class="jsdoc-param-type">Function</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>Callback to be invoked when the promise is rejected.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">progback</td>
+            <td class="jsdoc-param-type">Function</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>Callback to be invoked when the promise emits a progress update.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type"><a class="jsdoc-link" href="/api/1.8/dojo/promise/Promise">dojo/promise/Promise</a> | undefined</span></div>
+        <div class="jsdoc-return-description">Promise, or if a callback is provided, the result of the callback.</div>
+      </div>
+    </div>
+  </div>
+</div>

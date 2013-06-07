@@ -1,0 +1,70 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/encoding/crypto/SimpleAES</div>
+<h1 class="objectIcon36 jsdoc-title">dojox/encoding/crypto/SimpleAES<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>SimpleAES, ported from dojox.sql, and done without the need for
+a Google Gears worker pool.</p>
+</div>
+<div class="jsdoc-full-summary"><p>Taken from <a href="http://www.movable-type.co.uk/scripts/aes.html">http://www.movable-type.co.uk/scripts/aes.html</a> by
+Chris Veness (CLA signed); adapted for Dojo by Brad Neuberg
+(bkn3 AT columbia.edu) and moved to DojoX crypto by Tom Trenka
+(ttrenka AT gmail.com).
+
+</p>
+<p>A few notes:
+1) This algorithm uses a customized version of CBC mode by creating
+a nonce, using it as an initialization vector, and storing the
+IV as the first portion of the encrypted text.  Because of this, it
+is HIGHLY PROBABLE that it will NOT be usable by other AES implementations.
+2) All encoding is done in hex format; other encoding formats (such
+as base 64) are not supported.
+3) The bit depth of the key is hardcoded at 256, despite the ability
+of the code to handle all three recommended bit depths.
+4) The passed key will be padded (as opposed to enforcing a strict
+length) with null bytes.</p>
+</div>
+<p>See the <a href="/reference-guide/1.8/dojox/encoding/crypto/SimpleAES.html" target="_blank">dojox/encoding/crypto/SimpleAES reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_encoding_crypto_SimpleAES_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span>SimpleAES, ported from dojox.sql, and done without the need for
+a Google Gears worker pool.</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_encoding_crypto_SimpleAES_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/encoding/crypto/SimpleAES" class="jsdoc-link">dojox/encoding/crypto/SimpleAES</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>SimpleAES, ported from dojox.sql, and done without the need for
+a Google Gears worker pool.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Taken from <a href="http://www.movable-type.co.uk/scripts/aes.html">http://www.movable-type.co.uk/scripts/aes.html</a> by
+Chris Veness (CLA signed); adapted for Dojo by Brad Neuberg
+(bkn3 AT columbia.edu) and moved to DojoX crypto by Tom Trenka
+(ttrenka AT gmail.com).
+
+</p>
+<p>A few notes:
+1) This algorithm uses a customized version of CBC mode by creating
+a nonce, using it as an initialization vector, and storing the
+IV as the first portion of the encrypted text.  Because of this, it
+is HIGHLY PROBABLE that it will NOT be usable by other AES implementations.
+2) All encoding is done in hex format; other encoding formats (such
+as base 64) are not supported.
+3) The bit depth of the key is hardcoded at 256, despite the ability
+of the code to handle all three recommended bit depths.
+4) The passed key will be padded (as opposed to enforcing a strict
+length) with null bytes.</p>
+</div>
+      </div>
+    </div>
+  </div>
+</div>

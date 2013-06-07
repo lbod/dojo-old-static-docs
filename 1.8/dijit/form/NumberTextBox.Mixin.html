@@ -1,0 +1,546 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/form/NumberTextBox.Mixin</div>
+<h1 class="constructorIcon36 jsdoc-title">dijit/form/NumberTextBox.Mixin<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>A mixin for all number textboxes</p>
+</div>
+<p>See the <a href="/reference-guide/1.8/dijit/form.html" target="_blank">dijit/form/NumberTextBox.Mixin reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="objectIcon inherited"><a href="#1_8dijit_form_NumberTextBox_Mixin_constraints" class="inline-link"> constraints </a><span>Despite the name, this parameter specifies both constraints on the input
+(including minimum/maximum allowed values) as well as
+formatting options like places (the number of digits to display after
+the decimal point).</span><span title="inherited from dijit/form/NumberTextBox" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dijit_form_NumberTextBox_Mixin_editOptions" class="inline-link"> editOptions </a><span>Properties to mix into constraints when the value is being edited.</span><span title="inherited from dijit/form/NumberTextBox" class="jsdoc-inherited"></span>
+    </li>
+    <li class="numberIcon inherited"><a href="#1_8dijit_form_NumberTextBox_Mixin_value" class="inline-link"> value </a><span>The starting depth level at which the labels are not displayed anymore on cells.If NaN no threshold is applied.</span><span title="inherited from dijit/form/NumberTextBox" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private inherited"><a href="#1_8dijit_form_NumberTextBox_Mixin__formatter" class="inline-link"> _formatter</a><span class="parameters">(</span>value, options) <span>Format a Number as a String, using locale-specific settings</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/NumberTextBox" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dijit_form_NumberTextBox_Mixin__getDisplayedValueAttr" class="inline-link"> _getDisplayedValueAttr</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/NumberTextBox" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dijit_form_NumberTextBox_Mixin__getValueAttr" class="inline-link"> _getValueAttr</a><span class="parameters">(</span>) <span>Hook so get(&#39;value&#39;) works.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/NumberTextBox" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dijit_form_NumberTextBox_Mixin__parser" class="inline-link"> _parser</a><span class="parameters">(</span>expression, options) <span>Convert a properly formatted string to a primitive Number, using
+locale-specific settings.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/NumberTextBox" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dijit_form_NumberTextBox_Mixin__setBlurValue" class="inline-link"> _setBlurValue</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/NumberTextBox" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dijit_form_NumberTextBox_Mixin__setConstraintsAttr" class="inline-link"> _setConstraintsAttr</a><span class="parameters">(</span>constraints) <span></span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/NumberTextBox" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dijit_form_NumberTextBox_Mixin__setValueAttr" class="inline-link"> _setValueAttr</a><span class="parameters">(</span>value, priorityChange, formattedValue) <span>Hook so set(&#39;value&#39;, ...) works.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/form/NumberTextBox" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dijit_form_NumberTextBox_Mixin_filter" class="inline-link"> filter</a><span class="parameters">(</span>value) <span>This is called with both the display value (string), and the actual value (a number).</span><span title="inherited from dijit/form/NumberTextBox" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dijit_form_NumberTextBox_Mixin_format" class="inline-link"> format</a><span class="parameters">(</span>value, constraints) <span>Formats the value as a Number, according to constraints.</span><span title="inherited from dijit/form/NumberTextBox" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dijit_form_NumberTextBox_Mixin_isValid" class="inline-link"> isValid</a><span class="parameters">(</span>isFocused) <span></span><span title="inherited from dijit/form/NumberTextBox" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dijit_form_NumberTextBox_Mixin_parse" class="inline-link"> parse</a><span class="parameters">(</span>value, constraints) <span>Replaceable function to convert a formatted string to a number value</span><span title="inherited from dijit/form/NumberTextBox" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dijit_form_NumberTextBox_Mixin_pattern" class="inline-link"> pattern</a><span class="parameters">(</span>options) <span>Builds the regular needed to parse a number</span><span title="inherited from dijit/form/NumberTextBox" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dijit_form_NumberTextBox_Mixin_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span></span><span title="inherited from dijit/form/NumberTextBox" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dijit_form_NumberTextBox_Mixin_serialize" class="inline-link"> serialize</a><span class="parameters">(</span>value, options) <span>Convert value (a Number) into a canonical string (ie, how the number literal is written in javascript/java/C/etc.)</span><span title="inherited from dijit/form/NumberTextBox" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private inherited"><a href="#1_8dijit_form_NumberTextBox_Mixin__onFocus" class="inline-link"> _onFocus</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dijit_form_NumberTextBox_Mixin_constraints"></a><span class="objectIcon">constraints</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/form/NumberTextBox" class="jsdoc-link">dijit/form/NumberTextBox</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Despite the name, this parameter specifies both constraints on the input
+(including minimum/maximum allowed values) as well as
+formatting options like places (the number of digits to display after
+the decimal point).</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dijit_form_NumberTextBox_Mixin_editOptions"></a><span class="objectIcon">editOptions</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/form/NumberTextBox" class="jsdoc-link">dijit/form/NumberTextBox</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Properties to mix into constraints when the value is being edited.
+This is here because we edit the number in the format &quot;12345&quot;, which is
+different than the display value (ex: &quot;12,345&quot;)</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dijit_form_NumberTextBox_Mixin_value"></a><span class="numberIcon">value</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/form/NumberTextBox" class="jsdoc-link">dijit/form/NumberTextBox</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>The starting depth level at which the labels are not displayed anymore on cells.<br>If NaN no threshold is applied. The depth is the visual depth of the items on the screen not
+in the data (i.e. after drill down the depth of an item might change).
+Default is NaN.</p>
+</div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dijit_form_NumberTextBox_Mixin__formatter"></a><span class="functionIcon">_formatter</span><span class="parameters">(value, options)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/NumberTextBox" class="jsdoc-link">dijit/form/NumberTextBox</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Format a Number as a String, using locale-specific settings</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Create a string from a Number using a known localized pattern.
+Formatting patterns appropriate to the locale are chosen from the
+<a href="http://unicode.org/cldr">Common Locale Data Repository</a> as well as the appropriate symbols and
+delimiters.
+If value is Infinity, -Infinity, or is not a valid JavaScript number, return null.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">Number</td>
+            <td class="jsdoc-param-description"><p>the number to be formatted</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">options</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>An object with the following properties:
+
+</p>
+<ul>
+<li><p>pattern (String, optional): <p>override <a href="http://www.unicode.org/reports/tr35/#Number_Format_Patterns">formatting pattern</a>
+with this string.  Default value is based on locale.  Overriding this property will defeat
+localization.  Literal characters in patterns are not supported.</p></p>
+</li>
+<li><p>type (String, optional): <p>choose a format type based on the locale from the following:
+decimal, scientific (not yet supported), percent, currency. decimal by default.</p></p>
+</li>
+<li><p>places (Number, optional): <p>fixed number of decimal places to show.  This overrides any
+information in the provided pattern.</p></p>
+</li>
+<li><p>round (Number, optional): <p>5 rounds to nearest .5; 0 rounds to nearest whole (default). -1
+means do not round.</p></p>
+</li>
+<li><p>locale (String, optional): <p>override the locale used to determine formatting rules</p></p>
+</li>
+<li><p>fractional (Boolean, optional): <p>If false, show no decimal places, overriding places and pattern settings.</p></p>
+</li>
+</ul>
+
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">null | undefined</span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dijit_form_NumberTextBox_Mixin__getDisplayedValueAttr"></a><span class="functionIcon">_getDisplayedValueAttr</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/NumberTextBox" class="jsdoc-link">dijit/form/NumberTextBox</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dijit_form_NumberTextBox_Mixin__getValueAttr"></a><span class="functionIcon">_getValueAttr</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/NumberTextBox" class="jsdoc-link">dijit/form/NumberTextBox</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Hook so get(&#39;value&#39;) works.
+Returns Number, NaN for &#39;&#39;, or undefined for unparseable text</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dijit_form_NumberTextBox_Mixin__parser"></a><span class="functionIcon">_parser</span><span class="parameters">(expression, options)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/NumberTextBox" class="jsdoc-link">dijit/form/NumberTextBox</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Convert a properly formatted string to a primitive Number, using
+locale-specific settings.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Create a Number from a string using a known localized pattern.
+Formatting patterns are chosen appropriate to the locale
+and follow the syntax described by
+<a href="http://www.unicode.org/reports/tr35/#Number_Format_Patterns">unicode.org TR35</a>
+Note that literal characters in patterns are not supported.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">expression</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>A string representation of a Number</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">options</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>An object with the following properties:
+
+</p>
+<ul>
+<li><p>pattern (String, optional): <p>override <a href="http://www.unicode.org/reports/tr35/#Number_Format_Patterns">formatting pattern</a>
+with this string.  Default value is based on locale.  Overriding this property will defeat
+localization.  Literal characters in patterns are not supported.</p></p>
+</li>
+<li><p>type (String, optional): <p>choose a format type based on the locale from the following:
+decimal, scientific (not yet supported), percent, currency. decimal by default.</p></p>
+</li>
+<li><p>locale (String, optional): <p>override the locale used to determine formatting rules</p></p>
+</li>
+<li><p>strict (Boolean, optional): <p>strict parsing, false by default.  Strict parsing requires input as produced by the format() method.
+Non-strict is more permissive, e.g. flexible on white space, omitting thousands separators</p></p>
+</li>
+<li><p>fractional (Boolean|Array, optional): <p>Whether to include the fractional portion, where the number of decimal places are implied by pattern
+or explicit &#39;places&#39; parameter.  The value [true,false] makes the fractional portion optional.</p></p>
+</li>
+</ul>
+
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Number | number</span></div>
+        <div class="jsdoc-return-description"><p>The starting depth level at which the labels are not displayed anymore on cells.<br>If NaN no threshold is applied. The depth is the visual depth of the items on the screen not
+in the data (i.e. after drill down the depth of an item might change).
+Default is NaN.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dijit_form_NumberTextBox_Mixin__setBlurValue"></a><span class="functionIcon">_setBlurValue</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/NumberTextBox" class="jsdoc-link">dijit/form/NumberTextBox</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dijit_form_NumberTextBox_Mixin__setConstraintsAttr"></a><span class="functionIcon">_setConstraintsAttr</span><span class="parameters">(constraints)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/NumberTextBox" class="jsdoc-link">dijit/form/NumberTextBox</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">constraints</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dijit_form_NumberTextBox_Mixin__setValueAttr"></a><span class="functionIcon">_setValueAttr</span><span class="parameters">(value, priorityChange, formattedValue)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/NumberTextBox" class="jsdoc-link">dijit/form/NumberTextBox</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Hook so set(&#39;value&#39;, ...) works.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">Number</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">priorityChange</td>
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">formattedValue</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dijit_form_NumberTextBox_Mixin_filter"></a><span class="functionIcon">filter</span><span class="parameters">(value)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/NumberTextBox" class="jsdoc-link">dijit/form/NumberTextBox</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>This is called with both the display value (string), and the actual value (a number).
+When called with the actual value it does corrections so that &#39;&#39; etc. are represented as NaN.
+Otherwise it dispatches to the superclass&#39;s filter() method.
+
+</p>
+<p>See <code>dijit/form/TextBox.filter()</code> for more details.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">Number</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Number</span></div>
+        <div class="jsdoc-return-description"><p>The starting depth level at which the labels are not displayed anymore on cells.<br>If NaN no threshold is applied. The depth is the visual depth of the items on the screen not
+in the data (i.e. after drill down the depth of an item might change).
+Default is NaN.</p>
+</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dijit_form_NumberTextBox_Mixin_format"></a><span class="functionIcon">format</span><span class="parameters">(value, constraints)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/NumberTextBox" class="jsdoc-link">dijit/form/NumberTextBox</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Formats the value as a Number, according to constraints.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">Number</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">constraints</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>An object with the following properties:
+
+</p>
+<ul>
+<li><p>pattern (String, optional): <p>override <a href="http://www.unicode.org/reports/tr35/#Number_Format_Patterns">formatting pattern</a>
+with this string.  Default value is based on locale.  Overriding this property will defeat
+localization.  Literal characters in patterns are not supported.</p></p>
+</li>
+<li><p>type (String, optional): <p>choose a format type based on the locale from the following:
+decimal, scientific (not yet supported), percent, currency. decimal by default.</p></p>
+</li>
+<li><p>places (Number, optional): <p>fixed number of decimal places to show.  This overrides any
+information in the provided pattern.</p></p>
+</li>
+<li><p>round (Number, optional): <p>5 rounds to nearest .5; 0 rounds to nearest whole (default). -1
+means do not round.</p></p>
+</li>
+<li><p>locale (String, optional): <p>override the locale used to determine formatting rules</p></p>
+</li>
+<li><p>fractional (Boolean, optional): <p>If false, show no decimal places, overriding places and pattern settings.</p></p>
+</li>
+</ul>
+
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | string</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dijit_form_NumberTextBox_Mixin_isValid"></a><span class="functionIcon">isValid</span><span class="parameters">(isFocused)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/NumberTextBox" class="jsdoc-link">dijit/form/NumberTextBox</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">isFocused</td>
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | boolean</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dijit_form_NumberTextBox_Mixin_parse"></a><span class="functionIcon">parse</span><span class="parameters">(value, constraints)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/NumberTextBox" class="jsdoc-link">dijit/form/NumberTextBox</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Replaceable function to convert a formatted string to a number value</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">constraints</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>An object with the following properties:
+
+</p>
+<ul>
+<li><p>pattern (String, optional): <p>override <a href="http://www.unicode.org/reports/tr35/#Number_Format_Patterns">formatting pattern</a>
+with this string.  Default value is based on locale.  Overriding this property will defeat
+localization.  Literal characters in patterns are not supported.</p></p>
+</li>
+<li><p>type (String, optional): <p>choose a format type based on the locale from the following:
+decimal, scientific (not yet supported), percent, currency. decimal by default.</p></p>
+</li>
+<li><p>places (Number, optional): <p>fixed number of decimal places to show.  This overrides any
+information in the provided pattern.</p></p>
+</li>
+<li><p>round (Number, optional): <p>5 rounds to nearest .5; 0 rounds to nearest whole (default). -1
+means do not round.</p></p>
+</li>
+<li><p>locale (String, optional): <p>override the locale used to determine formatting rules</p></p>
+</li>
+<li><p>fractional (Boolean, optional): <p>If false, show no decimal places, overriding places and pattern settings.</p></p>
+</li>
+</ul>
+
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dijit_form_NumberTextBox_Mixin_pattern"></a><span class="functionIcon">pattern</span><span class="parameters">(options)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/NumberTextBox" class="jsdoc-link">dijit/form/NumberTextBox</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Builds the regular needed to parse a number</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Returns regular expression with positive and negative match, group
+and decimal separators</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">options</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>An object with the following properties:
+
+</p>
+<ul>
+<li><p>pattern (String, optional): <p>override <a href="http://www.unicode.org/reports/tr35/#Number_Format_Patterns">formatting pattern</a>
+with this string.  Default value is based on locale.  Overriding this property will defeat
+localization.</p></p>
+</li>
+<li><p>type (String, optional): <p>choose a format type based on the locale from the following:
+decimal, scientific (not yet supported), percent, currency. decimal by default.</p></p>
+</li>
+<li><p>locale (String, optional): <p>override the locale used to determine formatting rules</p></p>
+</li>
+<li><p>strict (Boolean, optional): <p>strict parsing, false by default.  Strict parsing requires input as produced by the format() method.
+Non-strict is more permissive, e.g. flexible on white space, omitting thousands separators</p></p>
+</li>
+<li><p>places (Number|String, optional): <p>number of decimal places to accept: Infinity, a positive number, or
+a range &quot;n,m&quot;.  Defined by pattern or Infinity if pattern not provided.</p></p>
+</li>
+</ul>
+
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dijit_form_NumberTextBox_Mixin_postMixInProperties"></a><span class="functionIcon">postMixInProperties</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/NumberTextBox" class="jsdoc-link">dijit/form/NumberTextBox</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dijit_form_NumberTextBox_Mixin_serialize"></a><span class="functionIcon">serialize</span><span class="parameters">(value, options)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/NumberTextBox" class="jsdoc-link">dijit/form/NumberTextBox</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Convert value (a Number) into a canonical string (ie, how the number literal is written in javascript/java/C/etc.)</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">Number</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">options</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">string</span></div>
+      </div>
+    </div>
+    <h2>Events</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dijit_form_NumberTextBox_Mixin__onFocus"></a><span class="functionIcon">_onFocus</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dijit/form/NumberTextBox" class="jsdoc-link">dijit/form/NumberTextBox</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+    </div>
+  </div>
+</div>

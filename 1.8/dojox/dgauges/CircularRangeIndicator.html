@@ -1,0 +1,1101 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/dgauges/CircularRangeIndicator</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/dgauges/CircularRangeIndicator<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-mixins">
+  <label>Extends </label><a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase,   </a>
+</div>
+<div class="jsdoc-full-summary"><p>A CircularRangeIndicator is used to represent a range of values on a scale.
+Use the addIndicator method of CircularScale to use it.
+It is represented as a donut slice.</p>
+</div>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/dgauges/CircularRangeIndicator<span class="parameters">();</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/dgauges/CircularRangeIndicator">dojox/dgauges/CircularRangeIndicator</a></div>
+<p>See the <a href="/reference-guide/1.8/dojox/dgauges.html" target="_blank">dojox/dgauges/CircularRangeIndicator reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="objectIcon private inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator__animation" class="inline-link"> _animation </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon private inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator__attrPairNames" class="inline-link"> _attrPairNames </a><span>Used across all instances a hash to cache attribute names and their getter 
+and setter names.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon private inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator__cursorListeners" class="inline-link"> _cursorListeners </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon private inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator__downListeners" class="inline-link"> _downListeners </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="booleanIcon private inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator__indicatorShapeFuncFlag" class="inline-link"> _indicatorShapeFuncFlag </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="booleanIcon private inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator__interactionAreaFlag" class="inline-link"> _interactionAreaFlag </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon private inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator__moveAndUpListeners" class="inline-link"> _moveAndUpListeners </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="booleanIcon private inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator__preventAnimation" class="inline-link"> _preventAnimation </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="numberIcon private inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator__transitionValue" class="inline-link"> _transitionValue </a><span>The starting depth level at which the labels are not displayed anymore on cells.If NaN no threshold is applied.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="numberIcon inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator_animationDuration" class="inline-link"> animationDuration </a><span>The duration of the value change animation in milliseconds.</span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator_animationEaser" class="inline-link"> animationEaser </a><span>The easer function of the value change animation.</span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="numberIcon inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator_endThickness" class="inline-link"> endThickness </a><span>The end thickness of the donut slice in pixels.</span><span title="inherited from dojox/dgauges/CircularRangeIndicator" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator_fill" class="inline-link"> fill </a><span>A fill object that will be passed to the setFill method of GFX.</span><span title="inherited from dojox/dgauges/CircularRangeIndicator" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator_interactionArea" class="inline-link"> interactionArea </a><span>How to interact with the indicator using mouse or touch interactions.</span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator_interactionMode" class="inline-link"> interactionMode </a><span>Can be &quot;mouse&quot; or &quot;touch&quot;.</span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator_invalidatingProperties" class="inline-link"> invalidatingProperties </a><span></span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
+    </li>
+    <li class="booleanIcon inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator_invalidRendering" class="inline-link"> invalidRendering </a><span></span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
+    </li>
+    <li class="numberIcon inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator_radius" class="inline-link"> radius </a><span>The starting depth level at which the labels are not displayed anymore on cells.If NaN no threshold is applied.</span><span title="inherited from dojox/dgauges/CircularRangeIndicator" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator_scale" class="inline-link"> scale </a><span></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="numberIcon inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator_start" class="inline-link"> start </a><span>The start value of the range indicator.</span><span title="inherited from dojox/dgauges/CircularRangeIndicator" class="jsdoc-inherited"></span>
+    </li>
+    <li class="numberIcon inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator_startThickness" class="inline-link"> startThickness </a><span>The start thickness of the donut slice in pixels.</span><span title="inherited from dojox/dgauges/CircularRangeIndicator" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator_stroke" class="inline-link"> stroke </a><span>A stroke object that will be passed to the setStroke method of GFX.</span><span title="inherited from dojox/dgauges/CircularRangeIndicator" class="jsdoc-inherited"></span>
+    </li>
+    <li class="numberIcon inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator_value" class="inline-link"> value </a><span></span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dojox_dgauges_CircularRangeIndicator__alphaInterpolation" class="inline-link"> _alphaInterpolation</a><span class="parameters">(</span>c1, c2, len) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_dgauges_CircularRangeIndicator__alphasInterpolation" class="inline-link"> _alphasInterpolation</a><span class="parameters">(</span>alphas, positions, len) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator__changeAttrValue" class="inline-link"> _changeAttrValue</a><span class="parameters">(</span>name, value) <span>Internal helper for directly changing an attribute value.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_dgauges_CircularRangeIndicator__colorInterpolation" class="inline-link"> _colorInterpolation</a><span class="parameters">(</span>c1, c2, len) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_dgauges_CircularRangeIndicator__colorsInterpolation" class="inline-link"> _colorsInterpolation</a><span class="parameters">(</span>colors, ratios, len) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator__connectCursorListeners" class="inline-link"> _connectCursorListeners</a><span class="parameters">(</span>target) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator__connectDownListeners" class="inline-link"> _connectDownListeners</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator__connectMoveAndUpListeners" class="inline-link"> _connectMoveAndUpListeners</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator__disconnectCursorListeners" class="inline-link"> _disconnectCursorListeners</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator__disconnectDownListeners" class="inline-link"> _disconnectDownListeners</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator__disconnectListeners" class="inline-link"> _disconnectListeners</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator__disconnectMoveAndUpListeners" class="inline-link"> _disconnectMoveAndUpListeners</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_dgauges_CircularRangeIndicator__drawColorTrack" class="inline-link"> _drawColorTrack</a><span class="parameters">(</span>g, ox, oy, radius, orientation, startAngleRadians, endAngleRadians, sWeight, eWeight, fill, stroke, clippingAngleRadians) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator__endAnimation" class="inline-link"> _endAnimation</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator__endEditing" class="inline-link"> _endEditing</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator__get" class="inline-link"> _get</a><span class="parameters">(</span>name, names) <span>Private function that does a get based off a hash of names</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_dgauges_CircularRangeIndicator__getEntriesFor" class="inline-link"> _getEntriesFor</a><span class="parameters">(</span>entries, attr) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_dgauges_CircularRangeIndicator__interpolateColor" class="inline-link"> _interpolateColor</a><span class="parameters">(</span>from, dest, n) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator__startAnimation" class="inline-link"> _startAnimation</a><span class="parameters">(</span>prop, oldValue, newValue) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator__startEditing" class="inline-link"> _startEditing</a><span class="parameters">(</span>) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator__updateAnimation" class="inline-link"> _updateAnimation</a><span class="parameters">(</span>v) <span>Internal method.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator_addInvalidatingProperties" class="inline-link"> addInvalidatingProperties</a><span class="parameters">(</span>properties) <span>Add properties to the watched properties to trigger invalidation.</span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_dgauges_CircularRangeIndicator_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property on a Stateful instance.</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator_invalidateRendering" class="inline-link"> invalidateRendering</a><span class="parameters">(</span>) <span>Invalidating the rendering for the next executation frame.</span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator_postscript" class="inline-link"> postscript</a><span class="parameters">(</span>mixin) <span></span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_dgauges_CircularRangeIndicator_refreshRendering" class="inline-link"> refreshRendering</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a Stateful instance</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator_validateRendering" class="inline-link"> validateRendering</a><span class="parameters">(</span>) <span>Immediately validate the rendering if it has been invalidated.</span><span title="inherited from dojox/widget/_Invalidating" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator_valueChanged" class="inline-link"> valueChanged</a><span class="parameters">(</span>indicator) <span>Invoked when the value of the indicator changes.</span><span title="inherited from dojox/dgauges/ScaleIndicatorBase" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator_watch" class="inline-link"> watch</a><span class="parameters">(</span>name, callback) <span>Watches a property for changes</span><span title="inherited from dojo/Stateful" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dojox_dgauges_CircularRangeIndicator__onMouseDown" class="inline-link"> _onMouseDown</a><span class="parameters">(</span>event) <span>Internal method.</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_dgauges_CircularRangeIndicator__onMouseMove" class="inline-link"> _onMouseMove</a><span class="parameters">(</span>event) <span>Internal method.</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_dgauges_CircularRangeIndicator__onMouseUp" class="inline-link"> _onMouseUp</a><span class="parameters">(</span>event) <span>Internal method.</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__animation"></a><span class="objectIcon">_animation</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__attrPairNames"></a><span class="objectIcon">_attrPairNames</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Used across all instances a hash to cache attribute names and their getter 
+and setter names.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__cursorListeners"></a><span class="objectIcon">_cursorListeners</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__downListeners"></a><span class="objectIcon">_downListeners</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__indicatorShapeFuncFlag"></a><span class="booleanIcon">_indicatorShapeFuncFlag</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__interactionAreaFlag"></a><span class="booleanIcon">_interactionAreaFlag</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__moveAndUpListeners"></a><span class="objectIcon">_moveAndUpListeners</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__preventAnimation"></a><span class="booleanIcon">_preventAnimation</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__transitionValue"></a><span class="numberIcon">_transitionValue</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>The starting depth level at which the labels are not displayed anymore on cells.<br>If NaN no threshold is applied. The depth is the visual depth of the items on the screen not
+in the data (i.e. after drill down the depth of an item might change).
+Default is NaN.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator_animationDuration"></a><span class="numberIcon">animationDuration</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>The duration of the value change animation in milliseconds. Default is 0.
+The animation occurs on both user interactions and programmatic value changes.
+Set this property to 0 to disable animation.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator_animationEaser"></a><span class="objectIcon">animationEaser</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>The easer function of the value change animation. Default is fx._defaultEasing.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator_endThickness"></a><span class="numberIcon">endThickness</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/dgauges/CircularRangeIndicator" class="jsdoc-link">dojox/dgauges/CircularRangeIndicator</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>The end thickness of the donut slice in pixels. </p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator_fill"></a><span class="objectIcon">fill</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/dgauges/CircularRangeIndicator" class="jsdoc-link">dojox/dgauges/CircularRangeIndicator</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>A fill object that will be passed to the setFill method of GFX.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator_interactionArea"></a><span class="stringIcon">interactionArea</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>How to interact with the indicator using mouse or touch interactions.
+Can be &quot;indicator&quot;, &quot;gauge&quot;, &quot;area&quot; or &quot;none&quot;. The default value is &quot;gauge&quot;.
+If set to &quot;indicator&quot;, the indicator shape reacts to mouse and touch events.
+If set to &quot;gauge&quot;, the whole gauge reacts to mouse and touch events.
+If set to &quot;area&quot;, the whole bounding box of the widget reacts to mouse and touch events.
+If &quot;none&quot;, interactions are disabled.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator_interactionMode"></a><span class="stringIcon">interactionMode</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Can be &quot;mouse&quot; or &quot;touch&quot;.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator_invalidatingProperties"></a><span class="objectIcon">invalidatingProperties</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/widget/_Invalidating" class="jsdoc-link">dojox/widget/_Invalidating</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator_invalidRendering"></a><span class="booleanIcon">invalidRendering</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/widget/_Invalidating" class="jsdoc-link">dojox/widget/_Invalidating</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator_radius"></a><span class="numberIcon">radius</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/dgauges/CircularRangeIndicator" class="jsdoc-link">dojox/dgauges/CircularRangeIndicator</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>The starting depth level at which the labels are not displayed anymore on cells.<br>If NaN no threshold is applied. The depth is the visual depth of the items on the screen not
+in the data (i.e. after drill down the depth of an item might change).
+Default is NaN.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator_scale"></a><span class="objectIcon">scale</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator_start"></a><span class="numberIcon">start</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/dgauges/CircularRangeIndicator" class="jsdoc-link">dojox/dgauges/CircularRangeIndicator</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>The start value of the range indicator.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator_startThickness"></a><span class="numberIcon">startThickness</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/dgauges/CircularRangeIndicator" class="jsdoc-link">dojox/dgauges/CircularRangeIndicator</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>The start thickness of the donut slice in pixels. </p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator_stroke"></a><span class="objectIcon">stroke</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/dgauges/CircularRangeIndicator" class="jsdoc-link">dojox/dgauges/CircularRangeIndicator</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>A stroke object that will be passed to the setStroke method of GFX.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator_value"></a><span class="numberIcon">value</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__alphaInterpolation"></a><span class="functionIcon">_alphaInterpolation</span><span class="parameters">(c1, c2, len)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dgauges/CircularRangeIndicator" class="jsdoc-link">dojox/dgauges/CircularRangeIndicator</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Internal method.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">c1</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">c2</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">len</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__alphasInterpolation"></a><span class="functionIcon">_alphasInterpolation</span><span class="parameters">(alphas, positions, len)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dgauges/CircularRangeIndicator" class="jsdoc-link">dojox/dgauges/CircularRangeIndicator</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Internal method.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">alphas</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">positions</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">len</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__changeAttrValue"></a><span class="functionIcon">_changeAttrValue</span><span class="parameters">(name, value)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Internal helper for directly changing an attribute value.
+</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Directly change the value of an attribute on an object, bypassing any
+accessor setter.  Also handles the calling of watch and emitting events.
+It is designed to be used by descendent class when there are two values
+of attributes that are linked, but calling .set() is not appropriate.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The property to set.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">Mixed</td>
+            <td class="jsdoc-param-description"><p>The value to set in the property.
+</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">function</span></div>
+        <div class="jsdoc-return-description"><p>Internal helper for directly changing an attribute value.
+</p>
+</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__colorInterpolation"></a><span class="functionIcon">_colorInterpolation</span><span class="parameters">(c1, c2, len)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dgauges/CircularRangeIndicator" class="jsdoc-link">dojox/dgauges/CircularRangeIndicator</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Internal method.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">c1</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">c2</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">len</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__colorsInterpolation"></a><span class="functionIcon">_colorsInterpolation</span><span class="parameters">(colors, ratios, len)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dgauges/CircularRangeIndicator" class="jsdoc-link">dojox/dgauges/CircularRangeIndicator</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Internal method.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">colors</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">ratios</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">len</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__connectCursorListeners"></a><span class="functionIcon">_connectCursorListeners</span><span class="parameters">(target)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Internal method.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">target</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__connectDownListeners"></a><span class="functionIcon">_connectDownListeners</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Internal method.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__connectMoveAndUpListeners"></a><span class="functionIcon">_connectMoveAndUpListeners</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Internal method.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__disconnectCursorListeners"></a><span class="functionIcon">_disconnectCursorListeners</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Internal method.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__disconnectDownListeners"></a><span class="functionIcon">_disconnectDownListeners</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Internal method.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__disconnectListeners"></a><span class="functionIcon">_disconnectListeners</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Internal method.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__disconnectMoveAndUpListeners"></a><span class="functionIcon">_disconnectMoveAndUpListeners</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Internal method.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__drawColorTrack"></a><span class="functionIcon">_drawColorTrack</span><span class="parameters">(g, ox, oy, radius, orientation, startAngleRadians, endAngleRadians, sWeight, eWeight, fill, stroke, clippingAngleRadians)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dgauges/CircularRangeIndicator" class="jsdoc-link">dojox/dgauges/CircularRangeIndicator</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Internal method.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">g</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">ox</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">oy</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">radius</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">orientation</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">startAngleRadians</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">endAngleRadians</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">sWeight</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">eWeight</td>
+            <td class="jsdoc-param-type">number</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">fill</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">stroke</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">clippingAngleRadians</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__endAnimation"></a><span class="functionIcon">_endAnimation</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Internal method.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__endEditing"></a><span class="functionIcon">_endEditing</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Internal method.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__get"></a><span class="functionIcon">_get</span><span class="parameters">(name, names)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Private function that does a get based off a hash of names</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">names</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description"><p>Hash of names of custom attributes</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__getAttrNames"></a><span class="functionIcon">_getAttrNames</span><span class="parameters">(name)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Helper function for get() and set().
+Caches attribute name values so we don&#39;t do the string ops every time.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | object</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__getEntriesFor"></a><span class="functionIcon">_getEntriesFor</span><span class="parameters">(entries, attr)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dgauges/CircularRangeIndicator" class="jsdoc-link">dojox/dgauges/CircularRangeIndicator</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Internal method.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">entries</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">attr</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__interpolateColor"></a><span class="functionIcon">_interpolateColor</span><span class="parameters">(from, dest, n)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dgauges/CircularRangeIndicator" class="jsdoc-link">dojox/dgauges/CircularRangeIndicator</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Internal method.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">from</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">dest</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">n</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__startAnimation"></a><span class="functionIcon">_startAnimation</span><span class="parameters">(prop, oldValue, newValue)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Internal method.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">prop</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">oldValue</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">newValue</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__startEditing"></a><span class="functionIcon">_startEditing</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Internal method.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__updateAnimation"></a><span class="functionIcon">_updateAnimation</span><span class="parameters">(v)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Internal method.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">v</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator_addInvalidatingProperties"></a><span class="functionIcon">addInvalidatingProperties</span><span class="parameters">(properties)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/_Invalidating" class="jsdoc-link">dojox/widget/_Invalidating</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Add properties to the watched properties to trigger invalidation. This method must be called in
+the constructor. It is typically used by subclasses of a _Invalidating class to add more properties
+to watch for.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">properties</td>
+            <td class="jsdoc-param-type">String[]</td>
+            <td class="jsdoc-param-description"><p>The list of properties to watch for.</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dgauges/CircularRangeIndicator" class="jsdoc-link">dojox/dgauges/CircularRangeIndicator</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator_get"></a><span class="functionIcon">get</span><span class="parameters">(name)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Get a property on a Stateful instance.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Get a named property on a Stateful object. The property may
+potentially be retrieved via a getter method in subclasses. In the base class
+this just retrieves the object&#39;s property.
+For example:</p>
+<pre><code>  stateful = new dojo.Stateful({foo: 3});
+  stateful.get(&quot;foo&quot;) // returns 3
+  stateful.foo // returns 3</pre></code>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The property to get.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
+        <div class="jsdoc-return-description">The property value on this Stateful instance.</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator_invalidateRendering"></a><span class="functionIcon">invalidateRendering</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/_Invalidating" class="jsdoc-link">dojox/widget/_Invalidating</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Invalidating the rendering for the next executation frame.</p>
+</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator_postscript"></a><span class="functionIcon">postscript</span><span class="parameters">(mixin)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/_Invalidating" class="jsdoc-link">dojox/widget/_Invalidating</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">mixin</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator_refreshRendering"></a><span class="functionIcon">refreshRendering</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dgauges/CircularRangeIndicator" class="jsdoc-link">dojox/dgauges/CircularRangeIndicator</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator_set"></a><span class="functionIcon">set</span><span class="parameters">(name, value)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Set a property on a Stateful instance</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Sets named properties on a stateful object and notifies any watchers of
+the property. A programmatic setter may be defined in subclasses.
+For example:</p>
+<pre><code>  stateful = new dojo.Stateful();
+  stateful.watch(function(name, oldValue, value){
+    // this will be called on the set below
+  }
+  stateful.set(foo, 5);</pre></code>
+<p></p>
+<p>set() may also be called with a hash of name/value pairs, ex:</p>
+<pre><code>  myObj.set({
+    foo: &quot;Howdy&quot;,
+    bar: 3
+  })</pre></code>
+<p>This is equivalent to calling set(foo, &quot;Howdy&quot;) and set(bar, 3)</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The property to set.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>The value to set in the property.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | function</span></div>
+        <div class="jsdoc-return-description">The function returns this dojo.Stateful instance.</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator_validateRendering"></a><span class="functionIcon">validateRendering</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/_Invalidating" class="jsdoc-link">dojox/widget/_Invalidating</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Immediately validate the rendering if it has been invalidated. You generally do not call that method yourself.</p>
+</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator_valueChanged"></a><span class="functionIcon">valueChanged</span><span class="parameters">(indicator)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Invoked when the value of the indicator changes.
+User can connect an listener on this function:</p>
+<pre><code>  connect.connect(theIndicator, &quot;valueChanged&quot;, lang.hitch(this, function(){
+    //do something
+  }));</code></pre>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">indicator</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator_watch"></a><span class="functionIcon">watch</span><span class="parameters">(name, callback)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/Stateful" class="jsdoc-link">dojo/Stateful</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Watches a property for changes</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>Indicates the property to watch. This is optional (the callback may be the
+only parameter), and if omitted, all the properties will be watched</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">callback</td>
+            <td class="jsdoc-param-type">Function</td>
+            <td class="jsdoc-param-description"><p>The function to execute when the property changes. This will be called after
+the property has been changed. The callback will be called with the |this|
+set to the instance, the first argument as the name of the property, the
+second argument as the old value and the third argument as the new value.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | object</span></div>
+        <div class="jsdoc-return-description">An object handle for the watch. The unwatch method of this object
+can be used to discontinue watching this property:
+|  var watchHandle = obj.watch("foo", callback);
+|  watchHandle.unwatch(); // callback won't be called now</div>
+      </div>
+    </div>
+    <h2>Events</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__onMouseDown"></a><span class="functionIcon">_onMouseDown</span><span class="parameters">(event)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/dgauges/CircularRangeIndicator" class="jsdoc-link">dojox/dgauges/CircularRangeIndicator</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Internal method.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__onMouseMove"></a><span class="functionIcon">_onMouseMove</span><span class="parameters">(event)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/dgauges/CircularRangeIndicator" class="jsdoc-link">dojox/dgauges/CircularRangeIndicator</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Internal method.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_dgauges_CircularRangeIndicator__onMouseUp"></a><span class="functionIcon">_onMouseUp</span><span class="parameters">(event)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/dgauges/ScaleIndicatorBase" class="jsdoc-link">dojox/dgauges/ScaleIndicatorBase</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Internal method.</p>
+</div>
+      </div>
+    </div>
+  </div>
+</div>

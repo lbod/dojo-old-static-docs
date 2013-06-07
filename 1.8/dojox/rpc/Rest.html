@@ -1,0 +1,222 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/rpc/Rest</div>
+<h1 class="functionIcon36 jsdoc-title">dojox/rpc/Rest<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>This provides a HTTP REST service with full range REST verbs include PUT,POST, and DELETE.</p>
+</div>
+<div class="jsdoc-full-summary"><p>A normal GET query is done by using the service directly:</p>
+<pre><code> var restService = dojox.rpc.Rest(&quot;Project&quot;);
+ restService(&quot;4&quot;);</pre></code>
+<p>This will do a GET for the URL &quot;/Project/4&quot;.</p>
+<pre><code> restService.put(&quot;4&quot;,&quot;new content&quot;);</pre></code>
+<p>This will do a PUT to the URL &quot;/Project/4&quot; with the content of &quot;new content&quot;.
+You can also use the SMD service to generate a REST service:</p>
+<pre><code> var services = dojox.rpc.Service({services: {myRestService: {transport: &quot;REST&quot;,...
+ services.myRestService(&quot;parameters&quot;);</pre></code>
+<p></p>
+<p>The modifying methods can be called as sub-methods of the rest service method like:</p>
+<pre><code> services.myRestService.put(&quot;parameters&quot;,&quot;data to put in resource&quot;);
+ services.myRestService.post(&quot;parameters&quot;,&quot;data to post to the resource&quot;);
+ services.myRestService[&#39;delete&#39;](&quot;parameters&quot;);</pre></code>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">path</td>
+    <td class="jsdoc-param-type">String</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">isJson</td>
+    <td class="jsdoc-param-type">Boolean</td>
+    <td class="jsdoc-param-description">
+      <div><em>Optional</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">schema</td>
+    <td class="jsdoc-param-type">Object</td>
+    <td class="jsdoc-param-description">
+      <div><em>Optional</em></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">getRequest</td>
+    <td class="jsdoc-param-type">Function</td>
+    <td class="jsdoc-param-description">
+      <div><em>Optional</em></div>
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojox/rpc/Rest.html" target="_blank">dojox/rpc/Rest reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="objectIcon private"><a href="#1_8dojox_rpc_Rest__index" class="inline-link"> _index </a><span></span><span title="private" class="jsdoc-private"></span>
+    </li>
+    <li class="objectIcon private"><a href="#1_8dojox_rpc_Rest__timeStamps" class="inline-link"> _timeStamps </a><span></span><span title="private" class="jsdoc-private"></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dojox_rpc_Rest__change" class="inline-link"> _change</a><span class="parameters">(</span>method, service, id, serializedContent) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_rpc_Rest__get" class="inline-link"> _get</a><span class="parameters">(</span>service, id) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_rpc_Rest_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>path, isJson, schema, getRequest) <span>This provides a HTTP REST service with full range REST verbs include PUT,POST, and DELETE.</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_rpc_Rest__index"></a><span class="objectIcon">_index</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/rpc/Rest" class="jsdoc-link">dojox/rpc/Rest</a>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_rpc_Rest__timeStamps"></a><span class="objectIcon">_timeStamps</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/rpc/Rest" class="jsdoc-link">dojox/rpc/Rest</a>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_rpc_Rest__change"></a><span class="functionIcon">_change</span><span class="parameters">(method, service, id, serializedContent)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/rpc/OfflineRest" class="jsdoc-link">dojox/rpc/OfflineRest</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">method</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">service</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">id</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">serializedContent</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_rpc_Rest__get"></a><span class="functionIcon">_get</span><span class="parameters">(service, id)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/rpc/OfflineRest" class="jsdoc-link">dojox/rpc/OfflineRest</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">service</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">id</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_rpc_Rest_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(path, isJson, schema, getRequest)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/rpc/Rest" class="jsdoc-link">dojox/rpc/Rest</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>This provides a HTTP REST service with full range REST verbs include PUT,POST, and DELETE.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>A normal GET query is done by using the service directly:</p>
+<pre><code> var restService = dojox.rpc.Rest(&quot;Project&quot;);
+ restService(&quot;4&quot;);</pre></code>
+<p>This will do a GET for the URL &quot;/Project/4&quot;.</p>
+<pre><code> restService.put(&quot;4&quot;,&quot;new content&quot;);</pre></code>
+<p>This will do a PUT to the URL &quot;/Project/4&quot; with the content of &quot;new content&quot;.
+You can also use the SMD service to generate a REST service:</p>
+<pre><code> var services = dojox.rpc.Service({services: {myRestService: {transport: &quot;REST&quot;,...
+ services.myRestService(&quot;parameters&quot;);</pre></code>
+<p></p>
+<p>The modifying methods can be called as sub-methods of the rest service method like:</p>
+<pre><code> services.myRestService.put(&quot;parameters&quot;,&quot;data to put in resource&quot;);
+ services.myRestService.post(&quot;parameters&quot;,&quot;data to post to the resource&quot;);
+ services.myRestService[&#39;delete&#39;](&quot;parameters&quot;);</pre></code>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">path</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">isJson</td>
+            <td class="jsdoc-param-type">Boolean</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">schema</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">getRequest</td>
+            <td class="jsdoc-param-type">Function</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">function</span></div>
+      </div>
+    </div>
+  </div>
+</div>

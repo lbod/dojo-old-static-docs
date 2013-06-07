@@ -1,0 +1,155 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/store/util/SimpleQueryEngine</div>
+<h1 class="functionIcon36 jsdoc-title">dojo/store/util/SimpleQueryEngine<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>Defines the query engine to use for querying the data store</p>
+</div>
+<div class="jsdoc-full-summary"><p>The SimpleQueryEngine provides a way of getting a QueryResults through
+the use of a simple object hash as a filter.  The hash will be used to
+match properties on data objects with the corresponding value given. In
+other words, only exact matches will be returned.
+
+</p>
+<p>This function can be used as a template for more complex query engines;
+for example, an engine can be created that accepts an object hash that
+contains filtering functions, or a string that gets evaluated, etc.
+
+</p>
+<p>When creating a new dojo.store, simply set the store&#39;s queryEngine
+field as a reference to this function.
+</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">query</td>
+    <td class="jsdoc-param-type">Object</td>
+    <td class="jsdoc-param-description"><p>An object hash with fields that may match fields of items in the store.
+Values in the hash will be compared by normal == operator, but regular expressions
+or any object that provides a test() method are also supported and can be
+used to match strings by more complex expressions
+(and then the regex&#39;s or object&#39;s test() method will be used to match values).
+</p>
+ 
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">options</td>
+    <td class="jsdoc-param-type">dojo/store/api/Store.QueryOptions</td>
+    <td class="jsdoc-param-description">
+      <div><em>Optional</em></div><p>An object that contains optional information such as sort, start, and count.
+</p>
+ 
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojo/store/util/SimpleQueryEngine.html" target="_blank">dojo/store/util/SimpleQueryEngine reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<div class="jsdoc-examples">
+  <h2>Examples</h2>
+  <div class="jsdoc-example">
+    <h3>Example 1</h3><p>Define a store with a reference to this engine, and set up a query method.
+
+</p>
+<pre><code>  var myStore = function(options){
+    //  ...more properties here
+    this.queryEngine = SimpleQueryEngine;
+    //  define our query method
+    this.query = function(query, options){
+      return QueryResults(this.queryEngine(query, options)(this.data));
+    };
+  };</code></pre>
+
+  </div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojo_store_util_SimpleQueryEngine_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>query, options) <span>Defines the query engine to use for querying the data store</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_store_util_SimpleQueryEngine_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(query, options)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/store/util/SimpleQueryEngine" class="jsdoc-link">dojo/store/util/SimpleQueryEngine</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Defines the query engine to use for querying the data store</p>
+</div>
+        <div class="jsdoc-full-summary"><p>The SimpleQueryEngine provides a way of getting a QueryResults through
+the use of a simple object hash as a filter.  The hash will be used to
+match properties on data objects with the corresponding value given. In
+other words, only exact matches will be returned.
+
+</p>
+<p>This function can be used as a template for more complex query engines;
+for example, an engine can be created that accepts an object hash that
+contains filtering functions, or a string that gets evaluated, etc.
+
+</p>
+<p>When creating a new dojo.store, simply set the store&#39;s queryEngine
+field as a reference to this function.
+</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">query</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>An object hash with fields that may match fields of items in the store.
+Values in the hash will be compared by normal == operator, but regular expressions
+or any object that provides a test() method are also supported and can be
+used to match strings by more complex expressions
+(and then the regex&#39;s or object&#39;s test() method will be used to match values).
+</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">options</td>
+            <td class="jsdoc-param-type">dojo/store/api/Store.QueryOptions</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>An object that contains optional information such as sort, start, and count.
+</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Function | function</span></div>
+        <div class="jsdoc-return-description">A function that caches the passed query under the field "matches".  See any
+of the "query" methods on dojo.stores.
+</div>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><p>Define a store with a reference to this engine, and set up a query method.
+
+</p>
+<pre><code>  var myStore = function(options){
+    //  ...more properties here
+    this.queryEngine = SimpleQueryEngine;
+    //  define our query method
+    this.query = function(query, options){
+      return QueryResults(this.queryEngine(query, options)(this.data));
+    };
+  };</code></pre>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,656 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/editor/plugins/TablePlugins</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/editor/plugins/TablePlugins<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-mixins">
+  <label>Extends </label><a href="/api/1.8/dijit/_editor/_Plugin" class="jsdoc-link">dijit/_editor/_Plugin,   </a>
+</div>
+<div class="jsdoc-full-summary"><p>A collection of Plugins for inserting and modifying tables in the Editor
+See end of this document for all available plugs
+and dojox/editorPlugins/tests/editorTablePlugs.html for an example
+
+</p>
+<p>NOT IMPLEMENTED: Not handling cell merge, span or split
+</p>
+</div>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/editor/plugins/TablePlugins<span class="parameters">(args);</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dijit/_editor/_Plugin">dijit/_editor/_Plugin</a></div>
+<div class="jsdoc-summary"><p>Create the plugin.</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">args</td>
+    <td class="jsdoc-param-type">Object</td>
+    <td class="jsdoc-param-description">
+      <div><em>Optional</em></div><p>Initial settings for any of the attributes.</p>
+ 
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojox/editor/plugins/TablePlugins.html" target="_blank">dojox/editor/plugins/TablePlugins reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="booleanIcon"><a href="#1_8dojox_editor_plugins_TablePlugins_alwaysAvailable" class="inline-link"> alwaysAvailable </a><span></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_editor_plugins_TablePlugins_button" class="inline-link"> button </a><span>Pointer to dijit/form/Button or other widget (ex: dijit/form/FilteringSelect)
+that is added to the toolbar to control this plugin.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojox_editor_plugins_TablePlugins_command" class="inline-link"> command </a><span>String like &quot;insertUnorderedList&quot;, &quot;outdent&quot;, &quot;justifyCenter&quot;, etc. that represents an editor command.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojox_editor_plugins_TablePlugins_commandName" class="inline-link"> commandName </a><span></span><span title="inherited from dojox/editor/plugins/TablePlugins" class="jsdoc-inherited"></span>
+    </li>
+    <li class="booleanIcon inherited"><a href="#1_8dojox_editor_plugins_TablePlugins_disabled" class="inline-link"> disabled </a><span>Flag to indicate if this plugin has been disabled and should do nothing
+helps control button state, among other things.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_editor_plugins_TablePlugins_editor" class="inline-link"> editor </a><span>Points to the parent editor</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojox_editor_plugins_TablePlugins_iconClassPrefix" class="inline-link"> iconClassPrefix </a><span></span><span title="inherited from dojox/editor/plugins/TablePlugins" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojox_editor_plugins_TablePlugins_label" class="inline-link"> label </a><span></span><span title="inherited from dojox/editor/plugins/TablePlugins" class="jsdoc-inherited"></span>
+    </li>
+    <li class="booleanIcon inherited"><a href="#1_8dojox_editor_plugins_TablePlugins_undoEnabled" class="inline-link"> undoEnabled </a><span></span><span title="inherited from dojox/editor/plugins/TablePlugins" class="jsdoc-inherited"></span>
+    </li>
+    <li class="booleanIcon inherited"><a href="#1_8dojox_editor_plugins_TablePlugins_useDefaultCommand" class="inline-link"> useDefaultCommand </a><span></span><span title="inherited from dojox/editor/plugins/TablePlugins" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private inherited"><a href="#1_8dojox_editor_plugins_TablePlugins__getAttrNames" class="inline-link"> _getAttrNames</a><span class="parameters">(</span>name) <span>Helper function for get() and set().</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_editor_plugins_TablePlugins__initButton" class="inline-link"> _initButton</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_editor_plugins_TablePlugins__makeTitle" class="inline-link"> _makeTitle</a><span class="parameters">(</span>str) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_editor_plugins_TablePlugins__set" class="inline-link"> _set</a><span class="parameters">(</span>name, value) <span>Helper function to set new value for specified attribute</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_editor_plugins_TablePlugins__setDisabledAttr" class="inline-link"> _setDisabledAttr</a><span class="parameters">(</span>disabled) <span>Function to set the plugin state and call updateState to make sure the
+button is updated appropriately.</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_editor_plugins_TablePlugins_begEdit" class="inline-link"> begEdit</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_editor_plugins_TablePlugins_buttonClass" class="inline-link"> buttonClass</a><span class="parameters">(</span>) <span>Class of widget (ex: dijit.form.Button or dijit/form/FilteringSelect)
+that is added to the toolbar to control this plugin.</span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_editor_plugins_TablePlugins_connect" class="inline-link"> connect</a><span class="parameters">(</span>o, f, tf) <span>Make a connect.connect() that is automatically disconnected when this plugin is destroyed.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_editor_plugins_TablePlugins_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args) <span>Create the plugin.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_editor_plugins_TablePlugins_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Over-ridden destroy to do some cleanup.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_editor_plugins_TablePlugins_endEdit" class="inline-link"> endEdit</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_editor_plugins_TablePlugins_get" class="inline-link"> get</a><span class="parameters">(</span>name) <span>Get a property from a plugin.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon private inherited"><a href="#1_8dojox_editor_plugins_TablePlugins_getLabel" class="inline-link"> getLabel</a><span class="parameters">(</span>key) <span>Returns the label to use for the button</span><span title="private" class="jsdoc-private"> </span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_editor_plugins_TablePlugins_getSelectedCells" class="inline-link"> getSelectedCells</a><span class="parameters">(</span>) <span>Gets the selected cells from the passed table.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_editor_plugins_TablePlugins_getTableInfo" class="inline-link"> getTableInfo</a><span class="parameters">(</span>forceNewData) <span>Gets the table in focus
+Collects info on the table - see return params</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_editor_plugins_TablePlugins_makeColumnsEven" class="inline-link"> makeColumnsEven</a><span class="parameters">(</span>) <span>After changing column amount, change widths to
+keep columns even</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_editor_plugins_TablePlugins_modTable" class="inline-link"> modTable</a><span class="parameters">(</span>cmd, args) <span>Where each plugin performs its action.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_editor_plugins_TablePlugins_selectTable" class="inline-link"> selectTable</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_editor_plugins_TablePlugins_set" class="inline-link"> set</a><span class="parameters">(</span>name, value) <span>Set a property on a plugin</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_editor_plugins_TablePlugins_setEditor" class="inline-link"> setEditor</a><span class="parameters">(</span>editor) <span></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_editor_plugins_TablePlugins_setToolbar" class="inline-link"> setToolbar</a><span class="parameters">(</span>toolbar) <span>Tell the plugin to add it&#39;s controller widget (often a button)
+to the toolbar.</span><span title="inherited from dijit/_editor/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_editor_plugins_TablePlugins_updateState" class="inline-link"> updateState</a><span class="parameters">(</span>) <span>Over-ride for button state control for disabled to work.</span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_editor_plugins_TablePlugins_onDisplayChanged" class="inline-link"> onDisplayChanged</a><span class="parameters">(</span>withinTable) <span>subscribed to from the global object&#39;s publish method</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_editor_plugins_TablePlugins_onEditorLoaded" class="inline-link"> onEditorLoaded</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_alwaysAvailable"></a><span class="booleanIcon">alwaysAvailable</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/editor/plugins/TablePlugins" class="jsdoc-link">dojox/editor/plugins/TablePlugins</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_button"></a><span class="objectIcon">button</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_editor/_Plugin" class="jsdoc-link">dijit/_editor/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Pointer to <a class="jsdoc-link" href="/api/1.8/dijit/form/Button">dijit/form/Button</a> or other widget (ex: <a class="jsdoc-link" href="/api/1.8/dijit/form/FilteringSelect">dijit/form/FilteringSelect</a>)
+that is added to the toolbar to control this plugin.
+If not specified, will be created on initialization according to <code>buttonClass</code></p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_command"></a><span class="stringIcon">command</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_editor/_Plugin" class="jsdoc-link">dijit/_editor/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>String like &quot;insertUnorderedList&quot;, &quot;outdent&quot;, &quot;justifyCenter&quot;, etc. that represents an editor command.
+Passed to editor.execCommand() if <code>useDefaultCommand</code> is true.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_commandName"></a><span class="stringIcon">commandName</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/editor/plugins/TablePlugins" class="jsdoc-link">dojox/editor/plugins/TablePlugins</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_disabled"></a><span class="booleanIcon">disabled</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_editor/_Plugin" class="jsdoc-link">dijit/_editor/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Flag to indicate if this plugin has been disabled and should do nothing
+helps control button state, among other things.  Set via the setter api.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_editor"></a><span class="objectIcon">editor</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/_editor/_Plugin" class="jsdoc-link">dijit/_editor/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Points to the parent editor</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_iconClassPrefix"></a><span class="stringIcon">iconClassPrefix</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/editor/plugins/TablePlugins" class="jsdoc-link">dojox/editor/plugins/TablePlugins</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_label"></a><span class="stringIcon">label</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/editor/plugins/TablePlugins" class="jsdoc-link">dojox/editor/plugins/TablePlugins</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_undoEnabled"></a><span class="booleanIcon">undoEnabled</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/editor/plugins/TablePlugins" class="jsdoc-link">dojox/editor/plugins/TablePlugins</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_useDefaultCommand"></a><span class="booleanIcon">useDefaultCommand</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/editor/plugins/TablePlugins" class="jsdoc-link">dojox/editor/plugins/TablePlugins</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins__getAttrNames"></a><span class="functionIcon">_getAttrNames</span><span class="parameters">(name)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_editor/_Plugin" class="jsdoc-link">dijit/_editor/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Helper function for get() and set().
+Caches attribute name values so we don&#39;t do the string ops every time.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | object</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins__initButton"></a><span class="functionIcon">_initButton</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/editor/plugins/TablePlugins" class="jsdoc-link">dojox/editor/plugins/TablePlugins</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins__makeTitle"></a><span class="functionIcon">_makeTitle</span><span class="parameters">(str)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/editor/plugins/TablePlugins" class="jsdoc-link">dojox/editor/plugins/TablePlugins</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">str</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins__set"></a><span class="functionIcon">_set</span><span class="parameters">(name, value)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_editor/_Plugin" class="jsdoc-link">dijit/_editor/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Helper function to set new value for specified attribute</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">anything</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins__setDisabledAttr"></a><span class="functionIcon">_setDisabledAttr</span><span class="parameters">(disabled)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_editor/_Plugin" class="jsdoc-link">dijit/_editor/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Function to set the plugin state and call updateState to make sure the
+button is updated appropriately.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">disabled</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_begEdit"></a><span class="functionIcon">begEdit</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/editor/plugins/TablePlugins" class="jsdoc-link">dojox/editor/plugins/TablePlugins</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_buttonClass"></a><span class="functionIcon">buttonClass</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/editor/plugins/TablePlugins" class="jsdoc-link">dojox/editor/plugins/TablePlugins</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Class of widget (ex: dijit.form.Button or dijit/form/FilteringSelect)
+that is added to the toolbar to control this plugin.
+This is used to instantiate the button, unless <code>button</code> itself is specified directly.</p>
+</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_connect"></a><span class="functionIcon">connect</span><span class="parameters">(o, f, tf)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_editor/_Plugin" class="jsdoc-link">dijit/_editor/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Make a connect.connect() that is automatically disconnected when this plugin is destroyed.
+Similar to <code>dijit/_Widget.connect()</code>.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">o</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">f</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">tf</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(args)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_editor/_Plugin" class="jsdoc-link">dijit/_editor/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Create the plugin.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">args</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>Initial settings for any of the attributes.</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/editor/plugins/TablePlugins" class="jsdoc-link">dojox/editor/plugins/TablePlugins</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Over-ridden destroy to do some cleanup.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_endEdit"></a><span class="functionIcon">endEdit</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/editor/plugins/TablePlugins" class="jsdoc-link">dojox/editor/plugins/TablePlugins</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_get"></a><span class="functionIcon">get</span><span class="parameters">(name)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_editor/_Plugin" class="jsdoc-link">dijit/_editor/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Get a property from a plugin.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Get a named property from a plugin. The property may
+potentially be retrieved via a getter method. If no getter is defined, this
+just retrieves the object&#39;s property.
+For example, if the plugin has a properties &quot;foo&quot;
+and &quot;bar&quot; and a method named &quot;_getFooAttr&quot;, calling:</p>
+<pre><code>  plugin.get(&quot;foo&quot;);</pre></code>
+<p>would be equivalent to writing:</p>
+<pre><code>  plugin._getFooAttr();</pre></code>
+<p>and:</p>
+<pre><code>  plugin.get(&quot;bar&quot;);</pre></code>
+<p>would be equivalent to writing:</p>
+<pre><code>  plugin.bar;</pre></code>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description"><p>The property to get.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field private inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_getLabel"></a><span class="functionIcon">getLabel</span><span class="parameters">(key)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_editor/_Plugin" class="jsdoc-link">dijit/_editor/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Returns the label to use for the button</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">key</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_getSelectedCells"></a><span class="functionIcon">getSelectedCells</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/editor/plugins/TablePlugins" class="jsdoc-link">dojox/editor/plugins/TablePlugins</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Gets the selected cells from the passed table.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | Array</span></div>
+        <div class="jsdoc-return-description">array of TDs or empty array</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_getTableInfo"></a><span class="functionIcon">getTableInfo</span><span class="parameters">(forceNewData)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/editor/plugins/TablePlugins" class="jsdoc-link">dojox/editor/plugins/TablePlugins</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Gets the table in focus
+Collects info on the table - see return params
+</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">forceNewData</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_makeColumnsEven"></a><span class="functionIcon">makeColumnsEven</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/editor/plugins/TablePlugins" class="jsdoc-link">dojox/editor/plugins/TablePlugins</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>After changing column amount, change widths to
+keep columns even</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_modTable"></a><span class="functionIcon">modTable</span><span class="parameters">(cmd, args)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/editor/plugins/TablePlugins" class="jsdoc-link">dojox/editor/plugins/TablePlugins</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Where each plugin performs its action.
+Note: not using execCommand. In spite of their presence in the
+Editor as query-able plugins, I was not able to find any evidence
+that they are supported (especially in NOT IE). If they are
+supported in other browsers, it may help with the undo problem.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">cmd</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">args</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_selectTable"></a><span class="functionIcon">selectTable</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/editor/plugins/TablePlugins" class="jsdoc-link">dojox/editor/plugins/TablePlugins</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_set"></a><span class="functionIcon">set</span><span class="parameters">(name, value)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_editor/_Plugin" class="jsdoc-link">dijit/_editor/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Set a property on a plugin</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Sets named properties on a plugin which may potentially be handled by a
+setter in the plugin.
+For example, if the plugin has a properties &quot;foo&quot;
+and &quot;bar&quot; and a method named &quot;_setFooAttr&quot;, calling:</p>
+<pre><code>  plugin.set(&quot;foo&quot;, &quot;Howdy!&quot;);</pre></code>
+<p>would be equivalent to writing:</p>
+<pre><code>  plugin._setFooAttr(&quot;Howdy!&quot;);</pre></code>
+<p>and:</p>
+<pre><code>  plugin.set(&quot;bar&quot;, 3);</pre></code>
+<p>would be equivalent to writing:</p>
+<pre><code>  plugin.bar = 3;</pre></code>
+<p></p>
+<p>set() may also be called with a hash of name/value pairs, ex:</p>
+<pre><code>  plugin.set({
+    foo: &quot;Howdy&quot;,
+    bar: 3
+  })</pre></code>
+<p>This is equivalent to calling set(foo, &quot;Howdy&quot;) and set(bar, 3)</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">attribute</td>
+            <td class="jsdoc-param-description"><p>The property to set.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">anything</td>
+            <td class="jsdoc-param-description"><p>The value to set in the property.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">function | string</span></div>
+        <div class="jsdoc-return-description"><p>Set a property on a plugin</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_setEditor"></a><span class="functionIcon">setEditor</span><span class="parameters">(editor)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/editor/plugins/TablePlugins" class="jsdoc-link">dojox/editor/plugins/TablePlugins</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">editor</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_setToolbar"></a><span class="functionIcon">setToolbar</span><span class="parameters">(toolbar)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_editor/_Plugin" class="jsdoc-link">dijit/_editor/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Tell the plugin to add it&#39;s controller widget (often a button)
+to the toolbar.  Does nothing if there is no controller widget.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">toolbar</td>
+            <td class="jsdoc-param-type">dijit/Toolbar</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_updateState"></a><span class="functionIcon">updateState</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/editor/plugins/TablePlugins" class="jsdoc-link">dojox/editor/plugins/TablePlugins</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Over-ride for button state control for disabled to work.</p>
+</div>
+      </div>
+    </div>
+    <h2>Events</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_onDisplayChanged"></a><span class="functionIcon">onDisplayChanged</span><span class="parameters">(withinTable)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/editor/plugins/TablePlugins" class="jsdoc-link">dojox/editor/plugins/TablePlugins</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>subscribed to from the global object&#39;s publish method</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_editor_plugins_TablePlugins_onEditorLoaded"></a><span class="functionIcon">onEditorLoaded</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/editor/plugins/TablePlugins" class="jsdoc-link">dojox/editor/plugins/TablePlugins</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+    </div>
+  </div>
+</div>

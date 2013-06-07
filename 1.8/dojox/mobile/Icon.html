@@ -1,0 +1,150 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mobile/Icon</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/mobile/Icon<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>A wrapper for image icon, CSS sprite icon, or DOM Button.</p>
+</div>
+<div class="jsdoc-full-summary"><p>Icon is an utility for creating an image icon, a CSS sprite icon,
+or a DOM Button. It calls iconUtils.createIcon() with given
+parameters to create an icon.
+Note that this module is not a widget, i.e., it does not inherit
+from <a class="jsdoc-link" href="/api/1.8/dijit/_WidgetBase">dijit/_WidgetBase</a>.</p>
+</div>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/mobile/Icon<span class="parameters">(args,node);</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/mobile/Icon">dojox/mobile/Icon</a></div>
+<div class="jsdoc-summary"><p>Creates a new instance of the class.</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">args</td>
+    <td class="jsdoc-param-type">Object</td>
+    <td class="jsdoc-param-description">
+      <div><em>Optional</em></div><p>Contains properties to be set.</p>
+ 
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">node</td>
+    <td class="jsdoc-param-type">DomNode</td>
+    <td class="jsdoc-param-description">
+      <div><em>Optional</em></div><p>The DOM node. If none is specified, it is automatically created. </p>
+ 
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojox/mobile/Icon.html" target="_blank">dojox/mobile/Icon reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<div class="jsdoc-examples">
+  <h2>Examples</h2>
+  <div class="jsdoc-example">
+    <h3>Example 1</h3><p>Image icon:</p>
+<pre><code>  &lt;div data-dojo-type=&quot;dojox.mobile.Icon&quot;
+    data-dojo-props=&#39;icon:&quot;images/tab-icon-12h.png&quot;&#39;&gt;&lt;/div&gt;</code></pre>
+<p></p>
+<p>CSS sprite icon:</p>
+<pre><code>  &lt;div data-dojo-type=&quot;dojox.mobile.Icon&quot;
+    data-dojo-props=&#39;icon:&quot;images/tab-icons.png&quot;,iconPos:&quot;29,116,29,29&quot;&#39;&gt;&lt;/div&gt;</code></pre>
+<p></p>
+<p>DOM Button:</p>
+<pre><code>  &lt;div data-dojo-type=&quot;dojox.mobile.Icon&quot;
+    data-dojo-props=&#39;icon:&quot;mblDomButtonBlueCircleArrow&quot;&#39;&gt;&lt;/div&gt;</code></pre>
+
+  </div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="stringIcon"><a href="#1_8dojox_mobile_Icon_alt" class="inline-link"> alt </a><span></span>
+    </li>
+    <li class="stringIcon"><a href="#1_8dojox_mobile_Icon_icon" class="inline-link"> icon </a><span>An icon to display.</span>
+    </li>
+    <li class="stringIcon"><a href="#1_8dojox_mobile_Icon_iconPos" class="inline-link"> iconPos </a><span></span>
+    </li>
+    <li class="stringIcon"><a href="#1_8dojox_mobile_Icon_tag" class="inline-link"> tag </a><span></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_mobile_Icon_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>args, node) <span>Creates a new instance of the class.</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_mobile_Icon_alt"></a><span class="stringIcon">alt</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/mobile/Icon" class="jsdoc-link">dojox/mobile/Icon</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_mobile_Icon_icon"></a><span class="stringIcon">icon</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/mobile/Icon" class="jsdoc-link">dojox/mobile/Icon</a>
+        </div>
+        <div class="jsdoc-summary"><p>An icon to display. The value can be either a path for an image
+file or a class name of a DOM button.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_mobile_Icon_iconPos"></a><span class="stringIcon">iconPos</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/mobile/Icon" class="jsdoc-link">dojox/mobile/Icon</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_mobile_Icon_tag"></a><span class="stringIcon">tag</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/mobile/Icon" class="jsdoc-link">dojox/mobile/Icon</a>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_mobile_Icon_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(args, node)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/Icon" class="jsdoc-link">dojox/mobile/Icon</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Creates a new instance of the class.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">args</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>Contains properties to be set.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">node</td>
+            <td class="jsdoc-param-type">DomNode</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>The DOM node. If none is specified, it is automatically created. </p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

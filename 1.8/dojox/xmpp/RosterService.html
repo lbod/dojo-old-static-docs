@@ -1,0 +1,419 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/xmpp/RosterService</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/xmpp/RosterService<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/xmpp/RosterService<span class="parameters">(xmppSession);</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/xmpp/RosterService">dojox/xmpp/RosterService</a></div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">xmppSession</td>
+    <td class="jsdoc-param-type">undefined</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojox/xmpp.html" target="_blank">dojox/xmpp/RosterService reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_xmpp_RosterService_addRosterItem" class="inline-link"> addRosterItem</a><span class="parameters">(</span>jid, name, groups) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_xmpp_RosterService_addRosterItemToGroup" class="inline-link"> addRosterItemToGroup</a><span class="parameters">(</span>jid, group) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_xmpp_RosterService_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>xmppSession) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_xmpp_RosterService_getAvatar" class="inline-link"> getAvatar</a><span class="parameters">(</span>jid) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_xmpp_RosterService_publishAvatar" class="inline-link"> publishAvatar</a><span class="parameters">(</span>type, binval) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_xmpp_RosterService_removeRosterGroup" class="inline-link"> removeRosterGroup</a><span class="parameters">(</span>group) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_xmpp_RosterService_removeRosterItem" class="inline-link"> removeRosterItem</a><span class="parameters">(</span>jid) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_xmpp_RosterService_removeRosterItemFromGroup" class="inline-link"> removeRosterItemFromGroup</a><span class="parameters">(</span>jid, group) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_xmpp_RosterService_renameRosterGroup" class="inline-link"> renameRosterGroup</a><span class="parameters">(</span>group, newGroup) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_xmpp_RosterService_renameRosterItem" class="inline-link"> renameRosterItem</a><span class="parameters">(</span>jid, newName) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_xmpp_RosterService_rosterItemRenameGroup" class="inline-link"> rosterItemRenameGroup</a><span class="parameters">(</span>jid, oldGroup, newGroup) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_xmpp_RosterService_updateRosterItem" class="inline-link"> updateRosterItem</a><span class="parameters">(</span>jid, name, groups) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_xmpp_RosterService_verifyRoster" class="inline-link"> verifyRoster</a><span class="parameters">(</span>res) <span></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_xmpp_RosterService_onVerifyRoster" class="inline-link"> onVerifyRoster</a><span class="parameters">(</span>id) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_xmpp_RosterService_onVerifyRosterFailed" class="inline-link"> onVerifyRosterFailed</a><span class="parameters">(</span>err) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_xmpp_RosterService_addRosterItem"></a><span class="functionIcon">addRosterItem</span><span class="parameters">(jid, name, groups)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/xmpp/RosterService" class="jsdoc-link">dojox/xmpp/RosterService</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">jid</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">groups</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_xmpp_RosterService_addRosterItemToGroup"></a><span class="functionIcon">addRosterItemToGroup</span><span class="parameters">(jid, group)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/xmpp/RosterService" class="jsdoc-link">dojox/xmpp/RosterService</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">jid</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">group</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_xmpp_RosterService_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(xmppSession)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/xmpp/RosterService" class="jsdoc-link">dojox/xmpp/RosterService</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">xmppSession</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_xmpp_RosterService_getAvatar"></a><span class="functionIcon">getAvatar</span><span class="parameters">(jid)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/xmpp/RosterService" class="jsdoc-link">dojox/xmpp/RosterService</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">jid</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_xmpp_RosterService_publishAvatar"></a><span class="functionIcon">publishAvatar</span><span class="parameters">(type, binval)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/xmpp/RosterService" class="jsdoc-link">dojox/xmpp/RosterService</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">type</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">binval</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_xmpp_RosterService_removeRosterGroup"></a><span class="functionIcon">removeRosterGroup</span><span class="parameters">(group)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/xmpp/RosterService" class="jsdoc-link">dojox/xmpp/RosterService</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">group</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_xmpp_RosterService_removeRosterItem"></a><span class="functionIcon">removeRosterItem</span><span class="parameters">(jid)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/xmpp/RosterService" class="jsdoc-link">dojox/xmpp/RosterService</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">jid</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_xmpp_RosterService_removeRosterItemFromGroup"></a><span class="functionIcon">removeRosterItemFromGroup</span><span class="parameters">(jid, group)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/xmpp/RosterService" class="jsdoc-link">dojox/xmpp/RosterService</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">jid</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">group</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_xmpp_RosterService_renameRosterGroup"></a><span class="functionIcon">renameRosterGroup</span><span class="parameters">(group, newGroup)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/xmpp/RosterService" class="jsdoc-link">dojox/xmpp/RosterService</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">group</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">newGroup</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_xmpp_RosterService_renameRosterItem"></a><span class="functionIcon">renameRosterItem</span><span class="parameters">(jid, newName)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/xmpp/RosterService" class="jsdoc-link">dojox/xmpp/RosterService</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">jid</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">newName</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_xmpp_RosterService_rosterItemRenameGroup"></a><span class="functionIcon">rosterItemRenameGroup</span><span class="parameters">(jid, oldGroup, newGroup)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/xmpp/RosterService" class="jsdoc-link">dojox/xmpp/RosterService</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">jid</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">oldGroup</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">newGroup</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_xmpp_RosterService_updateRosterItem"></a><span class="functionIcon">updateRosterItem</span><span class="parameters">(jid, name, groups)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/xmpp/RosterService" class="jsdoc-link">dojox/xmpp/RosterService</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">jid</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">groups</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_xmpp_RosterService_verifyRoster"></a><span class="functionIcon">verifyRoster</span><span class="parameters">(res)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/xmpp/RosterService" class="jsdoc-link">dojox/xmpp/RosterService</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">res</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+    </div>
+    <h2>Events</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_xmpp_RosterService_onVerifyRoster"></a><span class="functionIcon">onVerifyRoster</span><span class="parameters">(id)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/xmpp/RosterService" class="jsdoc-link">dojox/xmpp/RosterService</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_xmpp_RosterService_onVerifyRosterFailed"></a><span class="functionIcon">onVerifyRosterFailed</span><span class="parameters">(err)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/xmpp/RosterService" class="jsdoc-link">dojox/xmpp/RosterService</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+    </div>
+  </div>
+</div>

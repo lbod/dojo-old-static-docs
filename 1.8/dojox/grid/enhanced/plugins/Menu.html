@@ -1,0 +1,498 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/plugins/Menu</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/plugins/Menu<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-mixins">
+  <label>Extends </label><a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin,   </a>
+</div>
+<div class="jsdoc-full-summary"><p>Provides context menu support, including header menu, row menu, cell menu and selected region menu</p>
+</div>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/grid/enhanced/plugins/Menu<span class="parameters">();</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/grid/enhanced/plugins/Menu">dojox/grid/enhanced/plugins/Menu</a></div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<div class="jsdoc-examples">
+  <h2>Examples</h2>
+  <div class="jsdoc-example">
+    <h3>Example 1</h3><pre><code>  &lt;div dojoType=&quot;dojox.grid.EnhancedGrid&quot;
+    plugins=&quot;{menus:{headerMenu:&quot;headerMenuId&quot;, rowMenu:&quot;rowMenuId&quot;, cellMenu:&quot;cellMenuId&quot;,
+               selectedRegionMenu:&quot;selectedRegionMenuId&quot;}}&quot; ...&gt;
+  &lt;/div&gt;</code></pre>
+
+  </div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="arrayIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_Menu__connects" class="inline-link"> _connects </a><span>List of all connections.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="arrayIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_Menu__subscribes" class="inline-link"> _subscribes </a><span>List of all subscribes.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins_Menu_grid" class="inline-link"> grid </a><span>Grid that the plugin belongs to</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins_Menu_name" class="inline-link"> name </a><span>Plugin name</span><span title="inherited from dojox/grid/enhanced/plugins/Menu" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins_Menu_option" class="inline-link"> option </a><span>Plugin properties - leveraged with default and user specified properties.
+e.g. for dnd plugin, it may look like {&quot;class&quot;: dojox.grid.enhanced.plugins.DnD, &quot;dependency&quot;: [&quot;nestedSorting&quot;], ...}</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins_Menu_privates" class="inline-link"> privates </a><span>Private properties/methods shouldn&#39;t be mixin-ed anytime.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins_Menu_types" class="inline-link"> types </a><span>menu types</span><span title="inherited from dojox/grid/enhanced/plugins/Menu" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Menu__getMenuWidget" class="inline-link"> _getMenuWidget</a><span class="parameters">(</span>menu) <span>Fetch the required menu widget(should already been created)</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Menu__initMenu" class="inline-link"> _initMenu</a><span class="parameters">(</span>menuType, menu) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Menu__setCellMenuAttr" class="inline-link"> _setCellMenuAttr</a><span class="parameters">(</span>menu) <span>Set cell menu widget</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Menu__setMenuAttr" class="inline-link"> _setMenuAttr</a><span class="parameters">(</span>menu, menuType) <span>Bind menus to Grid.</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Menu__setRowMenuAttr" class="inline-link"> _setRowMenuAttr</a><span class="parameters">(</span>menu) <span>Set row menu widget</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_Menu__setSelectedRegionMenuAttr" class="inline-link"> _setSelectedRegionMenuAttr</a><span class="parameters">(</span>menu) <span>Set row menu widget</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Menu_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Connects specified obj/event to specified method of this object.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Menu_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Menu_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Destroy all resources.
+_Grid.destroy() will unbind headerMenu</span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Menu_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Disconnects handle and removes it from connection list.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Menu_init" class="inline-link"> init</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Menu_showMenu" class="inline-link"> showMenu</a><span class="parameters">(</span>e) <span>Show appropriate context menu
+Fired from dojox.grid.enhanced._Events.onRowContextMenu, &#39;this&#39; scope - Grid</span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Menu_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>topic, method) <span>Subscribes to the specified topic and calls the specified method
+of this object.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Menu_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Un-subscribes handle and removes it from subscriptions list.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Menu_onPostInit" class="inline-link"> onPostInit</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Menu_onPreInit" class="inline-link"> onPreInit</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_Menu_onSetStore" class="inline-link"> onSetStore</a><span class="parameters">(</span>store) <span>Called when store is changed.</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_Menu_onStartUp" class="inline-link"> onStartUp</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Menu__connects"></a><span class="arrayIcon">_connects</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>List of all connections.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Menu__subscribes"></a><span class="arrayIcon">_subscribes</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>List of all subscribes.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Menu_grid"></a><span class="objectIcon">grid</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Grid that the plugin belongs to</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Menu_name"></a><span class="stringIcon">name</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/enhanced/plugins/Menu" class="jsdoc-link">dojox/grid/enhanced/plugins/Menu</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Plugin name</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Menu_option"></a><span class="objectIcon">option</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Plugin properties - leveraged with default and user specified properties.
+e.g. for dnd plugin, it may look like {&quot;class&quot;: dojox.grid.enhanced.plugins.DnD, &quot;dependency&quot;: [&quot;nestedSorting&quot;], ...}</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Menu_privates"></a><span class="objectIcon">privates</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Private properties/methods shouldn&#39;t be mixin-ed anytime.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Menu_types"></a><span class="objectIcon">types</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/enhanced/plugins/Menu" class="jsdoc-link">dojox/grid/enhanced/plugins/Menu</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>menu types</p>
+</div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Menu__getMenuWidget"></a><span class="functionIcon">_getMenuWidget</span><span class="parameters">(menu)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Menu" class="jsdoc-link">dojox/grid/enhanced/plugins/Menu</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Fetch the required menu widget(should already been created)</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">menu</td>
+            <td class="jsdoc-param-type">String | Widget(dijit.Menu)</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Menu__initMenu"></a><span class="functionIcon">_initMenu</span><span class="parameters">(menuType, menu)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Menu" class="jsdoc-link">dojox/grid/enhanced/plugins/Menu</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">menuType</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">menu</td>
+            <td class="jsdoc-param-type">String | dijit/Menu</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Menu__setCellMenuAttr"></a><span class="functionIcon">_setCellMenuAttr</span><span class="parameters">(menu)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Menu" class="jsdoc-link">dojox/grid/enhanced/plugins/Menu</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Set cell menu widget</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">menu</td>
+            <td class="jsdoc-param-type">Widget(dijit.Menu)</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Menu__setMenuAttr"></a><span class="functionIcon">_setMenuAttr</span><span class="parameters">(menu, menuType)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Menu" class="jsdoc-link">dojox/grid/enhanced/plugins/Menu</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Bind menus to Grid.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">menu</td>
+            <td class="jsdoc-param-type">Widget(dijit.Menu)</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">menuType</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Menu__setRowMenuAttr"></a><span class="functionIcon">_setRowMenuAttr</span><span class="parameters">(menu)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Menu" class="jsdoc-link">dojox/grid/enhanced/plugins/Menu</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Set row menu widget</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">menu</td>
+            <td class="jsdoc-param-type">Widget(dijit.Menu)</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Menu__setSelectedRegionMenuAttr"></a><span class="functionIcon">_setSelectedRegionMenuAttr</span><span class="parameters">(menu)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Menu" class="jsdoc-link">dojox/grid/enhanced/plugins/Menu</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Set row menu widget</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">menu</td>
+            <td class="jsdoc-param-type">Widget(dijit.Menu)</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Menu_connect"></a><span class="functionIcon">connect</span><span class="parameters">(obj, event, method)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Connects specified obj/event to specified method of this object.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">obj</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">event</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">method</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><pre><code>  var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
+  // when foo.bar() is called, call the listener in the scope of plugin
+  plugin.connect(foo, &quot;bar&quot;, function(){
+    console.debug(this.xxx());//&quot;this&quot; - plugin scope
+  });</code></pre>
+
+          </div>
+        </div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Menu_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Menu" class="jsdoc-link">dojox/grid/enhanced/plugins/Menu</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Menu_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Menu" class="jsdoc-link">dojox/grid/enhanced/plugins/Menu</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Destroy all resources.
+_Grid.destroy() will unbind headerMenu</p>
+</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Menu_disconnect"></a><span class="functionIcon">disconnect</span><span class="parameters">(handle)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Disconnects handle and removes it from connection list.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">handle</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Menu_init"></a><span class="functionIcon">init</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Menu_showMenu"></a><span class="functionIcon">showMenu</span><span class="parameters">(e)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/Menu" class="jsdoc-link">dojox/grid/enhanced/plugins/Menu</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Show appropriate context menu
+Fired from dojox.grid.enhanced._Events.onRowContextMenu, &#39;this&#39; scope - Grid</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">e</td>
+            <td class="jsdoc-param-type">Event</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Menu_subscribe"></a><span class="functionIcon">subscribe</span><span class="parameters">(topic, method)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Subscribes to the specified topic and calls the specified method
+of this object.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">topic</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">method</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><pre><code>  var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
+  // when /my/topic is published, call the subscriber in the scope of plugin
+  // with passed parameter - &quot;v&quot;
+  plugin.subscribe(&quot;/my/topic&quot;, function(v){
+    console.debug(this.xxx(v));//&quot;this&quot; - plugin scope
+  });</code></pre>
+
+          </div>
+        </div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Menu_unsubscribe"></a><span class="functionIcon">unsubscribe</span><span class="parameters">(handle)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Un-subscribes handle and removes it from subscriptions list.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">handle</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <h2>Events</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Menu_onPostInit"></a><span class="functionIcon">onPostInit</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Menu_onPreInit"></a><span class="functionIcon">onPreInit</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Menu_onSetStore"></a><span class="functionIcon">onSetStore</span><span class="parameters">(store)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Called when store is changed.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_Menu_onStartUp"></a><span class="functionIcon">onStartUp</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/plugins/Menu" class="jsdoc-link">dojox/grid/enhanced/plugins/Menu</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+    </div>
+  </div>
+</div>

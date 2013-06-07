@@ -1,0 +1,966 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/enhanced/plugins/DnD</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/grid/enhanced/plugins/DnD<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-mixins">
+  <label>Extends </label><a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin,   </a>
+</div>
+<div class="jsdoc-full-summary"><p>Provide drag and drop for grid columns/rows/cells within grid and out of grid.
+The store of grid must implement dojo.data.api.Write.
+
+</p>
+<p>DnD selected columns:
+Support moving within grid, moving/copying out of grid to a non-grid DnD target.
+
+</p>
+<p>DnD selected rows:
+Support moving within grid, moving/copying out of grid to any DnD target.
+
+</p>
+<p>DnD selected cells (in rectangle shape only):
+Support moving/copying within grid, moving/copying out of grid to any DnD target.</p>
+</div>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/grid/enhanced/plugins/DnD<span class="parameters">(grid,args);</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/grid/enhanced/plugins/DnD">dojox/grid/enhanced/plugins/DnD</a></div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">grid</td>
+    <td class="jsdoc-param-type">undefined</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">args</td>
+    <td class="jsdoc-param-type">undefined</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+</table>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="objectIcon private"><a href="#1_8dojox_grid_enhanced_plugins_DnD__config" class="inline-link"> _config </a><span></span><span title="private" class="jsdoc-private"></span>
+    </li>
+    <li class="arrayIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_DnD__connects" class="inline-link"> _connects </a><span>List of all connections.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="booleanIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_DnD__copyOnly" class="inline-link"> _copyOnly </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/DnD" class="jsdoc-inherited"></span>
+    </li>
+    <li class="arrayIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_DnD__subscribes" class="inline-link"> _subscribes </a><span>List of all subscribes.</span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="numberIcon private inherited"><a href="#1_8dojox_grid_enhanced_plugins_DnD__targetAnchorBorderWidth" class="inline-link"> _targetAnchorBorderWidth </a><span></span><span title="private" class="jsdoc-private"></span><span title="inherited from dojox/grid/enhanced/plugins/DnD" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins_DnD_grid" class="inline-link"> grid </a><span>Grid that the plugin belongs to</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins_DnD_name" class="inline-link"> name </a><span>plugin name;</span><span title="inherited from dojox/grid/enhanced/plugins/DnD" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins_DnD_option" class="inline-link"> option </a><span>Plugin properties - leveraged with default and user specified properties.
+e.g. for dnd plugin, it may look like {&quot;class&quot;: dojox.grid.enhanced.plugins.DnD, &quot;dependency&quot;: [&quot;nestedSorting&quot;], ...}</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_grid_enhanced_plugins_DnD_privates" class="inline-link"> privates </a><span>Private properties/methods shouldn&#39;t be mixin-ed anytime.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_DnD__allDnDItemsLoaded" class="inline-link"> _allDnDItemsLoaded</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_DnD__calcCellTargetAnchorPos" class="inline-link"> _calcCellTargetAnchorPos</a><span class="parameters">(</span>evt, containerPos, targetAnchor) <span>Calculate the position of the cell DnD avatar</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_DnD__calcColTargetAnchorPos" class="inline-link"> _calcColTargetAnchorPos</a><span class="parameters">(</span>evt, containerPos) <span>Calculate the position of the column DnD avatar</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_DnD__calcRowTargetAnchorPos" class="inline-link"> _calcRowTargetAnchorPos</a><span class="parameters">(</span>evt, containerPos) <span>Calculate the position of the row DnD avatar</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_DnD__canAccept" class="inline-link"> _canAccept</a><span class="parameters">(</span>sourcePlugin) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_DnD__clear" class="inline-link"> _clear</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_DnD__createDnDUI" class="inline-link"> _createDnDUI</a><span class="parameters">(</span>evt, isMovingIn) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_DnD__createMoveable" class="inline-link"> _createMoveable</a><span class="parameters">(</span>evt) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_DnD__createSource" class="inline-link"> _createSource</a><span class="parameters">(</span>evt) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_DnD__destroyDnDUI" class="inline-link"> _destroyDnDUI</a><span class="parameters">(</span>isMovingOut, destroySource) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_DnD__destroyMoveable" class="inline-link"> _destroyMoveable</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_DnD__destroySource" class="inline-link"> _destroySource</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_DnD__endDnd" class="inline-link"> _endDnd</a><span class="parameters">(</span>destroySource) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_DnD__getDnDRegion" class="inline-link"> _getDnDRegion</a><span class="parameters">(</span>rowIndex, colIndex) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_DnD__getVisibleHeaders" class="inline-link"> _getVisibleHeaders</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_DnD__initEvents" class="inline-link"> _initEvents</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_DnD__isOutOfGrid" class="inline-link"> _isOutOfGrid</a><span class="parameters">(</span>evt) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_DnD__mapRegion" class="inline-link"> _mapRegion</a><span class="parameters">(</span>srcGrid, dndRegion) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_DnD__markTargetAnchor" class="inline-link"> _markTargetAnchor</a><span class="parameters">(</span>evt) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_DnD__mixinGrid" class="inline-link"> _mixinGrid</a><span class="parameters">(</span>) <span>Provide APIs for grid.</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_DnD__rearrange" class="inline-link"> _rearrange</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_DnD__startDnd" class="inline-link"> _startDnd</a><span class="parameters">(</span>evt) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_DnD__unmarkTargetAnchor" class="inline-link"> _unmarkTargetAnchor</a><span class="parameters">(</span>) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_DnD_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Connects specified obj/event to specified method of this object.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_DnD_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>grid, args) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_DnD_copyOnly" class="inline-link"> copyOnly</a><span class="parameters">(</span>isCopyOnly) <span>Setter/getter of this._copyOnly.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_DnD_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_DnD_disconnect" class="inline-link"> disconnect</a><span class="parameters">(</span>handle) <span>Disconnects handle and removes it from connection list.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_DnD_init" class="inline-link"> init</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_DnD_setupConfig" class="inline-link"> setupConfig</a><span class="parameters">(</span>config) <span>Configure which DnD functionalities are needed.</span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_DnD_subscribe" class="inline-link"> subscribe</a><span class="parameters">(</span>topic, method) <span>Subscribes to the specified topic and calls the specified method
+of this object.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_DnD_unsubscribe" class="inline-link"> unsubscribe</a><span class="parameters">(</span>handle) <span>Un-subscribes handle and removes it from subscriptions list.</span><span title="inherited from dojox/grid/enhanced/_Plugin" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_DnD__onMouseMove" class="inline-link"> _onMouseMove</a><span class="parameters">(</span>evt) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_grid_enhanced_plugins_DnD__onMouseUp" class="inline-link"> _onMouseUp</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_DnD_onDraggingOut" class="inline-link"> onDraggingOut</a><span class="parameters">(</span>sourcePlugin) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_DnD_onDraggingOver" class="inline-link"> onDraggingOver</a><span class="parameters">(</span>sourcePlugin) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_DnD_onDragIn" class="inline-link"> onDragIn</a><span class="parameters">(</span>sourcePlugin, isCopy) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid_enhanced_plugins_DnD_onDragOut" class="inline-link"> onDragOut</a><span class="parameters">(</span>isMove) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_DnD_onPostInit" class="inline-link"> onPostInit</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_DnD_onPreInit" class="inline-link"> onPreInit</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_DnD_onSetStore" class="inline-link"> onSetStore</a><span class="parameters">(</span>store) <span>Called when store is changed.</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_grid_enhanced_plugins_DnD_onStartUp" class="inline-link"> onStartUp</a><span class="parameters">(</span>) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__config"></a><span class="objectIcon">_config</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__connects"></a><span class="arrayIcon">_connects</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>List of all connections.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__copyOnly"></a><span class="booleanIcon">_copyOnly</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__subscribes"></a><span class="arrayIcon">_subscribes</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>List of all subscribes.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__targetAnchorBorderWidth"></a><span class="numberIcon">_targetAnchorBorderWidth</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD_grid"></a><span class="objectIcon">grid</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Grid that the plugin belongs to</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD_name"></a><span class="stringIcon">name</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>plugin name;</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD_option"></a><span class="objectIcon">option</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Plugin properties - leveraged with default and user specified properties.
+e.g. for dnd plugin, it may look like {&quot;class&quot;: dojox.grid.enhanced.plugins.DnD, &quot;dependency&quot;: [&quot;nestedSorting&quot;], ...}</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD_privates"></a><span class="objectIcon">privates</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Private properties/methods shouldn&#39;t be mixin-ed anytime.</p>
+</div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__allDnDItemsLoaded"></a><span class="functionIcon">_allDnDItemsLoaded</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__calcCellTargetAnchorPos"></a><span class="functionIcon">_calcCellTargetAnchorPos</span><span class="parameters">(evt, containerPos, targetAnchor)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Calculate the position of the cell DnD avatar</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evt</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">containerPos</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">targetAnchor</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__calcColTargetAnchorPos"></a><span class="functionIcon">_calcColTargetAnchorPos</span><span class="parameters">(evt, containerPos)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Calculate the position of the column DnD avatar</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evt</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">containerPos</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__calcRowTargetAnchorPos"></a><span class="functionIcon">_calcRowTargetAnchorPos</span><span class="parameters">(evt, containerPos)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Calculate the position of the row DnD avatar</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evt</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">containerPos</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__canAccept"></a><span class="functionIcon">_canAccept</span><span class="parameters">(sourcePlugin)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">sourcePlugin</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean | undefined</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__clear"></a><span class="functionIcon">_clear</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__createDnDUI"></a><span class="functionIcon">_createDnDUI</span><span class="parameters">(evt, isMovingIn)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evt</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">isMovingIn</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__createMoveable"></a><span class="functionIcon">_createMoveable</span><span class="parameters">(evt)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evt</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__createSource"></a><span class="functionIcon">_createSource</span><span class="parameters">(evt)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evt</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__destroyDnDUI"></a><span class="functionIcon">_destroyDnDUI</span><span class="parameters">(isMovingOut, destroySource)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">isMovingOut</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">destroySource</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__destroyMoveable"></a><span class="functionIcon">_destroyMoveable</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__destroySource"></a><span class="functionIcon">_destroySource</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__endDnd"></a><span class="functionIcon">_endDnd</span><span class="parameters">(destroySource)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">destroySource</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__getDnDRegion"></a><span class="functionIcon">_getDnDRegion</span><span class="parameters">(rowIndex, colIndex)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">rowIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">colIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">null | object</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__getVisibleHeaders"></a><span class="functionIcon">_getVisibleHeaders</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__initEvents"></a><span class="functionIcon">_initEvents</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__isOutOfGrid"></a><span class="functionIcon">_isOutOfGrid</span><span class="parameters">(evt)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evt</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__mapRegion"></a><span class="functionIcon">_mapRegion</span><span class="parameters">(srcGrid, dndRegion)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">srcGrid</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">dndRegion</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__markTargetAnchor"></a><span class="functionIcon">_markTargetAnchor</span><span class="parameters">(evt)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evt</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__mixinGrid"></a><span class="functionIcon">_mixinGrid</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Provide APIs for grid.</p>
+</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__rearrange"></a><span class="functionIcon">_rearrange</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__startDnd"></a><span class="functionIcon">_startDnd</span><span class="parameters">(evt)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evt</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__unmarkTargetAnchor"></a><span class="functionIcon">_unmarkTargetAnchor</span><span class="parameters">()</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD_connect"></a><span class="functionIcon">connect</span><span class="parameters">(obj, event, method)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Connects specified obj/event to specified method of this object.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">obj</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">event</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">method</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><pre><code>  var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
+  // when foo.bar() is called, call the listener in the scope of plugin
+  plugin.connect(foo, &quot;bar&quot;, function(){
+    console.debug(this.xxx());//&quot;this&quot; - plugin scope
+  });</code></pre>
+
+          </div>
+        </div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(grid, args)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">grid</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">args</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD_copyOnly"></a><span class="functionIcon">copyOnly</span><span class="parameters">(isCopyOnly)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Setter/getter of this._copyOnly.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">isCopyOnly</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD_disconnect"></a><span class="functionIcon">disconnect</span><span class="parameters">(handle)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Disconnects handle and removes it from connection list.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">handle</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD_init"></a><span class="functionIcon">init</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD_setupConfig"></a><span class="functionIcon">setupConfig</span><span class="parameters">(config)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Configure which DnD functionalities are needed.
+Combination of any item from type set (&quot;row&quot;, &quot;col&quot;, &quot;cell&quot;)
+and any item from mode set(&quot;within&quot;, &quot;in&quot;, &quot;out&quot;) is configurable.
+
+</p>
+<p>&quot;row&quot;, &quot;col&quot;, &quot;cell&quot; are straightforward, while the other 3 are explained below:
+
+</p>
+<ul>
+<li>&quot;within&quot;: DnD within grid, that is, column/row reordering and cell moving/copying.</li>
+<li>&quot;in&quot;: Whether allowed to accept rows/cells (currently not support columns) from another grid.</li>
+<li>&quot;out&quot;: Whether allowed to drag out of grid, to another grid or even to any other DnD target.</li>
+</ul>
+<p>If not provided in the config, will use the default.
+When declared together, Mode set has higher priority than type set.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">config</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>DnD configuration object.
+See the examples below.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><p>The following code disables row DnD within grid,
+but still can drag rows out of grid or drag rows from other gird.</p>
+<pre><code>  setUpConfig({
+    &quot;row&quot;: {
+      &quot;within&quot;: false
+    }
+  });</code></pre>
+<p></p>
+<p>The opposite way is also okay:</p>
+<pre><code>  setUpConfig({
+    &quot;within&quot;: {
+      &quot;row&quot;: false
+    }
+  });</code></pre>
+<p></p>
+<p>And if you&#39;d like to disable/enable a whole set, here&#39;s a shortcut:</p>
+<pre><code>  setUpConfig({
+    &quot;cell&quot;, true,
+    &quot;out&quot;: false
+  });</code></pre>
+<p></p>
+<p>Because mode has higher priority than type, the following will disable row dnd within grid:</p>
+<pre><code>  setUpConfig({
+    &quot;within&quot;, {
+      &quot;row&quot;: false;
+    },
+    &quot;row&quot;, {
+      &quot;within&quot;: true
+    }
+  });</code></pre>
+
+          </div>
+        </div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD_subscribe"></a><span class="functionIcon">subscribe</span><span class="parameters">(topic, method)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Subscribes to the specified topic and calls the specified method
+of this object.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">topic</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">method</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><pre><code>  var plugin = new dojox.grid.enhanced._Plugin(grid,&quot;myPlugin&quot;,{...});
+  // when /my/topic is published, call the subscriber in the scope of plugin
+  // with passed parameter - &quot;v&quot;
+  plugin.subscribe(&quot;/my/topic&quot;, function(v){
+    console.debug(this.xxx(v));//&quot;this&quot; - plugin scope
+  });</code></pre>
+
+          </div>
+        </div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD_unsubscribe"></a><span class="functionIcon">unsubscribe</span><span class="parameters">(handle)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Un-subscribes handle and removes it from subscriptions list.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">handle</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <h2>Events</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__onMouseMove"></a><span class="functionIcon">_onMouseMove</span><span class="parameters">(evt)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD__onMouseUp"></a><span class="functionIcon">_onMouseUp</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD_onDraggingOut"></a><span class="functionIcon">onDraggingOut</span><span class="parameters">(sourcePlugin)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD_onDraggingOver"></a><span class="functionIcon">onDraggingOver</span><span class="parameters">(sourcePlugin)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD_onDragIn"></a><span class="functionIcon">onDragIn</span><span class="parameters">(sourcePlugin, isCopy)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD_onDragOut"></a><span class="functionIcon">onDragOut</span><span class="parameters">(isMove)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/plugins/DnD" class="jsdoc-link">dojox/grid/enhanced/plugins/DnD</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD_onPostInit"></a><span class="functionIcon">onPostInit</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD_onPreInit"></a><span class="functionIcon">onPreInit</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD_onSetStore"></a><span class="functionIcon">onSetStore</span><span class="parameters">(store)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Called when store is changed.</p>
+</div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_grid_enhanced_plugins_DnD_onStartUp"></a><span class="functionIcon">onStartUp</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/enhanced/_Plugin" class="jsdoc-link">dojox/grid/enhanced/_Plugin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+    </div>
+  </div>
+</div>

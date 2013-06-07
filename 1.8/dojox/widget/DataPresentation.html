@@ -1,0 +1,425 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/widget/DataPresentation</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/widget/DataPresentation<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>A widget that connects to a data store in a simple manner,
+and also provides some additional convenience mechanisms
+for connecting to common data sources without needing to
+explicitly construct a Dojo data store. The widget can then
+present the data in several forms: as a graphical chart,
+as a tabular grid, or as display panels presenting meta-data
+(title, creation information, etc) from the data. The
+widget can also create and manage several of these forms
+in one simple construction.
+
+</p>
+<p>Note: this is a first experimental draft and any/all details
+are subject to substantial change in later drafts.</p>
+</div>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/widget/DataPresentation<span class="parameters">(node,args);</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/widget/DataPresentation">dojox/widget/DataPresentation</a></div>
+<div class="jsdoc-summary"><p>Set up properties and initialize.</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">node</td>
+    <td class="jsdoc-param-type">DomNode</td>
+    <td class="jsdoc-param-description"><p>The node to attach the data presentation to.</p>
+ 
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">args</td>
+    <td class="jsdoc-param-type">Object</td>
+    <td class="jsdoc-param-description"><p>(see above)</p>
+ 
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojox/widget/DataPresentation.html" target="_blank">dojox/widget/DataPresentation reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<div class="jsdoc-examples">
+  <h2>Examples</h2>
+  <div class="jsdoc-example">
+    <h3>Example 1</h3><pre><code>  var pres = new dojox.data.DataPresentation(&quot;myChartNode&quot;, {
+    type: &quot;chart&quot;,
+    url: &quot;/data/mydata&quot;,
+    gridNode: &quot;myGridNode&quot;
+  });</code></pre>
+
+  </div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="objectIcon"><a href="#1_8dojox_widget_DataPresentation_animate" class="inline-link"> animate </a><span>if an object is supplied, then the chart bars or columns will animate
+into place.</span>
+    </li>
+    <li class="stringIcon"><a href="#1_8dojox_widget_DataPresentation_chartType" class="inline-link"> chartType </a><span>the type of chart to display.</span>
+    </li>
+    <li class="numberIcon"><a href="#1_8dojox_widget_DataPresentation_labelMod" class="inline-link"> labelMod </a><span>the frequency of label annotations to be included on the
+independent axis. 1=every label. 0=no labels.</span>
+    </li>
+    <li class="booleanIcon"><a href="#1_8dojox_widget_DataPresentation_legendHorizontal" class="inline-link"> legendHorizontal </a><span>true if the legend should be rendered horizontally, or a number if
+the legend should be rendered as horizontal rows with that number of
+items in each row, or false if the legend should be rendered
+vertically (same as specifying 1).</span>
+    </li>
+    <li class="booleanIcon"><a href="#1_8dojox_widget_DataPresentation_reverse" class="inline-link"> reverse </a><span>true if the chart independent axis should be reversed.</span>
+    </li>
+    <li class="stringIcon"><a href="#1_8dojox_widget_DataPresentation_type" class="inline-link"> type </a><span>the type of presentation to be applied at the DOM attach point.</span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_widget_DataPresentation_cancelRefresh" class="inline-link"> cancelRefresh</a><span class="parameters">(</span>) <span>Cancels any and all outstanding data refreshes</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_widget_DataPresentation_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>node, args) <span>Set up properties and initialize.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_widget_DataPresentation_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span>Destroys the widget and all components and resources.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_widget_DataPresentation_getChartWidget" class="inline-link"> getChartWidget</a><span class="parameters">(</span>) <span>Returns the chart widget (if any) created if the type
+is &quot;chart&quot; or the &quot;chartNode&quot; property was supplied.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_widget_DataPresentation_getGridWidget" class="inline-link"> getGridWidget</a><span class="parameters">(</span>) <span>Returns the grid widget (if any) created if the type
+is &quot;grid&quot; or the &quot;gridNode&quot; property was supplied.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_widget_DataPresentation_refresh" class="inline-link"> refresh</a><span class="parameters">(</span>) <span>If a URL or data has been supplied, refreshes the
+presented data from the URL or data.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_widget_DataPresentation_renderChartWidget" class="inline-link"> renderChartWidget</a><span class="parameters">(</span>) <span>Renders the chart widget (if any).</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_widget_DataPresentation_renderGridWidget" class="inline-link"> renderGridWidget</a><span class="parameters">(</span>) <span>Renders the grid widget (if any).</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_widget_DataPresentation_setData" class="inline-link"> setData</a><span class="parameters">(</span>data, refreshInterval) <span>Sets the data to be presented, and an optional
+refresh interval in milliseconds (0=no refresh)</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_widget_DataPresentation_setPreparedStore" class="inline-link"> setPreparedStore</a><span class="parameters">(</span>store, query, queryOptions) <span>Sets the store and query.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_widget_DataPresentation_setStore" class="inline-link"> setStore</a><span class="parameters">(</span>store, query, queryOptions) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_widget_DataPresentation_setURL" class="inline-link"> setURL</a><span class="parameters">(</span>url, urlContent, refreshInterval) <span>Sets the URL to fetch data from, with optional content
+supplied with the request, and an optional
+refresh interval in milliseconds (0=no refresh)</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_widget_DataPresentation_animate"></a><span class="objectIcon">animate</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/widget/DataPresentation" class="jsdoc-link">dojox/widget/DataPresentation</a>
+        </div>
+        <div class="jsdoc-summary"><p>if an object is supplied, then the chart bars or columns will animate
+into place. If the object contains a field &#39;duration&#39; then the value
+supplied is the duration of the animation in milliseconds, otherwise
+a default duration is used. A boolean value true can alternatively be
+supplied to enable animation with the default duration.
+The default is null (no animation).</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_widget_DataPresentation_chartType"></a><span class="stringIcon">chartType</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/widget/DataPresentation" class="jsdoc-link">dojox/widget/DataPresentation</a>
+        </div>
+        <div class="jsdoc-summary"><p>the type of chart to display. This can be &#39;clusteredbars&#39;,
+&#39;areas&#39;, &#39;stackedcolumns&#39;, &#39;stackedbars&#39;, &#39;stackedareas&#39;,
+&#39;lines&#39;, &#39;hybrid&#39;. The default type is &#39;bar&#39;.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_widget_DataPresentation_labelMod"></a><span class="numberIcon">labelMod</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/widget/DataPresentation" class="jsdoc-link">dojox/widget/DataPresentation</a>
+        </div>
+        <div class="jsdoc-summary"><p>the frequency of label annotations to be included on the
+independent axis. 1=every label. 0=no labels. The default is 1.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_widget_DataPresentation_legendHorizontal"></a><span class="booleanIcon">legendHorizontal</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/widget/DataPresentation" class="jsdoc-link">dojox/widget/DataPresentation</a>
+        </div>
+        <div class="jsdoc-summary"><p>true if the legend should be rendered horizontally, or a number if
+the legend should be rendered as horizontal rows with that number of
+items in each row, or false if the legend should be rendered
+vertically (same as specifying 1). The default is true (legend
+rendered horizontally).</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_widget_DataPresentation_reverse"></a><span class="booleanIcon">reverse</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/widget/DataPresentation" class="jsdoc-link">dojox/widget/DataPresentation</a>
+        </div>
+        <div class="jsdoc-summary"><p>true if the chart independent axis should be reversed.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_widget_DataPresentation_type"></a><span class="stringIcon">type</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/widget/DataPresentation" class="jsdoc-link">dojox/widget/DataPresentation</a>
+        </div>
+        <div class="jsdoc-summary"><p>the type of presentation to be applied at the DOM attach point.
+This can be &#39;chart&#39;, &#39;legend&#39;, &#39;grid&#39;, &#39;title&#39;, &#39;footer&#39;. The
+default type is &#39;chart&#39;.</p>
+</div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_widget_DataPresentation_cancelRefresh"></a><span class="functionIcon">cancelRefresh</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/DataPresentation" class="jsdoc-link">dojox/widget/DataPresentation</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Cancels any and all outstanding data refreshes</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_widget_DataPresentation_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(node, args)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/DataPresentation" class="jsdoc-link">dojox/widget/DataPresentation</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Set up properties and initialize.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">node</td>
+            <td class="jsdoc-param-type">DomNode</td>
+            <td class="jsdoc-param-description"><p>The node to attach the data presentation to.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">args</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>(see above)</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_widget_DataPresentation_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/DataPresentation" class="jsdoc-link">dojox/widget/DataPresentation</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Destroys the widget and all components and resources.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_widget_DataPresentation_getChartWidget"></a><span class="functionIcon">getChartWidget</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/DataPresentation" class="jsdoc-link">dojox/widget/DataPresentation</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Returns the chart widget (if any) created if the type
+is &quot;chart&quot; or the &quot;chartNode&quot; property was supplied.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_widget_DataPresentation_getGridWidget"></a><span class="functionIcon">getGridWidget</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/DataPresentation" class="jsdoc-link">dojox/widget/DataPresentation</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Returns the grid widget (if any) created if the type
+is &quot;grid&quot; or the &quot;gridNode&quot; property was supplied.</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_widget_DataPresentation_refresh"></a><span class="functionIcon">refresh</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/DataPresentation" class="jsdoc-link">dojox/widget/DataPresentation</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>If a URL or data has been supplied, refreshes the
+presented data from the URL or data. If a refresh
+interval is also set, the periodic refresh is
+restarted. If a URL or data was not supplied, this
+method has no effect.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_widget_DataPresentation_renderChartWidget"></a><span class="functionIcon">renderChartWidget</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/DataPresentation" class="jsdoc-link">dojox/widget/DataPresentation</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Renders the chart widget (if any). This method is
+called whenever a chart widget is created or
+configured, and may be connected to.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_widget_DataPresentation_renderGridWidget"></a><span class="functionIcon">renderGridWidget</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/DataPresentation" class="jsdoc-link">dojox/widget/DataPresentation</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Renders the grid widget (if any). This method is
+called whenever a grid widget is created or
+configured, and may be connected to.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_widget_DataPresentation_setData"></a><span class="functionIcon">setData</span><span class="parameters">(data, refreshInterval)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/DataPresentation" class="jsdoc-link">dojox/widget/DataPresentation</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Sets the data to be presented, and an optional
+refresh interval in milliseconds (0=no refresh)</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">data</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">refreshInterval</td>
+            <td class="jsdoc-param-type">Number</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_widget_DataPresentation_setPreparedStore"></a><span class="functionIcon">setPreparedStore</span><span class="parameters">(store, query, queryOptions)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/DataPresentation" class="jsdoc-link">dojox/widget/DataPresentation</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Sets the store and query.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">store</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">query</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">queryOptions</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_widget_DataPresentation_setStore"></a><span class="functionIcon">setStore</span><span class="parameters">(store, query, queryOptions)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/DataPresentation" class="jsdoc-link">dojox/widget/DataPresentation</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">store</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">query</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">queryOptions</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_widget_DataPresentation_setURL"></a><span class="functionIcon">setURL</span><span class="parameters">(url, urlContent, refreshInterval)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/widget/DataPresentation" class="jsdoc-link">dojox/widget/DataPresentation</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Sets the URL to fetch data from, with optional content
+supplied with the request, and an optional
+refresh interval in milliseconds (0=no refresh)</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">url</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">urlContent</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">refreshInterval</td>
+            <td class="jsdoc-param-type">Number</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

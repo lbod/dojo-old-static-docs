@@ -1,0 +1,112 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/request/script.__BaseOptions</div>
+<h1 class="constructorIcon36 jsdoc-title">dojo/request/script.__BaseOptions<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<p>See the <a href="/reference-guide/1.8/dojo/request.html" target="_blank">dojo/request/script.__BaseOptions reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="stringIcon inherited"><a href="#1_8dojo_request_script___BaseOptions_checkString" class="inline-link"> checkString </a><span>A string of JavaScript that when evaluated like so:
+&quot;typeof(&quot; + checkString + &quot;) != &#39;undefined&#39;&quot;
+being true means that the script fetched has been loaded.</span><span title="inherited from dojo/request/script" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojo_request_script___BaseOptions_data" class="inline-link"> data </a><span>Data to transfer.</span><span title="inherited from dojo/request" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojo_request_script___BaseOptions_frameDoc" class="inline-link"> frameDoc </a><span>The Document object of a child iframe.</span><span title="inherited from dojo/request/script" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojo_request_script___BaseOptions_handleAs" class="inline-link"> handleAs </a><span>How to handle the response from the server.</span><span title="inherited from dojo/request" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojo_request_script___BaseOptions_jsonp" class="inline-link"> jsonp </a><span>The URL parameter name that indicates the JSONP callback string.</span><span title="inherited from dojo/request/script" class="jsdoc-inherited"></span>
+    </li>
+    <li class="booleanIcon inherited"><a href="#1_8dojo_request_script___BaseOptions_preventCache" class="inline-link"> preventCache </a><span>Whether to append a cache-busting parameter to the URL.</span><span title="inherited from dojo/request" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojo_request_script___BaseOptions_query" class="inline-link"> query </a><span>Query parameters to append to the URL.</span><span title="inherited from dojo/request" class="jsdoc-inherited"></span>
+    </li>
+    <li class="numberIcon inherited"><a href="#1_8dojo_request_script___BaseOptions_timeout" class="inline-link"> timeout </a><span>Milliseconds to wait for the response.</span><span title="inherited from dojo/request" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojo_request_script___BaseOptions_checkString"></a><span class="stringIcon">checkString</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/request/script" class="jsdoc-link">dojo/request/script</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>A string of JavaScript that when evaluated like so:
+&quot;typeof(&quot; + checkString + &quot;) != &#39;undefined&#39;&quot;
+being true means that the script fetched has been loaded.
+Do not use this if doing a JSONP type of call (use <code>jsonp</code> instead).</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojo_request_script___BaseOptions_data"></a><span class="stringIcon">data</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/request" class="jsdoc-link">dojo/request</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Data to transfer.  This is ignored for GET and DELETE
+requests.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojo_request_script___BaseOptions_frameDoc"></a><span class="objectIcon">frameDoc</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/request/script" class="jsdoc-link">dojo/request/script</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>The Document object of a child iframe. If this is passed in, the script
+will be attached to that document. This can be helpful in some comet long-polling
+scenarios with Firefox and Opera.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojo_request_script___BaseOptions_handleAs"></a><span class="stringIcon">handleAs</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/request" class="jsdoc-link">dojo/request</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>How to handle the response from the server.  Default is
+&#39;text&#39;.  Other values are &#39;json&#39;, &#39;javascript&#39;, and &#39;xml&#39;.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojo_request_script___BaseOptions_jsonp"></a><span class="stringIcon">jsonp</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/request/script" class="jsdoc-link">dojo/request/script</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>The URL parameter name that indicates the JSONP callback string.
+For instance, when using Yahoo JSONP calls it is normally,
+jsonp: &quot;callback&quot;. For AOL JSONP calls it is normally
+jsonp: &quot;c&quot;.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojo_request_script___BaseOptions_preventCache"></a><span class="booleanIcon">preventCache</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/request" class="jsdoc-link">dojo/request</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Whether to append a cache-busting parameter to the URL.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojo_request_script___BaseOptions_query"></a><span class="stringIcon">query</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/request" class="jsdoc-link">dojo/request</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Query parameters to append to the URL.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojo_request_script___BaseOptions_timeout"></a><span class="numberIcon">timeout</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojo/request" class="jsdoc-link">dojo/request</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Milliseconds to wait for the response.  If this time
+passes, the then the promise is rejected.</p>
+</div>
+      </div>
+    </div>
+  </div>
+</div>

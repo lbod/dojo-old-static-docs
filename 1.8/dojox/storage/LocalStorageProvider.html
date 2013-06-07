@@ -1,0 +1,719 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/storage/LocalStorageProvider</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/storage/LocalStorageProvider<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-mixins">
+  <label>Extends </label><a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider,   </a>
+</div>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/storage/LocalStorageProvider<span class="parameters">();</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/storage/Provider">dojox/storage/Provider</a></div>
+<p>See the <a href="/reference-guide/1.8/dojox/storage.html" target="_blank">dojox/storage/LocalStorageProvider reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="stringIcon inherited"><a href="#1_8dojox_storage_LocalStorageProvider_DEFAULT_NAMESPACE" class="inline-link"> DEFAULT_NAMESPACE </a><span>The namespace for all storage operations.</span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojox_storage_LocalStorageProvider_FAILED" class="inline-link"> FAILED </a><span>Flag that indicates a put() call to
+a storage provider failed.</span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon inherited"><a href="#1_8dojox_storage_LocalStorageProvider_onHideSettingsUI" class="inline-link"> onHideSettingsUI </a><span>If a function is assigned to this property, then when the settings
+provider&#39;s UI is closed this function is called.</span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojox_storage_LocalStorageProvider_PENDING" class="inline-link"> PENDING </a><span>Flag that indicates a put() call to a
+storage provider is pending user approval.</span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojox_storage_LocalStorageProvider_SIZE_NO_LIMIT" class="inline-link"> SIZE_NO_LIMIT </a><span>Returned by getMaximumSize() if this storage provider has no theoretical
+limit on the amount of data it can store.</span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojox_storage_LocalStorageProvider_SIZE_NOT_AVAILABLE" class="inline-link"> SIZE_NOT_AVAILABLE </a><span>Returned by getMaximumSize() if this storage provider can not determine
+the maximum amount of data it can support.</span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="objectIcon inherited"><a href="#1_8dojox_storage_LocalStorageProvider_store" class="inline-link"> store </a><span></span><span title="inherited from dojox/storage/LocalStorageProvider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="stringIcon inherited"><a href="#1_8dojox_storage_LocalStorageProvider_SUCCESS" class="inline-link"> SUCCESS </a><span>Flag that indicates a put() call to a
+storage provider was successful.</span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dojox_storage_LocalStorageProvider__assertIsValidKey" class="inline-link"> _assertIsValidKey</a><span class="parameters">(</span>key) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_storage_LocalStorageProvider__assertIsValidNamespace" class="inline-link"> _assertIsValidNamespace</a><span class="parameters">(</span>namespace) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_storage_LocalStorageProvider__beginsWith" class="inline-link"> _beginsWith</a><span class="parameters">(</span>haystack, needle) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_LocalStorageProvider_clear" class="inline-link"> clear</a><span class="parameters">(</span>namespace) <span></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_storage_LocalStorageProvider_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_LocalStorageProvider_get" class="inline-link"> get</a><span class="parameters">(</span>key, namespace) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_LocalStorageProvider_getFullKey" class="inline-link"> getFullKey</a><span class="parameters">(</span>key, namespace) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_LocalStorageProvider_getKeys" class="inline-link"> getKeys</a><span class="parameters">(</span>namespace) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_LocalStorageProvider_getMaximumSize" class="inline-link"> getMaximumSize</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_storage_LocalStorageProvider_getMultiple" class="inline-link"> getMultiple</a><span class="parameters">(</span>keys, namespace) <span></span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_LocalStorageProvider_getNamespaces" class="inline-link"> getNamespaces</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_storage_LocalStorageProvider_getResourceList" class="inline-link"> getResourceList</a><span class="parameters">(</span>) <span></span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_storage_LocalStorageProvider_hasKey" class="inline-link"> hasKey</a><span class="parameters">(</span>key, namespace) <span>Determines whether the storage has the given key.</span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_LocalStorageProvider_hasSettingsUI" class="inline-link"> hasSettingsUI</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_storage_LocalStorageProvider_hideSettingsUI" class="inline-link"> hideSettingsUI</a><span class="parameters">(</span>) <span>If this provider has a settings UI, hides it.</span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_LocalStorageProvider_initialize" class="inline-link"> initialize</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_LocalStorageProvider_isAvailable" class="inline-link"> isAvailable</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_LocalStorageProvider_isPermanent" class="inline-link"> isPermanent</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_LocalStorageProvider_isValidKey" class="inline-link"> isValidKey</a><span class="parameters">(</span>keyName) <span></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_storage_LocalStorageProvider_isValidKeyArray" class="inline-link"> isValidKeyArray</a><span class="parameters">(</span>keys) <span></span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_LocalStorageProvider_isValidNamespace" class="inline-link"> isValidNamespace</a><span class="parameters">(</span>keyName) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_LocalStorageProvider_put" class="inline-link"> put</a><span class="parameters">(</span>key, value, resultsHandler, namespace) <span></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_storage_LocalStorageProvider_putMultiple" class="inline-link"> putMultiple</a><span class="parameters">(</span>keys, values, resultsHandler, namespace) <span>Puts multiple keys and values into this storage system.</span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_storage_LocalStorageProvider_remove" class="inline-link"> remove</a><span class="parameters">(</span>key, namespace) <span></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_storage_LocalStorageProvider_removeMultiple" class="inline-link"> removeMultiple</a><span class="parameters">(</span>keys, namespace) <span>Removes the given keys from this storage system.</span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_storage_LocalStorageProvider_showSettingsUI" class="inline-link"> showSettingsUI</a><span class="parameters">(</span>) <span>If this provider has a settings UI, determined
+by calling hasSettingsUI(), it is shown.</span><span title="inherited from dojox/storage/Provider" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_DEFAULT_NAMESPACE"></a><span class="stringIcon">DEFAULT_NAMESPACE</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>The namespace for all storage operations. This is useful if several
+applications want access to the storage system from the same domain but
+want different storage silos.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_FAILED"></a><span class="stringIcon">FAILED</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Flag that indicates a put() call to
+a storage provider failed.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_onHideSettingsUI"></a><span class="functionIcon">onHideSettingsUI</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>If a function is assigned to this property, then when the settings
+provider&#39;s UI is closed this function is called. Useful, for example,
+if the user has just cleared out all storage for this provider using
+the settings UI, and you want to update your UI.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_PENDING"></a><span class="stringIcon">PENDING</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Flag that indicates a put() call to a
+storage provider is pending user approval.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_SIZE_NO_LIMIT"></a><span class="stringIcon">SIZE_NO_LIMIT</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Returned by getMaximumSize() if this storage provider has no theoretical
+limit on the amount of data it can store.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_SIZE_NOT_AVAILABLE"></a><span class="stringIcon">SIZE_NOT_AVAILABLE</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Returned by getMaximumSize() if this storage provider can not determine
+the maximum amount of data it can support.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_store"></a><span class="objectIcon">store</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/storage/LocalStorageProvider" class="jsdoc-link">dojox/storage/LocalStorageProvider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_SUCCESS"></a><span class="stringIcon">SUCCESS</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-summary"><p>Flag that indicates a put() call to a
+storage provider was successful.</p>
+</div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider__assertIsValidKey"></a><span class="functionIcon">_assertIsValidKey</span><span class="parameters">(key)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/LocalStorageProvider" class="jsdoc-link">dojox/storage/LocalStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">key</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider__assertIsValidNamespace"></a><span class="functionIcon">_assertIsValidNamespace</span><span class="parameters">(namespace)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/LocalStorageProvider" class="jsdoc-link">dojox/storage/LocalStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">namespace</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider__beginsWith"></a><span class="functionIcon">_beginsWith</span><span class="parameters">(haystack, needle)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/LocalStorageProvider" class="jsdoc-link">dojox/storage/LocalStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">haystack</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">needle</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_clear"></a><span class="functionIcon">clear</span><span class="parameters">(namespace)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/LocalStorageProvider" class="jsdoc-link">dojox/storage/LocalStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">namespace</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_get"></a><span class="functionIcon">get</span><span class="parameters">(key, namespace)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/LocalStorageProvider" class="jsdoc-link">dojox/storage/LocalStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">key</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">namespace</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_getFullKey"></a><span class="functionIcon">getFullKey</span><span class="parameters">(key, namespace)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/LocalStorageProvider" class="jsdoc-link">dojox/storage/LocalStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">key</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">namespace</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">string</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_getKeys"></a><span class="functionIcon">getKeys</span><span class="parameters">(namespace)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/LocalStorageProvider" class="jsdoc-link">dojox/storage/LocalStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">namespace</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_getMaximumSize"></a><span class="functionIcon">getMaximumSize</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/LocalStorageProvider" class="jsdoc-link">dojox/storage/LocalStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_getMultiple"></a><span class="functionIcon">getMultiple</span><span class="parameters">(keys, namespace)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">keys</td>
+            <td class="jsdoc-param-type">array</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">namespace</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_getNamespaces"></a><span class="functionIcon">getNamespaces</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/LocalStorageProvider" class="jsdoc-link">dojox/storage/LocalStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_getResourceList"></a><span class="functionIcon">getResourceList</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_hasKey"></a><span class="functionIcon">hasKey</span><span class="parameters">(key, namespace)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Determines whether the storage has the given key.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">key</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">namespace</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_hasSettingsUI"></a><span class="functionIcon">hasSettingsUI</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/LocalStorageProvider" class="jsdoc-link">dojox/storage/LocalStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_hideSettingsUI"></a><span class="functionIcon">hideSettingsUI</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>If this provider has a settings UI, hides it.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_initialize"></a><span class="functionIcon">initialize</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/LocalStorageProvider" class="jsdoc-link">dojox/storage/LocalStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_isAvailable"></a><span class="functionIcon">isAvailable</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/LocalStorageProvider" class="jsdoc-link">dojox/storage/LocalStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_isPermanent"></a><span class="functionIcon">isPermanent</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/LocalStorageProvider" class="jsdoc-link">dojox/storage/LocalStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_isValidKey"></a><span class="functionIcon">isValidKey</span><span class="parameters">(keyName)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/LocalStorageProvider" class="jsdoc-link">dojox/storage/LocalStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">keyName</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean | undefined</span></div>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_isValidKeyArray"></a><span class="functionIcon">isValidKeyArray</span><span class="parameters">(keys)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">keys</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_isValidNamespace"></a><span class="functionIcon">isValidNamespace</span><span class="parameters">(keyName)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/LocalStorageProvider" class="jsdoc-link">dojox/storage/LocalStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">keyName</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean | undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_put"></a><span class="functionIcon">put</span><span class="parameters">(key, value, resultsHandler, namespace)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/LocalStorageProvider" class="jsdoc-link">dojox/storage/LocalStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">key</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">object</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">resultsHandler</td>
+            <td class="jsdoc-param-type">function</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">namespace</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_putMultiple"></a><span class="functionIcon">putMultiple</span><span class="parameters">(keys, values, resultsHandler, namespace)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Puts multiple keys and values into this storage system.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Important note: if you are using Dojo Storage in conjunction with
+Dojo Offline, then you don&#39;t need to provide
+a resultsHandler; this is because for Dojo Offline we
+use Google Gears to persist data, which has unlimited data
+once the user has given permission. If you are using Dojo
+Storage apart from Dojo Offline, then under the covers hidden
+Flash might be used, which is both asychronous and which might
+get denied; in this case you must provide a resultsHandler.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">keys</td>
+            <td class="jsdoc-param-type">array</td>
+            <td class="jsdoc-param-description"><p>An array of string keys to use when retrieving this value in the future,
+one per value to be stored</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">values</td>
+            <td class="jsdoc-param-type">array</td>
+            <td class="jsdoc-param-description"><p>An array of values to store; this can be any JavaScript type, though the
+performance of plain strings is considerably better</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">resultsHandler</td>
+            <td class="jsdoc-param-type">function</td>
+            <td class="jsdoc-param-description"><p>A callback function that will receive three arguments. The
+first argument is one of three values: dojox.storage.SUCCESS,
+dojox.storage.FAILED, or dojox.storage.PENDING; these values
+determine how the put request went. In some storage systems
+users can deny a storage request, resulting in a
+dojox.storage.FAILED, while in other storage systems a storage
+request must wait for user approval, resulting in a
+dojox.storage.PENDING status until the request is either
+approved or denied, resulting in another call back with
+dojox.storage.SUCCESS.
+The second argument in the call back is the key name that was being stored.
+The third argument in the call back is an optional message that
+details possible error messages that might have occurred during
+the storage process.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">namespace</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>Optional string namespace that this value will be placed into;
+if left off, the value will be placed into dojox.storage.DEFAULT_NAMESPACE</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><pre><code>  var resultsHandler = function(status, key, message){
+    alert(&quot;status=&quot;+status+&quot;, key=&quot;+key+&quot;, message=&quot;+message);
+  };
+  dojox.storage.put([&quot;test&quot;], [&quot;hello world&quot;], resultsHandler);</code></pre>
+
+          </div>
+        </div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_remove"></a><span class="functionIcon">remove</span><span class="parameters">(key, namespace)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/LocalStorageProvider" class="jsdoc-link">dojox/storage/LocalStorageProvider</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">key</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">namespace</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_removeMultiple"></a><span class="functionIcon">removeMultiple</span><span class="parameters">(keys, namespace)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Removes the given keys from this storage system.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">keys</td>
+            <td class="jsdoc-param-type">array</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">namespace</td>
+            <td class="jsdoc-param-type">string</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_storage_LocalStorageProvider_showSettingsUI"></a><span class="functionIcon">showSettingsUI</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/storage/Provider" class="jsdoc-link">dojox/storage/Provider</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>If this provider has a settings UI, determined
+by calling hasSettingsUI(), it is shown.</p>
+</div>
+      </div>
+    </div>
+  </div>
+</div>

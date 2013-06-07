@@ -1,0 +1,981 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/gantt/GanttTaskControl</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/gantt/GanttTaskControl<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/gantt/GanttTaskControl<span class="parameters">(taskInfo,project,chart);</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/gantt/GanttTaskControl">dojox/gantt/GanttTaskControl</a></div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">taskInfo</td>
+    <td class="jsdoc-param-type">undefined</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">project</td>
+    <td class="jsdoc-param-type">undefined</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">chart</td>
+    <td class="jsdoc-param-type">undefined</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojox/gantt.html" target="_blank">dojox/gantt/GanttTaskControl reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_adjustPanelTime" class="inline-link"> adjustPanelTime</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_buildResourceInfo" class="inline-link"> buildResourceInfo</a><span class="parameters">(</span>resourceInfo) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_checkPos" class="inline-link"> checkPos</a><span class="parameters">(</span>startTime) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_checkPosition" class="inline-link"> checkPosition</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_checkWidthTaskNameItem" class="inline-link"> checkWidthTaskNameItem</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_clearPredTask" class="inline-link"> clearPredTask</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>taskInfo, project, chart) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_create" class="inline-link"> create</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_createConnectingLinesDS" class="inline-link"> createConnectingLinesDS</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_createConnectingLinesPN" class="inline-link"> createConnectingLinesPN</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_createTaskDescItem" class="inline-link"> createTaskDescItem</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_createTaskItem" class="inline-link"> createTaskItem</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_createTaskNameItem" class="inline-link"> createTaskNameItem</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_createTreeImg" class="inline-link"> createTreeImg</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_endMove" class="inline-link"> endMove</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_endResizeItem" class="inline-link"> endResizeItem</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_getDateOnPosition" class="inline-link"> getDateOnPosition</a><span class="parameters">(</span>position) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_getMaxPosPredChildTaskItem" class="inline-link"> getMaxPosPredChildTaskItem</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_getMaxPosPredChildTaskItemInTree" class="inline-link"> getMaxPosPredChildTaskItemInTree</a><span class="parameters">(</span>task) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_getMoveInfo" class="inline-link"> getMoveInfo</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_getResizeInfo" class="inline-link"> getResizeInfo</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_getTaskOwner" class="inline-link"> getTaskOwner</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_hideChildTasks" class="inline-link"> hideChildTasks</a><span class="parameters">(</span>task) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_hideDescTask" class="inline-link"> hideDescTask</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_moveChildTaskItems" class="inline-link"> moveChildTaskItems</a><span class="parameters">(</span>task, width, moveChild) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_moveCurrentTaskItem" class="inline-link"> moveCurrentTaskItem</a><span class="parameters">(</span>width, moveChild) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_moveDescTask" class="inline-link"> moveDescTask</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_moveItem" class="inline-link"> moveItem</a><span class="parameters">(</span>event) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_moveTaskItem" class="inline-link"> moveTaskItem</a><span class="parameters">(</span>posX) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_objKeyToStr" class="inline-link"> objKeyToStr</a><span class="parameters">(</span>obj, delm) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_postLoadData" class="inline-link"> postLoadData</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_refresh" class="inline-link"> refresh</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_refreshConnectingLinesDS" class="inline-link"> refreshConnectingLinesDS</a><span class="parameters">(</span>arrLines) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_refreshTaskDesc" class="inline-link"> refreshTaskDesc</a><span class="parameters">(</span>divDesc) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_refreshTaskItem" class="inline-link"> refreshTaskItem</a><span class="parameters">(</span>itemControl) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_resizeItem" class="inline-link"> resizeItem</a><span class="parameters">(</span>event) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_resizeTaskItem" class="inline-link"> resizeTaskItem</a><span class="parameters">(</span>width) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_setDuration" class="inline-link"> setDuration</a><span class="parameters">(</span>duration) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_setName" class="inline-link"> setName</a><span class="parameters">(</span>name) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_setPercentCompleted" class="inline-link"> setPercentCompleted</a><span class="parameters">(</span>percentage) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_setPreviousTask" class="inline-link"> setPreviousTask</a><span class="parameters">(</span>previousTaskId) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_setStartTime" class="inline-link"> setStartTime</a><span class="parameters">(</span>startTime, shiftChild) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_setTaskOwner" class="inline-link"> setTaskOwner</a><span class="parameters">(</span>owner) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_shiftChildTask" class="inline-link"> shiftChildTask</a><span class="parameters">(</span>task, height) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_shiftCurrentTasks" class="inline-link"> shiftCurrentTasks</a><span class="parameters">(</span>task, height) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_shiftNextTask" class="inline-link"> shiftNextTask</a><span class="parameters">(</span>task, height) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_shiftTask" class="inline-link"> shiftTask</a><span class="parameters">(</span>task, height) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_showChildTasks" class="inline-link"> showChildTasks</a><span class="parameters">(</span>task, isOpen) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_showDescTask" class="inline-link"> showDescTask</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_startMove" class="inline-link"> startMove</a><span class="parameters">(</span>event) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gantt_GanttTaskControl_startResize" class="inline-link"> startResize</a><span class="parameters">(</span>event) <span></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_adjustPanelTime"></a><span class="functionIcon">adjustPanelTime</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_buildResourceInfo"></a><span class="functionIcon">buildResourceInfo</span><span class="parameters">(resourceInfo)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">resourceInfo</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_checkPos"></a><span class="functionIcon">checkPos</span><span class="parameters">(startTime)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">startTime</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_checkPosition"></a><span class="functionIcon">checkPosition</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_checkWidthTaskNameItem"></a><span class="functionIcon">checkWidthTaskNameItem</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_clearPredTask"></a><span class="functionIcon">clearPredTask</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(taskInfo, project, chart)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">taskInfo</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">project</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">chart</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_create"></a><span class="functionIcon">create</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">function</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_createConnectingLinesDS"></a><span class="functionIcon">createConnectingLinesDS</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_createConnectingLinesPN"></a><span class="functionIcon">createConnectingLinesPN</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_createTaskDescItem"></a><span class="functionIcon">createTaskDescItem</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_createTaskItem"></a><span class="functionIcon">createTaskItem</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_createTaskNameItem"></a><span class="functionIcon">createTaskNameItem</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_createTreeImg"></a><span class="functionIcon">createTreeImg</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_endMove"></a><span class="functionIcon">endMove</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_endResizeItem"></a><span class="functionIcon">endResizeItem</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_getDateOnPosition"></a><span class="functionIcon">getDateOnPosition</span><span class="parameters">(position)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">position</td>
+            <td class="jsdoc-param-type">String[]</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>The tooltip position.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">instance</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_getMaxPosPredChildTaskItem"></a><span class="functionIcon">getMaxPosPredChildTaskItem</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_getMaxPosPredChildTaskItemInTree"></a><span class="functionIcon">getMaxPosPredChildTaskItemInTree</span><span class="parameters">(task)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">task</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_getMoveInfo"></a><span class="functionIcon">getMoveInfo</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_getResizeInfo"></a><span class="functionIcon">getResizeInfo</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_getTaskOwner"></a><span class="functionIcon">getTaskOwner</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_hideChildTasks"></a><span class="functionIcon">hideChildTasks</span><span class="parameters">(task)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">task</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_hideDescTask"></a><span class="functionIcon">hideDescTask</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_moveChildTaskItems"></a><span class="functionIcon">moveChildTaskItems</span><span class="parameters">(task, width, moveChild)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">task</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">width</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">moveChild</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_moveCurrentTaskItem"></a><span class="functionIcon">moveCurrentTaskItem</span><span class="parameters">(width, moveChild)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">width</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">moveChild</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_moveDescTask"></a><span class="functionIcon">moveDescTask</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_moveItem"></a><span class="functionIcon">moveItem</span><span class="parameters">(event)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">event</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_moveTaskItem"></a><span class="functionIcon">moveTaskItem</span><span class="parameters">(posX)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">posX</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_objKeyToStr"></a><span class="functionIcon">objKeyToStr</span><span class="parameters">(obj, delm)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">obj</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">delm</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">string</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_postLoadData"></a><span class="functionIcon">postLoadData</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_refresh"></a><span class="functionIcon">refresh</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">function</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_refreshConnectingLinesDS"></a><span class="functionIcon">refreshConnectingLinesDS</span><span class="parameters">(arrLines)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">arrLines</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_refreshTaskDesc"></a><span class="functionIcon">refreshTaskDesc</span><span class="parameters">(divDesc)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">divDesc</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_refreshTaskItem"></a><span class="functionIcon">refreshTaskItem</span><span class="parameters">(itemControl)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">itemControl</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_resizeItem"></a><span class="functionIcon">resizeItem</span><span class="parameters">(event)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">event</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_resizeTaskItem"></a><span class="functionIcon">resizeTaskItem</span><span class="parameters">(width)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">width</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_setDuration"></a><span class="functionIcon">setDuration</span><span class="parameters">(duration)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">duration</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_setName"></a><span class="functionIcon">setName</span><span class="parameters">(name)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">name</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_setPercentCompleted"></a><span class="functionIcon">setPercentCompleted</span><span class="parameters">(percentage)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">percentage</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_setPreviousTask"></a><span class="functionIcon">setPreviousTask</span><span class="parameters">(previousTaskId)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">previousTaskId</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_setStartTime"></a><span class="functionIcon">setStartTime</span><span class="parameters">(startTime, shiftChild)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">startTime</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">shiftChild</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_setTaskOwner"></a><span class="functionIcon">setTaskOwner</span><span class="parameters">(owner)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">owner</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_shiftChildTask"></a><span class="functionIcon">shiftChildTask</span><span class="parameters">(task, height)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">task</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">height</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_shiftCurrentTasks"></a><span class="functionIcon">shiftCurrentTasks</span><span class="parameters">(task, height)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">task</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">height</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_shiftNextTask"></a><span class="functionIcon">shiftNextTask</span><span class="parameters">(task, height)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">task</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">height</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_shiftTask"></a><span class="functionIcon">shiftTask</span><span class="parameters">(task, height)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">task</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">height</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_showChildTasks"></a><span class="functionIcon">showChildTasks</span><span class="parameters">(task, isOpen)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">task</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">isOpen</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_showDescTask"></a><span class="functionIcon">showDescTask</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_startMove"></a><span class="functionIcon">startMove</span><span class="parameters">(event)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">event</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gantt_GanttTaskControl_startResize"></a><span class="functionIcon">startResize</span><span class="parameters">(event)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gantt/GanttTaskControl" class="jsdoc-link">dojox/gantt/GanttTaskControl</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">event</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

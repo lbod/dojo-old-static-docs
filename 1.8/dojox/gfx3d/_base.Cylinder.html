@@ -1,0 +1,345 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/gfx3d/_base.Cylinder</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/gfx3d/_base.Cylinder<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/gfx3d/_base.Cylinder<span class="parameters">();</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/gfx3d/object">dojox/gfx3d/object</a></div>
+<p>See the <a href="/reference-guide/1.8/dojox/gfx3d.html" target="_blank">dojox/gfx3d/_base.Cylinder reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Cylinder_applyLeftTransform" class="inline-link"> applyLeftTransform</a><span class="parameters">(</span>matrix) <span>multiplies the existing matrix with an argument on left side
+(matrix * this.matrix)</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Cylinder_applyRightTransform" class="inline-link"> applyRightTransform</a><span class="parameters">(</span>matrix) <span>multiplies the existing matrix with an argument on right side
+(this.matrix * matrix)</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Cylinder_applyTransform" class="inline-link"> applyTransform</a><span class="parameters">(</span>matrix) <span>a shortcut for dojox.gfx.Shape.applyRightTransform</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Cylinder_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Cylinder_destroy" class="inline-link"> destroy</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Cylinder_draw" class="inline-link"> draw</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Cylinder_getOutline" class="inline-link"> getOutline</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Cylinder_getZOrder" class="inline-link"> getZOrder</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Cylinder_invalidate" class="inline-link"> invalidate</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Cylinder_render" class="inline-link"> render</a><span class="parameters">(</span>camera) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Cylinder_setFill" class="inline-link"> setFill</a><span class="parameters">(</span>fill) <span>sets a fill object
+(the default implementation is to delegate to
+the underlying 2D shape).</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Cylinder_setObject" class="inline-link"> setObject</a><span class="parameters">(</span>newObject) <span>sets a Object object</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Cylinder_setStroke" class="inline-link"> setStroke</a><span class="parameters">(</span>stroke) <span>sets a stroke object
+(the default implementation simply ignores it)</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Cylinder_setTransform" class="inline-link"> setTransform</a><span class="parameters">(</span>matrix) <span>sets a transformation matrix</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_gfx3d__base_Cylinder_toStdFill" class="inline-link"> toStdFill</a><span class="parameters">(</span>lighting, normal) <span></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d__base_Cylinder_applyLeftTransform"></a><span class="functionIcon">applyLeftTransform</span><span class="parameters">(matrix)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/object" class="jsdoc-link">dojox/gfx3d/object</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>multiplies the existing matrix with an argument on left side
+(matrix * this.matrix)</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">matrix</td>
+            <td class="jsdoc-param-type">dojox.gfx3d.matrix.Matrix</td>
+            <td class="jsdoc-param-description"><p>a matrix or a matrix-like object
+(see an argument of dojox.gfx.matrix.Matrix
+constructor for a list of acceptable arguments)</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">function</span></div>
+        <div class="jsdoc-return-description"><p>multiplies the existing matrix with an argument on left side
+(matrix * this.matrix)</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d__base_Cylinder_applyRightTransform"></a><span class="functionIcon">applyRightTransform</span><span class="parameters">(matrix)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/object" class="jsdoc-link">dojox/gfx3d/object</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>multiplies the existing matrix with an argument on right side
+(this.matrix * matrix)</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">matrix</td>
+            <td class="jsdoc-param-type">dojox.gfx3d.matrix.Matrix</td>
+            <td class="jsdoc-param-description"><p>a matrix or a matrix-like object
+(see an argument of dojox.gfx.matrix.Matrix
+constructor for a list of acceptable arguments)</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">function</span></div>
+        <div class="jsdoc-return-description"><p>multiplies the existing matrix with an argument on right side
+(this.matrix * matrix)</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d__base_Cylinder_applyTransform"></a><span class="functionIcon">applyTransform</span><span class="parameters">(matrix)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/object" class="jsdoc-link">dojox/gfx3d/object</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>a shortcut for dojox.gfx.Shape.applyRightTransform</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">matrix</td>
+            <td class="jsdoc-param-type">dojox.gfx3d.matrix.Matrix</td>
+            <td class="jsdoc-param-description"><p>a matrix or a matrix-like object
+(see an argument of dojox.gfx.matrix.Matrix
+constructor for a list of acceptable arguments)</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">function</span></div>
+        <div class="jsdoc-return-description"><p>a shortcut for dojox.gfx.Shape.applyRightTransform</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d__base_Cylinder_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/object" class="jsdoc-link">dojox/gfx3d/object</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d__base_Cylinder_destroy"></a><span class="functionIcon">destroy</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/object" class="jsdoc-link">dojox/gfx3d/object</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d__base_Cylinder_draw"></a><span class="functionIcon">draw</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/object" class="jsdoc-link">dojox/gfx3d/object</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d__base_Cylinder_getOutline"></a><span class="functionIcon">getOutline</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/object" class="jsdoc-link">dojox/gfx3d/object</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">null</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d__base_Cylinder_getZOrder"></a><span class="functionIcon">getZOrder</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/object" class="jsdoc-link">dojox/gfx3d/object</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d__base_Cylinder_invalidate"></a><span class="functionIcon">invalidate</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/object" class="jsdoc-link">dojox/gfx3d/object</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d__base_Cylinder_render"></a><span class="functionIcon">render</span><span class="parameters">(camera)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/object" class="jsdoc-link">dojox/gfx3d/object</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">camera</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d__base_Cylinder_setFill"></a><span class="functionIcon">setFill</span><span class="parameters">(fill)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/object" class="jsdoc-link">dojox/gfx3d/object</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>sets a fill object
+(the default implementation is to delegate to
+the underlying 2D shape).</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">fill</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>a fill object
+(see dojox.gfx.defaultLinearGradient,
+dojox.gfx.defaultRadialGradient,
+dojox.gfx.defaultPattern,
+dojo.Color
+or dojox.gfx.MODEL)</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">function</span></div>
+        <div class="jsdoc-return-description"><p>sets a fill object
+(the default implementation is to delegate to
+the underlying 2D shape).</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d__base_Cylinder_setObject"></a><span class="functionIcon">setObject</span><span class="parameters">(newObject)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/object" class="jsdoc-link">dojox/gfx3d/object</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>sets a Object object</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">newObject</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">function</span></div>
+        <div class="jsdoc-return-description"><p>sets a Object object</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d__base_Cylinder_setStroke"></a><span class="functionIcon">setStroke</span><span class="parameters">(stroke)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/object" class="jsdoc-link">dojox/gfx3d/object</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>sets a stroke object
+(the default implementation simply ignores it)</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">stroke</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>a stroke object
+(see dojox.gfx.defaultStroke)</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">function</span></div>
+        <div class="jsdoc-return-description"><p>sets a stroke object
+(the default implementation simply ignores it)</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d__base_Cylinder_setTransform"></a><span class="functionIcon">setTransform</span><span class="parameters">(matrix)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/object" class="jsdoc-link">dojox/gfx3d/object</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>sets a transformation matrix</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">matrix</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">function</span></div>
+        <div class="jsdoc-return-description"><p>sets a transformation matrix</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d__base_Cylinder_toStdFill"></a><span class="functionIcon">toStdFill</span><span class="parameters">(lighting, normal)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/object" class="jsdoc-link">dojox/gfx3d/object</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">lighting</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">normal</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+    </div>
+  </div>
+</div>

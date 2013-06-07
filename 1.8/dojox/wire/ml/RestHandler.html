@@ -1,0 +1,209 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/wire/ml/RestHandler</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/wire/ml/RestHandler<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>A REST service handler</p>
+</div>
+<div class="jsdoc-full-summary"><p>This class serves as a base REST service.
+Sub-classes may override _getContent() and _getResult() to handle
+specific content types.</p>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="stringIcon"><a href="#1_8dojox_wire_ml_RestHandler_contentType" class="inline-link"> contentType </a><span></span>
+    </li>
+    <li class="stringIcon"><a href="#1_8dojox_wire_ml_RestHandler_handleAs" class="inline-link"> handleAs </a><span></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dojox_wire_ml_RestHandler__getContent" class="inline-link"> _getContent</a><span class="parameters">(</span>method, parameters) <span>Generate a request content</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_wire_ml_RestHandler__getResult" class="inline-link"> _getResult</a><span class="parameters">(</span>data) <span>Extract a result</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_wire_ml_RestHandler__getUrl" class="inline-link"> _getUrl</a><span class="parameters">(</span>method, parameters, url) <span>Generate a URL</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_wire_ml_RestHandler_bind" class="inline-link"> bind</a><span class="parameters">(</span>method, parameters, deferred, url) <span>Call a service method with parameters.</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_wire_ml_RestHandler_contentType"></a><span class="stringIcon">contentType</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/wire/ml/RestHandler" class="jsdoc-link">dojox/wire/ml/RestHandler</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_wire_ml_RestHandler_handleAs"></a><span class="stringIcon">handleAs</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/wire/ml/RestHandler" class="jsdoc-link">dojox/wire/ml/RestHandler</a>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_wire_ml_RestHandler__getContent"></a><span class="functionIcon">_getContent</span><span class="parameters">(method, parameters)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/wire/ml/RestHandler" class="jsdoc-link">dojox/wire/ml/RestHandler</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Generate a request content</p>
+</div>
+        <div class="jsdoc-full-summary"><p>If &#39;method&#39; is &quot;POST&quot; or &quot;PUT&quot;, the first parameter in
+&#39;parameters&#39; is returned.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">method</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>A method name</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">parameters</td>
+            <td class="jsdoc-param-type">Array</td>
+            <td class="jsdoc-param-description"><p>An array of parameters</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | null</span></div>
+        <div class="jsdoc-return-description">A request content</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_wire_ml_RestHandler__getResult"></a><span class="functionIcon">_getResult</span><span class="parameters">(data)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/wire/ml/RestHandler" class="jsdoc-link">dojox/wire/ml/RestHandler</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Extract a result</p>
+</div>
+        <div class="jsdoc-full-summary"><p>A response data is returned as is.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">data</td>
+            <td class="jsdoc-param-type">anything</td>
+            <td class="jsdoc-param-description"><p>A response data returned by a service</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | anything</span></div>
+        <div class="jsdoc-return-description">A result object</div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_wire_ml_RestHandler__getUrl"></a><span class="functionIcon">_getUrl</span><span class="parameters">(method, parameters, url)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/wire/ml/RestHandler" class="jsdoc-link">dojox/wire/ml/RestHandler</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Generate a URL</p>
+</div>
+        <div class="jsdoc-full-summary"><p>If &#39;method&#39; is &quot;GET&quot; or &quot;DELETE&quot;, a query string is generated
+from a query object specified to the first parameter in
+&#39;parameters&#39; and appended to &#39;url&#39;.
+If &#39;url&#39; contains variable seguments (&quot;{parameter_name}&quot;),
+they are replaced with corresponding parameter values, instead.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">method</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>A method name</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">parameters</td>
+            <td class="jsdoc-param-type">Array</td>
+            <td class="jsdoc-param-description"><p>An array of parameters</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">url</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>A base URL</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | string</span></div>
+        <div class="jsdoc-return-description">A URL</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_wire_ml_RestHandler_bind"></a><span class="functionIcon">bind</span><span class="parameters">(method, parameters, deferred, url)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/wire/ml/RestHandler" class="jsdoc-link">dojox/wire/ml/RestHandler</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Call a service method with parameters.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>A service is called with a URL generated by _getUrl() and
+an HTTP method specified with &#39;method&#39;.
+For &quot;POST&quot; and &quot;PUT&quot;, a content is generated by _getContent().
+When data is loaded, _getResult() is used to pass the result to
+Deferred.callback().</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">method</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description"><p>A method name</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">parameters</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description"><p>An array of parameters</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">deferred</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description"><p>&#39;Deferred&#39;</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">url</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description"><p>A URL for the method</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

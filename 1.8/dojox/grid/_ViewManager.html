@@ -1,0 +1,480 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/grid/_ViewManager</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/grid/_ViewManager<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>A collection of grid views. Owned by grid and used internally for managing grid views.</p>
+</div>
+<div class="jsdoc-full-summary"><p>Grid creates views automatically based on grid&#39;s layout structure.
+Users should typically not need to access individual views or the views collection directly.</p>
+</div>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/grid/_ViewManager<span class="parameters">(inGrid);</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/grid/_ViewManager">dojox/grid/_ViewManager</a></div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">inGrid</td>
+    <td class="jsdoc-param-type">undefined</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+</table>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="numberIcon"><a href="#1_8dojox_grid__ViewManager_defaultWidth" class="inline-link"> defaultWidth </a><span></span>
+    </li>
+    <li class="arrayIcon"><a href="#1_8dojox_grid__ViewManager_views" class="inline-link"> views </a><span></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_grid__ViewManager_addView" class="inline-link"> addView</a><span class="parameters">(</span>inView) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__ViewManager_arrange" class="inline-link"> arrange</a><span class="parameters">(</span>l, w) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__ViewManager_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>inGrid) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__ViewManager_destroyViews" class="inline-link"> destroyViews</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__ViewManager_findClient" class="inline-link"> findClient</a><span class="parameters">(</span>inAutoWidth) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__ViewManager_forEach" class="inline-link"> forEach</a><span class="parameters">(</span>inCallback) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__ViewManager_getContentNodes" class="inline-link"> getContentNodes</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__ViewManager_getFirstScrollingView" class="inline-link"> getFirstScrollingView</a><span class="parameters">(</span>) <span>Returns the first grid view with a scroll bar</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__ViewManager_getViewWidth" class="inline-link"> getViewWidth</a><span class="parameters">(</span>inIndex) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__ViewManager_measureContent" class="inline-link"> measureContent</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__ViewManager_measureHeader" class="inline-link"> measureHeader</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__ViewManager_normalizeHeaderNodeHeight" class="inline-link"> normalizeHeaderNodeHeight</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__ViewManager_normalizeRowNodeHeights" class="inline-link"> normalizeRowNodeHeights</a><span class="parameters">(</span>inRowNodes) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__ViewManager_render" class="inline-link"> render</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__ViewManager_renderRow" class="inline-link"> renderRow</a><span class="parameters">(</span>inRowIndex, inNodes, skipRenorm) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__ViewManager_renormalizeRow" class="inline-link"> renormalizeRow</a><span class="parameters">(</span>inRowIndex) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__ViewManager_resetHeaderNodeHeight" class="inline-link"> resetHeaderNodeHeight</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__ViewManager_resize" class="inline-link"> resize</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__ViewManager_rowRemoved" class="inline-link"> rowRemoved</a><span class="parameters">(</span>inRowIndex) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__ViewManager_setScrollTop" class="inline-link"> setScrollTop</a><span class="parameters">(</span>inTop) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__ViewManager_updateRow" class="inline-link"> updateRow</a><span class="parameters">(</span>inRowIndex, skipRenorm) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_grid__ViewManager_updateRowStyles" class="inline-link"> updateRowStyles</a><span class="parameters">(</span>inRowIndex) <span></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_grid__ViewManager_onEach" class="inline-link"> onEach</a><span class="parameters">(</span>inMethod, inArgs) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__ViewManager_defaultWidth"></a><span class="numberIcon">defaultWidth</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/_ViewManager" class="jsdoc-link">dojox/grid/_ViewManager</a>
+        </div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__ViewManager_views"></a><span class="arrayIcon">views</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/grid/_ViewManager" class="jsdoc-link">dojox/grid/_ViewManager</a>
+        </div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__ViewManager_addView"></a><span class="functionIcon">addView</span><span class="parameters">(inView)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_ViewManager" class="jsdoc-link">dojox/grid/_ViewManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inView</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__ViewManager_arrange"></a><span class="functionIcon">arrange</span><span class="parameters">(l, w)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_ViewManager" class="jsdoc-link">dojox/grid/_ViewManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">l</td>
+            <td class="jsdoc-param-type">number</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">w</td>
+            <td class="jsdoc-param-type">number</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__ViewManager_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(inGrid)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_ViewManager" class="jsdoc-link">dojox/grid/_ViewManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inGrid</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__ViewManager_destroyViews"></a><span class="functionIcon">destroyViews</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_ViewManager" class="jsdoc-link">dojox/grid/_ViewManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__ViewManager_findClient"></a><span class="functionIcon">findClient</span><span class="parameters">(inAutoWidth)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_ViewManager" class="jsdoc-link">dojox/grid/_ViewManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inAutoWidth</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__ViewManager_forEach"></a><span class="functionIcon">forEach</span><span class="parameters">(inCallback)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_ViewManager" class="jsdoc-link">dojox/grid/_ViewManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inCallback</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__ViewManager_getContentNodes"></a><span class="functionIcon">getContentNodes</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_ViewManager" class="jsdoc-link">dojox/grid/_ViewManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__ViewManager_getFirstScrollingView"></a><span class="functionIcon">getFirstScrollingView</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_ViewManager" class="jsdoc-link">dojox/grid/_ViewManager</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Returns the first grid view with a scroll bar</p>
+</div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | null</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__ViewManager_getViewWidth"></a><span class="functionIcon">getViewWidth</span><span class="parameters">(inIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_ViewManager" class="jsdoc-link">dojox/grid/_ViewManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__ViewManager_measureContent"></a><span class="functionIcon">measureContent</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_ViewManager" class="jsdoc-link">dojox/grid/_ViewManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__ViewManager_measureHeader"></a><span class="functionIcon">measureHeader</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_ViewManager" class="jsdoc-link">dojox/grid/_ViewManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">number</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__ViewManager_normalizeHeaderNodeHeight"></a><span class="functionIcon">normalizeHeaderNodeHeight</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_ViewManager" class="jsdoc-link">dojox/grid/_ViewManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__ViewManager_normalizeRowNodeHeights"></a><span class="functionIcon">normalizeRowNodeHeights</span><span class="parameters">(inRowNodes)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_ViewManager" class="jsdoc-link">dojox/grid/_ViewManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowNodes</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__ViewManager_render"></a><span class="functionIcon">render</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_ViewManager" class="jsdoc-link">dojox/grid/_ViewManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__ViewManager_renderRow"></a><span class="functionIcon">renderRow</span><span class="parameters">(inRowIndex, inNodes, skipRenorm)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_ViewManager" class="jsdoc-link">dojox/grid/_ViewManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inNodes</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">skipRenorm</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__ViewManager_renormalizeRow"></a><span class="functionIcon">renormalizeRow</span><span class="parameters">(inRowIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_ViewManager" class="jsdoc-link">dojox/grid/_ViewManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__ViewManager_resetHeaderNodeHeight"></a><span class="functionIcon">resetHeaderNodeHeight</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_ViewManager" class="jsdoc-link">dojox/grid/_ViewManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__ViewManager_resize"></a><span class="functionIcon">resize</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_ViewManager" class="jsdoc-link">dojox/grid/_ViewManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__ViewManager_rowRemoved"></a><span class="functionIcon">rowRemoved</span><span class="parameters">(inRowIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_ViewManager" class="jsdoc-link">dojox/grid/_ViewManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__ViewManager_setScrollTop"></a><span class="functionIcon">setScrollTop</span><span class="parameters">(inTop)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_ViewManager" class="jsdoc-link">dojox/grid/_ViewManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inTop</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__ViewManager_updateRow"></a><span class="functionIcon">updateRow</span><span class="parameters">(inRowIndex, skipRenorm)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_ViewManager" class="jsdoc-link">dojox/grid/_ViewManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">skipRenorm</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__ViewManager_updateRowStyles"></a><span class="functionIcon">updateRowStyles</span><span class="parameters">(inRowIndex)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/grid/_ViewManager" class="jsdoc-link">dojox/grid/_ViewManager</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">inRowIndex</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <h2>Events</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_grid__ViewManager_onEach"></a><span class="functionIcon">onEach</span><span class="parameters">(inMethod, inArgs)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/grid/_ViewManager" class="jsdoc-link">dojox/grid/_ViewManager</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+    </div>
+  </div>
+</div>

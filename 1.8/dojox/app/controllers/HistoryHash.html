@@ -1,0 +1,280 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/app/controllers/HistoryHash</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/app/controllers/HistoryHash<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-mixins">
+  <label>Extends </label><a href="/api/1.8/dojox/app/Controller" class="jsdoc-link">dojox/app/Controller,   </a>
+</div>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/app/controllers/HistoryHash<span class="parameters">(app);</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/app/controllers/HistoryHash">dojox/app/controllers/HistoryHash</a></div>
+<div class="jsdoc-summary"><p>Bind &quot;startTransition&quot; event on dojox/app application&#39;s domNode,
+subscribe &quot;/dojo/hashchange&quot; event.
+</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">app</td>
+    <td class="jsdoc-param-type">undefined</td>
+    <td class="jsdoc-param-description"><p>dojox/app application instance.</p>
+ 
+    </td>
+  </tr>
+</table>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dojox_app_controllers_HistoryHash__addHistory" class="inline-link"> _addHistory</a><span class="parameters">(</span>hash) <span>Add hash to application history stack, update history management flags.</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_app_controllers_HistoryHash__back" class="inline-link"> _back</a><span class="parameters">(</span>currentHash, detail) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_app_controllers_HistoryHash__forward" class="inline-link"> _forward</a><span class="parameters">(</span>currentHash, detail) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dojox_app_controllers_HistoryHash__go" class="inline-link"> _go</a><span class="parameters">(</span>index, step) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_app_controllers_HistoryHash_bind" class="inline-link"> bind</a><span class="parameters">(</span>evented, event, handler) <span>Bind event on dojo/Evented instance, document, domNode or window.</span><span title="inherited from dojox/app/Controller" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_app_controllers_HistoryHash_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>app) <span>Bind &quot;startTransition&quot; event on dojox/app application&#39;s domNode,
+subscribe &quot;/dojo/hashchange&quot; event.</span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_app_controllers_HistoryHash_unbind" class="inline-link"> unbind</a><span class="parameters">(</span>evented, event) <span>remove a binded event signal.</span><span title="inherited from dojox/app/Controller" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dojox_app_controllers_HistoryHash__onHashChange" class="inline-link"> _onHashChange</a><span class="parameters">(</span>currentHash) <span>subscribe /dojo/hashchange and do add history, back, forward and go operation.</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_app_controllers_HistoryHash_onStartTransition" class="inline-link"> onStartTransition</a><span class="parameters">(</span>evt) <span>Response to dojox/app &quot;startTransition&quot; event.</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_app_controllers_HistoryHash__addHistory"></a><span class="functionIcon">_addHistory</span><span class="parameters">(hash)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/app/controllers/HistoryHash" class="jsdoc-link">dojox/app/controllers/HistoryHash</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Add hash to application history stack, update history management flags.
+</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">hash</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description"><p>new hash should be added to _historyStack.</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_app_controllers_HistoryHash__back"></a><span class="functionIcon">_back</span><span class="parameters">(currentHash, detail)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/app/controllers/HistoryHash" class="jsdoc-link">dojox/app/controllers/HistoryHash</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">currentHash</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">detail</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_app_controllers_HistoryHash__forward"></a><span class="functionIcon">_forward</span><span class="parameters">(currentHash, detail)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/app/controllers/HistoryHash" class="jsdoc-link">dojox/app/controllers/HistoryHash</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">currentHash</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">detail</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_app_controllers_HistoryHash__go"></a><span class="functionIcon">_go</span><span class="parameters">(index, step)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/app/controllers/HistoryHash" class="jsdoc-link">dojox/app/controllers/HistoryHash</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">index</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">step</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_app_controllers_HistoryHash_bind"></a><span class="functionIcon">bind</span><span class="parameters">(evented, event, handler)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/app/Controller" class="jsdoc-link">dojox/app/Controller</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Bind event on dojo/Evented instance, document, domNode or window.
+Save event signal in controller instance.
+</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evented</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>dojo/Evented instance, document, domNode or window</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">event</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>event</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">handler</td>
+            <td class="jsdoc-param-type">Function</td>
+            <td class="jsdoc-param-description"><p>event handler</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_app_controllers_HistoryHash_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(app)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/app/controllers/HistoryHash" class="jsdoc-link">dojox/app/controllers/HistoryHash</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Bind &quot;startTransition&quot; event on dojox/app application&#39;s domNode,
+subscribe &quot;/dojo/hashchange&quot; event.
+</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">app</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description"><p>dojox/app application instance.</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_app_controllers_HistoryHash_unbind"></a><span class="functionIcon">unbind</span><span class="parameters">(evented, event)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/app/Controller" class="jsdoc-link">dojox/app/Controller</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>remove a binded event signal.
+</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">evented</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description"><p>dojo/Evented instance, document, domNode or window</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">event</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>event</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <h2>Events</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_app_controllers_HistoryHash__onHashChange"></a><span class="functionIcon">_onHashChange</span><span class="parameters">(currentHash)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/app/controllers/HistoryHash" class="jsdoc-link">dojox/app/controllers/HistoryHash</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>subscribe /dojo/hashchange and do add history, back, forward and go operation.
+</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_app_controllers_HistoryHash_onStartTransition"></a><span class="functionIcon">onStartTransition</span><span class="parameters">(evt)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/app/controllers/HistoryHash" class="jsdoc-link">dojox/app/controllers/HistoryHash</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Response to dojox/app &quot;startTransition&quot; event.
+</p>
+</div>
+      </div>
+    </div>
+  </div>
+</div>

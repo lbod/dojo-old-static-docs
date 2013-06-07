@@ -1,0 +1,250 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/form/_ComboBoxMenuMixin</div>
+<h1 class="constructorIcon36 jsdoc-title">dijit/form/_ComboBoxMenuMixin<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>Focus-less menu for internal use in <a class="jsdoc-link" href="/api/1.8/dijit/form/ComboBox">dijit/form/ComboBox</a></p>
+</div>
+<p>See the <a href="/reference-guide/1.8/dijit/form/_ComboBoxMenuMixin.html" target="_blank">dijit/form/_ComboBoxMenuMixin reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="objectIcon private"><a href="#1_8dijit_form__ComboBoxMenuMixin__messages" class="inline-link"> _messages </a><span>Holds &quot;next&quot; and &quot;previous&quot; text for paging buttons on drop down</span><span title="private" class="jsdoc-private"></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dijit_form__ComboBoxMenuMixin__createOption" class="inline-link"> _createOption</a><span class="parameters">(</span>item, labelFunc) <span>Creates an option to appear on the popup menu subclassed by
+dijit/form/FilteringSelect.</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dijit_form__ComboBoxMenuMixin__setValueAttr" class="inline-link"> _setValueAttr</a><span class="parameters">(</span>value) <span></span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dijit_form__ComboBoxMenuMixin_buildRendering" class="inline-link"> buildRendering</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dijit_form__ComboBoxMenuMixin_clearResultList" class="inline-link"> clearResultList</a><span class="parameters">(</span>) <span>Clears the entries in the drop down list, but of course keeps the previous and next buttons.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dijit_form__ComboBoxMenuMixin_createOptions" class="inline-link"> createOptions</a><span class="parameters">(</span>results, options, labelFunc) <span>Fills in the items in the drop down list</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dijit_form__ComboBoxMenuMixin_getHighlightedOption" class="inline-link"> getHighlightedOption</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dijit_form__ComboBoxMenuMixin_highlightFirstOption" class="inline-link"> highlightFirstOption</a><span class="parameters">(</span>) <span>Highlight the first real item in the list (not Previous Choices).</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dijit_form__ComboBoxMenuMixin_highlightLastOption" class="inline-link"> highlightLastOption</a><span class="parameters">(</span>) <span>Highlight the last real item in the list (not More Choices).</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dijit_form__ComboBoxMenuMixin_postMixInProperties" class="inline-link"> postMixInProperties</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dijit_form__ComboBoxMenuMixin_selectFirstNode" class="inline-link"> selectFirstNode</a><span class="parameters">(</span>) <span></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dijit_form__ComboBoxMenuMixin_selectLastNode" class="inline-link"> selectLastNode</a><span class="parameters">(</span>) <span></span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dijit_form__ComboBoxMenuMixin_onChange" class="inline-link"> onChange</a><span class="parameters">(</span>direction) <span>Notifies ComboBox/FilteringSelect that user selected an option.</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dijit_form__ComboBoxMenuMixin_onClick" class="inline-link"> onClick</a><span class="parameters">(</span>node) <span></span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon private"><a href="#1_8dijit_form__ComboBoxMenuMixin_onClose" class="inline-link"> onClose</a><span class="parameters">(</span>) <span>Callback from dijit.popup code to this widget, notifying it that it closed</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dijit_form__ComboBoxMenuMixin_onPage" class="inline-link"> onPage</a><span class="parameters">(</span>direction) <span>Notifies ComboBox/FilteringSelect that user clicked to advance to next/previous page.</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dijit_form__ComboBoxMenuMixin__messages"></a><span class="objectIcon">_messages</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a>
+        </div>
+        <div class="jsdoc-summary"><p>Holds &quot;next&quot; and &quot;previous&quot; text for paging buttons on drop down</p>
+</div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dijit_form__ComboBoxMenuMixin__createOption"></a><span class="functionIcon">_createOption</span><span class="parameters">(item, labelFunc)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Creates an option to appear on the popup menu subclassed by
+<code>dijit/form/FilteringSelect</code>.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">item</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">labelFunc</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dijit_form__ComboBoxMenuMixin__setValueAttr"></a><span class="functionIcon">_setValueAttr</span><span class="parameters">(value)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dijit_form__ComboBoxMenuMixin_buildRendering"></a><span class="functionIcon">buildRendering</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dijit_form__ComboBoxMenuMixin_clearResultList"></a><span class="functionIcon">clearResultList</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Clears the entries in the drop down list, but of course keeps the previous and next buttons.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dijit_form__ComboBoxMenuMixin_createOptions"></a><span class="functionIcon">createOptions</span><span class="parameters">(results, options, labelFunc)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Fills in the items in the drop down list</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">results</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description"><p>Array of items</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">options</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description"><p>The options to the query function of the store
+</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">labelFunc</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description"><p>Function to produce a label in the drop down list from a dojo.data item</p>
+ 
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dijit_form__ComboBoxMenuMixin_getHighlightedOption"></a><span class="functionIcon">getHighlightedOption</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dijit_form__ComboBoxMenuMixin_highlightFirstOption"></a><span class="functionIcon">highlightFirstOption</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Highlight the first real item in the list (not Previous Choices).</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dijit_form__ComboBoxMenuMixin_highlightLastOption"></a><span class="functionIcon">highlightLastOption</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Highlight the last real item in the list (not More Choices).</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dijit_form__ComboBoxMenuMixin_postMixInProperties"></a><span class="functionIcon">postMixInProperties</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dijit_form__ComboBoxMenuMixin_selectFirstNode"></a><span class="functionIcon">selectFirstNode</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dijit_form__ComboBoxMenuMixin_selectLastNode"></a><span class="functionIcon">selectLastNode</span><span class="parameters">()</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+      </div>
+    </div>
+    <h2>Events</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dijit_form__ComboBoxMenuMixin_onChange"></a><span class="functionIcon">onChange</span><span class="parameters">(direction)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Notifies ComboBox/FilteringSelect that user selected an option.</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dijit_form__ComboBoxMenuMixin_onClick"></a><span class="functionIcon">onClick</span><span class="parameters">(node)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+      </div>
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dijit_form__ComboBoxMenuMixin_onClose"></a><span class="functionIcon">onClose</span><span class="parameters">()</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Callback from dijit.popup code to this widget, notifying it that it closed</p>
+</div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dijit_form__ComboBoxMenuMixin_onPage"></a><span class="functionIcon">onPage</span><span class="parameters">(direction)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dijit/form/_ComboBoxMenuMixin" class="jsdoc-link">dijit/form/_ComboBoxMenuMixin</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Notifies ComboBox/FilteringSelect that user clicked to advance to next/previous page.</p>
+</div>
+      </div>
+    </div>
+  </div>
+</div>

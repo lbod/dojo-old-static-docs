@@ -1,0 +1,190 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/lang/async</div>
+<h1 class="objectIcon36 jsdoc-title">dojox/lang/async<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<p>See the <a href="/reference-guide/1.8/dojox/lang/async.html" target="_blank">dojox/lang/async reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_lang_async_any" class="inline-link"> any</a><span class="parameters">(</span>x) <span>Executes functions in parallel.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_lang_async_ifThen" class="inline-link"> ifThen</a><span class="parameters">(</span>cond, ifTrue, ifFalse) <span>Executes a condition, waits for it if necessary, and executes
+one of two functions.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_lang_async_loop" class="inline-link"> loop</a><span class="parameters">(</span>cond, body) <span>Executes a condition, waits for it if necessary, and executes
+the body, if truthy value was returned.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_lang_async_par" class="inline-link"> par</a><span class="parameters">(</span>x) <span>Executes functions in parallel.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_lang_async_select" class="inline-link"> select</a><span class="parameters">(</span>cond, x) <span>Executes a condition, waits for it if necessary, and executes
+Nth function from list.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_lang_async_seq" class="inline-link"> seq</a><span class="parameters">(</span>x) <span>Executes functions sequentially.</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_lang_async_any"></a><span class="functionIcon">any</span><span class="parameters">(x)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/lang/async" class="jsdoc-link">dojox/lang/async</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Executes functions in parallel. As soon as one of them finishes
+cancels the rest.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">x</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_lang_async_ifThen"></a><span class="functionIcon">ifThen</span><span class="parameters">(cond, ifTrue, ifFalse)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/lang/async" class="jsdoc-link">dojox/lang/async</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Executes a condition, waits for it if necessary, and executes
+one of two functions.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">cond</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">ifTrue</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">ifFalse</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_lang_async_loop"></a><span class="functionIcon">loop</span><span class="parameters">(cond, body)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/lang/async" class="jsdoc-link">dojox/lang/async</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Executes a condition, waits for it if necessary, and executes
+the body, if truthy value was returned.
+Then it repeats the cycle until the condition function returns
+a falsy value.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">cond</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">body</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_lang_async_par"></a><span class="functionIcon">par</span><span class="parameters">(x)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/lang/async" class="jsdoc-link">dojox/lang/async</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Executes functions in parallel. Waits for all of them to finish.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">x</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_lang_async_select"></a><span class="functionIcon">select</span><span class="parameters">(cond, x)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/lang/async" class="jsdoc-link">dojox/lang/async</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Executes a condition, waits for it if necessary, and executes
+Nth function from list.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">cond</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">x</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_lang_async_seq"></a><span class="functionIcon">seq</span><span class="parameters">(x)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/lang/async" class="jsdoc-link">dojox/lang/async</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Executes functions sequentially. Waits if any of them returns Deferred.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">x</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

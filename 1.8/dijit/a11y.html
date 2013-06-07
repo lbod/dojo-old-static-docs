@@ -1,0 +1,172 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/a11y</div>
+<h1 class="objectIcon36 jsdoc-title">dijit/a11y<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>Accessibility utility functions (keyboard, tab stops, etc.)</p>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon private"><a href="#1_8dijit_a11y__getTabNavigable" class="inline-link"> _getTabNavigable</a><span class="parameters">(</span>root) <span>Finds descendants of the specified root node.</span><span title="private" class="jsdoc-private"> </span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dijit_a11y_getFirstInTabbingOrder" class="inline-link"> getFirstInTabbingOrder</a><span class="parameters">(</span>root, doc) <span>Finds the descendant of the specified root node
+that is first in the tabbing order</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dijit_a11y_getLastInTabbingOrder" class="inline-link"> getLastInTabbingOrder</a><span class="parameters">(</span>root, doc) <span>Finds the descendant of the specified root node
+that is last in the tabbing order</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dijit_a11y_hasDefaultTabStop" class="inline-link"> hasDefaultTabStop</a><span class="parameters">(</span>elem) <span>Tests if element is tab-navigable even without an explicit tabIndex setting</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dijit_a11y_isTabNavigable" class="inline-link"> isTabNavigable</a><span class="parameters">(</span>elem) <span>Tests if an element is tab-navigable</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dijit_a11y__getTabNavigable"></a><span class="functionIcon">_getTabNavigable</span><span class="parameters">(root)</span> <span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/a11y" class="jsdoc-link">dijit/a11y</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Finds descendants of the specified root node.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Finds the following descendants of the specified root node:
+
+</p>
+<ul>
+<li>the first tab-navigable element in document order
+without a tabIndex or with tabIndex=&quot;0&quot;</li>
+<li>the last tab-navigable element in document order
+without a tabIndex or with tabIndex=&quot;0&quot;</li>
+<li>the first element in document order with the lowest
+positive tabIndex value</li>
+<li>the last element in document order with the highest
+positive tabIndex value</li>
+</ul>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">root</td>
+            <td class="jsdoc-param-type">DOMNode</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dijit_a11y_getFirstInTabbingOrder"></a><span class="functionIcon">getFirstInTabbingOrder</span><span class="parameters">(root, doc)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/a11y" class="jsdoc-link">dijit/a11y</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Finds the descendant of the specified root node
+that is first in the tabbing order</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">root</td>
+            <td class="jsdoc-param-type">String | DOMNode</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">doc</td>
+            <td class="jsdoc-param-type">Document</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dijit_a11y_getLastInTabbingOrder"></a><span class="functionIcon">getLastInTabbingOrder</span><span class="parameters">(root, doc)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/a11y" class="jsdoc-link">dijit/a11y</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Finds the descendant of the specified root node
+that is last in the tabbing order</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">root</td>
+            <td class="jsdoc-param-type">String | DOMNode</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">doc</td>
+            <td class="jsdoc-param-type">Document</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div>
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dijit_a11y_hasDefaultTabStop"></a><span class="functionIcon">hasDefaultTabStop</span><span class="parameters">(elem)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/a11y" class="jsdoc-link">dijit/a11y</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Tests if element is tab-navigable even without an explicit tabIndex setting</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">elem</td>
+            <td class="jsdoc-param-type">Element</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | boolean</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dijit_a11y_isTabNavigable"></a><span class="functionIcon">isTabNavigable</span><span class="parameters">(elem)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/a11y" class="jsdoc-link">dijit/a11y</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Tests if an element is tab-navigable</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">elem</td>
+            <td class="jsdoc-param-type">Element</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">boolean</span></div>
+      </div>
+    </div>
+  </div>
+</div>

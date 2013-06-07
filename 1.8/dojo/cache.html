@@ -1,0 +1,193 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/cache</div>
+<h1 class="functionIcon36 jsdoc-title">dojo/cache<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>A getter and setter for storing the string content associated with the
+module and url arguments.</p>
+</div>
+<div class="jsdoc-full-summary"><p>If module is a string that contains slashes, then it is interpretted as a fully
+resolved path (typically a result returned by require.toUrl), and url should not be
+provided. This is the preferred signature. If module is a string that does not
+contain slashes, then url must also be provided and module and url are used to
+call <code>dojo.moduleUrl()</code> to generate a module URL. This signature is deprecated.
+If value is specified, the cache value for the moduleUrl will be set to
+that value. Otherwise, dojo.cache will fetch the moduleUrl and store it
+in its internal cache and return that cached value for the URL. To clear
+a cache value pass null for value. Since XMLHttpRequest (XHR) is used to fetch the
+the URL contents, only modules on the same domain of the page can use this capability.
+The build system can inline the cache values though, to allow for xdomain hosting.</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">module</td>
+    <td class="jsdoc-param-type">String | Object</td>
+    <td class="jsdoc-param-description"><p>dojo/cldr/supplemental</p>
+ 
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">url</td>
+    <td class="jsdoc-param-type">String</td>
+    <td class="jsdoc-param-description"><p>The rest of the path to append to the path derived from the module argument. If
+module is an object, then this second argument should be the &quot;value&quot; argument instead.</p>
+ 
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">value</td>
+    <td class="jsdoc-param-type">String | Object</td>
+    <td class="jsdoc-param-description">
+      <div><em>Optional</em></div><p>If a String, the value to use in the cache for the module/url combination.
+If an Object, it can have two properties: value and sanitize. The value property
+should be the value to use in the cache, and sanitize can be set to true or false,
+to indicate if XML declarations should be removed from the value and if the HTML
+inside a body tag in the value should be extracted as the real value. The value argument
+or the value property on the value argument are usually only used by the build system
+as it inlines cache content.</p>
+ 
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojo/cache.html" target="_blank">dojo/cache reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<div class="jsdoc-examples">
+  <h2>Examples</h2>
+  <div class="jsdoc-example">
+    <h3>Example 1</h3><p>To ask dojo.cache to fetch content and store it in the cache (the dojo[&quot;cache&quot;] style
+of call is used to avoid an issue with the build system erroneously trying to intern
+this example. To get the build system to intern your dojo.cache calls, use the
+&quot;dojo.cache&quot; style of call):</p>
+<pre><code> //If template.html contains &quot;&lt;h1&gt;Hello&lt;/h1&gt;&quot; that will be
+ //the value for the text variable.
+ var text = dojo[&quot;cache&quot;](&quot;my.module&quot;, &quot;template.html&quot;);</code></pre>
+
+  </div>
+  <div class="jsdoc-example">
+    <h3>Example 2</h3><p>To ask dojo.cache to fetch content and store it in the cache, and sanitize the input
+(the dojo[&quot;cache&quot;] style of call is used to avoid an issue with the build system
+erroneously trying to intern this example. To get the build system to intern your
+dojo.cache calls, use the &quot;dojo.cache&quot; style of call):</p>
+<pre><code> //If template.html contains &quot;&lt;html&gt;&lt;body&gt;&lt;h1&gt;Hello&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;&quot;, the
+ //text variable will contain just &quot;&lt;h1&gt;Hello&lt;/h1&gt;&quot;.
+ var text = dojo[&quot;cache&quot;](&quot;my.module&quot;, &quot;template.html&quot;, {sanitize: true});</code></pre>
+
+  </div>
+  <div class="jsdoc-example">
+    <h3>Example 3</h3><p>Same example as previous, but demonstrates how an object can be passed in as
+the first argument, then the value argument can then be the second argument.</p>
+<pre><code> //If template.html contains &quot;&lt;html&gt;&lt;body&gt;&lt;h1&gt;Hello&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;&quot;, the
+ //text variable will contain just &quot;&lt;h1&gt;Hello&lt;/h1&gt;&quot;.
+ var text = dojo[&quot;cache&quot;](new dojo._Url(&quot;my/module/template.html&quot;), {sanitize: true});</code></pre>
+
+  </div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon  inherited"><a href="#1_8dojo_cache_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>module, url, value) <span>A getter and setter for storing the string content associated with the
+module and url arguments.</span><span title="inherited from dojo/text" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojo_cache_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(module, url, value)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/text" class="jsdoc-link">dojo/text</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>A getter and setter for storing the string content associated with the
+module and url arguments.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>If module is a string that contains slashes, then it is interpretted as a fully
+resolved path (typically a result returned by require.toUrl), and url should not be
+provided. This is the preferred signature. If module is a string that does not
+contain slashes, then url must also be provided and module and url are used to
+call <code>dojo.moduleUrl()</code> to generate a module URL. This signature is deprecated.
+If value is specified, the cache value for the moduleUrl will be set to
+that value. Otherwise, dojo.cache will fetch the moduleUrl and store it
+in its internal cache and return that cached value for the URL. To clear
+a cache value pass null for value. Since XMLHttpRequest (XHR) is used to fetch the
+the URL contents, only modules on the same domain of the page can use this capability.
+The build system can inline the cache values though, to allow for xdomain hosting.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">module</td>
+            <td class="jsdoc-param-type">String | Object</td>
+            <td class="jsdoc-param-description"><p>dojo/cldr/supplemental</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">url</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description"><p>The rest of the path to append to the path derived from the module argument. If
+module is an object, then this second argument should be the &quot;value&quot; argument instead.</p>
+ 
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">value</td>
+            <td class="jsdoc-param-type">String | Object</td>
+            <td class="jsdoc-param-description">
+              <div><em>Optional</em></div><p>If a String, the value to use in the cache for the module/url combination.
+If an Object, it can have two properties: value and sanitize. The value property
+should be the value to use in the cache, and sanitize can be set to true or false,
+to indicate if XML declarations should be removed from the value and if the HTML
+inside a body tag in the value should be extracted as the real value. The value argument
+or the value property on the value argument are usually only used by the build system
+as it inlines cache content.</p>
+ 
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined | null</span></div>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><p>To ask dojo.cache to fetch content and store it in the cache (the dojo[&quot;cache&quot;] style
+of call is used to avoid an issue with the build system erroneously trying to intern
+this example. To get the build system to intern your dojo.cache calls, use the
+&quot;dojo.cache&quot; style of call):</p>
+<pre><code> //If template.html contains &quot;&lt;h1&gt;Hello&lt;/h1&gt;&quot; that will be
+ //the value for the text variable.
+ var text = dojo[&quot;cache&quot;](&quot;my.module&quot;, &quot;template.html&quot;);</code></pre>
+
+          </div>
+          <div class="jsdoc-example">
+            <h3>Example 2</h3><p>To ask dojo.cache to fetch content and store it in the cache, and sanitize the input
+(the dojo[&quot;cache&quot;] style of call is used to avoid an issue with the build system
+erroneously trying to intern this example. To get the build system to intern your
+dojo.cache calls, use the &quot;dojo.cache&quot; style of call):</p>
+<pre><code> //If template.html contains &quot;&lt;html&gt;&lt;body&gt;&lt;h1&gt;Hello&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;&quot;, the
+ //text variable will contain just &quot;&lt;h1&gt;Hello&lt;/h1&gt;&quot;.
+ var text = dojo[&quot;cache&quot;](&quot;my.module&quot;, &quot;template.html&quot;, {sanitize: true});</code></pre>
+
+          </div>
+          <div class="jsdoc-example">
+            <h3>Example 3</h3><p>Same example as previous, but demonstrates how an object can be passed in as
+the first argument, then the value argument can then be the second argument.</p>
+<pre><code> //If template.html contains &quot;&lt;html&gt;&lt;body&gt;&lt;h1&gt;Hello&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;&quot;, the
+ //text variable will contain just &quot;&lt;h1&gt;Hello&lt;/h1&gt;&quot;.
+ var text = dojo[&quot;cache&quot;](new dojo._Url(&quot;my/module/template.html&quot;), {sanitize: true});</code></pre>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

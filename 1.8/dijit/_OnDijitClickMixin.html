@@ -1,0 +1,109 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dijit/_OnDijitClickMixin</div>
+<h1 class="constructorIcon36 jsdoc-title">dijit/_OnDijitClickMixin<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<p>See the <a href="/reference-guide/1.8/dijit/_OnDijitClickMixin.html" target="_blank">dijit/_OnDijitClickMixin reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon  inherited"><a href="#1_8dijit__OnDijitClickMixin_a11yclick" class="inline-link"> a11yclick</a><span class="parameters">(</span>node, listener) <span>Custom a11yclick (a.k.a. ondijitclick) event
+which triggers on a mouse click, touch, or space/enter keyup.</span><span title="inherited from dijit/a11yclick" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dijit__OnDijitClickMixin_connect" class="inline-link"> connect</a><span class="parameters">(</span>obj, event, method) <span>Connects specified obj/event to specified method of this object
+and registers for disconnect() on widget destroy.</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dijit__OnDijitClickMixin_a11yclick"></a><span class="functionIcon">a11yclick</span><span class="parameters">(node, listener)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/a11yclick" class="jsdoc-link">dijit/a11yclick</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>Custom a11yclick (a.k.a. ondijitclick) event
+which triggers on a mouse click, touch, or space/enter keyup.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">node</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">listener</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dijit__OnDijitClickMixin_connect"></a><span class="functionIcon">connect</span><span class="parameters">(obj, event, method)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dijit/_OnDijitClickMixin" class="jsdoc-link">dijit/_OnDijitClickMixin</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Connects specified obj/event to specified method of this object
+and registers for disconnect() on widget destroy.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Provide widget-specific analog to connect.connect, except with the
+implicit use of this widget as the target object.
+This version of connect also provides a special &quot;ondijitclick&quot;
+event which triggers on a click or space or enter keyup.
+Events connected with <code>this.connect</code> are disconnected upon
+destruction.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">obj</td>
+            <td class="jsdoc-param-type">Object | null</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">event</td>
+            <td class="jsdoc-param-type">String | Function</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">method</td>
+            <td class="jsdoc-param-type">String | Function</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">any | undefined</span></div>
+        <div class="jsdoc-return-description">A handle that can be passed to `disconnect` in order to disconnect before
+the widget is destroyed.</div>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><pre><code>  var btn = new Button();
+  // when foo.bar() is called, call the listener we&#39;re going to
+  // provide in the scope of btn
+  btn.connect(foo, &quot;bar&quot;, function(){
+    console.debug(this.toString());
+  });</code></pre>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

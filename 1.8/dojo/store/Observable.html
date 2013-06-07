@@ -1,0 +1,121 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojo/store/Observable</div>
+<h1 class="functionIcon36 jsdoc-title">dojo/store/Observable<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>The Observable store wrapper takes a store and sets an observe method on query()
+results that can be used to monitor results for changes.
+</p>
+</div>
+<div class="jsdoc-full-summary"><p>Observable wraps an existing store so that notifications can be made when a query
+is performed.
+</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">store</td>
+    <td class="jsdoc-param-type">dojo/store/api/Store</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojo/store/Observable.html" target="_blank">dojo/store/Observable reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<div class="jsdoc-examples">
+  <h2>Examples</h2>
+  <div class="jsdoc-example">
+    <h3>Example 1</h3><p>Create a Memory store that returns an observable query, and then log some
+information about that query.
+
+</p>
+<pre><code>  var store = Observable(new Memory({
+    data: [
+      {id: 1, name: &quot;one&quot;, prime: false},
+      {id: 2, name: &quot;two&quot;, even: true, prime: true},
+      {id: 3, name: &quot;three&quot;, prime: true},
+      {id: 4, name: &quot;four&quot;, even: true, prime: false},
+      {id: 5, name: &quot;five&quot;, prime: true}
+    ]
+  }));
+  var changes = [], results = store.query({ prime: true });
+  var observer = results.observe(function(object, previousIndex, newIndex){
+    changes.push({previousIndex:previousIndex, newIndex:newIndex, object:object});
+  });</code></pre>
+<p></p>
+<p>See the Observable tests for more information.</p>
+
+  </div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojo_store_Observable_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>store) <span>The Observable store wrapper takes a store and sets an observe method on query()
+results that can be used to monitor results for changes.</span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojo_store_Observable_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(store)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojo/store/Observable" class="jsdoc-link">dojo/store/Observable</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>The Observable store wrapper takes a store and sets an observe method on query()
+results that can be used to monitor results for changes.
+</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Observable wraps an existing store so that notifications can be made when a query
+is performed.
+</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">store</td>
+            <td class="jsdoc-param-type">dojo/store/api/Store</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+        <div class="jsdoc-examples">
+          <h2>Examples</h2>
+          <div class="jsdoc-example">
+            <h3>Example 1</h3><p>Create a Memory store that returns an observable query, and then log some
+information about that query.
+
+</p>
+<pre><code>  var store = Observable(new Memory({
+    data: [
+      {id: 1, name: &quot;one&quot;, prime: false},
+      {id: 2, name: &quot;two&quot;, even: true, prime: true},
+      {id: 3, name: &quot;three&quot;, prime: true},
+      {id: 4, name: &quot;four&quot;, even: true, prime: false},
+      {id: 5, name: &quot;five&quot;, prime: true}
+    ]
+  }));
+  var changes = [], results = store.query({ prime: true });
+  var observer = results.observe(function(object, previousIndex, newIndex){
+    changes.push({previousIndex:previousIndex, newIndex:newIndex, object:object});
+  });</code></pre>
+<p></p>
+<p>See the Observable tests for more information.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,209 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/mobile/bookmarkable</div>
+<h1 class="objectIcon36 jsdoc-title">dojox/mobile/bookmarkable<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-full-summary"><p>Utilities to make the view transitions bookmarkable.</p>
+</div>
+<p>See the <a href="/reference-guide/1.8/dojox/mobile/bookmarkable.html" target="_blank">dojox/mobile/bookmarkable reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Property Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="booleanIcon private"><a href="#1_8dojox_mobile_bookmarkable_settingHash" class="inline-link"> settingHash </a><span>Whether the browser URL needs to be updated to include the hash.</span><span title="private" class="jsdoc-private"></span>
+    </li>
+    <li class="arrayIcon"><a href="#1_8dojox_mobile_bookmarkable_transitionInfo" class="inline-link"> transitionInfo </a><span>An array containing information about the transition.</span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_mobile_bookmarkable_addTransitionInfo" class="inline-link"> addTransitionInfo</a><span class="parameters">(</span>fromViewId, toViewId, args) <span>Adds transition information.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_mobile_bookmarkable_findTransitionViews" class="inline-link"> findTransitionViews</a><span class="parameters">(</span>moveTo) <span>Searches for a starting view and a destination view.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_mobile_bookmarkable_getTransitionInfo" class="inline-link"> getTransitionInfo</a><span class="parameters">(</span>fromViewId, toViewId) <span>Returns an array containing the transition information.</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_mobile_bookmarkable_handleFragIds" class="inline-link"> handleFragIds</a><span class="parameters">(</span>fragIds) <span>Analyzes the given hash (fragment id).</span>
+    </li>
+    <li class="functionIcon "><a href="#1_8dojox_mobile_bookmarkable_setFragIds" class="inline-link"> setFragIds</a><span class="parameters">(</span>toView) <span>Updates the hash (fragment id) in the browser URL.</span>
+    </li>
+  </ul>
+</div>
+<h2 class="jsdoc-summary-heading">Event Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon "><a href="#1_8dojox_mobile_bookmarkable_onHashChange" class="inline-link"> onHashChange</a><span class="parameters">(</span>value) <span>Called on &quot;/dojo/hashchange&quot; events.</span><span title="TODO" class="jsdoc-extension"></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Properties</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field private">
+        <div class="jsdoc-title"><a name="1_8dojox_mobile_bookmarkable_settingHash"></a><span class="booleanIcon">settingHash</span><span title="private" class="jsdoc-private"> </span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/mobile/bookmarkable" class="jsdoc-link">dojox/mobile/bookmarkable</a>
+        </div>
+        <div class="jsdoc-summary"><p>Whether the browser URL needs to be updated to include the hash.</p>
+</div>
+      </div>
+      <div class="jsdoc-field public">
+        <div class="jsdoc-title"><a name="1_8dojox_mobile_bookmarkable_transitionInfo"></a><span class="arrayIcon">transitionInfo</span>
+        </div>
+        <div class="jsdoc-inheritance">Defined by: <a href="/api/1.8/dojox/mobile/bookmarkable" class="jsdoc-link">dojox/mobile/bookmarkable</a>
+        </div>
+        <div class="jsdoc-summary"><p>An array containing information about the transition.</p>
+</div>
+      </div>
+    </div>
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_mobile_bookmarkable_addTransitionInfo"></a><span class="functionIcon">addTransitionInfo</span><span class="parameters">(fromViewId, toViewId, args)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/bookmarkable" class="jsdoc-link">dojox/mobile/bookmarkable</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Adds transition information.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">fromViewId</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">toViewId</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">args</td>
+            <td class="jsdoc-param-type">Object</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_mobile_bookmarkable_findTransitionViews"></a><span class="functionIcon">findTransitionViews</span><span class="parameters">(moveTo)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/bookmarkable" class="jsdoc-link">dojox/mobile/bookmarkable</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Searches for a starting view and a destination view.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">moveTo</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">Array</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_mobile_bookmarkable_getTransitionInfo"></a><span class="functionIcon">getTransitionInfo</span><span class="parameters">(fromViewId, toViewId)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/bookmarkable" class="jsdoc-link">dojox/mobile/bookmarkable</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Returns an array containing the transition information.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">fromViewId</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">toViewId</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_mobile_bookmarkable_handleFragIds"></a><span class="functionIcon">handleFragIds</span><span class="parameters">(fragIds)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/bookmarkable" class="jsdoc-link">dojox/mobile/bookmarkable</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Analyzes the given hash (fragment id).</p>
+</div>
+        <div class="jsdoc-full-summary"><p>Given a comma-separated list of view IDs, this method
+searches for a transition destination, and makes all the
+views in the hash visible.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">fragIds</td>
+            <td class="jsdoc-param-type">String</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">object</span></div>
+      </div>
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_mobile_bookmarkable_setFragIds"></a><span class="functionIcon">setFragIds</span><span class="parameters">(toView)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/mobile/bookmarkable" class="jsdoc-link">dojox/mobile/bookmarkable</a>
+        </div>
+        <div class="jsdoc-full-summary"><p>Updates the hash (fragment id) in the browser URL.</p>
+</div>
+        <div class="jsdoc-full-summary"><p>The hash value consists of one or more visible view ids
+separated with commas.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">toView</td>
+            <td class="jsdoc-param-type">Widget</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <h2>Events</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field">
+        <div class="jsdoc-title"><a name="1_8dojox_mobile_bookmarkable_onHashChange"></a><span class="functionIcon">onHashChange</span><span class="parameters">(value)</span>
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by: <a href="/api/1.8/dojox/mobile/bookmarkable" class="jsdoc-link">dojox/mobile/bookmarkable</a><span title="inherited" class="jsdoc-inherited TODO">      </span></div>
+        <div class="jsdoc-summary"><p>Called on &quot;/dojo/hashchange&quot; events.</p>
+</div>
+      </div>
+    </div>
+  </div>
+</div>

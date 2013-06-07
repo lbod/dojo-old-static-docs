@@ -1,0 +1,151 @@
+
+<div style="display:none" class="jsdoc-permalink">/api/1.8/dojox/gfx3d/scheduler.BinarySearchTree</div>
+<h1 class="constructorIcon36 jsdoc-title">dojox/gfx3d/scheduler.BinarySearchTree<span style="font-size:11px;color:#999;"> (version 1.8)</span></h1>
+<div class="jsdoc-function-information"> 
+  <h3>Usage:</h3>
+  <div class="function-signature"><span class="keyword">var</span> foo = new dojox/gfx3d/scheduler.BinarySearchTree<span class="parameters">(obj,outline);</span></div>
+</div>
+<div class="jsdoc-inheritance">Defined by <a class="jsdoc-link" href="/api/1.8/dojox/gfx3d/scheduler">dojox/gfx3d/scheduler</a></div>
+<div class="jsdoc-summary"><p>build the binary search tree, using binary space partition algorithm.
+The idea is for any polygon, for example, (a, b, c), the space is divided by
+the plane into two space: plus and minus.
+
+</p>
+<p>for any arbitrary vertex p, if(p - a) dotProduct n = 0, p is inside the plane,
+</p>
+<blockquote>
+<p>0, p is in the plus space, vice versa for minus space.
+n is the normal vector that is perpendicular the plate, defined as:</p>
+<pre><code>    n = ( b - a) crossProduct ( c - a )</code></pre>
+<p></p>
+</blockquote>
+<p>in this implementation, n is declared as normal, ,a is declared as orient.</p>
+</div>
+<table class="jsdoc-parameters">
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">obj</td>
+    <td class="jsdoc-param-type">dojox.gfx3d.Object</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+  <tr>
+    <td class="jsdoc-param-name">outline</td>
+    <td class="jsdoc-param-type">undefined</td>
+    <td class="jsdoc-param-description">
+    </td>
+  </tr>
+</table>
+<p>See the <a href="/reference-guide/1.8/dojox/gfx3d.html" target="_blank">dojox/gfx3d/scheduler.BinarySearchTree reference documentation</a> for more information.</p>
+<div class="jsdoc-children">
+  <div class="jsdoc-fieldlist"></div>
+</div>
+<h2 class="jsdoc-summary-heading">Method Summary<span class="jsdoc-summary-toggle"></span></h2>
+<div class="jsdoc-summary-list">
+  <ul class="jsdoc-property-list">
+    <li class="functionIcon  inherited"><a href="#1_8dojox_gfx3d_scheduler_BinarySearchTree_add" class="inline-link"> add</a><span class="parameters">(</span>obj, outline) <span></span><span title="inherited from dojox/gfx3d/scheduler" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_gfx3d_scheduler_BinarySearchTree_constructor" class="inline-link"> constructor</a><span class="parameters">(</span>obj, outline) <span>build the binary search tree, using binary space partition algorithm.</span><span title="inherited from dojox/gfx3d/scheduler" class="jsdoc-inherited"></span>
+    </li>
+    <li class="functionIcon  inherited"><a href="#1_8dojox_gfx3d_scheduler_BinarySearchTree_iterate" class="inline-link"> iterate</a><span class="parameters">(</span>outline) <span></span><span title="inherited from dojox/gfx3d/scheduler" class="jsdoc-inherited"></span>
+    </li>
+  </ul>
+</div>
+<div class="jsdoc-children">
+  <div class="jsdoc-fields">
+    <h2>Methods</h2>
+    <div class="jsdoc-property-list">
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_scheduler_BinarySearchTree_add"></a><span class="functionIcon">add</span><span class="parameters">(obj, outline)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/scheduler" class="jsdoc-link">dojox/gfx3d/scheduler</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">obj</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">outline</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_scheduler_BinarySearchTree_constructor"></a><span class="functionIcon">constructor</span><span class="parameters">(obj, outline)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/scheduler" class="jsdoc-link">dojox/gfx3d/scheduler</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"><p>build the binary search tree, using binary space partition algorithm.
+The idea is for any polygon, for example, (a, b, c), the space is divided by
+the plane into two space: plus and minus.
+
+</p>
+<p>for any arbitrary vertex p, if(p - a) dotProduct n = 0, p is inside the plane,
+</p>
+<blockquote>
+<p>0, p is in the plus space, vice versa for minus space.
+n is the normal vector that is perpendicular the plate, defined as:</p>
+<pre><code>    n = ( b - a) crossProduct ( c - a )</code></pre>
+<p></p>
+</blockquote>
+<p>in this implementation, n is declared as normal, ,a is declared as orient.</p>
+</div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">obj</td>
+            <td class="jsdoc-param-type">dojox.gfx3d.Object</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">outline</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="jsdoc-field inherited">
+        <div class="jsdoc-title"><a name="1_8dojox_gfx3d_scheduler_BinarySearchTree_iterate"></a><span class="functionIcon">iterate</span><span class="parameters">(outline)</span> 
+        </div>
+        <div class="jsdoc-inheritance TODO">Defined by <a href="/api/1.8/dojox/gfx3d/scheduler" class="jsdoc-link">dojox/gfx3d/scheduler</a><span title="inherited" class="jsdoc-inherited"></span>
+        </div>
+        <div class="jsdoc-full-summary"></div>
+        <table class="jsdoc-parameters">
+          <tr>
+            <th>Parameter</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="jsdoc-param-name">outline</td>
+            <td class="jsdoc-param-type">undefined</td>
+            <td class="jsdoc-param-description">
+            </td>
+          </tr>
+        </table>
+        <div><strong>Returns: </strong><span class="jsdoc-return-type">undefined</span></div>
+      </div>
+    </div>
+  </div>
+</div>
